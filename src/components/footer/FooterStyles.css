@@ -1,0 +1,99 @@
+footer {
+    padding: 130px 0;
+    background-color: #0B0A11;
+}
+.footer-box p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 7px 0 22px;
+}
+.footer-box .metapets-games-icon li {
+    margin: 0 30px 0 0px;
+}
+.footer-box .metapets-games-icon ul {
+    justify-content: flex-start;
+    padding: 0;
+}
+h4.footer-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+ul.footer-link li a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.footer-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+    padding: 9px 10px 9px 20px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,#000, #000), linear-gradient(184deg,#F213FF, rgb(22, 22, 22) , #0BEFD8);
+    border-radius: 18px;
+    -webkit-backdrop-filter: blur(153px);
+    backdrop-filter: blur(153px);
+}
+.footer-form input {
+    height: 54px;
+    max-width: 461px;
+    display: block;
+    width: calc(100% - 210px );
+    padding-right: 15px;
+    background-color: transparent;
+    border: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity:1;
+}
+.footer-form input::placeholder{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.copy-right  {
+    background-color: #0B0A11;
+}
+.copy-right p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 20px !important;
+}
+.footer-box.footer-box1 {
+    margin-left: 100px;
+}
+
+@media(max-width: 1400px){
+    .footer-box.footer-box1 {
+        margin-left: 0;
+    }
+}
+@media(max-width: 1200px){
+    .footer-box.footer-box1 {
+        margin-left:100px;
+    }
+}
