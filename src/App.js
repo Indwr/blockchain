@@ -15,6 +15,7 @@ import Terms from "./pages/terms/Terms";
 import Cookies from "./pages/cookies/Cookies";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Carousal from "./components/carousal/Carousal";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/cookies" component={Cookies} />
           <Route path="/staking" component={Staking} />
           <Route path="/terms" component={Terms} />
+          <Route path="/carousal" component={Carousal} />
         </Switch>
         <Footer />
       </div>
