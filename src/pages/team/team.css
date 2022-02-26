@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 15px;
+    padding: 18px;
 }
 .team-content img {
     border-radius: 54px;
@@ -28,6 +28,12 @@
     position: relative;
     text-align: center;
     margin-top: 54px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.04) 100%);
+    backdrop-filter: blur(17px);
+    border-radius: 54px;
+}
+.team-box img {
+    width: 100%;
 }
 .team-content h4 {
     font-weight: 600;

@@ -11,7 +11,7 @@ const Header = () => {
             <div className="container">
                 <div className="header-inner">
                     <div className="logo">
-                        <a href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
+                        <Link to={"/home"}><img src="assets/images/logo.svg" alt="logo" /></Link>
                     </div>
                     <div className="menu">
                         <nav className="navbar navbar-expand-xl p-0 ">
@@ -67,9 +67,9 @@ const Header = () => {
                                    
                                 </button>
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a className="dropdown-item" href="#">Action</a></li>
-                                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                                  <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                  <li><Link to={"/"} class="dropdown-item">Action</Link></li>
+                                  <li><Link to={"/"} class="dropdown-item">Another action</Link></li>
+                                  <li><Link to={"/"} class="dropdown-item">Something else here</Link></li>
                                 </ul>
                             </div>
                         </div>

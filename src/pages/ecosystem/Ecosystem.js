@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./ecosystem.css";
+// import video from '../../../../public/assets/images/metapets-video.mp4'
 
 const Ecosystem = () => {
     return <div>
@@ -123,21 +124,14 @@ const Ecosystem = () => {
                     </div>
                 </div>
                 <div className="ecosystem-img-box">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="ecosystem-img">
-                                <img src="assets/images/chase-chappell-yNOckbPdYvQ-unsplash.png" alt="" />
-                                <div className="play-btn">
-                                    <img src="assets/images/play-btn2.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 text-center">
                             <div className="ecosystem-img">
                                 <img src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg" alt="" />
                                 <div className="play-btn">
                                     <img src="assets/images/play-btn2.svg" alt="" />
                                 </div>
+                                <video src="assets/images/metapets-video.mp4" width="750" height="500" controls></video>       
                             </div>
                         </div>
                     </div>

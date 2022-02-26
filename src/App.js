@@ -10,6 +10,9 @@ import Team from "./pages/team/Team";
 import Whitepaper from "./pages/whitepaper/Whitepaper";
 import Tokenomics from "./pages/tokenomics/Tokenomics";
 import Staking from "./pages/staking/Staking";
+import Privacy from "./pages/privacy/Privacy";
+import Terms from "./pages/terms/Terms";
+import Cookies from "./pages/cookies/Cookies";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -27,8 +30,11 @@ function App() {
           <Route path="/partner" component={Partner} />
           <Route path="/team" component={Team} />
           <Route path="/whitepaper" component={Whitepaper} />
+          <Route path="/privacy" component={Privacy} />
           <Route path="/tokenomics" component={Tokenomics} />
+          <Route path="/cookies" component={Cookies} />
           <Route path="/staking" component={Staking} />
+          <Route path="/terms" component={Terms} />
         </Switch>
         <Footer />
       </div>

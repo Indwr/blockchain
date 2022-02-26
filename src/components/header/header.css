@@ -2,7 +2,7 @@
 
 /*--header.css--*/
 header {
-    background: linear-gradient(180deg, #0e0d17 0%, rgb(14 13 23) 100%);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     padding: 13px 0 3px;
     position: fixed;
     top: 0;
@@ -37,6 +37,12 @@ a.nav-link {
     color: #FFFFFF;
     opacity: 0.5;
     padding: 0;
+    transition: all .4s;
+}
+a.nav-link:hover {
+    background: -webkit-linear-gradient(180deg, #0BEFD8, #5959DF );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu-left {
     display: flex;
@@ -75,6 +81,7 @@ a.nav-link {
 }
 .theme-toggle {
     padding-top: 10px;
+    cursor: pointer;
 }
 .toggle-menu {
     display: block;
@@ -117,6 +124,26 @@ header .navbar-toggler-icon {
 }
 .menu__bar:nth-child(3) {
     top: 16px;
+}
+ul.dropdown-menu.show {
+    background-color: #000;
+    border-radius: 10px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,#000, #000), linear-gradient(184deg,#F213FF, rgb(22, 22, 22) , #0BEFD8);
+    left: auto !important;
+    right: 0 !important;
+}
+header .dropdown-item {
+    padding: 7px 15px;
+    clear: both;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+header .dropdown-item:focus, header .dropdown-item:hover {
+    color: #0175ef;
+    background-color: transparent;
 }
 
 

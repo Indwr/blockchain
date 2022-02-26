@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button,Container,Row } from 'react-bootstrap';
 import { Carousal } from "../../components/carousal/Carousal";
 import "./home.css";
@@ -18,10 +19,10 @@ const Home = () => {
                                     <p className="copy-text mb-0">0x24ce3d571fbcfd9d81...</p>
                                     
                                     <div className="btn-outer1" >
-                                      <a className="comman-btn btn-outer" href="#">
+                                      <Link className="comman-btn btn-outer" to={"/"}>
                                       Copy Address
                                       <img src="assets/images/button-border.svg" alt="button-border" />
-                                        </a>
+                                      </Link>
                                     
                                     </div>
                                 </div>
@@ -35,7 +36,7 @@ const Home = () => {
                                 <li><img src="assets/images/cardano-(ada).svg" alt="" /></li>
                             </ul>
                             <div className="banner-img">
-                                <img src="assets/images/banner-img1.png" alt="" />
+                                <img src="assets/images/banner-img2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -60,10 +61,10 @@ const Home = () => {
                             <h3 className="sub-heading mb-0">MetaPets Games</h3>
                             <p>MetaPets Games will be a way to engage the comnmuniity and help them build relationship in a fun and competitive way. NFT games where you can train your MetaPets, dress them, and breed them are some of the many ways you will be able to constantly give love and care to your new friend.</p>
                             <div className="btn-outer1" >
-                              <a className="comman-btn btn-outer" href="#">
+                              <Link className="comman-btn btn-outer" to={"/"}>
                                 Learn More
                                 <img src="assets/images/button-border.svg" alt="button-border" />
-                                </a>
+                                </Link>
                             
                             </div>
                         </div>
@@ -86,10 +87,10 @@ const Home = () => {
                               <h3 className="sub-heading mb-0">Custom Pets</h3>
                               <p>Architecto beatae vitae dicta sunt explicabo. Nemo enim ip sam voluptatem quia voluptas sit aspernatur aut odit. </p>
                               <div className="btn-outer1" >
-                                <a className="comman-btn btn-outer" href="#">
+                                <Link className="comman-btn btn-outer" to={"/"}>
                                   Buy Now
                                   <img src="assets/images/button-border.svg" alt="button-border" />
-                                </a>
+                                </Link>
                                 
                               </div>
                           </div>
@@ -124,28 +125,28 @@ const Home = () => {
                   <h3 className="sub-heading mb-0">Customizable Pets</h3>
                   <p>Use your imagination to custommize your loving friend! Launch your own custom MetaPets, adopt any traits you want to make them unique, brag about your pet MetaPets social media, and sell r swap it on the marketplace.</p>
                   <div className="btn-outer1" >
-                    <a className="comman-btn btn-outer" href="#">
+                    <Link className="comman-btn btn-outer" to={"/"}>
                       Buy Now
                       <img src="assets/images/button-border.svg" alt="button-border" />
-                    </a>
+                    </Link>
                     
                   </div>
                 </div>
               </div>
               <div className="col-md-6 order-md-2 order-1">
                 <div className="numquam-eius-right">
-                  <img src="assets/images/inner-box-circul.png" alt="" />
+                  <img src="assets/images/about-home.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="numquam-eius">
+        <section className="numquam-eius numquam-eius2">
           <div className="container">
             <div className="row">
             <div className="col-md-6 ">
                 <div className="numquam-eius-right">
-                  <img src="assets/images/inner-box-circul.png" alt="" />
+                  <img src="assets/images/about-home.png" alt="" />
                 </div>
               </div>
               <div className="col-md-6 d-flex align-items-center">
@@ -154,10 +155,10 @@ const Home = () => {
                   <h3 className="sub-heading mb-0">Customizable Pets</h3>
                   <p>MetaPets aims to make your MetaPet adaptable to the virtual designs of the metaverse. Interperable into other worlds, you can show your dog off in a dog show, have your prize cow produce milk to sell, and race your trophy-winning horse in a competition, all while earning a passive income from your MetaPets investment</p>
                   <div className="btn-outer1" >
-                    <a className="comman-btn btn-outer" href="#">
+                    <Link className="comman-btn btn-outer" to={"/"}>
                       Buy Now
                       <img src="assets/images/button-border.svg" alt="button-border" />
-                    </a>
+                    </Link>
                     
                   </div>
                 </div>
@@ -182,15 +183,15 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/5a.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                <div className="partner-box partner-box2">
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/marketcap.png" alt="" />
                   </div>
@@ -198,7 +199,7 @@ const Home = () => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/1a.png" alt="" />
                   </div>
@@ -206,7 +207,7 @@ const Home = () => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/2a.png" alt="" />
                   </div>
@@ -214,7 +215,7 @@ const Home = () => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/3a.png" alt="" />
                   </div>
@@ -222,7 +223,7 @@ const Home = () => {
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/partner-box.png" alt="" />
+                  <img src="assets/images/parner-box.png" alt="" />
                   <div className="partner-box-img">
                     <img src="assets/images/4a.png" alt="" />
                   </div>
@@ -231,10 +232,10 @@ const Home = () => {
             </div>
             <div className="parnter-btn">
             <div className="btn-outer1" >
-              <a className="comman-btn btn-outer" href="#">
+              <Link className="comman-btn btn-outer" to={"/"}>
                 Buy Now
                 <img src="assets/images/button-border.svg" alt="button-border" />
-              </a>
+              </Link>
               
             </div>
             </div>
@@ -258,10 +259,10 @@ const Home = () => {
                   <p>Our vision is to see that our peoject adds to the growth and value of the metaverse. It will indeed be interoperable and open - meaning that down the road, an owner will be able to use their MetaPets in other games/metaworlds that we, or anyone else out there create. </p>
                   <p>so, for example, your pet from MetaPets could be pulled into a training camp, a dog park, or any other type of game someone wants to build on different worlds in the metaverse without necessarily needing permissions. Our community happiness is our number one priority and everything we build will be to reward our loyal community.</p>
                   <div className="btn-outer1" >
-                    <a className="comman-btn btn-outer" href="#">
+                    <Link className="comman-btn btn-outer" to={"/"}>
                       Read Whitepapers
                       <img src="assets/images/button-border.svg" alt="button-border" />
-                    </a>
+                    </Link>
                     
                   </div>
                 </div>
@@ -302,10 +303,10 @@ const Home = () => {
                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
                   </div>
                   <div className="btn-outer1" >
-                    <a className="comman-btn btn-outer" href="#">
+                    <Link className="comman-btn btn-outer" to={"/"}>
                       Buy Now
                       <img src="assets/images/button-border.svg" alt="button-border" />
-                    </a>
+                    </Link>
                     
                   </div>
                 </div>

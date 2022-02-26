@@ -94,7 +94,7 @@ p {
     opacity: 0.5;
     margin-bottom: 26px !important;
 }
-a.comman-btn {
+.comman-btn {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -108,9 +108,12 @@ a.comman-btn {
     z-index: 2;
     overflow: hidden;
     padding: 3px;
+    transition: all .4s;
 }
-
-a.comman-btn:before{
+.comman-btn:hover {
+    color: #0175EF;
+}
+.comman-btn:before{
     content: "";
     position: absolute;
     top: 0;
@@ -129,6 +132,8 @@ a.comman-btn:before{
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(17px);
+    background-color: transparent;
+    border: 0;
 }
 .btn-outer img {
     position: absolute;
@@ -173,7 +178,7 @@ a.comman-btn:before{
         width: 180px;
         height: 55px;
     }
-    a.comman-btn {
+    .comman-btn {
         font-size: 15px;
         line-height: 15px;
     }
