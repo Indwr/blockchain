@@ -135,6 +135,19 @@ a.comman-btn:before{
     top: 0;
     left: 0;
 }
+.section-padding {
+    padding: 114px 0 150px;
+}
+.heading-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+}
 
 @media(max-width: 1200px){
     .sub-heading {

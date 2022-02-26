@@ -94,7 +94,6 @@ section.metapets-games {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 155px;
 }
 .metapets-games-icon li {
     margin: 0 33px;
@@ -120,6 +119,11 @@ section.metapets-games {
 img.metapets-games-left-img {
     margin-left: 118px;
 }
+.metapets-games-icon {
+    position: absolute;
+    top: 10px;
+    right: 289px;
+}
 
 /*-------custom-pets-----*/
 section.custom-pets {
@@ -134,6 +138,20 @@ section.custom-pets {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.custom-pets-inner-box:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid;
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
 }
 .custom-pets-inner {
     position: relative;
@@ -374,8 +392,18 @@ section.home-about{
     img.metapets-games-left-img {
         margin-left: 0;
     }
-    .metapets-games-icon ul {
+    /* .metapets-games-icon ul {
         margin-bottom: 125px;
+    } */
+    .metapets-games-icon {
+        position: absolute;
+        top: 10px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    img.custom-pets-main-img {
+        height: 500px;
     }
     
 }
@@ -387,6 +415,28 @@ section.home-about{
     }
     .banner-img img {
         display: none;
+    }
+    .partner-box {
+        margin-bottom: 24px;
+    }
+    .parnter-btn .btn-outer {
+        margin: 16px auto 0;
+    }
+    section.partner {
+        padding: 150px 0 60px;
+    }
+    .roadmap-text {
+        display: block;
+        text-align: center;
+    }
+    .roadmap-text-box {
+        max-width: 100%;
+    }
+    .roadmap-text .comman-btn.btn-outer {
+        margin: 0 auto;
+    }
+    .metapets-games-icon li {
+        margin: 0 20px;
     }
 }
 
@@ -430,9 +480,25 @@ section.home-about{
     .parner-round-img {
         top: 0;
     }
+    .parner-text p, .roadmap-text-box p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 24px !important;
+    }
+    section.partner {
+        padding: 100px 0 60px;
+    }
+    .home-about-left p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    img.custom-pets-main-img {
+        height: 350px;
+    }
+
 }
 
-@media(max-width: 567px){
+@media(max-width: 576px){
     .copy {
         display: block;
     }
@@ -446,5 +512,8 @@ section.home-about{
     }
     .metapets-games-icon ul {
         margin-bottom: 65px;
+    }
+    .copy-addres .btn-outer {
+        margin: 10px auto 0px;
     }
 }

@@ -46,19 +46,6 @@ const Home = () => {
         <section className="metapets-games">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 ">
-                        <div className="metapets-games-icon">
-                            <ul>
-                                <li><img src="assets/images/twitter.svg" alt="" /></li>
-                                <li><img src="assets/images/games.svg" alt="" /></li>
-                                <li><img src="assets/images/mail.svg" alt="" /></li>
-                                <li><img src="assets/images/games2.svg" alt="" /></li>
-                                <li><img src="assets/images/games3.svg" alt="" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
                     <div className="col-md-6">
                         <div className="metapets-games-left">
                             <img className="metapets-games-left-img" src="assets/images/metapets-games.png" alt="" />
@@ -106,13 +93,22 @@ const Home = () => {
                                 
                               </div>
                           </div>
-                          <img class="custom-pets-main-img" src="assets/images/custom-pets-img.png" alt="" />
+                          <img className="custom-pets-main-img" src="assets/images/custom-pets-img.png" alt="" />
                           <div className="custom-pets-circul">
                             <img className="rotating" src="assets/images/round-circul.png" alt="" />
                           </div>
                           <div className="custom-pets-circul2">
                             <img className="rotating" src="assets/images/round-circul.png" alt="" />
                           </div>
+                          <div className="metapets-games-icon">
+                            <ul>
+                                <li><img src="assets/images/twitter.svg" alt="" /></li>
+                                <li><img src="assets/images/games.svg" alt="" /></li>
+                                <li><img src="assets/images/mail.svg" alt="" /></li>
+                                <li><img src="assets/images/games2.svg" alt="" /></li>
+                                <li><img src="assets/images/games3.svg" alt="" /></li>
+                            </ul>
+                        </div>
                       </div>
                     </div>
                 </div>
@@ -122,7 +118,7 @@ const Home = () => {
         <section className="numquam-eius">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 d-flex align-items-center">
+              <div className="col-md-6 d-flex align-items-center order-md-1 order-2">
                 <div className="numquam-eius-left">
                   <h2 className="heading mb-0">Numquam Eius </h2>
                   <h3 className="sub-heading mb-0">Customizable Pets</h3>
@@ -136,7 +132,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 ">
+              <div className="col-md-6 order-md-2 order-1">
                 <div className="numquam-eius-right">
                   <img src="assets/images/inner-box-circul.png" alt="" />
                 </div>
@@ -184,7 +180,7 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -192,7 +188,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -200,7 +196,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -208,7 +204,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -216,7 +212,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -224,7 +220,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
                   <img src="assets/images/partner-box.png" alt="" />
                   <div className="partner-box-img">
@@ -255,7 +251,7 @@ const Home = () => {
         <section className="home-about">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 order-md-1 order-2">
                 <div className="home-about-left">
                   <h2 className="heading mb-0">Our Vision</h2>
                   <h3 className="sub-heading mb-0">About Us</h3>
@@ -270,7 +266,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 order-md-2 order-1">
                 <div className="home-about-right">
                   <img src="assets/images/about-home.png" alt="" />
                 </div>

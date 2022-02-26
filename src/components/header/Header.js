@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "react-bootstrap";
+// import { Navbar } from "react-bootstrap";
 import "../../assets/css/common.css";
 import "./header.css";
 
@@ -14,35 +14,42 @@ const Header = () => {
                         <a href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
                     </div>
                     <div className="menu">
-                        <nav className="navbar navbar-expand-xl  ">
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
+                        <nav className="navbar navbar-expand-xl p-0 ">
+                            <button className="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon">
+                                    <span className="toggle-menu" data-toggle-menu>
+                                        Toggle menu
+                                        <span className="menu__bar"></span>
+                                        <span className="menu__bar"></span>
+                                        <span className="menu__bar"></span>
+                                    </span>
+                                </span>
                             </button>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto">
                                     <li className="nav-item">
-                                    <a className="nav-link active ms-0" aria-current="page" href="#">About us</a>
+                                    <Link className="nav-link active ms-0" aria-current="page" to={"/about"}>About us</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Ecosystem</a>
+                                    <Link className="nav-link " to={"/ecosystem"}>Ecosystem</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Network</a>
+                                    <Link className="nav-link " to={"/network"}>Network</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Partners</a>
+                                    <Link className="nav-link " to={"/partners"}>Partners</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Team</a>
+                                    <Link className="nav-link " to={"/team"}>Team</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Whitepaper</a>
+                                    <Link className="nav-link " to={"/whitepaper"}>Whitepaper</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Tokenomics</a>
+                                    <Link className="nav-link " to={"/tokenomics"}>Tokenomics</Link>
                                     </li>
                                     <li className="nav-item">
-                                    <a className="nav-link" href="#">Staking</a>
+                                    <Link className="nav-link " to={"/staking"}>Staking</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -70,6 +77,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
+        <div className="header-space"></div>
     </div>
   );
 };

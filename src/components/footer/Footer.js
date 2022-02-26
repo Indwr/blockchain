@@ -7,8 +7,8 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-md-5">
-                <div className="footer-box">
-                  <a href=""> <img src="assets/images/footer-logo.png" alt="" /> </a>
+                <div className="footer-box footer-box-logo">
+                  <a href=""><img src="assets/images/logo.svg" alt="logo" /></a>
                   <p>Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium.</p>
                   <div className="metapets-games-icon">
                       <ul className="mb-0">
@@ -21,7 +21,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-2 col-md-4">
+              <div className="col-xxl-3 col-xl-2 col-md-4 col-sm-6">
                 <div className="footer-box footer-box1">
                   <h4 className="footer-heading">Documents</h4>
                   <ul className="footer-link">
@@ -31,7 +31,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className=" col-xl-2 col-md-3">
+              <div className=" col-xl-2 col-md-3 col-sm-6">
               <div className="footer-box ">
                   <h4 className="footer-heading">Resources</h4>
                   <ul className="footer-link">

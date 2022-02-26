@@ -1,0 +1,23 @@
+.partner-page {
+    position: relative;
+}
+.partner-heading {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+.partner-img-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner-img-box {
+    margin: 50px 28px 0;
+}
+.partner-round-img {
+    position: absolute;
+    bottom: -184px;
+    right: 0;
+    z-index: -1;
+}

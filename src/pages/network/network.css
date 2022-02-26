@@ -1,0 +1,35 @@
+.network {
+    position: relative;
+}
+.network-headding {
+    width: 100%;
+    max-width: 961px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.network-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.network-img {
+    margin: 0 17px;
+}
+.network-img-shadow, .network-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.network-img-outer {
+    position: relative;
+}
+.network-icon img {
+    margin: 0 auto;
+}
+.network-round {
+    position: absolute;
+    top: 174px;
+    left: 0;
+}
