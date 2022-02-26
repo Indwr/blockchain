@@ -26,7 +26,7 @@ export default class Carousal extends React.Component {
       <OwlCarousel className="owl-theme" loop margin={10} nav>
         {images?.map((data, keys) => (
           <div key={keys} className="item">
-            <img alt="slider image" src={data} />
+            <img alt="slider" src={data} />
           </div>
         ))}
       </OwlCarousel>
