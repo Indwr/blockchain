@@ -40,8 +40,8 @@ const Staking = () => {
                                         <p className='mb-0'>90 Days</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="staking-content">
+                            {/* </div>
+                            <div className="staking-content"> */}
                                 <div className="staking-box">
                                     <img src="assets/images/staking-frame.png" alt="" />
                                     <div className="staking frame-img">

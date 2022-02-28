@@ -97,11 +97,15 @@ ul.footer-link li a:hover {
     position: relative;
 }
 .metapets-games-icon-footer .metapets-games-icon {
-    position: absolute;
-    top: 10px;
+    position: initial;
+    top: 0;
     right: auto;
     left: 0;
     z-index: 4;
+    transform: translate(0);
+}
+.metapets-games-icon-footer ul li img {
+    width: 26px;
 }
 
 @media(max-width: 1400px){
@@ -124,11 +128,20 @@ ul.footer-link li a:hover {
         margin-top: 40px;
         border-top: 2px solid #1b1b1b;
     }
+    .footer-box.footer-box-logo a img {
+        width: 250px;
+    }
 }
 
 @media(max-width: 991px){
     .footer-box.footer-box1 {
         margin-left: 50px;
+    }
+    footer {
+        padding: 80px 0 40px;
+    }
+    .footer-box.footer-box-logo a img {
+        width: 200px;
     }
 }
 
@@ -145,6 +158,31 @@ ul.footer-link li a:hover {
         padding-top: 24px;
         margin-top: 24px;
     }
+    footer {
+        padding: 50px 0 0px;
+    }
+    .footer-form input {
+        width: calc(100% - 180px );
+    }
+    .footer-form {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0px 10px 0px 15px;
+    }
+    .copy-right p {
+        margin-bottom: 10px !important;
+    }
+    h4.footer-heading {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .footer-box p {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 7px 0 12px !important;
+    }
 }
 
 @media(max-width: 576px){
@@ -152,5 +190,22 @@ ul.footer-link li a:hover {
         margin-bottom: 24px;
         padding-bottom: 24px;
         border-bottom: 2px solid #1b1b1b;
+    }
+    footer .btn-outer {
+        width: 130px;
+        height: 38px;
+    }
+    .footer-form input {
+        width: calc(100% - 130px );
+    }
+    .comman-btn {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .footer-form {
+        margin-bottom: 20px;
+    }
+    .footer-box.footer-box-logo a img {
+        width: 150px;
     }
 }

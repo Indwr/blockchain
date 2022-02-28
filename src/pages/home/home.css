@@ -218,14 +218,18 @@ section.partner {
     padding: 250px 0 100px;
     position: relative;
 }
+.partner-box-outer {
+    overflow: hidden;
+    border-radius: 38px;
+}
 .partner-box {
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.04) 100%);
     backdrop-filter: blur(17px);
-    border-radius: 54px;
-    overflow: hidden;
+    border-radius: 38px;
+    /* overflow: hidden; */
 }
-.partner-box.partner-box2:after {
+.partner-box-outer.partner-box2:after {
     position: absolute;
     content: "";
     width: 75.57px;
@@ -235,7 +239,7 @@ section.partner {
     left: -20px;
     bottom: -20px;
 }
-.partner-box.partner-box2:before {
+.partner-box-outer .partner-box2:before {
     position: absolute;
     content: "";
     width: 80.54px;
@@ -444,6 +448,7 @@ section.numquam-eius.numquam-eius2 {
         right: auto;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%;
     }
     img.custom-pets-main-img {
         height: 500px;
@@ -453,13 +458,13 @@ section.numquam-eius.numquam-eius2 {
 
 @media(max-width: 991px){
     img.custom-pets-main-img {
-        height: 350px;
+        height: 450px;
         width: 100%;
     }
     .banner-img img {
         display: none;
     }
-    .partner-box {
+    .partner-box-outer {
         margin-bottom: 24px;
     }
     .parnter-btn .btn-outer {
@@ -538,6 +543,33 @@ section.numquam-eius.numquam-eius2 {
     img.custom-pets-main-img {
         height: 350px;
     }
+    section.custom-pets {
+        padding: 100px 0 130px;
+    }
+    .custom-pets-circul2 img, .custom-pets-circul img {
+        width: 300px;
+    }
+    .custom-pets-circul {
+        bottom: -130px;
+        left: -130px;
+    }
+    .custom-pets-circul2 {
+        top: -130px;
+        right: -130px;
+    }
+    .custom-pets-inner-box {
+        padding: 0px 20px;
+    }
+    .numquam-eius-right img {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    section.numquam-eius.numquam-eius2 {
+        margin-top: 100px;
+    }
+    .home-about-right {
+        margin-bottom: 30px;
+    }
 
 }
 
@@ -556,7 +588,21 @@ section.numquam-eius.numquam-eius2 {
     .metapets-games-icon ul {
         margin-bottom: 65px;
     }
-    .copy-addres .btn-outer {
+    .banner .copy-addres .btn-outer {
         margin: 10px auto 0px;
+    }
+    .banner .sub-heading {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .metapets-games-icon li {
+        margin: 0 10px;
+    }
+    img.custom-pets-main-img {
+        height: 420px;
+    }
+    section.numquam-eius.numquam-eius2 {
+        margin-top: 60px;
     }
 }

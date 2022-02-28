@@ -32,4 +32,27 @@
     position: absolute;
     top: 174px;
     left: 0;
+    z-index: -1;
+}
+
+@media(max-width: 1200px){
+    .network-round img {
+        width: 200px;
+    }
+}
+@media(max-width: 991px){
+    .network-round img {
+        width: 150px;
+    }
+}
+@media(max-width: 767px){
+    .network-round img {
+        width: 100px;
+    }
+    .network-img-box {
+        flex-flow: wrap;
+    }
+    .network-img {
+        margin: 24px 17px;
+    }
 }

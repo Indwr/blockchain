@@ -22,7 +22,7 @@ const Ecosystem = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/5a.png" alt="" />
                                         </div>
@@ -30,7 +30,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/marketcap.png" alt="" />
                                         </div>
@@ -38,7 +38,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/1a.png" alt="" />
                                         </div>
@@ -46,7 +46,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/2a.png" alt="" />
                                         </div>
@@ -54,7 +54,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/3a.png" alt="" />
                                         </div>
@@ -62,17 +62,17 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/4a.png" alt="" />
                                         </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="row cosystem-content1">
-                                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                                {/* </div>
+                                <div className="row cosystem-content1"> */}
+                                    <div className="col-lg-2 col-md-3 col-sm-4 col-6 ">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/5a.png" alt="" />
                                         </div>
@@ -80,7 +80,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/marketcap.png" alt="" />
                                         </div>
@@ -88,7 +88,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/1a.png" alt="" />
                                         </div>
@@ -96,7 +96,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/2a.png" alt="" />
                                         </div>
@@ -104,7 +104,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/3a.png" alt="" />
                                         </div>
@@ -112,7 +112,7 @@ const Ecosystem = () => {
                                     </div>
                                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                                         <div className="partner-box">
-                                        <img src="assets/images/partner-box.png" alt="" />
+                                        <img src="assets/images/parner-box.png" alt="" />
                                         <div className="partner-box-img">
                                             <img src="assets/images/4a.png" alt="" />
                                         </div>
@@ -127,11 +127,13 @@ const Ecosystem = () => {
                     <div className="row justify-content-center">
                         <div className="col-md-6 text-center">
                             <div className="ecosystem-img">
-                                <img src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg" alt="" />
-                                <div className="play-btn">
-                                    <img src="assets/images/play-btn2.svg" alt="" />
+                                <div className="ecosystem-img-box">
+                                    <img src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg" alt="" />
+                                    <div className="play-btn">
+                                        <img src="assets/images/play-btn2.svg" alt="" />
+                                    </div>
                                 </div>
-                                <video src="assets/images/metapets-video.mp4" width="750" height="500" controls></video>       
+                                <video  src="assets/images/metapets-video.mp4" width="750" height="500" controls></video>       
                             </div>
                         </div>
                     </div>

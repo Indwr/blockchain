@@ -128,7 +128,7 @@ p {
     position: relative;
     display: flex;
     width: 210px;
-    height: 60px;
+    height: 64px;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(17px);
@@ -165,6 +165,12 @@ p {
     }
 }
 
+@media(max-width: 991px){
+    .section-padding {
+        padding: 90px 0;
+    }
+}
+
 @media(max-width: 767px){
     .heading {
         font-size: 20px;
@@ -172,7 +178,8 @@ p {
     }
     .sub-heading {
         font-size: 30px;
-        line-height: 60px;
+        line-height: 40px;
+        margin-bottom: 10px;
     }
     .btn-outer {
         width: 180px;
@@ -188,6 +195,14 @@ p {
     }
     .copy-addres .btn-outer {
         margin-left: 40px;
+    }
+    .section-padding {
+        padding: 50px 0;
+    }
+    .heading-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0px !important;
     }
     
 }

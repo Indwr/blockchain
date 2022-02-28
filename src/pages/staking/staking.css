@@ -7,10 +7,13 @@
 .staking-content {
     display: flex;
     justify-content: center;
+    flex: 0 0 100%;
+    flex-flow: wrap;
 }
 .staking-box {
     margin: 50px 27px 0;
     position: relative;
+    flex: 0 0 30%;
 }
 .staking.frame-img {
     position: absolute;
@@ -18,6 +21,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    width: 100%;
 }
 .staking.frame-img img {
     margin: 0 auto;
@@ -81,4 +85,72 @@
     right: 0;
     z-index: -1;
     bottom: -66px;
+}
+
+@media(max-width: 1500px){
+    .staking.frame-img h3 {
+        font-size: 40px;
+        line-height: 41px;
+    }
+}
+
+@media(max-width: 1400px){
+    .staking.frame-img {
+        top: 25px;
+    }
+    .staking.frame-img h3 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+}
+
+@media(max-width: 1200px){
+    .staking-box {
+        flex: 0 0 44%;
+    }
+    .staking.frame-img {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 991px){
+    .staking-box {
+        margin: 28px 14px 0;
+    }
+    .staking.frame-img img {
+        width: 40px;
+    }
+    .staking.frame-img h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .staking.frame-img p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .stakin-circul img {
+        width: 200px;
+    }
+}
+
+@media(max-width: 767px){
+    .stakin-circul img {
+        width:150px;
+    }
+}
+
+@media(max-width: 576px){
+    .staking-box {
+        flex: 0 0 100%;
+    }
+    .staking-box {
+        margin: 28px 0px 0;
+    }
+    .staking-box img {
+        width: 100%;
+    }
+    .staking.frame-img img {
+        width: 50px;
+    }
 }

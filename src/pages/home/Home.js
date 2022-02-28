@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Carousal from '../../../src/components/carousal/Carousal';
 import "./home.css";
 
 const Home = () => {
@@ -257,49 +258,61 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/5a.png" alt="" />
+                  <div className="partner-box-outer">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/5a.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box partner-box2">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/marketcap.png" alt="" />
+                <div className="partner-box-outer ">
+                  <div className="partner-box partner-box2">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/marketcap.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/1a.png" alt="" />
+                <div className="partner-box-outer">
+                  <div className="partner-box">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/1a.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/2a.png" alt="" />
+                <div className="partner-box-outer">
+                  <div className="partner-box">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/2a.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/3a.png" alt="" />
+                <div className="partner-box-outer">
+                  <div className="partner-box">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/3a.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <img src="assets/images/parner-box.png" alt="" />
-                  <div className="partner-box-img">
-                    <img src="assets/images/4a.png" alt="" />
+                <div className="partner-box-outer">
+                  <div className="partner-box">
+                    <img src="assets/images/parner-box.png" alt="" />
+                    <div className="partner-box-img">
+                      <img src="assets/images/4a.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -383,7 +396,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <Carousal />         */}
+        <Carousal />        
       </section>
 
       <section className="roadmap">

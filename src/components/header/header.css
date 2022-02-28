@@ -209,6 +209,9 @@ header .dropdown-item:focus, header .dropdown-item:hover {
     .theme-toggle {
         padding-top: 6px;
     }
+    .header-space {
+        margin-bottom: 50px;
+    }
 }
 
 @media(max-width: 767px){
