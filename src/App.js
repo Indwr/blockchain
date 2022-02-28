@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -16,6 +21,7 @@ import Cookies from "./pages/cookies/Cookies";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Carousal from "./components/carousal/Carousal";
+import CarousalSecond from "./components/carousal-second/CarousalSecond";
 
 function App() {
   return (
@@ -23,6 +29,13 @@ function App() {
       <div>
         <Header />
         <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return true ? <Redirect to="/home" /> : <Redirect to="/home" />;
+            }}
+          />
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
@@ -37,6 +50,7 @@ function App() {
           <Route path="/staking" component={Staking} />
           <Route path="/terms" component={Terms} />
           <Route path="/carousal" component={Carousal} />
+          <Route path="/carousal-second" component={CarousalSecond} />
         </Switch>
         <Footer />
       </div>

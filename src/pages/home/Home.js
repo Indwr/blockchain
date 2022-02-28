@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Carousal from '../../../src/components/carousal/Carousal';
+import Carousal from "../../../src/components/carousal/Carousal";
+import Header from "../../components/header/Header";
 import "./home.css";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <div className="banner">
         <div className="container">
           <div className="row">
@@ -395,8 +397,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <Carousal />        
+        <Carousal />
       </section>
 
       <section className="roadmap">

@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "../../components/header/Header";
 import "./about.css";
 
 const About = () => {
   return (
     <div>
+      <Header />
       <section className="about section-padding">
         <div className="container">
           <div className="row">

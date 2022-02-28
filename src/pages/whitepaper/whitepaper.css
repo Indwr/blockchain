@@ -1,33 +1,47 @@
-.whitepaper{
-    position: relative;
+.whitepaper {
+  position: relative;
 }
 .whitepaper-heading {
-    width: 100%;
-    max-width: 620px;
-    text-align: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+  margin: 0 auto;
 }
 .whitepaper.content-box img {
-    border-radius: 55px;
-    margin: 48px 25px;
+  border-radius: 55px;
+  margin: 48px 25px;
 }
 .whitepaper.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  position: relative;
 }
 .team-round-circul {
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 .whitepaper-circel-img {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+/* Start Remove Toolbar css */
+
+.rpv-default-layout-toolbar {
+  display: none;
+}
+.rpv-default-layout-sidebar-headers {
+  display: none;
+}
+.rpv-default-layout-main {
+  border-radius: 8%;
+}
+
+/* End Remove Toolbar css */
