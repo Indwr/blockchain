@@ -13,6 +13,7 @@ const Home = () => {
 
   const copyAddress = (e) => {
     alert("Copied");
+    setAddress("0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d");
   };
   return (
     <div>
@@ -84,46 +85,35 @@ const Home = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://twitter.com/Metapetscoin"
-                      rel="noreferrer"
                       target="_blank"
+                      href={"https://twitter.com/Metapetscoin"}
                     >
                       <img src="assets/images/twitter.svg" alt="" />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://discord.com/invite/NQKR42dVmm"
+                      href={"https://discord.com/invite/NQKR42dVmm"}
                       target="_blank"
-                      rel="noreferrer"
                     >
                       <img src="assets/images/games.svg" alt="" />
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://t.me/metapets"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
+                    <a href={"https://t.me/metapets"} target="_blank">
                       <img src="assets/images/mail.svg" alt="" />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.reddit.com/user/Metapets"
+                      href={"https://www.reddit.com/user/Metapets"}
                       target="_blank"
-                      rel="noreferrer"
                     >
                       <img src="assets/images/games2.svg" alt="" />
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://linktr.ee/metapets"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
+                    <a href={"https://linktr.ee/metapets"} target="_blank">
                       <img src="assets/images/games3.svg" alt="" />
                     </a>
                   </li>
