@@ -80,8 +80,9 @@ a.nav-link:hover {
     z-index: 0;
 }
 .theme-toggle {
-    padding-top: 10px;
+    padding-top: 0;
     cursor: pointer;
+    margin-left: 30px;
 }
 .toggle-menu {
     display: block;

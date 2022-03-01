@@ -21,7 +21,9 @@ const Ecosystem = () => {
                     aperiam.
                   </p>
                 </div>
-                <div className="ecosystem box"></div>
+                <div className="ecosystem box">
+                  <img src="assets/images/metapets-plasma-logo-reveal.gif" alt="" />
+                </div>
                 <div className="ecosystem-content">
                   <div className="row">
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -131,7 +133,7 @@ const Ecosystem = () => {
             <div className="row justify-content-center">
               <div className="col-md-6 text-center">
                 <div className="ecosystem-img">
-                  <div className="ecosystem-img-box">
+                  <div className="ecosystem-img-box-outer">
                     <img
                       src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg"
                       alt=""

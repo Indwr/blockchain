@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Carousal from "../../../src/components/carousal/Carousal";
+import CarousalSecond from "../../../src/components/carousal-second/CarousalSecond";
 import Header from "../../components/header/Header";
 import "./home.css";
 
@@ -66,6 +67,27 @@ const Home = () => {
       <section className="metapets-games">
         <div className="container">
           <div className="row">
+            <div className="col-12">
+            <div className="metapets-games-icon">
+                  <ul>
+                    <li>
+                      <img src="assets/images/twitter.svg" alt="" />
+                    </li>
+                    <li>
+                      <img src="assets/images/games.svg" alt="" />
+                    </li>
+                    <li>
+                      <img src="assets/images/mail.svg" alt="" />
+                    </li>
+                    <li>
+                      <img src="assets/images/games2.svg" alt="" />
+                    </li>
+                    <li>
+                      <img src="assets/images/games3.svg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+            </div>
             <div className="col-md-6">
               <div className="metapets-games-left">
                 <img
@@ -150,25 +172,7 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <div className="metapets-games-icon">
-                  <ul>
-                    <li>
-                      <img src="assets/images/twitter.svg" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/games.svg" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/mail.svg" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/games2.svg" alt="" />
-                    </li>
-                    <li>
-                      <img src="assets/images/games3.svg" alt="" />
-                    </li>
-                  </ul>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -398,6 +402,9 @@ const Home = () => {
           </div>
         </div>
         <Carousal />
+        <div className="home-team-circul">
+          <img src="assets/images/home-team-cercul.png" alt="" />
+        </div>
       </section>
 
       <section className="roadmap">
@@ -426,6 +433,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <CarousalSecond />
       </section>
     </div>
   );

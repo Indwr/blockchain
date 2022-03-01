@@ -115,14 +115,13 @@ section.metapets-games {
     position: absolute;
     top: -80px;
     right: 0;
+    z-index: -1;
 }
 img.metapets-games-left-img {
     margin-left: 118px;
 }
 .metapets-games-icon {
-    position: absolute;
-    top: 10px;
-    right: 289px;
+    margin: 34px 0 152px;
 }
 
 /*-------custom-pets-----*/
@@ -341,7 +340,9 @@ section.home-about{
 
 
 /*-----home-team-----*/
-
+.home-team {
+    position: relative;
+}
 .home-team-heading {
     width: 100%;
     max-width: 610px;
@@ -357,8 +358,33 @@ section.home-about{
     opacity: 0.5;
     margin-bottom: 78px !important;
 }
+.home-team .owl-item.active.center .team-box:after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: url(../../../public/assets/images/team-slider-center.png);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backdrop-filter: blur(17px);
+    z-index: -1;
+}
+.home-team-circul {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*----road-map----*/
+section.roadmap {
+    margin-top: 273px;
+    padding-bottom: 221px;
+}
 .roadmap-text {
     display: flex;
     align-items: center;
@@ -379,6 +405,45 @@ section.home-about{
 section.numquam-eius.numquam-eius2 {
     margin-top: 203px;
 }
+.road-test-icon img {
+    max-width: 80px;
+}
+.road-test-box {
+    /* padding: 40px 35px 68px; */
+    position: relative;
+}
+.road-text-box-content {
+    position: absolute;
+    padding: 40px 35px 68px;
+}
+.road-test-box h4 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin: 62px 0 14px;
+}
+.road-test-box p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.box-img {
+    width: 100%;
+}
+/* .road-test-box:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../../public/assets/images/road-box-img.png);
+    background-position: center;
+    width: 96%;
+} */
 
 /*-------@media-------*/
 
@@ -439,16 +504,8 @@ section.numquam-eius.numquam-eius2 {
     img.metapets-games-left-img {
         margin-left: 0;
     }
-    /* .metapets-games-icon ul {
+    .metapets-games-icon ul {
         margin-bottom: 125px;
-    } */
-    .metapets-games-icon {
-        position: absolute;
-        top: 10px;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
     }
     img.custom-pets-main-img {
         height: 500px;
@@ -570,6 +627,9 @@ section.numquam-eius.numquam-eius2 {
     .home-about-right {
         margin-bottom: 30px;
     }
+    .metapets-games-icon {
+        margin: 24px 0 62px;
+    }
 
 }
 
@@ -600,7 +660,7 @@ section.numquam-eius.numquam-eius2 {
         margin: 0 10px;
     }
     img.custom-pets-main-img {
-        height: 420px;
+        height: 380px;
     }
     section.numquam-eius.numquam-eius2 {
         margin-top: 60px;

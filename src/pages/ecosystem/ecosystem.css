@@ -19,8 +19,8 @@
     backdrop-filter: blur(153px);
     width: 100%;
     max-width: 870px;
-    height: 490px;
-    margin: 40px auto 42px;
+    margin: 42px auto 42px;
+    overflow: hidden;
 }
 .ecosystem-content .partner-box {
     margin-top: 20px;

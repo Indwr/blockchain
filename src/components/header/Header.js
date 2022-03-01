@@ -17,24 +17,7 @@ const Header = () => {
             </div>
             <div className="menu">
               <nav className="navbar navbar-expand-xl p-0 ">
-                <button
-                  className="navbar-toggler p-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon">
-                    <span className="toggle-menu" data-toggle-menu>
-                      Toggle menu
-                      <span className="menu__bar"></span>
-                      <span className="menu__bar"></span>
-                      <span className="menu__bar"></span>
-                    </span>
-                  </span>
-                </button>
+                
                 <div
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
@@ -128,6 +111,24 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
+                <button
+                  className="navbar-toggler p-0 d-xxl-none ms-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon">
+                    <span className="toggle-menu" data-toggle-menu>
+                      Toggle menu
+                      <span className="menu__bar"></span>
+                      <span className="menu__bar"></span>
+                      <span className="menu__bar"></span>
+                    </span>
+                  </span>
+                </button>
               </div>
             </div>
           </div>
