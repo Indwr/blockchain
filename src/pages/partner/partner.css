@@ -21,7 +21,7 @@
   text-align: center;
   padding-bottom: 63px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 }
 .partner-img-box:after {
