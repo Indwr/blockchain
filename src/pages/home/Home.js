@@ -86,6 +86,7 @@ const Home = () => {
                   <li>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href={"https://twitter.com/Metapetscoin"}
                     >
                       <img src="assets/images/twitter.svg" alt="" />
@@ -94,26 +95,36 @@ const Home = () => {
                   <li>
                     <a
                       href={"https://discord.com/invite/NQKR42dVmm"}
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img src="assets/images/games.svg" alt="" />
                     </a>
                   </li>
                   <li>
-                    <a href={"https://t.me/metapets"} target="_blank">
+                    <a
+                      href={"https://t.me/metapets"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src="assets/images/mail.svg" alt="" />
                     </a>
                   </li>
                   <li>
                     <a
                       href={"https://www.reddit.com/user/Metapets"}
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img src="assets/images/games2.svg" alt="" />
                     </a>
                   </li>
                   <li>
-                    <a href={"https://linktr.ee/metapets"} target="_blank">
+                    <a
+                      href={"https://linktr.ee/metapets"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src="assets/images/games3.svg" alt="" />
                     </a>
                   </li>
@@ -179,6 +190,7 @@ const Home = () => {
                     <a
                       className="comman-btn btn-outer"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                     >
                       Buy Now
@@ -231,6 +243,7 @@ const Home = () => {
                   <a
                     className="comman-btn btn-outer"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                   >
                     Buy Now
@@ -274,6 +287,7 @@ const Home = () => {
                   <a
                     className="comman-btn btn-outer"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                   >
                     Buy Now
@@ -371,6 +385,7 @@ const Home = () => {
                 <a
                   className="comman-btn btn-outer"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                 >
                   Buy Now
@@ -471,6 +486,7 @@ const Home = () => {
                   <a
                     className="comman-btn btn-outer"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                   >
                     Buy Now
