@@ -1,11 +1,19 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Carousal from "../../../src/components/carousal/Carousal";
 import CarousalSecond from "../../../src/components/carousal-second/CarousalSecond";
 import Header from "../../components/header/Header";
 import "./home.css";
 
 const Home = () => {
+  const [address, setAddress] = useState(
+    "0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+  );
+
+  const copyAddress = (e) => {
+    alert("Copied");
+  };
   return (
     <div>
       <Header />
@@ -22,16 +30,20 @@ const Home = () => {
                 </p>
                 <div className="copy">
                   <div className="copy-addres">
-                    <p className="copy-text mb-0">0x24ce3d571fbcfd9d81...</p>
-
+                    <p className="copy-text mb-0">{address}</p>
                     <div className="btn-outer1">
-                      <Link className="comman-btn btn-outer" to={"/"}>
-                        Copy Address
-                        <img
-                          src="assets/images/button-border.svg"
-                          alt="button-border"
-                        />
-                      </Link>
+                      <CopyToClipboard
+                        text={address}
+                        onCopy={(e) => copyAddress(e)}
+                      >
+                        <button className="comman-btn btn-outer">
+                          Copy Address
+                          <img
+                            src="assets/images/button-border.svg"
+                            alt="button-border"
+                          />
+                        </button>
+                      </CopyToClipboard>
                     </div>
                   </div>
                 </div>
@@ -68,25 +80,41 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-            <div className="metapets-games-icon">
-                  <ul>
-                    <li>
+              <div className="metapets-games-icon">
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/Metapetscoin" target="_blank">
                       <img src="assets/images/twitter.svg" alt="" />
-                    </li>
-                    <li>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.com/invite/NQKR42dVmm"
+                      target="_blank"
+                    >
                       <img src="assets/images/games.svg" alt="" />
-                    </li>
-                    <li>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/metapets" target="_blank">
                       <img src="assets/images/mail.svg" alt="" />
-                    </li>
-                    <li>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.reddit.com/user/Metapets"
+                      target="_blank"
+                    >
                       <img src="assets/images/games2.svg" alt="" />
-                    </li>
-                    <li>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linktr.ee/metapets" target="_blank">
                       <img src="assets/images/games3.svg" alt="" />
-                    </li>
-                  </ul>
-                </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="col-md-6">
               <div className="metapets-games-left">
@@ -144,13 +172,17 @@ const Home = () => {
                     sam voluptatem quia voluptas sit aspernatur aut odit.{" "}
                   </p>
                   <div className="btn-outer1">
-                    <Link className="comman-btn btn-outer" to={"/"}>
+                    <a
+                      className="comman-btn btn-outer"
+                      target="_blank"
+                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    >
                       Buy Now
                       <img
                         src="assets/images/button-border.svg"
                         alt="button-border"
                       />
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <img
@@ -172,7 +204,6 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -193,13 +224,17 @@ const Home = () => {
                   sell r swap it on the marketplace.
                 </p>
                 <div className="btn-outer1">
-                  <Link className="comman-btn btn-outer" to={"/"}>
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
                     Buy Now
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -232,13 +267,17 @@ const Home = () => {
                   MetaPets investment
                 </p>
                 <div className="btn-outer1">
-                  <Link className="comman-btn btn-outer" to={"/"}>
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
                     Buy Now
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -325,13 +364,17 @@ const Home = () => {
             </div>
             <div className="parnter-btn">
               <div className="btn-outer1">
-                <Link className="comman-btn btn-outer" to={"/"}>
+                <a
+                  className="comman-btn btn-outer"
+                  target="_blank"
+                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                >
                   Buy Now
                   <img
                     src="assets/images/button-border.svg"
                     alt="button-border"
                   />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="parner-main-round">
@@ -421,13 +464,17 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="btn-outer1">
-                  <Link className="comman-btn btn-outer" to={"/"}>
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
                     Buy Now
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
