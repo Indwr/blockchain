@@ -19,7 +19,6 @@ import Staking from "./pages/staking/Staking";
 import Privacy from "./pages/privacy/Privacy";
 import Terms from "./pages/terms/Terms";
 import Cookies from "./pages/cookies/Cookies";
-import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Carousal from "./components/carousal/Carousal";
 import CarousalSecond from "./components/carousal-second/CarousalSecond";

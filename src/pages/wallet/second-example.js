@@ -23,6 +23,7 @@ const WalletCard = () => {
   const accountChangeHandler = (newAccount) => {
     setDefaultAccount(newAccount);
     getUserBalance(newAccount.toString());
+    setConnButtonText("Connect Wallet");
   };
 
   const getUserBalance = (address) => {

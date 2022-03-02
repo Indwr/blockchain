@@ -1,24 +1,24 @@
 import React from "react";
-import { useWeb3React } from "@web3-react/core";
-import { injected } from "../../components/wallet/connectors";
+// import { useWeb3React } from "@web3-react/core";
+// import { injected } from "../../components/wallet/connectors";
 import WalletCard from "./second-example";
 const Wallet = () => {
-  const { active, account, library, connector, activate, deactivate } =
-    useWeb3React();
-  async function connect() {
-    try {
-      await activate(injected);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  async function disconnect() {
-    try {
-      await deactivate();
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  // const { active, account, library, connector, activate, deactivate } =
+  //   useWeb3React();
+  // async function connect() {
+  //   try {
+  //     await activate(injected);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+  // async function disconnect() {
+  //   try {
+  //     await deactivate();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
   return (
     <div>
       <WalletCard />
