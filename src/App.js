@@ -4,6 +4,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+
 import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -22,12 +23,12 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Carousal from "./components/carousal/Carousal";
 import CarousalSecond from "./components/carousal-second/CarousalSecond";
+import Wallet from "./pages/wallet";
 
 function App() {
   return (
     <Router>
       <div>
-        <Header />
         <Switch>
           <Route
             exact
@@ -51,6 +52,7 @@ function App() {
           <Route path="/terms" component={Terms} />
           <Route path="/carousal" component={Carousal} />
           <Route path="/carousal-second" component={CarousalSecond} />
+          <Route path="/wallet" component={Wallet} />
         </Switch>
         <Footer />
       </div>

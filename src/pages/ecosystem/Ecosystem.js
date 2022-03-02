@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import "./ecosystem.css";
 // import video from '../../../../public/assets/images/metapets-video.mp4'
 
 const Ecosystem = () => {
+  const [active, setActive] = useState(false);
+  const changeStyle = (e) => {
+    setActive(true);
+  };
   return (
     <div>
       <Header />
@@ -22,7 +26,10 @@ const Ecosystem = () => {
                   </p>
                 </div>
                 <div className="ecosystem box">
-                  <img src="assets/images/metapets-plasma-logo-reveal.gif" alt="" />
+                  <img
+                    src="assets/images/metapets-plasma-logo-reveal.gif"
+                    alt=""
+                  />
                 </div>
                 <div className="ecosystem-content">
                   <div className="row">
@@ -133,7 +140,11 @@ const Ecosystem = () => {
             <div className="row justify-content-center">
               <div className="col-md-6 text-center">
                 <div className="ecosystem-img">
-                  <div className="ecosystem-img-box-outer">
+                  <div
+                    className="ecosystem-img-box-outer"
+                    onClick={(e) => changeStyle(e.target)}
+                    style={{ display: active ? "none" : "block" }}
+                  >
                     <img
                       src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg"
                       alt=""
@@ -143,6 +154,7 @@ const Ecosystem = () => {
                     </div>
                   </div>
                   <video
+                    style={{ display: active ? "block" : "none" }}
                     src="assets/images/metapets-video.mp4"
                     width="750"
                     height="500"
