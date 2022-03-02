@@ -468,7 +468,12 @@ section.numquam-eius.numquam-eius2 {
     opacity:0.6;
   }
 }
-
+.metapets-games-icon li img{
+    transition: all 0.4s;
+}
+.metapets-games-icon li img:hover {
+    transform: translateY(-10px);
+}
 
 
 /*-------@media-------*/
@@ -703,6 +708,7 @@ section.numquam-eius.numquam-eius2 {
     }
     .copy-text {
         margin: 0 auto;
+        max-width: 250px !important;
     }
     .copy-addres .btn-outer {
         margin-left: 0;

@@ -147,14 +147,21 @@ header .dropdown-item:focus, header .dropdown-item:hover {
     color: #0175ef;
     background-color: transparent;
 }
+.menu-close {
+    display: none;
+}
 
 
 @media(max-width: 1500px){
     .navbar-expand-xl .navbar-nav .nav-link {
-        margin-left: 20px;
+        margin-left: 16px;
     }
     a.nav-link {
         font-size: 16px;
+    }
+    .theme-toggle {
+        cursor: pointer;
+        margin-left: 20px;
     }
 }
 
@@ -164,11 +171,11 @@ header .dropdown-item:focus, header .dropdown-item:hover {
     }
     div#navbarSupportedContent {
         position: absolute;
-        left: -300px;
-        top: 71px;
+        left: -100%;
+        top: 0;
         z-index: 5;
         background-color: #1c1c1c;
-        width: 300px;
+        width: 100%;
         height: 100vh;
         transition: all 0.4s;
     }
@@ -177,9 +184,15 @@ header .dropdown-item:focus, header .dropdown-item:hover {
     }
     a.nav-link {
         font-size: 18px;
-        line-height: 18px;
-        padding: 12px;
+        line-height: 19px;
+        padding: 20px 12px;
         opacity: 1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        color: #FFFFFF;
+    }
+    li.nav-item:last-child a.nav-link {
+        padding-bottom: 0px;
+        border-bottom: 0px solid rgba(255, 255, 255, 0.04);
     }
     .navbar-expand-xl .navbar-nav .nav-link {
         margin-left: 0;
@@ -199,6 +212,12 @@ header .dropdown-item:focus, header .dropdown-item:hover {
     .navbar-expand-xl .navbar-nav {
         flex-direction: column !important;
         width: 100%;
+    }
+    .menu-close {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 15px;
     }
 }
 @media(max-width: 1199px){

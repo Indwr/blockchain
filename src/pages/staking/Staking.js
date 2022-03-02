@@ -80,7 +80,11 @@ const Staking = () => {
                     <p className="mb-0">720 Days</p>
                   </div>
                 </div>
+                
               </div>
+              <div className="stalking-heading">
+                  <p className="mb-0">APY VALUES TBA*</p>
+                </div>
             </div>
           </div>
         </div>

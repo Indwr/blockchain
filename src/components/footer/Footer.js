@@ -18,22 +18,22 @@ const Footer = () => {
                   accusantium que laudantium.
                 </p>
                 <div className="metapets-games-icon-footer">
-                  <div className="metapets-games-icon">
+                  <div className="metapets-games-icon mb-0">
                     <ul className="mb-0">
                       <li>
-                        <img src="assets/images/footer-tw.svg" alt="" />
+                        <Link to={"/#"}><img src="assets/images/footer-tw.svg" alt="" /></Link>
                       </li>
                       <li>
-                        <img src="assets/images/footer-game.svg" alt="" />
+                      <Link to={"/#"}><img src="assets/images/footer-game.svg" alt="" /></Link>
                       </li>
                       <li>
-                        <img src="assets/images/footer-mail.svg" alt="" />
+                      <Link to={"/#"}><img src="assets/images/footer-mail.svg" alt="" /></Link>
                       </li>
                       <li>
-                        <img src="assets/images/footer-img4.svg" alt="" />
+                      <Link to={"/#"}><img src="assets/images/footer-img4.svg" alt="" /></Link>
                       </li>
                       <li>
-                        <img src="assets/images/footer-img5.svg" alt="" />
+                      <Link to={"/#"}><img src="assets/images/footer-img5.svg" alt="" /></Link>
                       </li>
                     </ul>
                   </div>

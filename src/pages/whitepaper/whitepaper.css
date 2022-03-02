@@ -19,7 +19,8 @@
   position: relative;
 }
 .whitepaper.content-box {
-  margin: 48px 0;
+  margin: 48px 22px;
+  text-align: center;
 }
 .team-round-circul {
   position: absolute;
@@ -35,7 +36,28 @@
   transform: translateY(-50%);
   z-index: -1;
 }
-
+.whitepaper.content-box button {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0;
+  margin-top: 23px;
+  width: 100%;
+    justify-content: center;
+}
+.whitepaper.content-box button img {
+  border-radius: 0;
+  margin-right: 13px;
+}
+.whitepaper.content-box button span {
+  margin-top: 5px;
+}
 /* Start Remove Toolbar css */
 
 .rpv-default-layout-toolbar {
@@ -45,7 +67,37 @@
   display: none;
 }
 .rpv-default-layout-main {
-  border-radius: 8%;
+  border-radius: 55px;
 }
-
+.rpv-default-layout-container {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.content-box-pdf {
+  max-height: 845px !important;
+  max-width: 645px;
+}
 /* End Remove Toolbar css */
+
+
+@media(max-width: 991px){
+  .whitepaper.content-box {
+      width: 100%;
+  }
+  .content-box-pdf {
+    max-height: 600px !important;
+  }
+}
+@media(max-width: 767px){
+  .content-box-pdf {
+    max-height: 450px !important;
+  }
+  .whitepaper.content-box {
+    margin: 30px 22px;
+    text-align: center;
+}
+}

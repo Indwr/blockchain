@@ -37,7 +37,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/5a.png" alt="" />
+                          <img src="assets/images/ecosystem1.svg" alt="" />
+                          <h5>Sed ut perspic</h5>
                         </div>
                       </div>
                     </div>
@@ -45,7 +46,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/marketcap.png" alt="" />
+                          <img src="assets/images/ecosystem2.svg" alt="" />
+                          <h5>atis unde omnis</h5>
                         </div>
                       </div>
                     </div>
@@ -53,7 +55,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/1a.png" alt="" />
+                          <img src="assets/images/ecosystem3.svg" alt="" />
+                          <h5>iste natus error</h5>
                         </div>
                       </div>
                     </div>
@@ -61,7 +64,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/2a.png" alt="" />
+                          <img src="assets/images/ecosystem4.svg" alt="" />
+                          <h5>sit voluptatem</h5>
                         </div>
                       </div>
                     </div>
@@ -69,7 +73,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/3a.png" alt="" />
+                          <img src="assets/images/ecosystem5.svg" alt="" />
+                          <h5>accusantium</h5>
                         </div>
                       </div>
                     </div>
@@ -77,7 +82,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/4a.png" alt="" />
+                          <img src="assets/images/ecosystem6.svg" alt="" />
+                          <h5>doloremque</h5>
                         </div>
                       </div>
                     </div>
@@ -87,7 +93,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/5a.png" alt="" />
+                          <img src="assets/images/ecosystem7.svg" alt="" />
+                          <h5> laudantium totam</h5>
                         </div>
                       </div>
                     </div>
@@ -95,7 +102,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/marketcap.png" alt="" />
+                          <img src="assets/images/ecosystem8.svg" alt="" />
+                          <h5>laudantium totam</h5>
                         </div>
                       </div>
                     </div>
@@ -103,7 +111,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/1a.png" alt="" />
+                          <img src="assets/images/ecosystem9.svg" alt="" />
+                          <h5> ipsa quae ab illo </h5>
                         </div>
                       </div>
                     </div>
@@ -111,7 +120,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/2a.png" alt="" />
+                          <img src="assets/images/ecosystem10.svg" alt="" />
+                          <h5>inventore itatis</h5>
                         </div>
                       </div>
                     </div>
@@ -119,7 +129,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/3a.png" alt="" />
+                          <img src="assets/images/ecosystem11.svg" alt="" />
+                          <h5>et quasi archit</h5>
                         </div>
                       </div>
                     </div>
@@ -127,7 +138,8 @@ const Ecosystem = () => {
                       <div className="partner-box">
                         <img src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
-                          <img src="assets/images/4a.png" alt="" />
+                          <img src="assets/images/ecosystem12.svg" alt="" />
+                          <h5>beatae vitae dicta</h5>
                         </div>
                       </div>
                     </div>

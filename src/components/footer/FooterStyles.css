@@ -107,6 +107,13 @@ ul.footer-link li a:hover {
 .metapets-games-icon-footer ul li img {
     width: 26px;
 }
+.metapets-games-icon-footer li img{
+    transition: all .4s ease-in;
+}
+.metapets-games-icon-footer li img:hover {
+    transform: translateY(-10px);
+    transition: all .4s ease-in;
+}
 
 @media(max-width: 1400px){
     .footer-box.footer-box1 {
@@ -142,6 +149,9 @@ ul.footer-link li a:hover {
     }
     .footer-box.footer-box-logo a img {
         width: 200px;
+    }
+    .metapets-games-icon-footer a img {
+        width: 24px !important;
     }
 }
 

@@ -22,6 +22,23 @@ const Header = () => {
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
+                  <div className="menu-close">
+                    <img className="menu-logo" src="assets/images/menu-logo.svg" alt="log" />
+                    <button
+                  className="navbar-toggler p-0 d-xxl-none ms-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon">
+                  <img className="menu-close-icon" src="assets/images/close.svg" alt="icon" />
+                  </span>
+                </button>
+                    
+                  </div>
                   <ul className="navbar-nav me-auto">
                     <li className="nav-item">
                       <Link

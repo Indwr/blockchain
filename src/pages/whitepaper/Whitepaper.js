@@ -6,6 +6,7 @@ import "./whitepaper.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import Header from "../../components/header/Header";
+import { Link } from "react-router-dom";
 
 const Whitepaper = () => {
   const defaultLayoutPluginInstance = defaultLayoutPlugin({
@@ -36,19 +37,22 @@ const Whitepaper = () => {
               <div className="whitepaper content">
                 <div className="whitepaper content-box">
                   <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                    <div style={{ height: "850px", width: "100%" }}>
+                    <div className="content-box-pdf" style={{ height: "845px" }}>
                       <Viewer
                         fileUrl={"assets/pdf/1.pdf"}
                         plugins={[defaultLayoutPluginInstance]}
                       />
                     </div>
                   </Worker>
+                  <button><img src="assets/images/pdf-icon.svg" alt="icon" /><span>Download PDF File</span></button >
                 </div>
                 <div className="whitepaper content-box">
                   <img src="assets/images/whitepaper1.png" alt="" />
+                  <button><img src="assets/images/pdf-icon.svg" alt="icon" /><span>Download PDF File</span></button>
                 </div>
                 <div className="whitepaper content-box">
                   <img src="assets/images/whitepaper1.png" alt="" />
+                  <button><img src="assets/images/pdf-icon.svg" alt="icon" /><span>Download PDF File</span></button>
                 </div>
                 <div className="team-round-circul">
                   <img src="assets/images/team-round.png" alt="" />

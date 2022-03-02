@@ -441,7 +441,7 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="home-about-right">
-                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
+                <img className="fadeinout" src="assets/images/home-about-main.png" alt="" />
               </div>
             </div>
           </div>

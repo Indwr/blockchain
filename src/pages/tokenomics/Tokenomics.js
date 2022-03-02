@@ -16,7 +16,7 @@ const Tokenomics = () => {
                   <h3 className="sub-heading">Tokenomics</h3>
                   <div className="tokenomics-main-heading">
                     <h1>100 Quadrillion</h1>
-                    <img src="assets/images/token-text.png" alt="" />
+                    {/* <img src="assets/images/token-text.png" alt="" /> */}
                   </div>
                 </div>
                 <div className="tokenomics-content">
@@ -62,7 +62,7 @@ const Tokenomics = () => {
                 <div className="tokenomics-iframe">
                   <iframe
                     title="tokenomicsiframe"
-                    src="https://bubbles.moonlighttoken.com/bsc/token/0x603c7f932ed1fc6575303d8fb018fdcbb0f39a95?iframe=true"
+                    src="https://bubbles.moonlighttoken.com/bsc/token/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d?iframe=true"
                   />
                 </div>
                 <div className="tokenomics-round">
