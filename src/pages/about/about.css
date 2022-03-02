@@ -1,4 +1,4 @@
-.about {
+/* .about {
     position: relative;
 }
 .about-inner-box {
@@ -25,8 +25,8 @@
 .about-full-round-img {
     position: absolute;
     z-index: -1;
-    bottom: -350px;
-    left: 0;
+    bottom: -400px;
+    left: -400px;
 }
 
 @media(max-width: 1500px){
@@ -52,4 +52,4 @@
     .about-main-img img {
         width: 150px;
     }
-}
+} */

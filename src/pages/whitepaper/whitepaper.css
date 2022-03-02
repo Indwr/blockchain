@@ -9,7 +9,7 @@
 }
 .whitepaper.content-box img {
   border-radius: 55px;
-  margin: 48px 25px;
+  /* margin: 48px 25px; */
 }
 .whitepaper.content {
   display: flex;
@@ -17,6 +17,9 @@
   justify-content: center;
   flex-flow: wrap;
   position: relative;
+}
+.whitepaper.content-box {
+  margin: 48px 0;
 }
 .team-round-circul {
   position: absolute;
@@ -30,6 +33,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: -1;
 }
 
 /* Start Remove Toolbar css */

@@ -58,8 +58,11 @@ const Footer = () => {
             </div>
             <div className=" col-xl-2 col-md-3 col-sm-6">
               <div className="footer-box ">
-                <h4 className="footer-heading">Merchandise</h4>
+                <h4 className="footer-heading">Resources</h4>
                 <ul className="footer-link">
+                  <li>
+                    <Link to={"https://metapetsmerchandise.comhttps:/"}>Merchandise</Link>
+                  </li>
                   <li>
                     <Link to={"/whitepaper"}>Whitepaper</Link>
                   </li>

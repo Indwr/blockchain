@@ -15,13 +15,16 @@ const options1 = {
   smartSpeed: 1000,
   responsive: {
       0: {
-          items: 1,
+          items: 2,
+          margin: 20,
       },
       576: {
-          items: 1,
+          items: 2,
+          margin: 20,
       },
       767: {
-          items: 2,
+          items: 3,
+          margin: 20,
       },
       991: {
           items: 3,

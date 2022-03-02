@@ -23,6 +23,31 @@
 .about-full-round-img {
     position: absolute;
     z-index: -1;
-    bottom: -350px;
-    left: 0;
+    bottom: -400px;
+    left:-400px;
+}
+
+@media(max-width: 1500px){
+    .about-main-img img {
+        width: 300px;
+    }
+}
+@media(max-width: 1200px){
+    .about-main-img img {
+        width: 250px;
+    }
+}
+@media(max-width: 991px){
+    .about-main-img img {
+        width: 200px;
+    }
+    .about-half-round img {
+        width: 100px;
+    }
+}
+
+@media(max-width: 767px){
+    .about-main-img img {
+        width: 150px;
+    }
 }

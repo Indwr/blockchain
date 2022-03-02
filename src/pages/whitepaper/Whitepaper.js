@@ -31,25 +31,29 @@ const Whitepaper = () => {
               </div>
             </div>
           </div>
-          <div className="whitepaper content">
-            <div className="whitepaper content-box">
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                <div style={{ height: "850px", width: "90%" }}>
-                  <Viewer
-                    fileUrl={"assets/pdf/1.pdf"}
-                    plugins={[defaultLayoutPluginInstance]}
-                  />
+          <div className="row">
+            <div className="col-12">
+              <div className="whitepaper content">
+                <div className="whitepaper content-box">
+                  <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+                    <div style={{ height: "850px", width: "100%" }}>
+                      <Viewer
+                        fileUrl={"assets/pdf/1.pdf"}
+                        plugins={[defaultLayoutPluginInstance]}
+                      />
+                    </div>
+                  </Worker>
                 </div>
-              </Worker>
-            </div>
-            <div className="whitepaper content-box">
-              <img src="assets/images/whitepaper1.png" alt="" />
-            </div>
-            <div className="whitepaper content-box">
-              <img src="assets/images/whitepaper1.png" alt="" />
-            </div>
-            <div className="team-round-circul">
-              <img src="assets/images/team-round.png" alt="" />
+                <div className="whitepaper content-box">
+                  <img src="assets/images/whitepaper1.png" alt="" />
+                </div>
+                <div className="whitepaper content-box">
+                  <img src="assets/images/whitepaper1.png" alt="" />
+                </div>
+                <div className="team-round-circul">
+                  <img src="assets/images/team-round.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

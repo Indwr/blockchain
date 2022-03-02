@@ -22,41 +22,51 @@ const Partner = () => {
                 </div>
                 <div className="partner-img-outer">
                   <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img1.png" alt="" />
-                      <h6>Visit Website</h6>
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img1.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
                     </div>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img2.png" alt="" />
-                      <h6>Visit Website</h6>
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img2.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
                     </div>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img3.png" alt="" />
-                      <h6>Visit Website</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="partner-img-outer partner-img-outer">
-                  <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img4.png" alt="" />
-                      <h6>Visit Website</h6>
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img3.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
                     </div>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img5.png" alt="" />
-                      <h6>Visit Website</h6>
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img4.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
                     </div>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-content">
-                      <img src="assets/images/partner-img6.png" alt="" />
-                      <h6>Visit Website</h6>
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img5.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="partner-img-box">
+                    <div className="partner-img-box-outer">
+                      <div className="partner-img-box-content">
+                        <img src="assets/images/partner-img6.png" alt="" />
+                        <h6>Visit Website</h6>
+                      </div>
                     </div>
                   </div>
                 </div>

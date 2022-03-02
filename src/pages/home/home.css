@@ -25,6 +25,13 @@
     display: flex;
     align-items: center;
 }
+.copy-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    max-width: 174px !important;
+}
 .copy {
     display: inline-block;
 }
@@ -219,7 +226,7 @@ section.partner {
 }
 .partner-box-outer {
     overflow: hidden;
-    border-radius: 38px;
+    border-radius: 54px;
 }
 .partner-box {
     position: relative;
@@ -342,6 +349,7 @@ section.home-about{
 /*-----home-team-----*/
 .home-team {
     position: relative;
+    margin-top: 262px;
 }
 .home-team-heading {
     width: 100%;
@@ -411,12 +419,7 @@ section.numquam-eius.numquam-eius2 {
 .road-test-box {
     /* padding: 40px 35px 68px; */
     position: relative;
-}
-.road-text-box-content {
-    position: absolute;
-    padding: 40px 35px 68px;
-}
-.road-test-box h4 {
+}.road-test-box h4 {
     font-weight: 600;
     font-size: 30px;
     line-height: 31px;
@@ -433,21 +436,47 @@ section.numquam-eius.numquam-eius2 {
 .box-img {
     width: 100%;
 }
-/* .road-test-box:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(../../../public/assets/images/road-box-img.png);
-    background-position: center;
-    width: 96%;
-} */
+.road-text-box-content {
+    /* position: absolute; */
+    padding: 40px 35px 68px;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,rgb(17 16 26), #11101a), linear-gradient(145deg,#F213FF, rgb(17, 16, 27) , #0BEFD8);
+    border-radius: 54px;
+    -webkit-backdrop-filter: blur(153px);
+    backdrop-filter: blur(153px);
+    opacity: 0.5;
+}
+
+.fadeinout
+{
+  animation: fadeinout 4s infinite;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0.6;
+  }
+  50%
+  {
+    opacity:1;
+  }
+  100%
+  {
+    opacity:0.6;
+  }
+}
+
+
 
 /*-------@media-------*/
 
 
+@media(max-width: 1750px){
+    
+}
 @media(max-width: 1400px){
     .banner-img img {
         width: 500px;
@@ -533,6 +562,7 @@ section.numquam-eius.numquam-eius2 {
     .roadmap-text {
         display: block;
         text-align: center;
+        margin-bottom: 60px;
     }
     .roadmap-text-box {
         max-width: 100%;
@@ -542,6 +572,17 @@ section.numquam-eius.numquam-eius2 {
     }
     .metapets-games-icon li {
         margin: 0 20px;
+    }
+    .road-test-box h4 {
+        margin: 32px 0 14px;
+    }
+    section.roadmap {
+        margin-top: 163px;
+        padding-bottom: 121px;
+    }
+    .home-team {
+        position: relative;
+        margin-top: 162px;
     }
 }
 
@@ -630,6 +671,25 @@ section.numquam-eius.numquam-eius2 {
     .metapets-games-icon {
         margin: 24px 0 62px;
     }
+    .road-test-box h4 {
+        font-size: 20px;
+        line-height: 21px;
+        margin: 22px 0 14px;
+    }
+    .road-test-icon img {
+        max-width: 60px;
+    }
+    .road-text-box-content {
+        padding: 30px;
+    }
+    section.roadmap {
+        margin-top: 80px;
+        padding-bottom: 60px;
+    }
+    .home-team {
+        position: relative;
+        margin-top: 60px;
+    }
 
 }
 
@@ -640,6 +700,9 @@ section.numquam-eius.numquam-eius2 {
     .copy-addres {
         display: block;
         text-align: center;
+    }
+    .copy-text {
+        margin: 0 auto;
     }
     .copy-addres .btn-outer {
         margin-left: 0;
@@ -664,5 +727,20 @@ section.numquam-eius.numquam-eius2 {
     }
     section.numquam-eius.numquam-eius2 {
         margin-top: 60px;
+    }
+    .team-content h4 {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 14px 0 6px;
+    }
+    .team-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .team-content img {
+        border-radius: 20px;
+    }
+    .banner-inner li img {
+        width: 30px;
     }
 }

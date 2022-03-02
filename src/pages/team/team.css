@@ -13,8 +13,11 @@
 .team-content {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     padding: 18px;
+    margin: 0 auto;
+    transform: translatex(-50%);
+    width: 100%;
 }
 .team-content img {
     border-radius: 54px;
@@ -23,6 +26,7 @@
     object-fit: cover;
     max-height: 350px;
     max-width: 350px;
+    margin: 0 auto;
 }
 .team-box {
     position: relative;
@@ -70,4 +74,30 @@
     top: 30%;
     left: 0;
     z-index: -1;
+}
+
+@media(max-width: 767px){
+    .team-round-img img {
+        width: 100px;
+    }
+}
+
+@media(max-width: 576px){
+    
+    .team-content h4 {
+        font-size: 16px;
+        line-height: 16px;
+        margin: 20px 0 6px;
+    }
+    .team-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .team-content img {
+        border-radius: 20px;
+    }
+    .team-box {
+        border-radius: 28px;
+        margin-top: 24px;
+    }
 }

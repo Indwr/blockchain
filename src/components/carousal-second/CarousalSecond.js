@@ -9,19 +9,22 @@ const options = {
   responsiveClass: true,
   nav: false,
   dots: false,
-  autoplay: true,
+  autoplay: false,
   loop: true,
+  // center: true,
   navText: false,
-  stagePadding: 100,
+  stagePadding: 0,
   smartSpeed: 1000,
   responsive: {
       0: {
           items: 1,
           stagePadding:0,
+          margin: 20,
       },
       576: {
           items: 2,
           stagePadding:0,
+          margin: 20,
       },
       767: {
           items: 2,
@@ -37,7 +40,11 @@ const options = {
       },
       1500: {
         items: 4,
-        stagePadding: 100,
+        stagePadding: 0,
+      },
+      1700: {
+        items: 4,
+        stagePadding: 150,
       }
   },
 };
@@ -63,9 +70,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
         <div>
@@ -77,9 +81,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
         <div>
@@ -91,9 +92,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
         <div>
@@ -105,9 +103,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
         <div>
@@ -119,9 +114,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
         <div>
@@ -133,9 +125,6 @@ export default class CarousalSecond extends React.Component {
                 <h4>Q1 - 2022</h4>
                 <p className="mb-0">Sed ut perspiciatis unde omnis iste us error sit voluptatem accusantium que laudantium, totam rem aperiam.</p>
               </div>
-            <div className="box-img">
-              <img src="assets/images/road-box-img.png" alt="" />
-            </div>
           </div>
         </div>
       </OwlCarousel>

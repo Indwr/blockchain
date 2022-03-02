@@ -183,6 +183,9 @@ ul.footer-link li a:hover {
         line-height: 26px;
         margin: 7px 0 12px !important;
     }
+    section.home-about {
+        padding-top: 60px;
+    }
 }
 
 @media(max-width: 576px){
@@ -207,5 +210,8 @@ ul.footer-link li a:hover {
     }
     .footer-box.footer-box-logo a img {
         width: 150px;
+    }
+    .metapets-games-icon-footer .metapets-games-icon{
+        margin: 24px 0 0;
     }
 }

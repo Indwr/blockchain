@@ -50,23 +50,23 @@ const Home = () => {
                 </div>
                 <ul>
                   <li>
-                    <img src="assets/images/bitcoin-(btc).svg" alt="" />
+                    <img src="assets/images/banner-logo1.svg" alt="" />
                   </li>
                   <li>
-                    <img src="assets/images/ethereum.svg" alt="" />
+                    <img src="assets/images/banner-logo2.svg" alt="" />
                   </li>
                   <li>
-                    <img src="assets/images/binance-coin-(bnb).svg" alt="" />
+                    <img src="assets/images/banner-logo3.svg" alt="" />
                   </li>
                   <li>
-                    <img src="assets/images/binance-usd-(busd).svg" alt="" />
+                    <img src="assets/images/banner-logo4.svg" alt="" />
                   </li>
-                  <li>
+                  {/* <li>
                     <img src="assets/images/tether-(usdt).svg" alt="" />
                   </li>
                   <li>
                     <img src="assets/images/cardano-(ada).svg" alt="" />
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="banner-img">
                   <img src="assets/images/banner-img2.png" alt="" />
@@ -247,7 +247,7 @@ const Home = () => {
                     href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                   >
                     Buy Now
-                    <img
+                    <img 
                       src="assets/images/button-border.svg"
                       alt="button-border"
                     />
@@ -257,7 +257,7 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="numquam-eius-right">
-                <img src="assets/images/about-home.png" alt="" />
+                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 ">
               <div className="numquam-eius-right">
-                <img src="assets/images/about-home.png" alt="" />
+                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center">
@@ -441,7 +441,7 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="home-about-right">
-                <img src="assets/images/about-home.png" alt="" />
+                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
               </div>
             </div>
           </div>

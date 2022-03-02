@@ -25,7 +25,7 @@ const Team = () => {
           </div>
           <div className="team-outer">
             <div className="row justify-content-center">
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -35,7 +35,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -45,7 +45,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -55,7 +55,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -65,7 +65,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -75,7 +75,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -85,7 +85,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -95,7 +95,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -105,7 +105,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
@@ -115,7 +115,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-xxl-3 col-lg-4 col-6">
                 <div className="team-box">
                   <img src="assets/images/team-img-box.png" alt="" />
                   <div className="team-content">
