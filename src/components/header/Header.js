@@ -1,10 +1,21 @@
 import React from "react";
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { Navbar } from "react-bootstrap";
+// import { ThemeContext, themes } from "../themes/ThemeContext";
+
 import "../../assets/css/common.css";
 import "./header.css";
 
 const Header = () => {
+  // const [darkMode, setDarkMode] = useState(true);
+  // const [themeMode, setThemeMode] = useState(true);
+  // const changeThemeMode = () => {
+  //   if (themeMode === true) {
+  //     setThemeMode(false);
+  //   } else {
+  //     setThemeMode(true);
+  //   }
+  // };
   return (
     <div>
       <header>
@@ -17,27 +28,33 @@ const Header = () => {
             </div>
             <div className="menu">
               <nav className="navbar navbar-expand-xl p-0 ">
-                
                 <div
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
                   <div className="menu-close">
-                    <img className="menu-logo" src="assets/images/menu-logo.svg" alt="log" />
+                    <img
+                      className="menu-logo"
+                      src="assets/images/menu-logo.svg"
+                      alt="log"
+                    />
                     <button
-                  className="navbar-toggler p-0 d-xxl-none ms-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon">
-                  <img className="menu-close-icon" src="assets/images/close.svg" alt="icon" />
-                  </span>
-                </button>
-                    
+                      className="navbar-toggler p-0 d-xxl-none ms-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span className="navbar-toggler-icon">
+                        <img
+                          className="menu-close-icon"
+                          src="assets/images/close.svg"
+                          alt="icon"
+                        />
+                      </span>
+                    </button>
                   </div>
                   <ul className="navbar-nav me-auto">
                     <li className="nav-item">
@@ -89,6 +106,23 @@ const Header = () => {
               </nav>
               <div className="menu-left">
                 <div className="theme-toggle">
+                  {/* <label className="toggle">
+                    <ThemeContext.Consumer>
+                      {({ changeTheme }) => (
+                        <input
+                          className="toggle-checkbox"
+                          type="checkbox"
+                          onChange={() => {
+                            changeThemeMode();
+                            setDarkMode(!darkMode);
+                            changeTheme(darkMode ? themes.light : themes.dark);
+                          }}
+                          checked={themeMode}
+                        />
+                      )}
+                    </ThemeContext.Consumer>
+                    <div className="toggle-switch"></div>
+                  </label> */}
                   <img
                     src="assets/images/theme-toggle.svg"
                     alt="theme-toggle"

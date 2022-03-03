@@ -4,11 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ThemeContextWrapper from "./components/themes/SetupTheme";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeContextWrapper>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+    {""}
+  </ThemeContextWrapper>,
+
   document.getElementById("root")
 );
 

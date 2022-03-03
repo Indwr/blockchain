@@ -21,19 +21,49 @@ const Footer = () => {
                   <div className="metapets-games-icon mb-0">
                     <ul className="mb-0">
                       <li>
-                        <Link to={"/#"}><img src="assets/images/footer-tw.svg" alt="" /></Link>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={"https://twitter.com/Metapetscoin"}
+                        >
+                          <img src="assets/images/footer-tw.svg" alt="" />
+                        </a>
                       </li>
                       <li>
-                      <Link to={"/#"}><img src="assets/images/footer-game.svg" alt="" /></Link>
+                        <a
+                          href={"https://discord.com/invite/NQKR42dVmm"}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <img src="assets/images/footer-game.svg" alt="" />
+                        </a>
                       </li>
                       <li>
-                      <Link to={"/#"}><img src="assets/images/footer-mail.svg" alt="" /></Link>
+                        <a
+                          href={"https://t.me/metapets"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src="assets/images/footer-mail.svg" alt="" />
+                        </a>
                       </li>
                       <li>
-                      <Link to={"/#"}><img src="assets/images/footer-img4.svg" alt="" /></Link>
+                        <a
+                          href={"https://www.reddit.com/user/Metapets"}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <img src="assets/images/footer-img4.svg" alt="" />
+                        </a>
                       </li>
                       <li>
-                      <Link to={"/#"}><img src="assets/images/footer-img5.svg" alt="" /></Link>
+                        <a
+                          href={"https://linktr.ee/metapets"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img src="assets/images/footer-img5.svg" alt="" />
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -61,7 +91,13 @@ const Footer = () => {
                 <h4 className="footer-heading">Resources</h4>
                 <ul className="footer-link">
                   <li>
-                    <Link to={"https://metapetsmerchandise.comhttps:/"}>Merchandise</Link>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={"https://metapetsmerchandise.com"}
+                    >
+                      Merchandise
+                    </a>
                   </li>
                   <li>
                     <Link to={"/whitepaper"}>Whitepaper</Link>

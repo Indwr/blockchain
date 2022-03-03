@@ -155,7 +155,7 @@ const Home = () => {
                   give love and care to your new friend.
                 </p>
                 <div className="btn-outer1">
-                  <Link className="comman-btn btn-outer" to={"/"}>
+                  <Link className="comman-btn btn-outer" to={"/about"}>
                     Learn More
                     <img
                       src="assets/images/button-border.svg"
@@ -247,7 +247,7 @@ const Home = () => {
                     href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                   >
                     Buy Now
-                    <img 
+                    <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
                     />
@@ -257,7 +257,11 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="numquam-eius-right">
-                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
+                <img
+                  className="fadeinout"
+                  src="assets/images/about-home.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -268,7 +272,11 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 ">
               <div className="numquam-eius-right">
-                <img className="fadeinout" src="assets/images/about-home.png" alt="" />
+                <img
+                  className="fadeinout"
+                  src="assets/images/about-home.png"
+                  alt=""
+                />
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center">
@@ -441,7 +449,11 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="home-about-right">
-                <img className="fadeinout" src="assets/images/home-about-main.png" alt="" />
+                <img
+                  className="fadeinout"
+                  src="assets/images/home-about-main.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>

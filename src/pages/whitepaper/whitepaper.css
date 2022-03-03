@@ -44,12 +44,12 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   border: 0;
   margin-top: 23px;
   width: 100%;
-    justify-content: center;
+  justify-content: center;
 }
 .whitepaper.content-box button img {
   border-radius: 0;
@@ -83,21 +83,24 @@
 }
 /* End Remove Toolbar css */
 
-
-@media(max-width: 991px){
+@media (max-width: 991px) {
   .whitepaper.content-box {
-      width: 100%;
+    width: 100%;
   }
   .content-box-pdf {
     max-height: 600px !important;
   }
 }
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .content-box-pdf {
     max-height: 450px !important;
   }
   .whitepaper.content-box {
     margin: 30px 22px;
     text-align: center;
+  }
 }
+
+.alink {
+  color: #ffffff;
 }
