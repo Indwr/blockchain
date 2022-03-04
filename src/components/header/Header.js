@@ -1,22 +1,22 @@
-import React from "react";
-// import React, { useState } from "react";
+// import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { ThemeContext, themes } from "../themes/ThemeContext";
+import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
 import "../../assets/css/white.css";
 import "./header.css";
 
 const Header = () => {
-  // const [darkMode, setDarkMode] = useState(true);
-  // const [themeMode, setThemeMode] = useState(true);
-  // const changeThemeMode = () => {
-  //   if (themeMode === true) {
-  //     setThemeMode(false);
-  //   } else {
-  //     setThemeMode(true);
-  //   }
-  // };
+  const [darkMode, setDarkMode] = useState(true);
+  const [themeMode, setThemeMode] = useState(true);
+  const changeThemeMode = () => {
+    if (themeMode === true) {
+      setThemeMode(false);
+    } else {
+      setThemeMode(true);
+    }
+  };
   return (
     <div>
       <header>
@@ -107,7 +107,7 @@ const Header = () => {
               </nav>
               <div className="menu-left">
                 <div className="theme-toggle">
-                  {/* <label className="toggle">
+                  <label className="toggle">
                     <ThemeContext.Consumer>
                       {({ changeTheme }) => (
                         <input
@@ -123,7 +123,7 @@ const Header = () => {
                       )}
                     </ThemeContext.Consumer>
                     <div className="toggle-switch"></div>
-                  </label> */}
+                  </label>
                   <img
                     src="assets/images/theme-toggle.svg"
                     alt="theme-toggle"

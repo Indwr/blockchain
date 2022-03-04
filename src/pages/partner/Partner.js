@@ -22,88 +22,88 @@ const Partner = () => {
                 </div>
                 <div className="partner-img-outer">
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://whitebit.com/"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://whitebit.com/"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img1.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://coinmarketcap.com/currencies/metapets/"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://coinmarketcap.com/currencies/metapets/"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img2.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://www.coingecko.com/en/coins/metapets"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://www.coingecko.com/en/coins/metapets"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img3.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://bscscan.com/address/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://bscscan.com/address/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img4.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://www.dextools.io/app/bsc/pair-explorer/0xbe41f59d6d558a49ab04a10b479c9a8d6a280105"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://www.dextools.io/app/bsc/pair-explorer/0xbe41f59d6d558a49ab04a10b479c9a8d6a280105"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img5.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div className="partner-img-box">
-                    <div className="partner-img-box-outer">
-                      <div className="partner-img-box-content">
-                        <a
-                          target="_blank"
-                          href="https://poocoin.app/tokens/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                          rel="noreferrer"
-                        >
+                    <a
+                      target="_blank"
+                      href="https://poocoin.app/tokens/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
                           <img src="assets/images/partner-img6.png" alt="" />
-                        </a>
-                        <h6>Visit Website</h6>
+                          <h6>Visit Website</h6>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
