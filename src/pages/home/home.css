@@ -235,14 +235,14 @@ section.partner {
     overflow: hidden;
     border-radius: 54px;
 }
-.partner-box {
+.partner-outer .partner-box {
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.04) 100%);
     backdrop-filter: blur(17px);
     border-radius: 38px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-.partner-box-outer.partner-box2:after {
+/* .partner-box-outer.partner-box2:after {
     position: absolute;
     content: "";
     width: 75.57px;
@@ -261,7 +261,7 @@ section.partner {
     filter: blur(35px);
     right: -20px;
     top: -20px;
-}
+} */
 .partner-box-img {
     position: absolute;
     top: 50%;
@@ -282,6 +282,7 @@ section.partner {
 .parner-round-img {
     position: absolute;
     top: 0px;
+    z-index: -1;
 }
 .parner-text {
     width: 100%;
@@ -484,11 +485,13 @@ section.numquam-eius.numquam-eius2 {
 .metapets-games-icon li a svg{
     transition:all .4s;
 }
-.image-round img, .parner-round-img img, .half-round img, .network-round img, .partner-round-img img, .team-round-img img, .whitepaper-circel-img img, .stakin-circul img {
+.image-round, .parner-round-img, .half-round, .network-round, .partner-round-img, .team-round-img, .whitepaper-circel-img, .stakin-circul, .about-half-round {
     backdrop-filter: blur(94px);
     filter: blur(17px);
 }
-
+.roadmap .owl-item:not(.active) + .owl-item.active + .owl-item.active{
+    background: red;  
+ }
 
 /*-------@media-------*/
 

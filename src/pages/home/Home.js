@@ -388,10 +388,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                <div className="partner-box">
-                  <div className="partner-box-outer">
+                <div className="partner-box-outer">
+                  <div className="partner-box">
                     <img src="assets/images/parner-box.png" alt="" />
                     <div className="partner-box-img">
                       <img src="assets/images/5a.png" alt="" />
