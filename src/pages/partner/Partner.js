@@ -113,6 +113,9 @@ const Partner = () => {
         <div className="partner-round-img">
           <img src="assets/images/metapets-round.svg" alt="" />
         </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
+        </div>
       </section>
     </div>
   );

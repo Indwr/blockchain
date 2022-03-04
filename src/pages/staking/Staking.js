@@ -91,6 +91,9 @@ const Staking = () => {
         <div className="stakin-circul">
           <img src="assets/images/staking-circul.png" alt="" />
         </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
+        </div>
       </section>
     </div>
   );

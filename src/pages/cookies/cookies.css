@@ -26,6 +26,14 @@
     bottom: -400px;
     left:-400px;
 }
+.about-line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
 
 @media(max-width: 1500px){
     .about-main-img img {

@@ -123,6 +123,9 @@ const About = () => {
         <div className="about-full-round-img ">
           <img className="rotating" src="assets/images/home-team-cercul.png" alt="" />
         </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
+        </div>
       </section>
     </div>
   );

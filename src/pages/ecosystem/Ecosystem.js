@@ -33,54 +33,54 @@ const Ecosystem = () => {
                 </div>
                 <div className="ecosystem-content">
                   <div className="row">
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem1.svg" alt="" />
                           <h5>Sed ut perspic</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem2.svg" alt="" />
                           <h5>atis unde omnis</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem3.svg" alt="" />
                           <h5>iste natus error</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem4.svg" alt="" />
                           <h5>sit voluptatem</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem5.svg" alt="" />
                           <h5>accusantium</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem6.svg" alt="" />
                           <h5>doloremque</h5>
@@ -89,54 +89,54 @@ const Ecosystem = () => {
                     </div>
                     {/* </div>
                                 <div className="row cosystem-content1"> */}
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6 ">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6 ">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem7.svg" alt="" />
                           <h5> laudantium totam</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem8.svg" alt="" />
                           <h5>laudantium totam</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem9.svg" alt="" />
                           <h5> ipsa quae ab illo </h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem10.svg" alt="" />
                           <h5>inventore itatis</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem11.svg" alt="" />
                           <h5>et quasi archit</h5>
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img src="assets/images/parner-box.png" alt="" />
+                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem12.svg" alt="" />
                           <h5>beatae vitae dicta</h5>
@@ -182,6 +182,9 @@ const Ecosystem = () => {
         </div>
         <div className="ecosystem round">
           <img src="assets/images/ecosystem-round.png" alt="" />
+        </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
         </div>
       </section>
     </div>

@@ -83,6 +83,7 @@
     border-radius: 56px;
     overflow: hidden;
     margin: 12px 10px;
+    cursor: pointer;
 }
 .tokenomics-iframe iframe {
     width: 100%;
@@ -102,8 +103,9 @@
 }
 .tokenomics-content-box-bg{
     position: relative;
+    
 }
-.tokenomics-content-box.tokenomics-content-box-bg:after {
+.tokenomics-content-box:hover:after {
     position: absolute;
     content: "";
     width: 75.57px;
@@ -113,7 +115,12 @@
     bottom: 0;
     left: 0;
 }
-.tokenomics-content-box.tokenomics-content-box-bg:before {
+.tokenomics-content-box:hover:before, .tokenomics-content-box:hover:after{
+    transition: all .4s;
+    position: absolute;
+    content: "";
+}
+.tokenomics-content-box:hover:before {
     position: absolute;
     content: "";
     width: 80.54px;

@@ -63,6 +63,9 @@ const Network = () => {
         <div className="network-round">
           <img src="assets/images/network-round.png" alt="" />
         </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
+        </div>
       </section>
     </div>
   );

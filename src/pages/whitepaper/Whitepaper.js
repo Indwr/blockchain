@@ -77,6 +77,9 @@ const Whitepaper = () => {
         <div className="whitepaper-circel-img">
           <img src="assets/images/whitepaper-circul.png" alt="" />
         </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
+        </div>
       </section>
     </div>
   );

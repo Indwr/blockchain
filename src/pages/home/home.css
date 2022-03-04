@@ -91,7 +91,12 @@
     top: -152px;
     right: -332px;
 }
-
+.banner-inner ul li img {
+    width: 30px;
+}
+.white-bg{
+    display: none;
+}
 
 /*----------*/
 section.metapets-games {
@@ -131,6 +136,14 @@ img.metapets-games-left-img {
     margin: 34px 0 152px;
 }
 
+.metapets-games .metapets-games-icon a svg stop {
+    stop-color: #ededee;
+    transition: all .4s;
+}
+.metapets-games .metapets-games-icon a:hover svg stop {
+    stop-color: #02e3ce;
+}
+
 /*-------custom-pets-----*/
 section.custom-pets {
     padding: 184px 0 150px;
@@ -159,20 +172,14 @@ section.custom-pets:before {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* .custom-pets-inner-box:before {
+.custom-pets-line {
     position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 5px solid;
-    border-radius: 15px;
-    background-image: -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
-  background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
-} */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+}
 .custom-pets-inner {
     position: relative;
 }
@@ -468,11 +475,18 @@ section.numquam-eius.numquam-eius2 {
     opacity:0.6;
   }
 }
-.metapets-games-icon li img{
+.metapets-games-icon li a{
     transition: all 0.4s;
 }
-.metapets-games-icon li img:hover {
+.metapets-games-icon li a:hover svg{
     transform: translateY(-10px);
+}
+.metapets-games-icon li a svg{
+    transition:all .4s;
+}
+.image-round img, .parner-round-img img, .half-round img, .network-round img, .partner-round-img img, .team-round-img img, .whitepaper-circel-img img, .stakin-circul img {
+    backdrop-filter: blur(94px);
+    filter: blur(17px);
 }
 
 
@@ -481,6 +495,16 @@ section.numquam-eius.numquam-eius2 {
 
 @media(max-width: 1750px){
     
+}
+@media(max-width: 1600px){
+    .partner-box-outer {
+        border-radius: 50px;
+    }
+}
+@media(max-width: 1500px){
+    .partner-box-outer {
+        border-radius: 53px;
+    }
 }
 @media(max-width: 1400px){
     .banner-img img {

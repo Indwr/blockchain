@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
+import "../../assets/css/white.css";
 import "./header.css";
 
 const Header = () => {

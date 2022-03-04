@@ -115,6 +115,16 @@ ul.footer-link li a:hover {
     transition: all .4s ease-in;
 }
 
+/* a svg stop {
+    stop-color: #ededee ;
+} */
+.metapets-games-icon-footer svg {
+    width: 25px;
+}
+a:hover svg stop {
+    stop-color: #02e3ce !important;
+}
+
 @media(max-width: 1400px){
     .footer-box.footer-box1 {
         margin-left: 0;

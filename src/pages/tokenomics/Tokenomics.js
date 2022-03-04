@@ -16,7 +16,7 @@ const Tokenomics = () => {
                   <h3 className="sub-heading">Tokenomics</h3>
                   <div className="tokenomics-main-heading">
                     <h1>100 Quadrillion</h1>
-                    {/* <img src="assets/images/token-text.png" alt="" /> */}
+                    <img src="assets/images/token-text.png" alt="" />
                   </div>
                 </div>
                 <div className="tokenomics-content">
@@ -71,6 +71,9 @@ const Tokenomics = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="about-line">
+          <img src="assets/images/about-line.png" alt="" />
         </div>
       </section>
     </div>
