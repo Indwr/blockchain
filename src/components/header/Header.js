@@ -24,7 +24,8 @@ const Header = () => {
           <div className="header-inner">
             <div className="logo">
               <Link to={"/home"}>
-                <img src="assets/images/logo.svg" alt="logo" />
+                <img className="logo-black" src="assets/images/logo.svg" alt="logo" />
+                <img className="logo-white" src="assets/images/logo-white.svg" alt="logo" />
               </Link>
             </div>
             <div className="menu">
@@ -124,14 +125,16 @@ const Header = () => {
                     </ThemeContext.Consumer>
                     <div className="toggle-switch"></div>
                   </label>
-                  <img
+                  <img className="d-none"
                     src="assets/images/theme-toggle.svg"
                     alt="theme-toggle"
                   />
                 </div>
                 <div className="dropdown">
                   <div className="flag-img">
-                    <img src="assets/images/flag-bg.png" alt="" />
+                    <img className="flag-bg" src="assets/images/flag-bg.png" alt="" />
+                    <img className="flag-bg-white" src="assets/images/flag-bg-white.png" alt="" />
+                    
                   </div>
                   <button
                     className=" dropdown-toggle"

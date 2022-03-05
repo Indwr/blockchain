@@ -8,7 +8,7 @@ const options = {
   responsiveClass: true,
   nav: false,
   dots: false,
-  autoplay: false,
+  autoplay: true,
   loop: true,
   // center: true,
   navText: false,
@@ -64,7 +64,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q1 - 2022</h4>
               <p className="mb-0">
@@ -78,7 +79,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q2 - 2022</h4>
               <p className="mb-0">
@@ -92,7 +94,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q3 - 2022</h4>
               <p className="mb-0">
@@ -106,7 +109,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q4 - 2022</h4>
               <p className="mb-0">
@@ -120,7 +124,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q5 - 2022</h4>
               <p className="mb-0">
@@ -134,7 +139,8 @@ export default class CarousalSecond extends React.Component {
           <div className="road-test-box">
             <div className="road-text-box-content">
               <div className="road-test-icon">
-                <img src="assets/images/road-test1.png" alt="" />
+              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
               <h4>Q6 - 2022</h4>
               <p className="mb-0">

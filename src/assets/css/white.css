@@ -17,7 +17,7 @@ body.white-theme{
     color: #0B0A11;
 }
 .white-theme .copy-addres {
-    background-image: linear-gradient(to left,#fff, #fff), linear-gradient(184deg,#F213FF, rgb(187, 187, 187) , #0BEFD8);
+    background-image: linear-gradient(to left,#f2f4fc, #f6f6fd), linear-gradient(184deg,#F213FF, rgb(187, 187, 187) , #0BEFD8);
 }
 .white-theme .metapets-games .metapets-games-icon a svg stop {
     stop-color: #0E0D17;
@@ -33,5 +33,29 @@ body.white-theme{
     top: -80px;
     left: 0;
     z-index: -3;
-    filter: blur(124px);
+    filter: blur(41px);
+}
+.white-theme .logo-white, .white-theme .cat-white, .white-theme .metapets-games-left-img-white{
+    display: block;
+}
+.white-theme .logo-black, .white-theme .flag-bg, .white-theme .cat-black, .white-theme .metapets-games-left-img-black, .white-theme .metapats-bg{
+    display: none;
+}
+.white-theme .flag-bg-white{
+    display: block;
+}
+.white-theme .menu-left .dropdown-toggle::after {
+    color: #000000;
+}
+.white-theme .sub-heading {
+    color: #0B0A11;
+}
+.white-theme .custom-pets-line, .white-theme section.custom-pets:before {
+    display: none;
+}
+.white-theme .numquam-eius-left p, .white-theme .parner-text p, .white-theme .home-about-left p, .white-theme .home-team-heading p {
+    color: #0B0A11;
+}
+.white-theme .road-text-box-content {
+    background-image: linear-gradient(to left,#fcfcfc , #fcfcfc), linear-gradient(145deg,#F213FF, rgb(17, 16, 27) , #0BEFD8);
 }

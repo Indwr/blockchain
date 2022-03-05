@@ -68,17 +68,18 @@ const Home = () => {
                   </li> */}
                 </ul>
                 <div className="banner-img">
-                  <img src="assets/images/banner-img2.png" alt="" />
+                  <img className="cat-black" src="assets/images/banner-img2.png" alt="" />
+                  <img className="cat-white" src="assets/images/banner-img-3.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="white-bg">
-          <img src="assets/images/white-banner.png" alt="" />
+          <img src="assets/images/white-banner1.png" alt="" />
         </div>
       </div>
-
+      
       <section className="metapets-games">
         <div className="container">
           <div className="row">
@@ -305,8 +306,13 @@ const Home = () => {
             <div className="col-md-6">
               <div className="metapets-games-left">
                 <img
-                  className="metapets-games-left-img"
+                  className="metapets-games-left-img metapets-games-left-img-black"
                   src="assets/images/metapets-games.png"
+                  alt=""
+                />
+                <img
+                  className="metapets-games-left-img metapets-games-left-img-white"
+                  src="assets/images/metapets-games-white.png"
                   alt=""
                 />
                 <div className="metapats-bg">

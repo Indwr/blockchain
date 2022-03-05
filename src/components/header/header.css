@@ -39,6 +39,9 @@ a.nav-link {
     padding: 0;
     transition: all .4s;
 }
+.logo-black{
+    display: none;
+}
 a.nav-link:hover {
     background: -webkit-linear-gradient(180deg, #0BEFD8, #5959DF );
     -webkit-background-clip: text;
@@ -79,6 +82,10 @@ a.nav-link:hover {
     position: absolute;
     z-index: 0;
 }
+.flag-bg-white{
+    display: none;
+}
+
 .theme-toggle {
     padding-top: 0;
     cursor: pointer;
