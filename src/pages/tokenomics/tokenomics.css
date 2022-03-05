@@ -24,8 +24,12 @@
     color: #fff;
     font-weight: 600;
     font-size: 104px;
-    line-height: 79px;
+    line-height: 104px;
     margin: 0;
+    background: -webkit-linear-gradient(180deg, #f89627, #f2551a, #fc60d4 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 .tokenomics-content {
     display: flex;
@@ -130,7 +134,9 @@
     top: -20px;
     right: -20px;
 }
-
+.token-box-white{
+    display: none;
+}
 
 @media(max-width: 767px){
     .tokenomics-main-heading h1 {

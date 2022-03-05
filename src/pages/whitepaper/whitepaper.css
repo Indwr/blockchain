@@ -81,6 +81,12 @@
   max-height: 845px !important;
   max-width: 645px;
 }
+.rpv-default-layout-container {
+  border: 0;
+}
+.white-pdf-icon{
+  display: none;
+}
 /* End Remove Toolbar css */
 
 @media (max-width: 991px) {

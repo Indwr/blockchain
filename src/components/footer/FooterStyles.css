@@ -114,6 +114,9 @@ ul.footer-link li a:hover {
     transform: translateY(-10px);
     transition: all .4s ease-in;
 }
+.metapets-games-icon-footer a:hover path {
+    fill: #02e3ce;
+}
 
 /* a svg stop {
     stop-color: #ededee ;

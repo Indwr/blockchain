@@ -35,6 +35,12 @@
 .ecosystem-img {
     position: relative;
     cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,#000, #000), linear-gradient(145deg,#F213FF, rgb(22, 22, 22) , #0BEFD8);
+    border-radius: 54px;
 }
 .play-btn img {
     position: absolute;

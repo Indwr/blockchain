@@ -63,93 +63,119 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-              <div className="road-test-icon">
+            <div className="road-test-icon road-test-icon-black">
                 <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
                 <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
-              <h4>Q1 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
+              <div className="road-test-icon road-test-icon-white">
+                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+              </div>
+              <h4>[Q1 2022]</h4>
+              <ul className="mb-0">
+                <li>-Merch Store</li>
+                <li>- Merch Giveaways</li>
+                <li>- CertiK Audit</li>
+                <li>- NFT Merch </li>
+                <li>- Website Revamp</li>
+                <li>- MetaPets Swap</li>
+                <li>- Staking</li>
+              </ul>
             </div>
           </div>
         </div>
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-              <div className="road-test-icon">
-              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+            <div className="road-test-icon road-test-icon-black">
+                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
                 <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
-              <h4>Q2 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
+              <div className="road-test-icon road-test-icon-white">
+                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+              </div>
+              <h4>[Q2 2022]</h4>
+              <ul className="mb-0">
+                <li>- Reflection Tracker</li>
+                <li>- Preparation for Ethereum Bridge</li>
+                <li>- Augmented Reality Merch</li>
+                <li>- Game Development</li>
+                <li>- NFT Release (BSC)</li>
+                <li>- Ethereum Bridge</li>
+                <li>- 3D NFT Development</li>
+              </ul>
             </div>
           </div>
         </div>
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-              <div className="road-test-icon">
-              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+            <div className="road-test-icon road-test-icon-black">
+                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
                 <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
-              <h4>Q3 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
+              <div className="road-test-icon road-test-icon-white">
+                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+              </div>
+              <h4>[Q3 2022]</h4>
+              <ul className="mb-0">
+                <li>- 3D NFT Development</li>
+                <li>- 3D NFT Release</li>
+                <li>- NFT Staking</li>
+                <li>- Gamification integration and testing</li>
+                <li>- BETA Game Release</li>
+              </ul>
             </div>
           </div>
         </div>
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-              <div className="road-test-icon">
-              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+            <div className="road-test-icon road-test-icon-black">
+                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
                 <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
-              <h4>Q4 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
+              <div className="road-test-icon road-test-icon-white">
+                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+              </div>
+              <h4>[Q4 2022]</h4>
+              <ul className="mb-0">
+                <li>- NFT Integration to Games</li>
+                <li>- Polygon Bridge</li>
+                <li>- Custom NFT Pets</li>
+                <li>- NFT Marketplace</li>
+                <li>- BSC Contract Migration</li>
+                <li>- Developing NFT Breeding dAPP</li>
+              </ul>
             </div>
           </div>
         </div>
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-              <div className="road-test-icon">
-              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
+            <div className="road-test-icon road-test-icon-black">
+                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
                 <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
               </div>
-              <h4>Q5 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
+              <div className="road-test-icon road-test-icon-white">
+                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
+                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+              </div>
+              <h4>[Q1/Q2 2023]</h4>
+              <ul className="mb-0">
+                <li>- Avax Bridge</li>
+                <li>- NFT Breeding</li>
+                <li>- Multi-chain mainnet</li>
+                <li>- Multi-Chain Breeding</li>
+                <li>- New Feature & Utilities</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div>
-          <div className="road-test-box">
-            <div className="road-text-box-content">
-              <div className="road-test-icon">
-              <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
-              </div>
-              <h4>Q6 - 2022</h4>
-              <p className="mb-0">
-                Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                accusantium que laudantium, totam rem aperiam.
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </OwlCarousel>
     );
   }

@@ -97,6 +97,9 @@
     color: #FFFFFF;
     margin-top: 27px;
 }
+.staking-white{
+    display: none;
+}
 
 @media(max-width: 1600px){
     .staking-box {

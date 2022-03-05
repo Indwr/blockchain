@@ -91,17 +91,13 @@
     top: -152px;
     right: -332px;
 }
-.banner-inner ul li img {
+.banner-inner ul li svg {
     width: 30px;
 }
 .white-bg, .cat-white, .metapets-games-left-img-white{
     display: none;
 }
-.white-bg, .banner-img {
-    position: absolute;
-    top: 0;
-    right: -23px;
-}
+
 /*----------*/
 section.metapets-games {
     position: relative;
@@ -438,7 +434,7 @@ section.numquam-eius.numquam-eius2 {
     color: #FFFFFF;
     margin: 62px 0 14px;
 }
-.road-test-box p {
+.road-test-box p, .road-test-box li {
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
@@ -489,7 +485,7 @@ section.numquam-eius.numquam-eius2 {
 .metapets-games-icon li a svg{
     transition:all .4s;
 }
-.image-round, .parner-round-img, .half-round, .network-round, .partner-round-img, .team-round-img, .whitepaper-circel-img, .stakin-circul, .about-half-round {
+.image-round, .parner-round-img, .half-round, .network-round, .partner-round-img, .team-round-img, .whitepaper-circel-img, .stakin-circul, .about-half-round, .home-team-half-round {
     backdrop-filter: blur(94px);
     filter: blur(17px);
 }
@@ -527,6 +523,19 @@ img.road-test-icon2 {
 .roadmap .owl-item:not(.active) + .owl-item.active + .owl-item.active img.road-test-icon1{
     display: none !important;
  }
+ .road-test-icon-white, .custom-pets-main-img-white{
+     display: none;
+ }
+ .patner-box-white{
+     display: none;
+ }
+ .home-team-half-round {
+    position: absolute;
+    bottom: -290px;
+    right: 0;
+    z-index: -1;
+}
+ 
 
 /*-------@media-------*/
 
@@ -650,6 +659,48 @@ img.road-test-icon2 {
     .home-team {
         position: relative;
         margin-top: 162px;
+    }
+    .roadmap .owl-item:not(.active) + .owl-item.active .road-text-box-content{
+        opacity: 1;
+        border: 5px solid transparent;
+        overflow: hidden;
+     }
+    .roadmap .owl-item:not(.active) + .owl-item.active + .owl-item.active .road-text-box-content{
+        opacity: 1;
+        border: 2px solid transparent;
+        overflow: hidden;
+     }
+    .roadmap .owl-item:not(.active) + .owl-item.active .road-text-box-content:after{
+        position: absolute;
+        content: "";
+        top:0;
+        right:0;
+        width: 120px;
+        height: 120px;
+        background: #F213FF;
+        filter: blur(80px);
+     }
+    .roadmap .owl-item:not(.active) + .owl-item.active .road-text-box-content:before{
+        position: absolute;
+        content: "";
+        bottom:0;
+        left:0;
+        width: 100px;
+        height: 100px;
+        background: #0BEFD8;
+        filter: blur(80px);
+     }
+    .roadmap .owl-item:not(.active) + .owl-item.active img.road-test-icon2{
+        display: block !important;
+     }
+    .roadmap .owl-item:not(.active) + .owl-item.active img.road-test-icon1{
+        display: none !important;
+     }
+     .home-team-half-round {
+        position: absolute;
+        bottom: -159px;
+        right: 0;
+        z-index: -1;
     }
 }
 

@@ -75,6 +75,9 @@
     left: 0;
     z-index: -1;
 }
+.team-white-box{
+    display: none;
+}
 
 @media(max-width: 767px){
     .team-round-img img {

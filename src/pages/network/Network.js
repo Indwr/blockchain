@@ -13,13 +13,10 @@ const Network = () => {
               <div className="network-headding">
                 <h2 className="heading mb-0">Smart contract</h2>
                 <h1 className="sub-heading mb-0">
-                  Binance Smart Chain Network
+                Binance Smart Chain Network
                 </h1>
                 <p className="heading-text">
-                  The Binance Smart Chain Network is extremely safe and secure.
-                  Incur low transaction fees and super fast confirmations. And
-                  most importantly, The Binance Smart Chain Network connects
-                  seamlessly with Metamask and other online wallets!
+                The Binance Smart Chain Network is highly safe and secure. Incur low transaction fees and super fast confirmations. And most importantly, the Binance Smart Chain Network connects seamlessly with Metamask and other online wallets!
                 </p>
               </div>
               <div className="network-img-box">

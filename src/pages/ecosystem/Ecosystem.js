@@ -17,12 +17,10 @@ const Ecosystem = () => {
             <div className="col-12">
               <div className="ecoysystem-inner">
                 <div className="ecoysystem-inner-heading">
-                  <h2 className="heading mb-0">Lorem Ipsum</h2>
-                  <h1 className="sub-heading mb-0">EcoSystem</h1>
+                  <h2 className="heading mb-0">MetaPets</h2>
+                  <h1 className="sub-heading mb-0">Ecosystem</h1>
                   <p className="heading-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                  For projects to thrive, it is required for many moving parts to work closely together.
                   </p>
                 </div>
                 <div className="ecosystem box">
@@ -35,55 +33,62 @@ const Ecosystem = () => {
                   <div className="row">
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        {/* <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" /> */}
+                        <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem1.svg" alt="" />
-                          <h5>Sed ut perspic</h5>
+                          <h5>Charity </h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem2.svg" alt="" />
-                          <h5>atis unde omnis</h5>
+                          <h5>Giveaways</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem3.svg" alt="" />
-                          <h5>iste natus error</h5>
+                          <h5>Cross-Chain</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem4.svg" alt="" />
-                          <h5>sit voluptatem</h5>
+                          <h5>Dapps</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem5.svg" alt="" />
-                          <h5>accusantium</h5>
+                          <h5>Metaverse</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem6.svg" alt="" />
-                          <h5>doloremque</h5>
+                          <h5>Games</h5>
                         </div>
                       </div>
                     </div>
@@ -91,55 +96,61 @@ const Ecosystem = () => {
                                 <div className="row cosystem-content1"> */}
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6 ">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem7.svg" alt="" />
-                          <h5> laudantium totam</h5>
+                          <h5>3D Games</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem8.svg" alt="" />
-                          <h5>laudantium totam</h5>
+                          <h5>2D Games</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem9.svg" alt="" />
-                          <h5> ipsa quae ab illo </h5>
+                          <h5>VR/AR Games</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem10.svg" alt="" />
-                          <h5>inventore itatis</h5>
+                          <h5>Custom Pets</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem11.svg" alt="" />
-                          <h5>et quasi archit</h5>
+                          <h5>NFT</h5>
                         </div>
                       </div>
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-md-4 col-6">
                       <div className="partner-box">
-                        <img className="partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                      <img className="patner-box-black partner-box-img1" src="assets/images/parner-box.png" alt="" />
+                        <img className="patner-box-white partner-box-img1" src="assets/images/partner-box-white.png" alt="" />
                         <div className="partner-box-img">
                           <img src="assets/images/ecosystem12.svg" alt="" />
-                          <h5>beatae vitae dicta</h5>
+                          <h5>NFT Games</h5>
                         </div>
                       </div>
                     </div>
@@ -158,7 +169,7 @@ const Ecosystem = () => {
                     style={{ display: active ? "none" : "block" }}
                   >
                     <img
-                      src="assets/images/christin-hume-slbqShqAhEo-unsplash.jpg"
+                      src="assets/images/ecosystem-video-thumbnail.png"
                       alt=""
                     />
                     <div className="play-btn">

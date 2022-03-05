@@ -57,5 +57,132 @@ body.white-theme{
     color: #0B0A11;
 }
 .white-theme .road-text-box-content {
-    background-image: linear-gradient(to left,#fcfcfc , #fcfcfc), linear-gradient(145deg,#F213FF, rgb(17, 16, 27) , #0BEFD8);
+    background-image: linear-gradient(to left,#fcfcfc , #fcfcfc), linear-gradient(145deg,#F213FF, rgb(248, 248, 248) , #0BEFD8);
+    opacity: 0.7;
+}
+.white-theme .road-test-icon-white, .white-theme .custom-pets-main-img-white{
+    display: block;
+}
+.white-theme .road-test-icon-black, .white-theme .custom-pets-main-img-black{
+    display: none;
+}
+.white-theme .road-test-box h4, .white-theme .road-test-box p, .white-theme .custom-pets-inner-box p {
+    color: #0B0A11;
+}
+.white-theme .roadmap .owl-item:not(.active) + .owl-item.active + .owl-item.active .road-text-box-content:before {
+    width: 70px;
+    height: 50px;
+    filter: blur(100px);
+}
+.white-theme .roadmap .owl-item:not(.active) + .owl-item.active + .owl-item.active .road-text-box-content:after {
+    width: 70px;
+    height: 70px;
+    filter: blur(80px);
+}
+.white-theme .home-team .team-content h4, .white-theme .footer-box p, .white-theme ul.footer-link li a, .white-theme .copy-right p, .white-theme .roadmap-text-box p{
+    color: #0B0A11;
+}
+.white-theme .home-team .team-content p {
+    color: #848388;
+}
+.white-theme footer {
+    background-color: #FCFCFC;
+}
+.white-theme h4.footer-heading {
+    color: #0C0A12;
+}
+.white-theme .footer-form {
+    background-image: linear-gradient(to left,#FCFCFC, #FCFCFC), linear-gradient(184deg,#F213FF, rgb(201, 201, 201) , #0BEFD8);
+}
+.white-theme .footer-form input::placeholder{
+    color: #0C0A12;
+}
+.white-theme .copy-right {
+    background-color: #FCFCFC;
+}
+.white-theme .copy-right p{
+    color: #838386;
+}
+.white-theme .patner-box-black, .white-theme .menu-logo-black{
+    display: none;
+}
+.white-theme .patner-box-white, .white-theme .menu-logo-white{
+    display: block;
+}
+.white-theme .menu__bar{
+    background-color: #000;
+}
+img.menu-logo.menu-logo-white {
+    width: 132px;
+}
+.white-theme .banner-img {
+    position: absolute;
+    top: 0;
+    right: -23px;
+}
+.white-theme .metapets-games-icon-footer a path {
+    fill: #89898f;
+}
+.white-theme .metapets-games-icon-footer a:hover path {
+    fill: #05058D;
+}
+.white-theme .ecosystem-img {
+    background-image: linear-gradient(to left,#fff, #fff), linear-gradient(145deg,#F213FF, rgb(241, 241, 241) , #0BEFD8);
+}
+.white-theme .team-white-box{
+    display: block;
+}
+.white-theme .team-black-box{
+    display: none;
+}
+.white-theme .tean-box .team-content h4 {
+    color: #FFFFFF;
+}
+.white-theme .whitepaper.content-box button, .white-theme .road-test-box li{
+    color: #000000;
+}
+.white-theme .white-pdf-icon{
+    display: block;
+}
+.white-theme .black-pdf-icon{
+    display: none;
+}
+.white-theme .token-box-white{
+    display: block;
+}
+.white-theme .token-box-black{
+    display: none;
+}
+.white-theme .token-box-img {
+    z-index: -1;
+}
+.white-theme .staking-white{
+    display: block;
+}
+.white-theme .staking-black{
+    display: none;
+}
+.white-theme .staking-box:hover:before {
+    z-index: 0;
+}
+.white-theme .banner-inner ul li svg path {
+    fill: #262436;
+}
+
+
+@media(max-width: 1200px){
+    .white-theme div#navbarSupportedContent {
+        background-color: #fff;
+    }
+    .white-theme span.navbar-toggler-icon svg path {
+        fill: black;
+    }
+    .white-theme a.nav-link {
+        border-bottom: 1px solid rgb(57 57 57 / 22%);
+    }
+}
+@media(max-width: 991px){
+    .white-theme img.cat-white{
+        display: none;
+    }
 }

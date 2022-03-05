@@ -12,12 +12,10 @@ const Partner = () => {
             <div className="col-12">
               <div className="paetner-inner">
                 <div className="partner-heading">
-                  <h2 className="heading mb-0">Numquam Eius </h2>
+                  <h2 className="heading mb-0">MetaPets</h2>
                   <h1 className="sub-heading mb-0">Partners</h1>
                   <p className="heading-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam.
+                  We are very pleased to show our current partners and excited to announce more in the future.
                   </p>
                 </div>
                 <div className="partner-img-outer">

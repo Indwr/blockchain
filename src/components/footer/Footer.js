@@ -11,11 +11,11 @@ const Footer = () => {
             <div className="col-xl-3 col-md-5">
               <div className="footer-box footer-box-logo">
                 <Link to={"/home"}>
-                  <img src="assets/images/logo.svg" alt="logo" />
+                  <img className="logo-black" src="assets/images/logo.svg" alt="logo" />
+                  <img className="logo-white" src="assets/images/logo-white.svg" alt="logo" />
                 </Link>
                 <p>
-                  Sed ut perspiciatis unde omnis iste us error sit voluptatem
-                  accusantium que laudantium.
+                Check out what MetaPets looks like on our social media platforms.
                 </p>
                 <div className="metapets-games-icon-footer">
                   <div className="metapets-games-icon mb-0">
@@ -247,7 +247,7 @@ const Footer = () => {
                     <Link to={"/cookies"}>Cookies policy</Link>
                   </li>
                   <li>
-                    <Link to={"/privacy"}>Privacy</Link>
+                    <Link to={"/privacy"}>Privacy policy</Link>
                   </li>
                   <li>
                     <Link to={"/terms"}>Terms and Conditions</Link>
