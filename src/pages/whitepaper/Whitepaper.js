@@ -25,7 +25,12 @@ const Whitepaper = () => {
                 <h2 className="heading mb-0">MetaPets</h2>
                 <h1 className="sub-heading mb-0">Whitepaper</h1>
                 <p className="heading-text">
-                A project's whitepaper is a team's vision and plan for where the project will go. The more creative, well-written a whitepaper is, the better the vision. Check ours out and see if we got it right. To satisfy the needs of some of our international communities, we have translated it into a few languages. More to come.
+                  A project's whitepaper is a team's vision and plan for where
+                  the project will go. The more creative, well-written a
+                  whitepaper is, the better the vision. Check ours out and see
+                  if we got it right. To satisfy the needs of some of our
+                  international communities, we have translated it into a few
+                  languages. More to come.
                 </p>
               </div>
             </div>
@@ -37,38 +42,101 @@ const Whitepaper = () => {
                   <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
                     <div
                       className="content-box-pdf"
-                      style={{ height: "845px" }}
+                      style={{ height: "675px" }}
                     >
                       <Viewer
-                        fileUrl={"assets/pdf/1.pdf"}
+                        fileUrl={"assets/pdf/MetaPets-WhitePaper-V1-2.pdf"}
                         plugins={[defaultLayoutPluginInstance]}
                       />
                     </div>
                   </Worker>
                   <button>
-                    <img className="black-pdf-icon" src="assets/images/pdf-icon.svg" alt="icon" />
-                    <img className="white-pdf-icon" src="assets/images/pdf-white.svg" alt="icon" />
-                    <a className="alink" href={"assets/pdf/1.pdf"} download>
+                    <img
+                      className="black-pdf-icon"
+                      src="assets/images/pdf-icon.svg"
+                      alt="icon"
+                    />
+                    <img
+                      className="white-pdf-icon"
+                      src="assets/images/pdf-white.svg"
+                      alt="icon"
+                    />
+                    <a
+                      className="alink"
+                      href={"assets/pdf/MetaPets-WhitePaper-V1-2.pdf"}
+                      download
+                    >
                       Download PDF File
                     </a>
                   </button>
                 </div>
                 <div className="whitepaper content-box">
-                  <img src="assets/images/whitepaper1.png" alt="" />
+                  <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+                    <div
+                      className="content-box-pdf"
+                      style={{ height: "675px" }}
+                    >
+                      <Viewer
+                        fileUrl={
+                          "assets/pdf/MetaPets-Whitepaper-V1-Turkish.pdf"
+                        }
+                        plugins={[defaultLayoutPluginInstance]}
+                      />
+                    </div>
+                  </Worker>
                   <button>
-                  <img className="black-pdf-icon" src="assets/images/pdf-icon.svg" alt="icon" />
-                    <img className="white-pdf-icon" src="assets/images/pdf-white.svg" alt="icon" />
-                    <span>Download PDF File</span>
+                    <img
+                      className="black-pdf-icon"
+                      src="assets/images/pdf-icon.svg"
+                      alt="icon"
+                    />
+                    <img
+                      className="white-pdf-icon"
+                      src="assets/images/pdf-white.svg"
+                      alt="icon"
+                    />
+                    <a
+                      className="alink"
+                      href={"assets/pdf/MetaPets-Whitepaper-V1-Turkish.pdf"}
+                      download
+                    >
+                      Download PDF File
+                    </a>
                   </button>
                 </div>
                 <div className="whitepaper content-box">
-                  <img src="assets/images/whitepaper1.png" alt="" />
+                  <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+                    <div
+                      className="content-box-pdf"
+                      style={{ height: "675px" }}
+                    >
+                      <Viewer
+                        fileUrl={"assets/pdf/MetaPets-Whitepaper-V1-Arabic.pdf"}
+                        plugins={[defaultLayoutPluginInstance]}
+                      />
+                    </div>
+                  </Worker>
                   <button>
-                  <img className="black-pdf-icon" src="assets/images/pdf-icon.svg" alt="icon" />
-                    <img className="white-pdf-icon" src="assets/images/pdf-white.svg" alt="icon" />
-                    <span>Download PDF File</span>
+                    <img
+                      className="black-pdf-icon"
+                      src="assets/images/pdf-icon.svg"
+                      alt="icon"
+                    />
+                    <img
+                      className="white-pdf-icon"
+                      src="assets/images/pdf-white.svg"
+                      alt="icon"
+                    />
+                    <a
+                      className="alink"
+                      href={"assets/pdf/MetaPets-Whitepaper-V1-Arabic.pdf"}
+                      download
+                    >
+                      Download PDF File
+                    </a>
                   </button>
                 </div>
+
                 <div className="team-round-circul">
                   <img src="assets/images/team-round.png" alt="" />
                 </div>
