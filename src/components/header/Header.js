@@ -1,6 +1,6 @@
 // import React from "react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
@@ -8,6 +8,8 @@ import "../../assets/css/white.css";
 import "./header.css";
 
 const Header = () => {
+  const location = useLocation();
+
   const [darkMode, setDarkMode] = useState(true);
   const [themeMode, setThemeMode] = useState(true);
   const changeThemeMode = () => {
@@ -17,6 +19,11 @@ const Header = () => {
       setThemeMode(true);
     }
   };
+  if (location.pathname !== "/home") {
+    document.body.classList.remove("home-bg");
+  } else {
+    document.body.classList.add("home-bg");
+  }
   return (
     <div>
       <header>
@@ -24,8 +31,16 @@ const Header = () => {
           <div className="header-inner">
             <div className="logo">
               <Link to={"/home"}>
-                <img className="logo-black" src="assets/images/logo.svg" alt="logo" />
-                <img className="logo-white" src="assets/images/logo-white.svg" alt="logo" />
+                <img
+                  className="logo-black"
+                  src="assets/images/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  className="logo-white"
+                  src="assets/images/logo-white.svg"
+                  alt="logo"
+                />
               </Link>
             </div>
             <div className="menu">
@@ -55,10 +70,18 @@ const Header = () => {
                       aria-label="Toggle navigation"
                     >
                       <span className="navbar-toggler-icon">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 0.666656C6.62667 0.666656 0.666672 6.62666 0.666672 14C0.666672 21.3733 6.62667 27.3333 14 27.3333C21.3733 27.3333 27.3333 21.3733 27.3333 14C27.3333 6.62666 21.3733 0.666656 14 0.666656ZM19.7333 19.7333C19.2133 20.2533 18.3733 20.2533 17.8533 19.7333L14 15.88L10.1467 19.7333C9.62667 20.2533 8.78667 20.2533 8.26667 19.7333C7.74667 19.2133 7.74667 18.3733 8.26667 17.8533L12.12 14L8.26667 10.1467C7.74667 9.62666 7.74667 8.78666 8.26667 8.26666C8.78667 7.74666 9.62667 7.74666 10.1467 8.26666L14 12.12L17.8533 8.26666C18.3733 7.74666 19.2133 7.74666 19.7333 8.26666C20.2533 8.78666 20.2533 9.62666 19.7333 10.1467L15.88 14L19.7333 17.8533C20.24 18.36 20.24 19.2133 19.7333 19.7333Z" fill="white"/>
-                      </svg>
-
+                        <svg
+                          width="28"
+                          height="28"
+                          viewBox="0 0 28 28"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14 0.666656C6.62667 0.666656 0.666672 6.62666 0.666672 14C0.666672 21.3733 6.62667 27.3333 14 27.3333C21.3733 27.3333 27.3333 21.3733 27.3333 14C27.3333 6.62666 21.3733 0.666656 14 0.666656ZM19.7333 19.7333C19.2133 20.2533 18.3733 20.2533 17.8533 19.7333L14 15.88L10.1467 19.7333C9.62667 20.2533 8.78667 20.2533 8.26667 19.7333C7.74667 19.2133 7.74667 18.3733 8.26667 17.8533L12.12 14L8.26667 10.1467C7.74667 9.62666 7.74667 8.78666 8.26667 8.26666C8.78667 7.74666 9.62667 7.74666 10.1467 8.26666L14 12.12L17.8533 8.26666C18.3733 7.74666 19.2133 7.74666 19.7333 8.26666C20.2533 8.78666 20.2533 9.62666 19.7333 10.1467L15.88 14L19.7333 17.8533C20.24 18.36 20.24 19.2133 19.7333 19.7333Z"
+                            fill="white"
+                          />
+                        </svg>
                       </span>
                     </button>
                   </div>
@@ -129,15 +152,24 @@ const Header = () => {
                     </ThemeContext.Consumer>
                     <div className="toggle-switch"></div>
                   </label>
-                  <img className="d-none"
+                  <img
+                    className="d-none"
                     src="assets/images/theme-toggle.svg"
                     alt="theme-toggle"
                   />
                 </div>
                 <div className="dropdown">
                   <div className="flag-img">
-                    <img className="flag-bg" src="assets/images/flag-bg.png" alt="" />
-                    <img className="flag-bg-white" src="assets/images/flag-bg-white.png" alt="" />
+                    <img
+                      className="flag-bg"
+                      src="assets/images/flag-bg.png"
+                      alt=""
+                    />
+                    <img
+                      className="flag-bg-white"
+                      src="assets/images/flag-bg-white.png"
+                      alt=""
+                    />
                   </div>
                   <button
                     className=" dropdown-toggle"

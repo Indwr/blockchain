@@ -25,7 +25,8 @@ const Home = () => {
                 <h2 className="heading">MetaPets</h2>
                 <h1 className="sub-heading">A new world, a new pet</h1>
                 <p>
-                With MetaPets you can find your fur-ever friend who will always be with you in the Metaverse.
+                  With MetaPets you can find your fur-ever friend who will
+                  always be with you in the Metaverse.
                 </p>
                 <div className="copy">
                   <div className="copy-addres">
@@ -48,38 +49,166 @@ const Home = () => {
                 </div>
                 <ul>
                   <li>
-                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M34 5.66667L17 22.6667L22.6667 28.3333L34 17L45.3333 28.3333L51 22.6667L34 5.66667Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M34 62.3333L17 45.3333L22.6667 39.6667L34 51L45.3333 39.6667L51 45.3333L34 62.3333Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M56.058 27.489L49.647 33.9L56.058 40.3111L62.4691 33.9L56.058 27.489Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M12.1415 27.4886L5.73044 33.8996L12.1415 40.3107L18.5525 33.8996L12.1415 27.4886Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M33.7991 26.9879L26.787 34L33.7991 41.0121L40.8112 34L33.7991 26.9879Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                    <svg
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34 5.66667L17 22.6667L22.6667 28.3333L34 17L45.3333 28.3333L51 22.6667L34 5.66667Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M34 62.3333L17 45.3333L22.6667 39.6667L34 51L45.3333 39.6667L51 45.3333L34 62.3333Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M56.058 27.489L49.647 33.9L56.058 40.3111L62.4691 33.9L56.058 27.489Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M12.1415 27.4886L5.73044 33.8996L12.1415 40.3107L18.5525 33.8996L12.1415 27.4886Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M33.7991 26.9879L26.787 34L33.7991 41.0121L40.8112 34L33.7991 26.9879Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </li>
                   <li>
-                  <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.9625 22.3708L28.7625 17.2083C29.2542 16.9625 29.7458 16.9625 30.4833 17.2083L42.2833 22.3708C43.2667 22.8625 44.25 21.6333 43.5125 20.65L31.2208 5.65417C30.4833 4.67084 29.0083 4.67084 28.2708 5.65417L15.9792 20.65C14.9958 21.6333 15.9792 22.8625 16.9625 22.3708Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M16.9625 36.6292L28.7625 41.7917C29.2542 42.0375 29.7458 42.0375 30.4833 41.7917L42.2833 36.6292C43.2667 36.1375 44.25 37.3667 43.5125 38.35L31.2208 53.3458C30.4833 54.3292 29.0083 54.3292 28.2708 53.3458L15.9792 38.35C14.9958 37.3667 15.9792 36.1375 16.9625 36.6292Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M29.5 23.1083L16.7167 29.5L29.5 35.8917L42.2833 29.5L29.5 23.1083Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                    <svg
+                      width="59"
+                      height="59"
+                      viewBox="0 0 59 59"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.9625 22.3708L28.7625 17.2083C29.2542 16.9625 29.7458 16.9625 30.4833 17.2083L42.2833 22.3708C43.2667 22.8625 44.25 21.6333 43.5125 20.65L31.2208 5.65417C30.4833 4.67084 29.0083 4.67084 28.2708 5.65417L15.9792 20.65C14.9958 21.6333 15.9792 22.8625 16.9625 22.3708Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M16.9625 36.6292L28.7625 41.7917C29.2542 42.0375 29.7458 42.0375 30.4833 41.7917L42.2833 36.6292C43.2667 36.1375 44.25 37.3667 43.5125 38.35L31.2208 53.3458C30.4833 54.3292 29.0083 54.3292 28.2708 53.3458L15.9792 38.35C14.9958 37.3667 15.9792 36.1375 16.9625 36.6292Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M29.5 23.1083L16.7167 29.5L29.5 35.8917L42.2833 29.5L29.5 23.1083Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </li>
                   <li className="banner-icon-3">
-                  <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M39.5 39.8292L24.6875 48.3875L9.875 39.8292V22.7125L24.6875 14.1542L39.5 22.7125V27.9792" stroke="white" strokeWidth="6.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M39.5 39.8292L54.3125 31.2708L69.125 39.8292V56.9458L54.3125 65.5042L39.5 56.9458V51.35" stroke="white" strokeWidth="6.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                    <svg
+                      width="79"
+                      height="79"
+                      viewBox="0 0 79 79"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M39.5 39.8292L24.6875 48.3875L9.875 39.8292V22.7125L24.6875 14.1542L39.5 22.7125V27.9792"
+                        stroke="white"
+                        strokeWidth="6.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M39.5 39.8292L54.3125 31.2708L69.125 39.8292V56.9458L54.3125 65.5042L39.5 56.9458V51.35"
+                        stroke="white"
+                        strokeWidth="6.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </li>
                   <li>
-                  <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M61.6667 10.7917H16.9583C16.0333 10.7917 15.1083 11.1 14.4917 12.025L9.86667 18.1917C8.325 20.35 9.86667 23.125 12.3333 23.125H57.0417C57.9667 23.125 58.8917 22.8167 59.5083 21.8917L64.1333 15.725C65.675 13.5667 64.1333 10.7917 61.6667 10.7917Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
-                    <path d="M12.3333 30.8333H57.0417C57.9667 30.8333 58.8917 31.1417 59.5083 32.0667L64.1333 38.2333C65.675 40.3917 64.1333 43.1667 61.6667 43.1667H16.9583C16.0333 43.1667 15.1083 42.8583 14.4917 41.9333L9.86667 35.7667C8.325 33.6083 9.86667 30.8333 12.3333 30.8333Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
-                    <path d="M61.6667 50.875H16.9583C16.0333 50.875 15.1083 51.1833 14.4917 52.1083L9.86667 58.275C8.325 60.4333 9.86667 63.2083 12.3333 63.2083H57.0417C57.9667 63.2083 58.8917 62.9 59.5083 61.975L64.1333 55.8083C65.675 53.65 64.1333 50.875 61.6667 50.875Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
-                  </svg>
+                    <svg
+                      width="74"
+                      height="74"
+                      viewBox="0 0 74 74"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M61.6667 10.7917H16.9583C16.0333 10.7917 15.1083 11.1 14.4917 12.025L9.86667 18.1917C8.325 20.35 9.86667 23.125 12.3333 23.125H57.0417C57.9667 23.125 58.8917 22.8167 59.5083 21.8917L64.1333 15.725C65.675 13.5667 64.1333 10.7917 61.6667 10.7917Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                      />
+                      <path
+                        d="M12.3333 30.8333H57.0417C57.9667 30.8333 58.8917 31.1417 59.5083 32.0667L64.1333 38.2333C65.675 40.3917 64.1333 43.1667 61.6667 43.1667H16.9583C16.0333 43.1667 15.1083 42.8583 14.4917 41.9333L9.86667 35.7667C8.325 33.6083 9.86667 30.8333 12.3333 30.8333Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                      />
+                      <path
+                        d="M61.6667 50.875H16.9583C16.0333 50.875 15.1083 51.1833 14.4917 52.1083L9.86667 58.275C8.325 60.4333 9.86667 63.2083 12.3333 63.2083H57.0417C57.9667 63.2083 58.8917 62.9 59.5083 61.975L64.1333 55.8083C65.675 53.65 64.1333 50.875 61.6667 50.875Z"
+                        fill="white"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                      />
+                    </svg>
                   </li>
                 </ul>
                 <div className="banner-img">
-                  <img className="cat-black" src="assets/images/banner-img2.png" alt="" />
-                  <img className="cat-white" src="assets/images/banner-img-3.png" alt="" />
+                  <img
+                    className="cat-black"
+                    src="assets/images/banner-img2.png"
+                    alt=""
+                  />
+                  <img
+                    className="cat-white"
+                    src="assets/images/banner-img-3.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -89,7 +218,7 @@ const Home = () => {
           <img src="assets/images/white-banner1.png" alt="" />
         </div>
       </div>
-      
+
       <section className="metapets-games">
         <div className="container">
           <div className="row">
@@ -335,7 +464,11 @@ const Home = () => {
                 <h2 className="heading mb-0">Keep your pet engaged</h2>
                 <h3 className="sub-heading mb-0">MetaPets Games</h3>
                 <p>
-                MetaPets Games will be a way to engage the community and help them build a relationship in a fun and competitive way. NFT games where you can train your MetaPets, dress them, and breed them are some of the many ways you will be able to give love and care to your new friend constantly.
+                  MetaPets Games will be a way to engage the community and help
+                  them build a relationship in a fun and competitive way. NFT
+                  games where you can train your MetaPets, dress them, and breed
+                  them are some of the many ways you will be able to give love
+                  and care to your new friend constantly.
                 </p>
                 <div className="btn-outer1">
                   <Link className="comman-btn btn-outer" to={"/about"}>
@@ -362,11 +495,12 @@ const Home = () => {
               <div className="custom-pets-inner">
                 <div className="custom-pets-inner-box">
                   <h2 className="heading mb-0">
-                  Custom Pet Builder…Coming soon
+                    Custom Pet Builder…Coming soon
                   </h2>
                   <h3 className="sub-heading mb-0">Custom Pets</h3>
                   <p>
-                  Build the pet of your dreams, a friend who will be at your beckoned call.{" "}
+                    Build the pet of your dreams, a friend who will be at your
+                    beckoned call.{" "}
                   </p>
                   <div className="btn-outer1">
                     <a
@@ -383,8 +517,16 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-                <img className="custom-pets-main-img custom-pets-main-img-black" src="assets/images/custom-pets-img.png" alt="" />
-                <img className="custom-pets-main-img custom-pets-main-img-white" src="assets/images/custom-pets-white-img.png" alt="" />
+                <img
+                  className="custom-pets-main-img custom-pets-main-img-black"
+                  src="assets/images/custom-pets-img.png"
+                  alt=""
+                />
+                <img
+                  className="custom-pets-main-img custom-pets-main-img-white"
+                  src="assets/images/custom-pets-white-img.png"
+                  alt=""
+                />
                 <div className="custom-pets-circul">
                   <img
                     className="rotating"
@@ -413,10 +555,15 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 d-flex align-items-center order-md-1 order-2">
               <div className="numquam-eius-left">
-                <h2 className="heading mb-0">A pet that will always be yours</h2>
+                <h2 className="heading mb-0">
+                  A pet that will always be yours
+                </h2>
                 <h3 className="sub-heading mb-0">Customizable Pets</h3>
                 <p>
-                Use your imagination to customize your loving friend! Launch your custom MetaPet, adopt any traits you want to make them unique, brag about your pet MetaPets social media, and sell or swap it on the marketplace.
+                  Use your imagination to customize your loving friend! Launch
+                  your custom MetaPet, adopt any traits you want to make them
+                  unique, brag about your pet MetaPets social media, and sell or
+                  swap it on the marketplace.
                 </p>
                 <div className="btn-outer1">
                   <a
@@ -461,9 +608,16 @@ const Home = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div className="numquam-eius-left">
                 <h2 className="heading mb-0">Future Plans</h2>
-                <h3 className="sub-heading mb-0">{/*Change Customizable Pets & Write*/} Metaverse</h3>
+                <h3 className="sub-heading mb-0">
+                  {/*Change Customizable Pets & Write*/} Metaverse
+                </h3>
                 <p>
-                MetaPets aims to make your MetaPet adaptable to the virtual designs of the Metaverse. Interoperable into other worlds, you can show your dog off in a dog show, have your prize cow produce milk to sell, and race your trophy-winning horse in a competition, all while earning a passive income from your MetaPets investment.
+                  MetaPets aims to make your MetaPet adaptable to the virtual
+                  designs of the Metaverse. Interoperable into other worlds, you
+                  can show your dog off in a dog show, have your prize cow
+                  produce milk to sell, and race your trophy-winning horse in a
+                  competition, all while earning a passive income from your
+                  MetaPets investment.
                 </p>
                 <div className="btn-outer1">
                   <a
@@ -491,11 +645,11 @@ const Home = () => {
             <div className="row">
               <div className="col-12">
                 <div className="parner-text">
-                  <h2 className="heading mb-0">Our friends in the crypto world</h2>
+                  <h2 className="heading mb-0">
+                    Our friends in the crypto world
+                  </h2>
                   <h3 className="sub-heading mb-0">Partners</h3>
-                  <p>
-                  A project can't be successful alone
-                  </p>
+                  <p>A project can't be successful alone</p>
                 </div>
               </div>
             </div>
@@ -503,8 +657,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
                   <div className="partner-box">
-                    <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/5a.png" alt="" />
                     </div>
@@ -514,8 +676,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer ">
                   <div className="partner-box partner-box2">
-                  <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/marketcap.png" alt="" />
                     </div>
@@ -525,8 +695,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
                   <div className="partner-box">
-                  <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/1a.png" alt="" />
                     </div>
@@ -536,8 +714,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
                   <div className="partner-box">
-                  <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/2a.png" alt="" />
                     </div>
@@ -547,8 +733,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
                   <div className="partner-box">
-                  <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/3a.png" alt="" />
                     </div>
@@ -558,8 +752,16 @@ const Home = () => {
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
                   <div className="partner-box">
-                  <img className="patner-box-black" src="assets/images/parner-box.png" alt="" />
-                    <img className="patner-box-white" src="assets/images/partner-box-white.png" alt="" />
+                    <img
+                      className="patner-box-black"
+                      src="assets/images/parner-box.png"
+                      alt=""
+                    />
+                    <img
+                      className="patner-box-white"
+                      src="assets/images/partner-box-white.png"
+                      alt=""
+                    />
                     <div className="partner-box-img">
                       <img src="assets/images/4a.png" alt="" />
                     </div>
@@ -601,14 +803,23 @@ const Home = () => {
                 <h2 className="heading mb-0">Our Vision</h2>
                 <h3 className="sub-heading mb-0">About Us </h3>
                 <p>
-                Our vision is to see that our project adds to the growth and value of the Metaverse. It will indeed be interoperable and open - meaning that down the road, an owner will be able to use their MetaPets in other games/meta worlds that we or anyone else out there create.{" "}
+                  Our vision is to see that our project adds to the growth and
+                  value of the Metaverse. It will indeed be interoperable and
+                  open - meaning that down the road, an owner will be able to
+                  use their MetaPets in other games/meta worlds that we or
+                  anyone else out there create.{" "}
                 </p>
                 <p>
-                So, for example, your MetaPets could be pulled into a training camp, a dog park, or any other type of game someone wants to build on different worlds in the Metaverse without necessarily needing permission. Our community's happiness is our number one priority, and everything we create will be to reward our loyal community.
+                  So, for example, your MetaPets could be pulled into a training
+                  camp, a dog park, or any other type of game someone wants to
+                  build on different worlds in the Metaverse without necessarily
+                  needing permission. Our community's happiness is our number
+                  one priority, and everything we create will be to reward our
+                  loyal community.
                 </p>
                 <div className="btn-outer1">
                   <Link className="comman-btn btn-outer" to={"/"}>
-                  Our Whitepaper 
+                    Our Whitepaper
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -637,9 +848,7 @@ const Home = () => {
               <div className="home-team-heading">
                 <h2 className="heading mb-0">Our Legendary Crew</h2>
                 <h3 className="sub-heading mb-0">Team</h3>
-                <p>
-                A project goes farther with helping hands.
-                </p>
+                <p>A project goes farther with helping hands.</p>
               </div>
             </div>
           </div>
@@ -662,7 +871,10 @@ const Home = () => {
                   <h2 className="heading mb-0">Roadmap</h2>
                   <h3 className="sub-heading mb-0">Explore Our Roadmap</h3>
                   <p>
-                  The future for MetaPets is bold, creative, and will expand into the Metaverse. We look forward to bringing our investors our vision, one that will take us far beyond anyone's imagination.
+                    The future for MetaPets is bold, creative, and will expand
+                    into the Metaverse. We look forward to bringing our
+                    investors our vision, one that will take us far beyond
+                    anyone's imagination.
                   </p>
                 </div>
                 <div className="btn-outer1">
