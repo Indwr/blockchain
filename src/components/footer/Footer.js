@@ -96,10 +96,10 @@ const Footer = () => {
                                 y2="27.9999"
                                 gradientUnits="userSpaceOnUse"
                               >
-                                <stop stopColor="#00FFE5" />
+                                <stop stopColor="white" />
                                 <stop
                                   offset="1"
-                                  stopColor="#00FFE5"
+                                  stopColor="white"
                                   stopOpacity="0.35"
                                 />
                               </linearGradient>
