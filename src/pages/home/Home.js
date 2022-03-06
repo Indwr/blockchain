@@ -562,8 +562,8 @@ const Home = () => {
                 <p>
                   Use your imagination to customize your loving friend! Launch
                   your custom MetaPet, adopt any traits you want to make them
-                  unique, brag about your pet MetaPets social media, and sell or
-                  swap it on the marketplace.
+                  unique, brag about your MetaPet social media, and sell or swap
+                  it on the marketplace.
                 </p>
                 <div className="btn-outer1">
                   <a
