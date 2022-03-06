@@ -63,7 +63,7 @@ const Home = () => {
                     <path d="M29.5 23.1083L16.7167 29.5L29.5 35.8917L42.2833 29.5L29.5 23.1083Z" fill="white" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                   </li>
-                  <li>
+                  <li className="banner-icon-3">
                   <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M39.5 39.8292L24.6875 48.3875L9.875 39.8292V22.7125L24.6875 14.1542L39.5 22.7125V27.9792" stroke="white" strokeWidth="6.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M39.5 39.8292L54.3125 31.2708L69.125 39.8292V56.9458L54.3125 65.5042L39.5 56.9458V51.35" stroke="white" strokeWidth="6.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -461,7 +461,7 @@ const Home = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div className="numquam-eius-left">
                 <h2 className="heading mb-0">Future Plans</h2>
-                <h3 className="sub-heading mb-0">Change Customizable Pets & Write Metaverse</h3>
+                <h3 className="sub-heading mb-0">{/*Change Customizable Pets & Write*/} Metaverse</h3>
                 <p>
                 MetaPets aims to make your MetaPet adaptable to the virtual designs of the Metaverse. Interoperable into other worlds, you can show your dog off in a dog show, have your prize cow produce milk to sell, and race your trophy-winning horse in a competition, all while earning a passive income from your MetaPets investment.
                 </p>

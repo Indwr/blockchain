@@ -98,6 +98,12 @@
 img.partner-box-img1 {
     width: 100%;
 }
+.partner-box-img svg path {
+    stroke: #fff;
+}
+.partner-box:hover .partner-box-img svg path {
+    stroke: #0BEFD8;
+}
 
 @media(max-width :1500px){
     .ecosystem-content .partner-box {
@@ -174,6 +180,6 @@ img.partner-box-img1 {
 
 @media(max-width: 400px){
     .ecosystem-content .partner-box {
-        border-radius: 25px;
+        border-radius: 30px;
     }
 }

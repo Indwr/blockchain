@@ -13,6 +13,10 @@ body{
 	font-family: 'Epilogue', sans-serif !important;
     background-color:#0E0D17 !important;
     overflow-x: hidden;
+    background-image: url(../../../public/assets/images/home-background.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 h1, h2, h3, h4, h5, h6, p, ul{
@@ -72,7 +76,7 @@ img {
     font-weight: 600;
     font-size: 23px;
     line-height: 24px;
-    backdrop-filter: blur(17px);
+    /* backdrop-filter: blur(17px); */
     margin-bottom: 17px;
     background: -webkit-linear-gradient(180deg, #0BEFD8, #5959DF );
    -webkit-background-clip: text;

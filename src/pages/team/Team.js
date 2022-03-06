@@ -29,8 +29,19 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/DEE.png" alt="" />
-                    <h4>DEE</h4>
+                    <h4>Dee Norris </h4>
                     <p>CEO </p>
+                  </div>
+                </div>
+              </div>
+            <div className="col-xxl-3 col-lg-4 col-6">
+                <div className="team-box">
+                  <img className="team-black-box" src="assets/images/team-img-box.png" alt="" />
+                  <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
+                  <div className="team-content">
+                    <img src="assets/images/adora.jpg" alt="" />
+                    <h4>Adora</h4>
+                    <p>Organizer</p>
                   </div>
                 </div>
               </div>
@@ -41,7 +52,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/APRIL.png" alt="" />
                     <h4>APRIL</h4>
-                    <p>CEO </p>
+                    <p>MOD</p>
                   </div>
                 </div>
               </div>
@@ -51,8 +62,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/BRIAN.png" alt="" />
-                    <h4>BRIAN</h4>
-                    <p>CEO </p>
+                    <h4>Brian Hoffeman</h4>
+                    <p>Discord Coordinator</p>
                   </div>
                 </div>
               </div>
@@ -63,7 +74,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/CHING.png" alt="" />
                     <h4>CHING</h4>
-                    <p>CEO </p>
+                    <p>MOD</p>
                   </div>
                 </div>
               </div>
@@ -73,8 +84,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/DAVID.png" alt="" />
-                    <h4>DAVID</h4>
-                    <p>CEO </p>
+                    <h4>David Feansis</h4>
+                    <p>Discord Coordinator</p>
                   </div>
                 </div>
               </div>
@@ -84,8 +95,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/GERALT.png" alt="" />
-                    <h4>GERALT</h4>
-                    <p>CEO </p>
+                    <h4>Geralt</h4>
+                    <p>Technician</p>
                   </div>
                 </div>
               </div>
@@ -95,8 +106,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/GUSTO.png" alt="" />
-                    <h4>GUSTO</h4>
-                    <p>CEO </p>
+                    <h4>Nathan</h4>
+                    <p>Creative Director</p>
                   </div>
                 </div>
               </div>
@@ -107,7 +118,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/HERO.png" alt="" />
                     <h4>HERO</h4>
-                    <p>CEO </p>
+                    <p>MOD</p>
                   </div>
                 </div>
               </div>
@@ -117,8 +128,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/KOOL.png" alt="" />
-                    <h4>KOOL</h4>
-                    <p>CEO </p>
+                    <h4>Kool Clipz</h4>
+                    <p>VC MOD</p>
                   </div>
                 </div>
               </div>
@@ -128,8 +139,19 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/LIAM.png" alt="" />
-                    <h4>LIAM</h4>
-                    <p>CEO </p>
+                    <h4>Liam Hayne</h4>
+                    <p>PR Manages</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xxl-3 col-lg-4 col-6">
+                <div className="team-box">
+                <img className="team-black-box" src="assets/images/team-img-box.png" alt="" />
+                  <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
+                  <div className="team-content">
+                    <img src="assets/images/lauren.png" alt="" />
+                    <h4>Lauren</h4>
+                    <p>Head of research</p>
                   </div>
                 </div>
               </div>
@@ -140,7 +162,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/LUCKY.png" alt="" />
                     <h4>LUCKY</h4>
-                    <p>CEO </p>
+                    <p>MOD Team </p>
                   </div>
                 </div>
               </div>
@@ -151,7 +173,18 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/MATT.png" alt="" />
                     <h4>MATT</h4>
-                    <p>CEO </p>
+                    <p>Event Coordinator</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xxl-3 col-lg-4 col-6">
+                <div className="team-box">
+                <img className="team-black-box" src="assets/images/team-img-box.png" alt="" />
+                  <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
+                  <div className="team-content">
+                    <img src="assets/images/nad-king.jpg" alt="" />
+                    <h4>Nad King</h4>
+                    <p>MEta MOD</p>
                   </div>
                 </div>
               </div>
@@ -161,8 +194,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/PEABODY.png" alt="" />
-                    <h4>PEABODY</h4>
-                    <p>CEO </p>
+                    <h4>Peabody</h4>
+                    <p>CFO </p>
                   </div>
                 </div>
               </div>
@@ -172,8 +205,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/PHIL.png" alt="" />
-                    <h4>PHIL</h4>
-                    <p>CEO </p>
+                    <h4>Phil Kennedy</h4>
+                    <p>Social Media Manager</p>
                   </div>
                 </div>
               </div>
@@ -183,8 +216,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/RAY.png" alt="" />
-                    <h4>RAY</h4>
-                    <p>CEO </p>
+                    <h4>Ray</h4>
+                    <p>CFO </p>
                   </div>
                 </div>
               </div>
@@ -194,8 +227,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/SCOTT.png" alt="" />
-                    <h4>SCOTT</h4>
-                    <p>CEO </p>
+                    <h4>Scott</h4>
+                    <p>Meta MOD</p>
                   </div>
                 </div>
               </div>
@@ -205,8 +238,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/SEMI.png" alt="" />
-                    <h4>SEMI</h4>
-                    <p>CEO </p>
+                    <h4>Semi</h4>
+              <p>Discord Manager </p>
                   </div>
                 </div>
               </div>
@@ -216,8 +249,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/TAJ.png" alt="" />
-                    <h4>TAJ</h4>
-                    <p>CEO </p>
+                    <h4>Taj Zaza</h4>
+              <p>Arabic Spokesman</p>
                   </div>
                 </div>
               </div>
@@ -227,8 +260,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/TINAS_HUBBY.png" alt="" />
-                    <h4>TINAS_HUBBY</h4>
-                    <p>CEO </p>
+                    <h4>Emi</h4>
+                    <p>MOD Team </p>
                   </div>
                 </div>
               </div>
@@ -238,8 +271,8 @@ const Team = () => {
                   <img className="team-white-box" src="assets/images/team-white-bg.png" alt="" />
                   <div className="team-content">
                     <img src="assets/images/TONY.png" alt="" />
-                    <h4>TONY</h4>
-                    <p>CEO </p>
+                    <h4>Tony</h4>
+              <p>Meta Mod & FUD KIlla</p>
                   </div>
                 </div>
               </div>
@@ -250,7 +283,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/Z.png" alt="" />
                     <h4>Z</h4>
-                    <p>CEO </p>
+                    <p>Analyst </p>
                   </div>
                 </div>
               </div>

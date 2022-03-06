@@ -12,6 +12,7 @@ const options = {
   loop: true,
   // center: true,
   navText: false,
+  // autoHeight: true,
   stagePadding: 0,
   smartSpeed: 1000,
   responsive: {

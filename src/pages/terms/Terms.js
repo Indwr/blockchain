@@ -12,103 +12,50 @@ const About = () => {
             <div className="col12">
               <div className="about-inner">
                 <div className="about-inner-box">
-                  <h2 className="heading">Lorem Ipsum</h2>
-                  <h1 className="sub-heading">Terms Condition</h1>
+                  <h2 className="heading">MetaPets</h2>
+                  <h1 className="sub-heading">Terms and Conditions</h1>
+                  <p>These terms and conditions (the "Terms and Conditions") govern the use of <a href="www.metapetscoin.com">www.metapetscoin.com</a> . This Site is owned and operated by Liam Hayne. This Site is an ecommerce website.</p>
+                  <p>By using this Site, you indicate that you have read and understand these Terms and Conditions and agree to abide by them at all times.</p>
+                  <h5>Intellectual Property</h5>
+                  <p>All content published and made available on our Site is the property of Liam Hayne and the Site's creators. This includes, but is not limited to images, text, logos, documents, downloadable files and anything that contributes to the composition of our Site.</p>
+                  <h5>Sale of Goods And Services</h5>
+                  <p>These Terms and Conditions govern the sale of goods and services available on our Site.</p>
+                  <p>The following goods are available on our Site:</p>
+                  <p className="ms-4">- NFT Pets.</p>
+                  <p>The following services are available on our Site:</p>
+                  <p className="ms-4">- Gaming.</p>
+                  <p>The services will be paid for in full when the services are ordered.</p>
+                  <p>These Terms and Conditions apply to all the goods and services that are displayed on our Site at the time you access it. This includes all products listed as being out of stock. All information, descriptions, or images that we provide about our goods and services are as accurate as possible. However, we are not legally bound by such information, descriptions, or images as we cannot guarantee the accuracy of all goods and services we provide. You agree to purchase goods and services from our Site at your own risk.</p>
+                  <p>We reserve the right to modify, reject or cancel your order whenever it becomes necessary. If we cancel your order and have already processed your payment, we will give you a refund equal to the amount you paid. You agree that it is your responsibility to monitor your payment instrument to verify receipt of any refund.</p>
+                  <h5>Payments</h5>
+                  <p>We accept the following payment methods on our Site:</p>
+                  <p>- Cryptocurrency listed on website. </p>
+                  <p>When you provide us with your payment information, you authorize our use of and access to the payment instrument you have chosen to use. By providing us with your payment information, you authorize us to charge the amount due to this payment instrument.</p>
+                  <p>If we believe your payment has violated any law or these Terms and Conditions, we reserve the right to cancel or reverse your transaction. </p>
+                  <h5>Consumer Protection Law</h5>
+                  <p>Where any consumer protection legislation in your jurisdiction applies and cannot be excluded, these Terms and Conditions will not limit your legal rights and remedies under that legislation. These Terms and Conditions will be read subject to the mandatory provisions of that legislation. If there is a conflict between these Terms and Conditions and that legislation, the mandatory provisions of the legislation will apply.</p>
+                  <h5>Limitation of Liability</h5>
+                  <p>Liam Hayne and our directors, officers, agents, employees, subsidiaries, and affiliates will not be liable for any actions, claims, losses, damages, liabilities and expenses including legal fees from your use of the Site.</p>
+                  <h5>Indemnity</h5>
+                  <p>Except where prohibited by law, by using this Site you indemnify and hold harmless Liam Hayne and our directors, officers, agents, employees, subsidiaries, and affiliates from any actions, claims, losses, damages, liabilities and expenses including legal fees arising out of your use of our Site or your violation of these Terms and Conditions.</p>
+                  <h5>Applicable Law</h5>
+                  <p>These Terms and Conditions are governed by the laws of the State of Ohio.</p>
+                  <h5>Severability</h5>
+                  <p>If at any time any of the provisions set forth in these Terms and Conditions are found to be inconsistent or invalid under applicable laws, those provisions will be deemed void and will be removed from these Terms and Conditions. All other provisions will not be affected by the removal and the rest of these Terms and Conditions will still be considered valid.</p>
+                  <h5>Changes </h5>
+                  <p>These Terms and Conditions may be amended from time to time in order to maintain compliance with the law and to reflect any changes to the way we operate our Site and the way we expect users to behave on our Site. We will notify users by email of changes to these Terms and Conditions or post a notice on our Site. </p>
+                  <h5>Contact Details </h5>
+                  <p>Please contact us if you have any questions or concerns. Our contact details are as follows:</p>
                   <p>
-                    MetaPets aims to be a first step in bringing love and
-                    companionship to the metaverse in a personalized way,
-                    allowing users to become owners of pets of their design.
-                    Never again do you have to worry about the painful feelings
-                    that come with loss.
+                    <a href="tel:1916633095 ">(191) 663-3095 </a><br/>
+                    <a href="mailto:support@metapetscoin.com  ">support@metapetscoin.com  </a><br/>
+                    8731 Tanager Woods Dr.
+
                   </p>
-                  <p>
-                    Allergic to cats but love them? Fulfill your heart's wish to
-                    own your cat, made into an NFT, where the colors, sizes, and
-                    loveable furriness are customizable into your forever
-                    friend.
-                  </p>
-                  <p>
-                    MetaPets aims to make your MetaPet adaptable to the virtual
-                    designs of the metaverse. Interoperable into other worlds,
-                    you can show your dog off in a dog show, have your prize cow
-                    produce milk to sell, and race your trophy-winning horse in
-                    a competition, all while earning a passive income from your
-                    MetaPets Investment.
-                  </p>
-                  <p>
-                    What if you could own a pet that would be with you forever?
-                    Always there for you, always loving, always happy to see
-                    you. The concept is not so hard to imagine, especially now,
-                    when you envision your pet in a digital world in the
-                    metaverse.
-                  </p>
-                  <p>
-                    It has inspired us to think about the relationship between
-                    real pets you adopt in the real world and ones that will
-                    always be with you in the Metaverse.
-                  </p>
-                  <p>
-                    Your best friend is with you when you’re sad, lonely, or
-                    tired and just want to be together. Never again will you
-                    lose your pet and have to deal with the grief and hardship
-                    of loss.{" "}
-                  </p>
-                  <p>
-                    It's hard to get over the sadness, the loss, hard to feel
-                    like a new pet won't leave you too. But imagine you could
-                    own a forever pet in the metaverse. You can still have a
-                    friendship or be a family together in the metaverse. You can
-                    easily find pet owners who may suffer the same situation you
-                    have, and you can help each other get through the pain
-                    together. It's the starting point that we thought of when
-                    thinking about our pets, the possibilities to be together
-                    forever, which is why we created this project – MetaPets.
-                  </p>
-                  <p>
-                    With the changes in global lifestyles and people adopting
-                    new ways to be creative while they are stuck at home, it may
-                    not be entirely random that 2021 was the year that people
-                    started talking seriously about the metaverse. During the
-                    pandemic, so many things have gone digital from
-                    necessity—from being social to shopping, that it sometimes
-                    felt as if we were halfway into the metaverse already.
-                  </p>
-                  <p>
-                    Before that, Virtual Reality (VR) seemed like the most
-                    realistic way to push us to a transition into a
-                    reality-based digital world. We’ll continue to see attempts
-                    to shift focus towards VR with headsets; however, once we
-                    are more comfortable wearing powerful devices and things
-                    like this go more mainstream, it’s game over. Or could it
-                    possibly be interpreted differently? More like GAME ON.{" "}
-                  </p>
-                  <p>
-                    In doing so, there will be different layers of reality that
-                    we will be experiencing, even in the same environment or
-                    physical space that slowly shifts us like we have been with
-                    our phones—passively, in a physical environment while
-                    mentally into a digital one. Yet, this is just the
-                    beginning, because beyond a phone, our whole bodies will be
-                    fully engaged, and that’s where the metaverse starts to get
-                    interesting—where all things are possible, and a new and
-                    imaginative world with our friends and companions.
-                  </p>
-                  <p>
-                    In this place, we genuinely begin to explore and live in
-                    these alternate realities simultaneously with our eternally
-                    loyal and loving MetaPets.
-                  </p>
-                  <p>
-                    Thanks to the level of resolution and quality of today’s
-                    technology, the metaverse may appear as natural as in real
-                    life. However, it’s all pointing toward a more immersive
-                    entertainment experience that engages all of our senses
-                    while staying true to a creator’s vision, for instance, the
-                    ability to have a secondary existence in a virtual world
-                    with your beloved pets. Owners can outfit their pets, train
-                    and breed them, show them off at the national dog show, and
-                    place them on a pedestal for others to envy.
-                  </p>
+
+
+
+                  
                   <div className="about-main-img">
                     <img src="assets/images/about-main.png" alt="" />
                   </div>

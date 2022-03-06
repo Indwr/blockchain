@@ -127,6 +127,58 @@ ul.footer-link li a:hover {
 a:hover svg stop {
     stop-color: #02e3ce !important;
 }
+.modal-content {
+    background-color: #121022 !important;
+    border-radius: 24px !important;
+}
+.modal-body {
+    text-align: center !important;
+    padding: 60px !important;
+}
+.modal-body .heading {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 79px;
+}
+.modal-body a.comman-btn.btn-outer {
+    margin: 0 auto;
+}
+.modal-body button.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.home-background {
+    position: fixed;
+    top: 0;
+    z-index: -5;
+    opacity: .5;
+}
+.home-background {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    opacity: 1;
+    background: #000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-background img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 @media(max-width: 1400px){
     .footer-box.footer-box1 {

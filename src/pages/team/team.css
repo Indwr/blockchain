@@ -88,13 +88,13 @@
 @media(max-width: 576px){
     
     .team-content h4 {
-        font-size: 16px;
-        line-height: 16px;
-        margin: 20px 0 6px;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 15px 0 6px;
     }
     .team-content p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 18px;
     }
     .team-content img {
         border-radius: 20px;

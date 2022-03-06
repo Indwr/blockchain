@@ -1,5 +1,7 @@
+
 body.white-theme{
     background-color: #FFFFFF !important;
+    background-image: url(../../../public/assets/images/home-backgroun-white.gif) !important;
 }
 .white-theme header {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -53,9 +55,18 @@ body.white-theme{
 .white-theme .custom-pets-line, .white-theme section.custom-pets:before {
     display: none;
 }
-.white-theme .numquam-eius-left p, .white-theme .parner-text p, .white-theme .home-about-left p, .white-theme .home-team-heading p {
+.white-theme .numquam-eius-left p, .white-theme .parner-text p, .white-theme .home-about-left p, .white-theme .home-team-heading p{
     color: #0B0A11;
 }
+
+.white-theme .about-inner-box ul li {
+    color: #0B0A11;
+    opacity: 0.5;
+}
+.white-theme .about-inner-box h5 {
+    color: #0B0A11;
+}
+
 .white-theme .road-text-box-content {
     background-image: linear-gradient(to left,#fcfcfc , #fcfcfc), linear-gradient(145deg,#F213FF, rgb(248, 248, 248) , #0BEFD8);
     opacity: 0.7;
@@ -168,6 +179,23 @@ img.menu-logo.menu-logo-white {
 .white-theme .banner-inner ul li svg path {
     fill: #262436;
 }
+.white-theme .banner-inner ul li svg path {
+    stroke: #000;
+}
+.white-theme li.banner-icon-3 svg path {
+    fill: transparent !important;
+}
+.white-theme .modal-content {
+    background-color: #fff !important;
+    border-radius: 24px !important;
+    border: 0 !important;
+}
+/* .white-theme .home-background-white{
+    display: block;
+}
+.white-theme .home-background-black{
+    display: block;
+} */
 
 
 @media(max-width: 1200px){

@@ -437,7 +437,7 @@ section.numquam-eius.numquam-eius2 {
 .road-test-box p, .road-test-box li {
     font-weight: normal;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 36px;
     color: #FFFFFF;
     opacity: 0.5;
 }
@@ -446,7 +446,7 @@ section.numquam-eius.numquam-eius2 {
 }
 .road-text-box-content {
     /* position: absolute; */
-    padding: 40px 35px 68px;
+    padding: 40px 35px 40px;
     border: 2px solid transparent;
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
@@ -535,7 +535,9 @@ img.road-test-icon2 {
     right: 0;
     z-index: -1;
 }
- 
+.road-test-box ul {
+    height: 270px;
+}
 
 /*-------@media-------*/
 

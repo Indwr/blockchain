@@ -11,7 +11,7 @@ const Staking = () => {
           <div className="row">
             <div className="col-12">
               <div className="staking-heading">
-                <h2 className="heading mb-0">Stake your Metapets and earn</h2>
+                <h2 className="heading mb-0">Stake your MetaPets and earn</h2>
                 <h1 className="sub-heading mb-0">MetaPets Coin </h1>
                 <p className="heading-text">
                 Stake your MetaPets tokens and earn MetaPets coins

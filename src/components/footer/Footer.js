@@ -272,13 +272,13 @@ const Footer = () => {
                     <Link to={"/whitepaper"}>Whitepaper</Link>
                   </li>
                   <li>
-                    <Link to={"/home"}>Litepaper</Link>
+                    <Link to={"/home"} data-bs-toggle="modal" data-bs-target="#exampleModal">Litepaper</Link>
                   </li>
                   <li>
-                    <Link to={"/home"}>Support</Link>
+                    <Link to={"/home"} data-bs-toggle="modal" data-bs-target="#exampleModal">Support</Link>
                   </li>
                   <li>
-                    <Link to={"/home"}>Api</Link>
+                    <Link to={"/home"} data-bs-toggle="modal" data-bs-target="#exampleModal">Api</Link>
                   </li>
                 </ul>
               </div>
@@ -312,6 +312,37 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-body">
+            <button type="button" className="btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <path d="M17.5 3.74156C9.43538 3.74156 2.91663 10.2603 2.91663 18.3249C2.91663 26.3895 9.43538 32.9082 17.5 32.9082C25.5645 32.9082 32.0833 26.3895 32.0833 18.3249C32.0833 10.2603 25.5645 3.74156 17.5 3.74156ZM23.7708 24.5957C23.202 25.1645 22.2833 25.1645 21.7145 24.5957L17.5 20.3811L13.2854 24.5957C12.7166 25.1645 11.7979 25.1645 11.2291 24.5957C10.6604 24.027 10.6604 23.1082 11.2291 22.5395L15.4437 18.3249L11.2291 14.1103C10.6604 13.5416 10.6604 12.6228 11.2291 12.0541C11.7979 11.4853 12.7166 11.4853 13.2854 12.0541L17.5 16.2686L21.7145 12.0541C22.2833 11.4853 23.202 11.4853 23.7708 12.0541C24.3395 12.6228 24.3395 13.5416 23.7708 14.1103L19.5562 18.3249L23.7708 22.5395C24.325 23.0936 24.325 24.027 23.7708 24.5957Z" fill="#33304D"/>
+              </g>
+              </svg>
+
+              </button>
+              <h2 className="heading">Coming Soon</h2>
+              <div className="btn-outer1">
+                  <Link className="comman-btn btn-outer" data-bs-dismiss="modal" to={"/"}>
+                  Close
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </Link>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="home-background">
+        <img className="home-background" src="assets/images/loading.gif" alt="" />
       </div>
     </div>
   );
