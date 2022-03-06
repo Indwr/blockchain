@@ -12,6 +12,13 @@ body{
 	margin:0px;
 	font-family: 'Epilogue', sans-serif !important;
     background-color:#0E0D17 !important;
+    overflow-x: hidden; 
+}
+body.home-bg{
+	padding:0px;
+	margin:0px;
+	font-family: 'Epilogue', sans-serif !important;
+    background-color:#0E0D17 !important;
     overflow-x: hidden;
     background-image: url(../../../public/assets/images/home-background.gif);
     background-position: center;

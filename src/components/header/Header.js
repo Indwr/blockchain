@@ -138,7 +138,6 @@ const Header = () => {
                   <div className="flag-img">
                     <img className="flag-bg" src="assets/images/flag-bg.png" alt="" />
                     <img className="flag-bg-white" src="assets/images/flag-bg-white.png" alt="" />
-                    
                   </div>
                   <button
                     className=" dropdown-toggle"

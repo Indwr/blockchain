@@ -1,6 +1,8 @@
 
 body.white-theme{
     background-color: #FFFFFF !important;
+}
+body.white-theme.home-bg{
     background-image: url(../../../public/assets/images/home-backgroun-white.gif) !important;
 }
 .white-theme header {
