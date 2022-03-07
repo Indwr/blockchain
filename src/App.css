@@ -93,3 +93,17 @@
   position: relative;
   top: 2px;
 }
+
+@media(max-width: 767px){
+  .toggle-switch {
+    width: 48px;
+    height: 24px;
+  }
+  .toggle-switch:before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 4px;
+    transition: left 0.25s;
+}
+}

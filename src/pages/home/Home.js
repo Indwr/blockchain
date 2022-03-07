@@ -583,11 +583,13 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="numquam-eius-right">
+              <div className="numquam-eius-right-img">
                 <img
-                  className="fadeinout"
-                  src="assets/images/about-home.png"
+                  className=""
+                  src="assets/images/Owlsframed2.gif"
                   alt=""
                 />
+              </div>
               </div>
             </div>
           </div>
@@ -598,11 +600,13 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 ">
               <div className="numquam-eius-right">
+              <div className="numquam-eius-right-img">
                 <img
-                  className="fadeinout"
-                  src="assets/images/about-home.png"
+                  className=""
+                  src="assets/images/Kingakibagif1.gif"
                   alt=""
                 />
+              </div>
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center">
@@ -830,11 +834,13 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="home-about-right">
+              <div className="numquam-eius-right-img">
                 <img
-                  className="fadeinout"
-                  src="assets/images/home-about-main.png"
+                  className=""
+                  src="assets/images/home-about-animation.gif"
                   alt=""
                 />
+              </div>
               </div>
             </div>
           </div>

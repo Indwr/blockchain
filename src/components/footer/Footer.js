@@ -400,7 +400,7 @@ const Footer = () => {
       >
         <img
           className="home-background"
-          src="assets/images/loading.gif"
+          src="assets/images/final-loading-screen-animations.gif"
           alt=""
         />
       </div>

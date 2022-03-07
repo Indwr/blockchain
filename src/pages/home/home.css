@@ -542,6 +542,20 @@ img.road-test-icon2 {
 .road-test-box ul {
     height: 270px;
 }
+.numquam-eius-right-img {
+    width: 100%;
+    max-width: 670px;
+    height: 470px;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,#000, #000), linear-gradient(150deg,#F213FF, rgb(22, 22, 22) , #0BEFD8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
 
 /*-------@media-------*/
 
@@ -814,6 +828,9 @@ img.road-test-icon2 {
         position: relative;
         margin-top: 60px;
     }
+    .numquam-eius-right-img {
+        margin: 0 auto 30px;
+    }
 
 }
 
@@ -867,5 +884,10 @@ img.road-test-icon2 {
     }
     .banner-inner li img {
         width: 30px;
+    }
+    .numquam-eius-right-img {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
