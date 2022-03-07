@@ -818,7 +818,7 @@ const Home = () => {
                   loyal community.
                 </p>
                 <div className="btn-outer1">
-                  <Link className="comman-btn btn-outer" to={"/"}>
+                  <Link className="comman-btn btn-outer" to={"/whitepaper"}>
                     Our Whitepaper
                     <img
                       src="assets/images/button-border.svg"

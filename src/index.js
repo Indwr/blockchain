@@ -7,13 +7,14 @@ import { BrowserRouter } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeContextWrapper from "./components/themes/SetupTheme";
-if (module.hot) {
-  module.hot.accept();
-}
+import ScrollToTop from "./ScrollToTop";
+
+window.scrollTo(0, 0);
 ReactDOM.render(
   <ThemeContextWrapper>
     <React.StrictMode>
       <BrowserRouter>
+        <ScrollToTop />
         <App />
       </BrowserRouter>
     </React.StrictMode>

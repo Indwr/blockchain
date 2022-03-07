@@ -6,7 +6,7 @@ const Footer = () => {
   const [showHomePageLoader, setShowHomePageLoader] = useState(true);
   setTimeout(() => {
     setShowHomePageLoader(false);
-  }, 2000);
+  }, 1200);
   return (
     <div>
       <footer>

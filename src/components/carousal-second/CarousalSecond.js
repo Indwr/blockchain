@@ -64,17 +64,33 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-            <div className="road-test-icon road-test-icon-black">
-                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
+              <div className="road-test-icon road-test-icon-black">
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/road-test1.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/road-test-2.png"
+                  alt=""
+                />
               </div>
               <div className="road-test-icon road-test-icon-white">
-                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
               </div>
               <h4>[Q1 2022]</h4>
               <ul className="mb-0">
-                <li>-Merch Store</li>
+                <li>- Merch Store</li>
                 <li>- Merch Giveaways</li>
                 <li>- CertiK Audit</li>
                 <li>- NFT Merch </li>
@@ -88,13 +104,29 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-            <div className="road-test-icon road-test-icon-black">
-                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
+              <div className="road-test-icon road-test-icon-black">
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/road-test1.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/road-test-2.png"
+                  alt=""
+                />
               </div>
               <div className="road-test-icon road-test-icon-white">
-                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
               </div>
               <h4>[Q2 2022]</h4>
               <ul className="mb-0">
@@ -112,13 +144,29 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-            <div className="road-test-icon road-test-icon-black">
-                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
+              <div className="road-test-icon road-test-icon-black">
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/road-test1.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/road-test-2.png"
+                  alt=""
+                />
               </div>
               <div className="road-test-icon road-test-icon-white">
-                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
               </div>
               <h4>[Q3 2022]</h4>
               <ul className="mb-0">
@@ -134,13 +182,29 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-            <div className="road-test-icon road-test-icon-black">
-                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
+              <div className="road-test-icon road-test-icon-black">
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/road-test1.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/road-test-2.png"
+                  alt=""
+                />
               </div>
               <div className="road-test-icon road-test-icon-white">
-                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
               </div>
               <h4>[Q4 2022]</h4>
               <ul className="mb-0">
@@ -157,13 +221,29 @@ export default class CarousalSecond extends React.Component {
         <div>
           <div className="road-test-box">
             <div className="road-text-box-content">
-            <div className="road-test-icon road-test-icon-black">
-                <img className="road-test-icon1" src="assets/images/road-test1.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/road-test-2.png" alt="" />
+              <div className="road-test-icon road-test-icon-black">
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/road-test1.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/road-test-2.png"
+                  alt=""
+                />
               </div>
               <div className="road-test-icon road-test-icon-white">
-                <img className="road-test-icon1" src="assets/images/roadmap2.png" alt="" />
-                <img className="road-test-icon2" src="assets/images/roadmap2.png" alt="" />
+                <img
+                  className="road-test-icon1"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
+                <img
+                  className="road-test-icon2"
+                  src="assets/images/roadmap2.png"
+                  alt=""
+                />
               </div>
               <h4>[Q1/Q2 2023]</h4>
               <ul className="mb-0">
@@ -176,7 +256,6 @@ export default class CarousalSecond extends React.Component {
             </div>
           </div>
         </div>
-        
       </OwlCarousel>
     );
   }
