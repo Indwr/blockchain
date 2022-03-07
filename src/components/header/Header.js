@@ -1,6 +1,8 @@
 // import React from "react";
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
+
 import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
@@ -8,7 +10,7 @@ import "../../assets/css/white.css";
 import "./header.css";
 
 const Header = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
   const [darkMode, setDarkMode] = useState(true);
   const [themeMode, setThemeMode] = useState(true);
@@ -19,11 +21,11 @@ const Header = () => {
       setThemeMode(true);
     }
   };
-  if (location.pathname !== "/home") {
-    document.body.classList.remove("home-bg");
-  } else {
-    document.body.classList.add("home-bg");
-  }
+  // if (location.pathname !== "/home") {
+  //   document.body.classList.remove("home-bg");
+  // } else {
+  document.body.classList.remove("home-bg");
+  // }
   return (
     <div>
       <header>

@@ -48,7 +48,7 @@ function App() {
           <Route path="/tokenomics" component={Tokenomics} />
           <Route path="/cookies" component={Cookies} />
           <Route path="/staking" component={Staking} />
-          <Route path="/terms" component={Terms} />
+          <Route exact path="/terms" component={Terms} />
           <Route path="/carousal" component={Carousal} />
           <Route path="/carousal-second" component={CarousalSecond} />
           <Route path="/wallet" component={Wallet} />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./FooterStyles.css";
 
 const Footer = () => {
@@ -257,7 +257,7 @@ const Footer = () => {
                 <h4 className="footer-heading">Documents</h4>
                 <ul className="footer-link">
                   <li>
-                    <Link to={"/cookies"}>Cookies policy</Link>
+                    <NavLink to="/cookies">Cookies policy</NavLink>
                   </li>
                   <li>
                     <Link to={"/privacy"}>Privacy policy</Link>
