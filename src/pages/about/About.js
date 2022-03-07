@@ -14,6 +14,12 @@ const About = () => {
                 <div className="about-inner-box">
                   <h2 className="heading">Our Vision</h2>
                   <h1 className="sub-heading">About Us</h1>
+                  <video loop autoPlay controls="controls">
+                    <source
+                      src="assets/images/about-video.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                   <p>
                     MetaPets aims to be a first step in bringing love and
                     companionship to the Metaverse in a personalized way,

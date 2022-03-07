@@ -97,9 +97,13 @@
 }
 .banner-inner ul li svg {
     width: 30px;
+    height: 30px;
 }
 .white-bg, .cat-white, .metapets-games-left-img-white{
     display: none;
+}
+.custom-pets-line img {
+    width: 100%;
 }
 
 /*----------*/
@@ -544,8 +548,7 @@ img.road-test-icon2 {
 }
 .numquam-eius-right-img {
     width: 100%;
-    max-width: 670px;
-    height: 470px;
+    height: 650px;
     box-sizing: border-box;
     border: 5px solid transparent;
     background-clip: padding-box, border-box;
@@ -555,6 +558,12 @@ img.road-test-icon2 {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    overflow: hidden;
+}
+.numquam-eius-right-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 
 /*-------@media-------*/
@@ -587,6 +596,9 @@ img.road-test-icon2 {
     img.metapets-games-left-img {
         margin-left: 58px;
         width: 500px;
+    }
+    .partner-box-outer {
+        border-radius: 40px;
     }
     
 }
@@ -634,6 +646,15 @@ img.road-test-icon2 {
     }
     img.custom-pets-main-img {
         height: 500px;
+    }
+    .numquam-eius-right-img img {
+        height: 500px;
+    }
+    .numquam-eius-right-img {
+        height:500px;
+    }
+    .partner-box-outer {
+        border-radius: 33px;
     }
     
 }
@@ -721,6 +742,12 @@ img.road-test-icon2 {
         bottom: -159px;
         right: 0;
         z-index: -1;
+    }
+    .numquam-eius-right-img img {
+        height: 400px;
+    }
+    .numquam-eius-right-img {
+        height:400px;
     }
 }
 
@@ -831,6 +858,9 @@ img.road-test-icon2 {
     .numquam-eius-right-img {
         margin: 0 auto 30px;
     }
+    .numquam-eius-right-img img {
+        height: 350px;
+    }
 
 }
 
@@ -889,5 +919,26 @@ img.road-test-icon2 {
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .numquam-eius-right-img img {
+        height: 300px;
+    }
+    .partner-box-outer {
+        border-radius: 45px;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .partner-box-outer {
+        border-radius: 32px;
+    }
+}
+@media(max-width: 400px){
+    .partner-box-outer {
+        border-radius: 20px;
+    }
+    .partner-outer .partner-box {
+        border-radius: 30px;
     }
 }

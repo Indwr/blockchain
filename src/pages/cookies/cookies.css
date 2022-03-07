@@ -19,6 +19,7 @@
     right: 0;
     left: auto;
     transform: translateY(-50%);
+    z-index: -1;
 }
 .about-full-round-img {
     position: absolute;
@@ -46,6 +47,11 @@
     color: #fff;
     opacity: 0.7;
     margin-bottom: 20px;
+}
+.about-inner-box video {
+    border-radius: 40px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 @media(max-width: 1500px){
@@ -78,5 +84,10 @@
     .about-inner-box ul li {
         font-size: 16px;
         line-height: 36px;
+    }
+    .about-inner-box video {
+        border-radius: 40px;
+        margin-bottom: 30px;
+        width: 100%;
     }
 }

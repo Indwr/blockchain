@@ -71,7 +71,7 @@
 }
 .tokenomics-round {
     position: absolute;
-    top: 134px;
+    top: 810px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -103,7 +103,7 @@
 }
 .tokenomics-iframe {
     text-align: center;
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .tokenomics-content-box-bg{
     position: relative;
