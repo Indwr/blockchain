@@ -26,7 +26,7 @@ import Wallet from "./pages/wallet";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <div>
         <Switch>
           <Route
