@@ -902,6 +902,16 @@ const Home = () => {
           </div>
         </div>
         <CarousalSecond />
+        <div className="container">
+        <div className="roadmap-bottom mt-lg-5 pt-lg-5 mt-3 pt-3">
+          <p><b>METAVERSE:</b> </p>
+          <p>For the time being, we have decided not to include anything related to the METAVERSE in our roadmap because we are unsure when the METAVERSE will be fully developed. Our team is in contact with large companies working on the METAVERSE, but we currently lack all of the assets required for our METAVERSE game, which is why we have decided not to include anything in our roadmap.</p>
+          <p>We're also developing on our own Play to Earn METAVERSE game, called The Pets Verse, for which more details will be released soon.</p>
+          <p><b>NOTE:</b></p>
+          <p className="mb-0">Our Roadmap may change at any time. Several revisions to our Roadmap plans can be made during the completion process.</p>
+        </div>
+        </div>
+        
       </section>
     </div>
   );

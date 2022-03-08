@@ -192,6 +192,9 @@ img.menu-logo.menu-logo-white {
     border-radius: 24px !important;
     border: 0 !important;
 }
+.white-theme .alink {
+    color: #000;
+}
 /* .white-theme .home-background-white{
     display: block;
 }
