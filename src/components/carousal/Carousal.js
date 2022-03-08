@@ -8,7 +8,7 @@ const options1 = {
   responsiveClass: true,
   nav: false,
   dots: false,
-  autoplay: false,
+  autoplay: true,
   center: true,
   loop: true,
   navText: false,

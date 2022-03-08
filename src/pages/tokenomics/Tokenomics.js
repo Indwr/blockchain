@@ -13,7 +13,7 @@ const Tokenomics = () => {
               <div className="tokenomics-inner">
                 <div className="tokenomics-heading">
                   <h2 className="heading mb-0">MetaPets</h2>
-                  <h3 className="sub-heading">Tokenomics</h3>
+                  <h3 className="sub-heading mb-0">Tokenomics</h3>
                   <div className="tokenomics-main-heading">
                     <h1>100 Quadrillion</h1>
                     <p className="mb-0 heading-text">According to our Bubble Map partners: we have a healthy project.</p>

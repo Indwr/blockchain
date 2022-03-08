@@ -565,6 +565,12 @@ img.road-test-icon2 {
     height: 600px;
     object-fit: cover;
 }
+.roadmap-bottom p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
 
 /*-------@media-------*/
 

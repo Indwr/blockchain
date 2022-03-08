@@ -7,7 +7,7 @@
 .tokenomics-main-heading {
     position: relative;
     text-align: center;
-    margin: 73px 0 40px;
+    margin: 50px 0 40px;
 }
 .tokenomics-inner{
     position: relative;
@@ -71,7 +71,7 @@
 }
 .tokenomics-round {
     position: absolute;
-    top: 810px;
+    top: 790px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -103,7 +103,7 @@
 }
 .tokenomics-iframe {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .tokenomics-content-box-bg{
     position: relative;

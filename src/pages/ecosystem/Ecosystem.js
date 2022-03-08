@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import Header from "../../components/header/Header";
 import "./ecosystem.css";
 // import video from '../../../../public/assets/images/metapets-video.mp4'
 
 const Ecosystem = () => {
-  const [active, setActive] = useState(false);
-  const [autoplayy, setAutoPlay] = useState(false);
-  const changeStyle = (e) => {
-    setActive(true);
-    setAutoPlay(true);
-  };
+ 
   return (
     <div>
       <Header />
@@ -27,10 +23,13 @@ const Ecosystem = () => {
                   </p>
                 </div>
                 <div className="ecosystem box">
-                  <img
-                    src="assets/images/metapets-plasma-logo-reveal.gif"
-                    alt=""
-                  />
+                <video
+                    loop
+                    autoPlay
+                    controls="controls"
+                    src="assets/images/IMG_1374.mp4"
+                    type="video/mp4"
+                  ></video>
                 </div>
                 <div className="ecosystem-content">
                   <div className="row">
@@ -629,7 +628,7 @@ const Ecosystem = () => {
               </div>
             </div>
           </div>
-          <div className="ecosystem-img-box">
+          {/* <div className="ecosystem-img-box">
             <div className="row justify-content-center">
               <div className="col-md-6 text-center">
                 <div className="ecosystem-img">
@@ -668,7 +667,7 @@ const Ecosystem = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="ecosystem half-round">
           <img src="assets/images/half-round.png" alt="" />
