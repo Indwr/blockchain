@@ -15,7 +15,8 @@ const Partner = () => {
                   <h2 className="heading mb-0">MetaPets</h2>
                   <h1 className="sub-heading mb-0">Partners</h1>
                   <p className="heading-text">
-                  We are very pleased to show our current partners and excited to announce more in the future.
+                    We are very pleased to show our current partners and excited
+                    to announce more in the future.
                   </p>
                 </div>
                 <div className="partner-img-outer">

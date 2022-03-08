@@ -5,7 +5,6 @@ import Carousal from "../../../src/components/carousal/Carousal";
 import CarousalSecond from "../../../src/components/carousal-second/CarousalSecond";
 import Header from "../../components/header/Header";
 import "./home.css";
-
 const Home = () => {
   const newLocal = "0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d";
   const [address, setAddress] = useState(newLocal);
@@ -13,6 +12,7 @@ const Home = () => {
   const copyAddress = (e) => {
     alert("Copied");
     setAddress(newLocal);
+    // window.scrollTo(0, 0);
   };
   return (
     <div>
@@ -583,13 +583,13 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="numquam-eius-right">
-              <div className="numquam-eius-right-img">
-                <img
-                  className=""
-                  src="assets/images/Owlsframed2.gif"
-                  alt=""
-                />
-              </div>
+                <div className="numquam-eius-right-img">
+                  <img
+                    className=""
+                    src="assets/images/Owlsframed2.gif"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -600,13 +600,13 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 ">
               <div className="numquam-eius-right">
-              <div className="numquam-eius-right-img">
-                <img
-                  className=""
-                  src="assets/images/Kingakibagif1.gif"
-                  alt=""
-                />
-              </div>
+                <div className="numquam-eius-right-img">
+                  <img
+                    className=""
+                    src="assets/images/Kingakibagif1.gif"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center">
@@ -660,116 +660,152 @@ const Home = () => {
             <div className="row justify-content-center">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
-                  <div className="partner-box">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/5a.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://whitebit.com"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/5a.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer ">
-                  <div className="partner-box partner-box2">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/marketcap.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://coinmarketcap.com/currencies/metapets/"
+                  >
+                    <div className="partner-box partner-box2">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/marketcap.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
-                  <div className="partner-box">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/1a.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.coingecko.com/en/coins/metapets"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/1a.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
-                  <div className="partner-box">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/2a.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://bscscan.com/address/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/2a.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
-                  <div className="partner-box">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/3a.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.dextools.io/app/bsc/pair-explorer/0xbe41f59d6d558a49ab04a10b479c9a8d6a280105"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/3a.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                 <div className="partner-box-outer">
-                  <div className="partner-box">
-                    <img
-                      className="patner-box-black"
-                      src="assets/images/parner-box.png"
-                      alt=""
-                    />
-                    <img
-                      className="patner-box-white"
-                      src="assets/images/partner-box-white.png"
-                      alt=""
-                    />
-                    <div className="partner-box-img">
-                      <img src="assets/images/4a.png" alt="" />
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://poocoin.app/tokens/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/4a.png" alt="" />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -834,13 +870,13 @@ const Home = () => {
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="home-about-right">
-              <div className="numquam-eius-right-img">
-                <img
-                  className=""
-                  src="assets/images/home-about-animation.gif"
-                  alt=""
-                />
-              </div>
+                <div className="numquam-eius-right-img">
+                  <img
+                    className=""
+                    src="assets/images/home-about-animation.gif"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -903,15 +939,32 @@ const Home = () => {
         </div>
         <CarousalSecond />
         <div className="container">
-        <div className="roadmap-bottom mt-lg-5 pt-lg-5 mt-3 pt-3">
-          <p><b>METAVERSE:</b> </p>
-          <p>For the time being, we have decided not to include anything related to the METAVERSE in our roadmap because we are unsure when the METAVERSE will be fully developed. Our team is in contact with large companies working on the METAVERSE, but we currently lack all of the assets required for our METAVERSE game, which is why we have decided not to include anything in our roadmap.</p>
-          <p>We're also developing on our own Play to Earn METAVERSE game, called The Pets Verse, for which more details will be released soon.</p>
-          <p><b>NOTE:</b></p>
-          <p className="mb-0">Our Roadmap may change at any time. Several revisions to our Roadmap plans can be made during the completion process.</p>
+          <div className="roadmap-bottom mt-lg-5 pt-lg-5 mt-3 pt-3">
+            <p>
+              <b>METAVERSE:</b>{" "}
+            </p>
+            <p>
+              For the time being, we have decided not to include anything
+              related to the METAVERSE in our roadmap because we are unsure when
+              the METAVERSE will be fully developed. Our team is in contact with
+              large companies working on the METAVERSE, but we currently lack
+              all of the assets required for our METAVERSE game, which is why we
+              have decided not to include anything in our roadmap.
+            </p>
+            <p>
+              We're also developing on our own Play to Earn METAVERSE game,
+              called The Pets Verse, for which more details will be released
+              soon.
+            </p>
+            <p>
+              <b>NOTE:</b>
+            </p>
+            <p className="mb-0">
+              Our Roadmap may change at any time. Several revisions to our
+              Roadmap plans can be made during the completion process.
+            </p>
+          </div>
         </div>
-        </div>
-        
       </section>
     </div>
   );

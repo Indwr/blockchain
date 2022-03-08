@@ -1,8 +1,13 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import "./staking.css";
+import useScrollPosition from "../../useScrollPosition";
 
 const Staking = () => {
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
+  window.scrollTo(0, 0);
+
   return (
     <div>
       <Header />
@@ -14,13 +19,21 @@ const Staking = () => {
                 <h2 className="heading mb-0">Stake your MetaPets and earn</h2>
                 <h1 className="sub-heading mb-0">MetaPets Coin </h1>
                 <p className="heading-text">
-                Stake your MetaPets tokens and earn MetaPets coins
+                  Stake your MetaPets tokens and earn MetaPets coins
                 </p>
               </div>
               <div className="staking-content">
                 <div className="staking-box">
-                  <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -30,8 +43,16 @@ const Staking = () => {
                   </div>
                 </div>
                 <div className="staking-box staking-box-bg">
-                <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -41,8 +62,16 @@ const Staking = () => {
                   </div>
                 </div>
                 <div className="staking-box">
-                <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -54,8 +83,16 @@ const Staking = () => {
                 {/* </div>
                             <div className="staking-content"> */}
                 <div className="staking-box">
-                  <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -65,8 +102,16 @@ const Staking = () => {
                   </div>
                 </div>
                 <div className="staking-box">
-                <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -76,8 +121,16 @@ const Staking = () => {
                   </div>
                 </div>
                 <div className="staking-box">
-                <img className="staking-black" src="assets/images/staking-frame.png" alt="" />
-                  <img className="staking-white" src="assets/images/staking-white-bg.png" alt="" />
+                  <img
+                    className="staking-black"
+                    src="assets/images/staking-frame.png"
+                    alt=""
+                  />
+                  <img
+                    className="staking-white"
+                    src="assets/images/staking-white-bg.png"
+                    alt=""
+                  />
                   <div className="staking frame-img">
                     <img src="assets/images/meta-coin.svg" alt="" />
                     <h3>
@@ -86,11 +139,10 @@ const Staking = () => {
                     <p className="mb-0">720 Days</p>
                   </div>
                 </div>
-                
               </div>
               <div className="stalking-heading">
-                  <p className="mb-0">APY VALUES TBA*</p>
-                </div>
+                <p className="mb-0">APY VALUES TBA*</p>
+              </div>
             </div>
           </div>
         </div>

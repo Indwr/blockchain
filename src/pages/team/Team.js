@@ -95,7 +95,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/BRIAN.png" alt="" />
                     <h4>Brian Hoffeman</h4>
-                    <p>Discord Coordinator</p>
+                    <p>VC Mod</p>
                   </div>
                 </div>
               </div>
@@ -266,7 +266,7 @@ const Team = () => {
                   <div className="team-content">
                     <img src="assets/images/LUCKY.png" alt="" />
                     <h4>LUCKY</h4>
-                    <p>MOD Team </p>
+                    <p>CMO </p>
                   </div>
                 </div>
               </div>

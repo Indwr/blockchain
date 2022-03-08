@@ -65,7 +65,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/APRIL.png" alt="" />
               <h4>APRIL</h4>
-              <p>CMOD</p>
+              <p>MOD</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/BRIAN.png" alt="" />
               <h4>Brian Hoffeman</h4>
-              <p>CEO </p>
+              <p>VC Mod</p>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/DAVID.png" alt="" />
               <h4>David Fransis</h4>
-              <p>CEO </p>
+              <p>Discord Manager</p>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/GUSTO.png" alt="" />
               <h4>Nathan</h4>
-                    <p>Creative Director</p>
+              <p>Creative Director</p>
             </div>
           </div>
         </div>
@@ -143,9 +143,9 @@ export default class Carousal extends React.Component {
           <div className="team-box mt-0">
             <img src="assets/images/team-img-box.png" alt="" />
             <div className="team-content">
-            <img src="assets/images/lauren.png" alt="" />
-                    <h4>Lauren</h4>
-                    <p>Head of research</p>
+              <img src="assets/images/lauren.png" alt="" />
+              <h4>Lauren</h4>
+              <p>Head of research</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/LIAM.png" alt="" />
               <h4>Liam Hayne</h4>
-                    <p>PR Manages</p>
+              <p>PR Manager</p>
             </div>
           </div>
         </div>
@@ -183,9 +183,9 @@ export default class Carousal extends React.Component {
           <div className="team-box mt-0">
             <img src="assets/images/team-img-box.png" alt="" />
             <div className="team-content">
-            <img src="assets/images/nad-king.jpg" alt="" />
-                    <h4>Nad King</h4>
-                    <p>MEta MOD</p>
+              <img src="assets/images/nad-king.jpg" alt="" />
+              <h4>Nad King</h4>
+              <p>Meta MOD</p>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/PEABODY.png" alt="" />
               <h4>Peabody</h4>
-                    <p>CFO </p>
+              <p>CFO </p>
             </div>
           </div>
         </div>
@@ -215,7 +215,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/RAY.png" alt="" />
               <h4>Ray</h4>
-                    <p>CFO </p>
+              <p>CFO </p>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/SCOTT.png" alt="" />
               <h4>Scott</h4>
-                    <p>Meta MOD</p>
+              <p>Meta MOD</p>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ export default class Carousal extends React.Component {
             <div className="team-content">
               <img src="assets/images/TONY.png" alt="" />
               <h4>Tony</h4>
-              <p>Meta Mod & FUD KIlla</p>
+              <p>Meta Mod & FUD Killa</p>
             </div>
           </div>
         </div>
