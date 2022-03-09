@@ -1,11 +1,12 @@
-// import React, { useState } from "react";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
 import "./ecosystem.css";
 // import video from '../../../../public/assets/images/metapets-video.mp4'
 
 const Ecosystem = () => {
- 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Header />
@@ -23,7 +24,7 @@ const Ecosystem = () => {
                   </p>
                 </div>
                 <div className="ecosystem box">
-                <video
+                  <video
                     loop
                     autoPlay
                     controls="controls"

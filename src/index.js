@@ -9,7 +9,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeContextWrapper from "./components/themes/SetupTheme";
 import ScrollToTop from "./ScrollToTop";
 
-window.scrollTo(0, 0);
 ReactDOM.render(
   <ThemeContextWrapper>
     <React.StrictMode>

@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
 import "./staking.css";
-import useScrollPosition from "../../useScrollPosition";
-
 const Staking = () => {
-  const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
-  window.scrollTo(0, 0);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Header />

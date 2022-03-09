@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Carousal from "../../../src/components/carousal/Carousal";
@@ -6,13 +6,15 @@ import CarousalSecond from "../../../src/components/carousal-second/CarousalSeco
 import Header from "../../components/header/Header";
 import "./home.css";
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const newLocal = "0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d";
   const [address, setAddress] = useState(newLocal);
 
   const copyAddress = (e) => {
     alert("Copied");
     setAddress(newLocal);
-    // window.scrollTo(0, 0);
   };
   return (
     <div>
