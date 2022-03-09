@@ -92,7 +92,7 @@ body.white-theme.home-bg{
     height: 70px;
     filter: blur(80px);
 }
-.white-theme .home-team .team-content h4, .white-theme .footer-box p, .white-theme ul.footer-link li a, .white-theme .copy-right p, .white-theme .roadmap-text-box p{
+.white-theme .home-team .team-content h4, .white-theme .footer-box p, .white-theme ul.footer-link li a, .white-theme .copy-right p, .white-theme .roadmap-text-box p, .white-theme .roadmap-bottom p{
     color: #0B0A11;
 }
 .white-theme .home-team .team-content p {

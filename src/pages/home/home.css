@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     background-size: cover; */
 } 
+.home-outer {
+    overflow: hidden;
+}
 .banner ul {
     display: flex;
     align-items: center;
@@ -150,6 +153,9 @@ img.metapets-games-left-img {
 }
 .metapets-games .metapets-games-icon a:hover svg stop {
     stop-color: #02e3ce;
+}
+.owl-item.active.center{
+    transform: scale(1.1);
 }
 
 /*-------custom-pets-----*/
@@ -402,6 +408,9 @@ section.home-about{
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.owl-stage {
+    padding: 40px 0;
 }
 
 /*----road-map----*/
@@ -866,6 +875,11 @@ img.road-test-icon2 {
     }
     .numquam-eius-right-img img {
         height: 350px;
+    }
+    .home-team-heading p {
+        margin-bottom: 30px !important;
+        font-size: 18px;
+        line-height: 33px;
     }
 
 }

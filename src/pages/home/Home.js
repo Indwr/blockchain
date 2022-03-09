@@ -17,7 +17,7 @@ const Home = () => {
     setAddress(newLocal);
   };
   return (
-    <div>
+    <div className="home-outer">
       <Header />
       <div className="banner">
         <div className="container">
