@@ -304,6 +304,13 @@ img.menu-logo.menu-logo-white {
     background-color: #fff;
     color: #000;
 }
+.white-theme .stack-mpcheading-right p {
+    color: #000;
+}
+.white-theme .inner-staking-locked-box .dropdown-item:hover{
+    background-color: #666568;
+    color: #fff;
+}
 
 @media(max-width: 1200px){
     .white-theme div#navbarSupportedContent {

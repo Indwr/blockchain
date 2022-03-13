@@ -18,6 +18,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 54px;
+  backdrop-filter: blur(17px);
 }
 .partner-img-box {
   margin: 50px 28px 0;

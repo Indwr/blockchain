@@ -154,9 +154,9 @@ img.metapets-games-left-img {
 .metapets-games .metapets-games-icon a:hover svg stop {
     stop-color: #02e3ce;
 }
-.owl-item.active.center{
+/* .owl-item.active.center{
     transform: scale(1.1);
-}
+} */
 
 /*-------custom-pets-----*/
 section.custom-pets {
@@ -594,7 +594,12 @@ img.road-test-icon2 {
 }
 @media(max-width: 1500px){
     .partner-box-outer {
-        border-radius: 53px;
+        border-radius: 50px;
+    }
+}
+@media(max-width: 1450px){
+    .partner-box-outer {
+        border-radius: 47px;
     }
 }
 @media(max-width: 1400px){
@@ -672,6 +677,15 @@ img.road-test-icon2 {
         border-radius: 33px;
     }
     
+}
+
+@media(max-width: 1100px){
+    .partner-box-outer {
+        border-radius: 30px;
+    }
+    .partner-outer .partner-box {
+        border-radius: 29px;
+    }
 }
 
 @media(max-width: 991px){
@@ -763,6 +777,15 @@ img.road-test-icon2 {
     }
     .numquam-eius-right-img {
         height:400px;
+    }
+    .partner-outer .partner-box {
+        border-radius: 43px;
+    }
+}
+
+@media(max-width: 850px){
+    .partner-outer .partner-box {
+        border-radius: 36px;
     }
 }
 

@@ -173,7 +173,7 @@ const Team = () => {
                   />
                   <div className="team-content">
                     <img src="assets/images/NB.png" alt="" />
-                    <h4>Nathan</h4>
+                    <h4>NB</h4>
                     <p>Creative Director</p>
                   </div>
                 </div>

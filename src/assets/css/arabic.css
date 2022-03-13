@@ -1,0 +1,55 @@
+.arabic a.nav-link.nav-link-about.active.ms-0 {
+    margin-left: 45px !important;
+}
+.arabic .banner-img {
+    left: -332px;
+    right: auto;
+}
+.arabic .copy-addres .btn-outer {
+    margin-right: 112px;
+    margin-left: 0;
+}
+.arabic .banner ul li:last-child {
+    margin-right: 22px;
+}
+.arabic .banner ul li:first-child {
+    margin-right: 0;
+}
+.arabic .copy-addres {
+    padding: 9.24px 28.26px 9.24px 10.7px;
+}
+.arabic .metapats-bg {
+    right: -216px;
+    left: auto;
+}
+.arabic .numquam-eius-left {
+    margin-right: 140px;
+    margin-left: 0;
+}
+.arabic .owl-stage-outer{
+    position:relative;
+    overflow:hidden;
+    -webkit-transform:translate3d(0,0,0);
+    direction: ltr;
+}
+.arabic .menu-left .dropdown-toggle::after {
+    margin-right: 9px;
+    margin-left: 0px;
+}
+.arabic .about-main-img {
+    right: auto;
+    left: 0;
+}
+.arabic .about-full-round-img {
+    right: -400px;
+    left: auto;
+    transform: translateY(-50%) rotate(180deg);
+}
+.arabic .about-half-round {
+    right: auto;
+    left: 0;
+}
+.arabic .about {
+    position: relative;
+    overflow: hidden;
+}

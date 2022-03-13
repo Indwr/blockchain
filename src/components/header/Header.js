@@ -7,6 +7,7 @@ import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
 import "../../assets/css/white.css";
+// import "../../assets/css/arabic.css";
 import "./header.css";
 
 const Header = () => {
@@ -90,7 +91,7 @@ const Header = () => {
                   <ul className="navbar-nav me-auto">
                     <li className="nav-item">
                       <Link
-                        className="nav-link active ms-0"
+                        className="nav-link nav-link-about active ms-0"
                         aria-current="page"
                         to={"/about"}
                       >
