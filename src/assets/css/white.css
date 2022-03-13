@@ -201,7 +201,109 @@ img.menu-logo.menu-logo-white {
 .white-theme .home-background-black{
     display: block;
 } */
-
+.white-theme .staking-inner-second-box {
+    background: linear-gradient(180deg, rgba(11, 10, 17, 0.8) 0%, rgba(14, 12, 12, 0.8) 100%);
+}
+.white-theme .stakin-inner-heading-btn button {
+    background-image: linear-gradient(to left,#ffffff, #ffffff), linear-gradient(15deg,#F213FF, rgb(49 49 49) , #0BEFD8);
+    color: #0B0A11;
+    opacity: 1;
+}
+.white-theme .inner-staking-locked .nav-pills .nav-link {
+    color: #080714;
+}
+.white-theme .nav-pills .nav-link.active, .white-theme .nav-pills .show>.nav-link {
+    color: #080714;
+}
+.white-theme .stakin-inner-heading-box {
+    background-image: linear-gradient(to left,#ffffff, #f4f4f4), linear-gradient(15deg,#F213FF, rgb(49 49 49) , #0BEFD8);
+}
+.white-theme .stakin-inner-heading-box h6 {
+    color: #0B0A11;
+}
+.white-theme .staking-icon .first-img {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.white-theme .staking-icon p {
+    color: #3B393F;
+}
+.white-theme table thead th {
+    background-color: #222023 !important;
+}
+.white-theme tr.dark-tr td, .white-theme tr.dark-tr th {
+    background-color: #F5F5F5 !important;
+}
+.white-theme .table-outer tbody th {
+    color: #0B0A11;
+}
+.white-theme .inner-staking-locked-box .dropdown span.btn {
+    background-image: linear-gradient(to left,#ffffff, #ffffff), linear-gradient(114deg,#0BEFD8 , #005048);
+    color: #0B0A11;
+}
+.white-theme span.lock {
+    color: #0B0A11;
+    opacity: 1;
+}
+.white-theme .range-ammount {
+    color: #0B0A11;
+    border: 1px solid #00504833;
+}
+.white-theme .stake {
+    background-image: linear-gradient(to left,#f9f9f9, #ffffff), linear-gradient(114deg,#0BEFD8 , #4C3FE0, #F213FF);
+    color: #0B0A11;
+}
+.white-theme .apy-box {
+    background-image: linear-gradient(to left,#ffffff, #fffdfd), linear-gradient(114deg,#0BEFD8 , #005048);
+    color: #0B0A11;
+}
+.white-theme .staking-detail-bar-outer {
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to left,#ffffff, #ffffff), linear-gradient(27deg,#0BEFD8 , #4C3FE0, #F213FF);
+}
+.white-theme .staking-bar-text p, .white-theme .staking-bar p {
+    color: #000000;
+}
+.white-theme .staking-bar-text h4, .white-theme .staking-bar-number h5{
+    color: #0B0A11;
+}
+.white-theme .stack-mpc-heading h4 {
+    color: #000000;
+}
+.white-theme .mpc-coin h5, .white-theme .mpc-coin-right p, .white-theme .mpc-coin-right button {
+    color: #000000;
+}
+.white-theme .staking-inner-summary {
+    background: linear-gradient(180deg, rgba(11, 10, 17, 0.8) 0%, rgba(14, 12, 12, 0.8) 100%);
+}
+.white-theme .summry-row {
+    backdrop-filter: blur(0px);
+}
+.white-theme .stakin-inner-heading-btn button {
+    background-image: linear-gradient(to left,#3c3a3b, #3b3a3b), linear-gradient(197deg,#0BEFD8, #4C3FE0 , #F213FF);
+    color: #fff;
+}
+.white-theme tr.light-tr td, .white-theme tr.light-tr th {
+    background-color: #fff !important;
+}
+.white-theme .table-outer2 td {
+    color: #000000;
+}
+.white-theme .not-connect h5 {
+    color: #000;
+}
+.white-theme .staking-popup1 .modal-body {
+    /* background: linear-gradient(180deg, rgba(11, 10, 17, 0.8) 0%, rgba(14, 12, 12, 0.8) 100%); */
+    background-image: linear-gradient(to left,#3a3a3d, #3a3a3d), linear-gradient(197deg,#0BEFD8, #3F2FF100 , #F213FF);
+    border: 1px solid transparent;
+    margin: 0 1px;
+}
+.white-theme .inner-staking-locked-box .dropdown-item {
+    background-color: #fff;
+    color: #000;
+}
 
 @media(max-width: 1200px){
     .white-theme div#navbarSupportedContent {

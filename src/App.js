@@ -19,6 +19,7 @@ import Staking from "./pages/staking/Staking";
 import Privacy from "./pages/privacy/Privacy";
 import Terms from "./pages/terms/Terms";
 import Cookies from "./pages/cookies/Cookies";
+import Stakinginner from "./pages/Staking-inner/Stakinginner";
 import Footer from "./components/footer/Footer";
 import Carousal from "./components/carousal/Carousal";
 import CarousalSecond from "./components/carousal-second/CarousalSecond";
@@ -48,7 +49,9 @@ function App() {
           <Route path="/tokenomics" component={Tokenomics} />
           <Route path="/cookies" component={Cookies} />
           <Route path="/staking" component={Staking} />
+          <Route path="/Staking-inner" component={Stakinginner} />
           <Route exact path="/terms" component={Terms} />
+          <Route path="/Staking-inner" component={Stakinginner} />
           <Route path="/carousal" component={Carousal} />
           <Route path="/carousal-second" component={CarousalSecond} />
           <Route path="/wallet" component={Wallet} />
