@@ -986,6 +986,12 @@ img.road-test-icon2 {
     .partner-box-outer {
         border-radius: 45px;
     }
+    .home-team .team-content h4 {
+        line-height: 19px;
+        color: #FFFFFF;
+        margin: 15px 0 6px;
+        font-size: 18px;
+    }
     
 }
 
@@ -1007,4 +1013,5 @@ img.road-test-icon2 {
     .home-team .team-box {
         border-radius: 26px;
     }
+
 }
