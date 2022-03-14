@@ -15,13 +15,19 @@ const Tokenomics = () => {
             <div className="col-12">
               <div className="tokenomics-inner">
                 <div className="tokenomics-heading">
-                  <h2 className="heading mb-0">MetaPets</h2>
-                  <h3 className="sub-heading mb-0">Tokenomics</h3>
+                  <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
+                  <h3 className="sub-heading mb-0 english-lng">Tokenomics</h3>
+                  <h3 className="sub-heading mb-0 erabic-lng">رموز</h3>
                   <div className="tokenomics-main-heading">
-                    <h1>100 Quadrillion</h1>
-                    <p className="mb-0 heading-text">
+                    <h1 className="english-lng">100 Quadrillion</h1>
+                    <h1 className="erabic-lng">100 كوادريليون</h1>
+                    <p className="mb-0 heading-text english-lng">
                       According to our Bubble Map partners: we have a healthy
                       project.
+                    </p>
+                    <p className="mb-0 heading-text erabic-lng">
+                    وفقًا لشركائنا في Bubble Map: لدينا مشروع صحي.
                     </p>
                     {/* <img src="assets/images/token-text.png" alt="" /> */}
                   </div>
@@ -35,7 +41,8 @@ const Tokenomics = () => {
                 <div className="tokenomics-content">
                   <div className="tokenomics-content-box">
                     <h4>2%</h4>
-                    <p>Redistributed to our amazing holders</p>
+                    <p className="english-lng">Redistributed to our amazing holders</p>
+                    <p className="erabic-lng">أعيد توزيعها على أصحابنا المذهلين</p>
                     <div className="token-box-img">
                       <img
                         className="token-box-black"
@@ -51,7 +58,8 @@ const Tokenomics = () => {
                   </div>
                   <div className="tokenomics-content-box tokenomics-content-box-bg">
                     <h4>3%</h4>
-                    <p>To Liquidity to maintain stability</p>
+                    <p className="english-lng">To Liquidity to maintain stability</p>
+                    <p className="erabic-lng">للسيولة للحفاظ على الاستقرار</p>
                     <div className="token-box-img">
                       <img
                         className="token-box-black"
@@ -67,7 +75,8 @@ const Tokenomics = () => {
                   </div>
                   <div className="tokenomics-content-box">
                     <h4>5%</h4>
-                    <p>PrizeFund wallet for community games with cash prizes</p>
+                    <p className="english-lng">PrizeFund wallet for community games with cash prizes</p>
+                    <p className="erabic-lng">محفظة PrizeFund للألعاب المجتمعية بجوائز نقدية</p>
                     <div className="token-box-img">
                       <img
                         className="token-box-black"
@@ -83,7 +92,8 @@ const Tokenomics = () => {
                   </div>
                   <div className="tokenomics-content-box">
                     <h4>1%</h4>
-                    <p>Towards aggressive marketing</p>
+                    <p className="english-lng">Towards aggressive marketing</p>
+                    <p className="erabic-lng">نحو تسويق مكافح</p>
                     <div className="token-box-img">
                       <img
                         className="token-box-black"
@@ -99,9 +109,13 @@ const Tokenomics = () => {
                   </div>
                   <div className="tokenomics-content-box">
                     <h4>2%</h4>
-                    <p>
+                    <p className="english-lng">
                       Used by AI technology to strategically buy back tokens and
                       kick out paper hands
+                    </p>
+                    <p className="erabic-lng">
+                    تستخدم بواسطة تقنية الذكاء الاصطناعي لإعادة شراء الرموز بشكل استراتيجي وطرد الأيدي الورقية
+
                     </p>
                     <div className="token-box-img">
                       <img

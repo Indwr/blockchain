@@ -26,9 +26,12 @@ const Footer = () => {
                     alt="logo"
                   />
                 </Link>
-                <p>
+                <p className="english-lng">
                   Check out what MetaPets looks like on our social media
                   platforms.
+                </p>
+                <p className="erabic-lng">
+                تحقق من شكل Meta Pets على منصات التواصل الاجتماعي الخاصة بنا.
                 </p>
                 <div className="metapets-games-icon-footer">
                   <div className="metapets-games-icon mb-0">
@@ -254,8 +257,9 @@ const Footer = () => {
             </div>
             <div className="col-xxl-3 col-xl-2 col-md-4 col-sm-6">
               <div className="footer-box footer-box1">
-                <h4 className="footer-heading">Documents</h4>
-                <ul className="footer-link">
+                <h4 className="footer-heading english-lng">Documents</h4>
+                <h4 className="footer-heading erabic-lng">وثائق</h4>
+                <ul className="footer-link english-lng">
                   <li>
                     <NavLink to="/cookies">Cookies policy</NavLink>
                   </li>
@@ -266,12 +270,24 @@ const Footer = () => {
                     <Link to={"/terms"}>Terms and Conditions</Link>
                   </li>
                 </ul>
+                <ul className="footer-link erabic-lng">
+                  <li>
+                    <NavLink to="/cookies">اتفاقية ملفات تعريف الارتباط</NavLink>
+                  </li>
+                  <li>
+                    <Link to={"/privacy"}>سياسة الخصوصية</Link>
+                  </li>
+                  <li>
+                    <Link to={"/terms"}>الأحكام والشروط</Link>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className=" col-xl-2 col-md-3 col-sm-6">
               <div className="footer-box ">
-                <h4 className="footer-heading">Resources</h4>
-                <ul className="footer-link">
+                <h4 className="footer-heading english-lng">Resources</h4>
+                <h4 className="footer-heading erabic-lng">موارد</h4>
+                <ul className="footer-link english-lng">
                   <li>
                     <a
                       target="_blank"
@@ -312,17 +328,70 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
+                <ul className="footer-link erabic-lng">
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={"https://metapetsmerchandise.com"}
+                    >
+                      بضائع
+                    </a>
+                  </li>
+                  <li>
+                    <Link to={"/whitepaper"}>ورق ابيض</Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={"/home"}
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      ورقة عمل
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={"/home"}
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      الدعم
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={"/home"}
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      واجهة برمجة التطبيق
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="col-xxl-4 col-xl-5">
               <div className="footer-box footer-box-mail">
-                <h4 className="footer-heading">Subscribe us</h4>
-                <p>Subscribe to our newsletter</p>
+                <h4 className="footer-heading english-lng">Subscribe us</h4>
+                <h4 className="footer-heading erabic-lng">اشترك معنا</h4>
+                <p className="english-lng">Subscribe to our newsletter</p>
+                <p className="erabic-lng">اشترك في نشرتنا الإخبارية</p>
                 <div className="footer-form">
-                  <input type="text" placeholder="Enter email address" />
-                  <div className="btn-outer1">
+                  <input className="english-lng" type="text" placeholder="Enter email address" />
+                  <input className="erabic-lng" type="text" placeholder="أدخل عنوان البريد الالكتروني" />
+                  <div className="btn-outer1 english-lng">
                     <button className="comman-btn btn-outer">
                       Subscribe
+                      <img
+                        src="assets/images/button-border.svg"
+                        alt="button-border"
+                      />
+                    </button>
+                  </div>
+                  <div className="btn-outer1 erabic-lng">
+                    <button className="comman-btn btn-outer">
+                    الإشتراك
                       <img
                         src="assets/images/button-border.svg"
                         alt="button-border"
@@ -339,7 +408,8 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <p>© Meta Pets 2022, All Rights Reserved</p>
+              <p className="english-lng">© Meta Pets 2022, All Rights Reserved</p>
+              <p className="erabic-lng">© Meta Pets 2022 ، جميع الحقوق محفوظة</p>
             </div>
           </div>
         </div>

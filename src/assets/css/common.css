@@ -169,6 +169,12 @@ p {
 .about-line img {
     width: 100%;
 }
+.erabic-lng{
+    display: none;
+}
+.english-lng{
+    display: none;
+}
 
 @media(max-width: 1200px){
     .sub-heading {

@@ -15,10 +15,15 @@ const Team = () => {
             <div className="col-12">
               <div className="team-inner">
                 <div className="team-inner-heading">
-                  <h2 className="heading mb-0">MetaPets</h2>
-                  <h1 className="sub-heading mb-0">Team</h1>
-                  <p className="heading-text">
+                  <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
+                  <h1 className="sub-heading mb-0 english-lng">Team</h1>
+                  <h1 className="sub-heading mb-0 erabic-lng">فريق</h1>
+                  <p className="heading-text english-lng">
                     A project goes farther with helping hands.
+                  </p>
+                  <p className="heading-text erabic-lng">
+                  يذهب المشروعإلى  أبعد من ذلك بمساعدة الأيدي.
                   </p>
                 </div>
               </div>

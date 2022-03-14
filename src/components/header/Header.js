@@ -7,7 +7,7 @@ import { ThemeContext, themes } from "../themes/ThemeContext";
 
 import "../../assets/css/common.css";
 import "../../assets/css/white.css";
-// import "../../assets/css/arabic.css";
+import "../../assets/css/arabic.css";
 import "./header.css";
 
 const Header = () => {
@@ -88,7 +88,7 @@ const Header = () => {
                       </span>
                     </button>
                   </div>
-                  <ul className="navbar-nav me-auto">
+                  <ul className="navbar-nav me-auto english-lng">
                     <li className="nav-item">
                       <Link
                         className="nav-link nav-link-about active ms-0"
@@ -131,6 +131,52 @@ const Header = () => {
                     <li className="nav-item">
                       <Link className="nav-link " to={"/staking"}>
                         Staking
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul className="navbar-nav me-auto erabic-lng">
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link nav-link-about active ms-0"
+                        aria-current="page"
+                        to={"/about"}
+                      >
+                        معلومات عنا
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/ecosystem"}>
+                      النظام البيئي
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/network"}>
+                      شبكة الاتصال
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/partner"}>
+                      شركاء
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/team"}>
+                      فريق
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/whitepaper"}>
+                      الورقة البيضاء
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/tokenomics"}>
+                      الرموز
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/staking"}>
+                      ربط الحصة
                       </Link>
                     </li>
                   </ul>

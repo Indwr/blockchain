@@ -16,11 +16,16 @@ const Ecosystem = () => {
             <div className="col-12">
               <div className="ecoysystem-inner">
                 <div className="ecoysystem-inner-heading">
-                  <h2 className="heading mb-0">MetaPets</h2>
-                  <h1 className="sub-heading mb-0">Ecosystem</h1>
-                  <p className="heading-text">
+                  <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 erabic-lng">نظام ميتابيتس</h2>
+                  <h1 className="sub-heading mb-0 english-lng">Ecosystem</h1>
+                  <h1 className="sub-heading mb-0 erabic-lng">البيئي</h1>
+                  <p className="heading-text english-lng">
                     For projects to thrive, it is required for many moving parts
                     to work closely together.
+                  </p>
+                  <p className="heading-text erabic-lng">
+                  لكي تزدهر المشاريع ، يلزم أن تعمل العديد من الأجزاء المتحركة معًا بشكل وثيق.
                   </p>
                 </div>
                 <div className="ecosystem box">
@@ -89,7 +94,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Charity </h5>
+                          <h5 className="english-lng">Charity </h5>
+                          <h5 className="erabic-lng">عمل خيري </h5>
                         </div>
                       </div>
                     </div>
@@ -144,7 +150,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Giveaways</h5>
+                          <h5 className="english-lng">Giveaways</h5>
+                          <h5 className="erabic-lng">هدايا </h5>
                         </div>
                       </div>
                     </div>
@@ -188,7 +195,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Cross-Chain</h5>
+                          <h5 className="english-lng">Cross-Chain</h5>
+                          <h5 className="erabic-lng">عبر سلسلة</h5>
                         </div>
                       </div>
                     </div>
@@ -238,7 +246,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Dapps</h5>
+                          <h5 className="english-lng">Dapps</h5>
+                          <h5 className="erabic-lng">تطبيق لامركزي</h5>
                         </div>
                       </div>
                     </div>
@@ -270,7 +279,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Metaverse</h5>
+                          <h5 className="english-lng">Metaverse</h5>
+                          <h5 className="erabic-lng">ميتافيرس </h5>
                         </div>
                       </div>
                     </div>
@@ -328,7 +338,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Games</h5>
+                          <h5 className="english-lng">Games</h5>
+                          <h5 className="erabic-lng"> ألعاب</h5>
                         </div>
                       </div>
                     </div>
@@ -372,7 +383,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>3D Games</h5>
+                          <h5 className="english-lng">3D Games</h5>
+                          <h5 className="erabic-lng">ألعاب ثلاثية الأبعاد</h5>
                         </div>
                       </div>
                     </div>
@@ -414,7 +426,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>2D Games</h5>
+                          <h5 className="english-lng">2D Games</h5>
+                          <h5 className="erabic-lng">   ألعاب ثنائية الأبعاد</h5>
                         </div>
                       </div>
                     </div>
@@ -456,7 +469,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>VR/AR Games</h5>
+                          <h5 className="english-lng">VR/AR Games</h5>
+                          <h5 className="erabic-lng">ألعاب</h5>
                         </div>
                       </div>
                     </div>
@@ -514,7 +528,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>Custom Pets</h5>
+                          <h5 className="english-lng">Custom Pets</h5>
+                          <h5 className="erabic-lng"> حيوانات أليفة مخصصة</h5>
                         </div>
                       </div>
                     </div>
@@ -620,7 +635,8 @@ const Ecosystem = () => {
                             />
                           </svg>
 
-                          <h5>NFT Games</h5>
+                          <h5 className="english-lng">NFT Games</h5>
+                          <h5 className="erabic-lng">NFT ألعاب </h5>
                         </div>
                       </div>
                     </div>

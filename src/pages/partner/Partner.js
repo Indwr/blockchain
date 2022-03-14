@@ -15,11 +15,16 @@ const Partner = () => {
             <div className="col-12">
               <div className="paetner-inner">
                 <div className="partner-heading">
-                  <h2 className="heading mb-0">MetaPets</h2>
-                  <h1 className="sub-heading mb-0">Partners</h1>
-                  <p className="heading-text">
+                  <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
+                  <h1 className="sub-heading mb-0 english-lng">Partners</h1>
+                  <h1 className="sub-heading mb-0 erabic-lng">شركاء</h1>
+                  <p className="heading-text english-lng">
                     We are very pleased to show our current partners and excited
                     to announce more in the future.
+                  </p>
+                  <p className="heading-text erabic-lng">
+                  يسعدنا أن نظهر شركائنا الحاليين ومتحمسون للإعلان عن المزيد في المستقبل.
                   </p>
                 </div>
                 <div className="partner-img-outer">

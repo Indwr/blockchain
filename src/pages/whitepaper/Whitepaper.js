@@ -25,15 +25,20 @@ const Whitepaper = () => {
           <div className="row">
             <div className="col-12">
               <div className="whitepaper-heading">
-                <h2 className="heading mb-0">MetaPets</h2>
-                <h1 className="sub-heading mb-0">Whitepaper</h1>
-                <p className="heading-text">
+                <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
+                <h1 className="sub-heading mb-0 english-lng">Whitepaper</h1>
+                <h1 className="sub-heading mb-0 erabic-lng">ورقة معلومات</h1>
+                <p className="heading-text english-lng">
                   A project's whitepaper is a team's vision and plan for where
                   the project will go. The more creative, well-written a
                   whitepaper is, the better the vision. Check ours out and see
                   if we got it right. To satisfy the needs of some of our
                   international communities, we have translated it into a few
                   languages. More to come.
+                </p>
+                <p className="heading-text erabic-lng">
+                الورقة البيضاء للمشروع هي رؤية الفريق وخطته للمكان الذي سيذهب إليه المشروع. كلما كانت الورقة البيضاء أكثر إبداعًا وحسنًا ، كانت الرؤية أفضل. تحقق من منتجاتنا ومعرفة ما إذا كنا قد حصلنا عليها بشكل صحيح. لتلبية احتياجات بعض مجتمعاتنا الدولية ، قمنا بترجمتها إلى عدة لغات. المزيد قادم.
                 </p>
               </div>
             </div>

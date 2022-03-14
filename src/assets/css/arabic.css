@@ -1,3 +1,9 @@
+.erabic-lng{
+    display: block;
+}
+.arabic .english-lng{
+    display: none;
+}
 .arabic a.nav-link.nav-link-about.active.ms-0 {
     margin-left: 45px !important;
 }
@@ -26,6 +32,10 @@
     margin-right: 140px;
     margin-left: 0;
 }
+.arabic .numquam-eius2 .numquam-eius-left {
+    margin-right: 0px;
+    margin-left: 140px;
+}
 .arabic .owl-stage-outer{
     position:relative;
     overflow:hidden;
@@ -44,12 +54,43 @@
     right: -400px;
     left: auto;
     transform: translateY(-50%) rotate(180deg);
+    bottom: -847px;
 }
 .arabic .about-half-round {
     right: auto;
     left: 0;
+    transform: translateY(-50%) rotate(180deg);
 }
 .arabic .about {
     position: relative;
     overflow: hidden;
+}
+.arabic .parner-round-img {
+    transform: rotate(180deg);
+}
+.arabic ul.dropdown-menu.show {
+    left: auto;
+    right: auto !important;
+    width: 221px;
+}
+
+@media(max-width: 1400px){
+    .arabic .numquam-eius-left {
+        margin-right: 0px;
+        margin-left: 0;
+    }
+    .arabic .numquam-eius2 .numquam-eius-left {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .arabic .banner-img {
+        left: 0px;
+        right: auto;
+    }
+}
+
+@media(max-width: 576px){
+    .arabic .copy-addres .btn-outer {
+        margin: 10px auto 0;
+    }
 }

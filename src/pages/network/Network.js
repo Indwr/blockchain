@@ -21,15 +21,18 @@ const Network = () => {
           <div className="row">
             <div className="col12">
               <div className="network-headding">
-                <h2 className="heading mb-0">Smart contract</h2>
-                <h1 className="sub-heading mb-0">
-                  Binance Smart Chain Network
-                </h1>
-                <p className="heading-text">
+                <h2 className="heading mb-0 english-lng">Smart contract</h2>
+                <h2 className="heading mb-0 erabic-lng">عقد ذكي</h2>
+                <h1 className="sub-heading mb-0 english-lng">Binance Smart Chain Network</h1>
+                <h1 className="sub-heading mb-0 erabic-lng">شبكة بايننس الذكية(BSC)</h1>
+                <p className="heading-text english-lng">
                   The Binance Smart Chain Network is highly safe and secure.
                   Incur low transaction fees and super fast confirmations. And
                   most importantly, the Binance Smart Chain Network connects
                   seamlessly with Metamask and other online wallets!
+                </p>
+                <p className="heading-text erabic-lng">
+                شبكة بايننس الذكية(BSC)هي شبكة آمنة ومضمونه  للغاية. تحمل تكلفة دراسة كاملة وتناول الطعام. والأهم من ذلك ، شبكة بايننس الذكية(BSC) تتصل بسلاسة مع ميتا ماسك والمحافظ الأخرى على الإنترنت!
                 </p>
               </div>
               <div className="ecosystem-img-box">
