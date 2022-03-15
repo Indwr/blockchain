@@ -1,19 +1,68 @@
 import React, { useEffect, useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
+import { ethers } from "ethers";
+
 import Header from "../../components/header/Header";
 import "./stakinginner.css";
 
 const Stakinginner = () => {
-  const [show, setShow] = useState(true);
-
+  const [show, setShow] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [defaultAccount, setDefaultAccount] = useState(null);
+  const [userBalance, setUserBalance] = useState(null);
+  const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const connectWalletHandler = () => {
+    if (window.ethereum) {
+      window.ethereum
+        .request({
+          method: "eth_requestAccounts",
+        })
+        .then((result) => {
+          accountChangeHandler(result[0]);
+        });
+    } else {
+      setErrorMessage("Install MetaMask");
+    }
+  };
+
+  const accountChangeHandler = (newAccount) => {
+    console.log("Adress ", newAccount);
+    setDefaultAccount(newAccount);
+    getUserBalance(newAccount.toString());
+    setConnButtonText("Connect Wallet");
+  };
+
+  const getUserBalance = (address) => {
+    window.ethereum
+      .request({
+        method: "eth_getBalance",
+        params: [address, "latest"],
+      })
+      .then((balance) => {
+        setUserBalance(ethers.utils.formatEther(balance));
+      });
+  };
+
+  const checkMetamaskHasDisconnected = () => {
+    console.log(window.ethereum);
+    window.ethereum.on("disconnect", () => {
+      console.log("MetaMask discconnected");
+    });
+  };
+
+  window.ethereum.on("accountsChanged", accountChangeHandler);
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (typeof window.ethereum !== "undefined") {
-      console.log("MetaMask is installed!");
-    } else {
+    if (typeof window.ethereum === "undefined") {
+      handleShow();
       console.log("Please install MetaMask");
+    }
+    if (!defaultAccount) {
+      handleShow();
     }
   }, []);
   return (
@@ -29,7 +78,7 @@ const Stakinginner = () => {
                 <div className="stakin-inner-heading-box">
                   <div className="staking-icon">
                     <img src="assets/images/stakin-inner2.svg" alt="icon" />
-                    <p>35</p>
+                    <p>{userBalance}</p>
                   </div>
                   <div className="staking-icon staking-icon1">
                     <img
@@ -39,15 +88,19 @@ const Stakinginner = () => {
                     />
                     <p>457</p>
                   </div>
-                  <h6>0x8D....137</h6>
+                  <h6>{defaultAccount}</h6>
+                  <button onClick={checkMetamaskHasDisconnected}>Logout</button>
                 </div>
                 <div className="stakin-inner-heading-btn">
-                  <button
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal1"
-                  >
-                    Connect wallet
-                  </button>
+                  {defaultAccount === null && (
+                    <button
+                      // data-bs-toggle="modal"
+                      // data-bs-target="#exampleModal1"
+                      onClick={connectWalletHandler}
+                    >
+                      {connButtonText}
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -578,7 +631,7 @@ const Stakinginner = () => {
         </div>
       </section>
 
-      <div className="staking-popup1">
+      {/* <div className="staking-popup1">
         <div
           className="modal fade"
           id="exampleModal1"
@@ -603,20 +656,21 @@ const Stakinginner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="staking-popup1">
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+        <Modal show={show} onHide={handleClose} backdrop="static">
+          <Modal.Header>
+            <Modal.Title>MetaPets Staking</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>MetaMask is not installed</Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
+            <a
+              href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click to install
+            </a>
           </Modal.Footer>
         </Modal>
 
