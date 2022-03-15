@@ -169,11 +169,14 @@ p {
 .about-line img {
     width: 100%;
 }
+ul.navbar-nav.me-auto.erabic-lng{
+    display: none ;
+}
 .erabic-lng{
-    display: none;
+    display: none ;
 }
 .english-lng{
-    display: none;
+    display: block;
 }
 
 @media(max-width: 1200px){
@@ -185,6 +188,7 @@ p {
         font-size: 20px;
         line-height: 34px;
     }
+    
 }
 
 @media(max-width: 991px){

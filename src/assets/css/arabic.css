@@ -1,6 +1,9 @@
 .erabic-lng{
     display: block;
 }
+.arabic ul.navbar-nav.me-auto.erabic-lng {
+    display: flex ;
+}
 .arabic .english-lng{
     display: none;
 }
@@ -89,6 +92,12 @@
     }
 }
 
+@media(max-width: 1200px){
+    .arabic .navbar-expand-xl .navbar-nav .nav-link {
+        margin-left: 0px !important;
+        padding-right: 15px !important;
+    }
+}
 @media(max-width: 576px){
     .arabic .copy-addres .btn-outer {
         margin: 10px auto 0;
