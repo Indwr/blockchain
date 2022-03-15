@@ -112,6 +112,48 @@ const Partner = () => {
                       </div>
                     </a>
                   </div>
+                  <div className="partner-img-box">
+                    <a
+                      target="_blank"
+                      href="https://www.certik.com/"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
+                          <img src="assets/images/cretik.png" alt="" />
+                          <h6>Visit Website</h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="partner-img-box">
+                    <a
+                      target="_blank"
+                      href="https://www.pinksale.finance/"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
+                          <img src="assets/images/pinkmoon.png" alt="" />
+                          <h6>Visit Website</h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="partner-img-box">
+                    <a
+                      target="_blank"
+                      href="https://pancakeswap.finance/"
+                      rel="noreferrer"
+                    >
+                      <div className="partner-img-box-outer">
+                        <div className="partner-img-box-content">
+                          <img src="assets/images/pancakeswap.png" alt="" />
+                          <h6>Visit Website</h6>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

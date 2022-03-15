@@ -78,7 +78,7 @@ const Whitepaper = () => {
                     </a>
                   </button>
                 </div>
-                <div className="whitepaper content-box">
+                {/* <div className="whitepaper content-box">
                   <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
                     <div
                       className="content-box-pdf"
@@ -143,7 +143,7 @@ const Whitepaper = () => {
                       Download PDF File
                     </a>
                   </button>
-                </div>
+                </div> */}
 
                 <div className="team-round-circul">
                   <img src="assets/images/team-round.png" alt="" />

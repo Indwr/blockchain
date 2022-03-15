@@ -23,16 +23,13 @@ const Network = () => {
               <div className="network-headding">
                 <h2 className="heading mb-0 english-lng">Smart contract</h2>
                 <h2 className="heading mb-0 erabic-lng">عقد ذكي</h2>
-                <h1 className="sub-heading mb-0 english-lng">Binance Smart Chain Network</h1>
-                <h1 className="sub-heading mb-0 erabic-lng">شبكة بايننس الذكية(BSC)</h1>
+                <h1 className="sub-heading mb-0 english-lng">MetaPets Supported Blockchain</h1>
+                <h1 className="sub-heading mb-0 erabic-lng">البلوكتشين المدعومة من Meta Pets</h1>
                 <p className="heading-text english-lng">
-                  The Binance Smart Chain Network is highly safe and secure.
-                  Incur low transaction fees and super fast confirmations. And
-                  most importantly, the Binance Smart Chain Network connects
-                  seamlessly with Metamask and other online wallets!
+                MetaPets is now supported solely by the Binance Smart Chain blockchain. Since its inception on November 22, 2021, this project has been steadily expanding its crew and progressing along its roadmap. The MetaPets ecosystem will continue to grow, and we will need to use other blockchains like Ethereum and the Polygon network to complete our roadmap ambitions.
                 </p>
                 <p className="heading-text erabic-lng">
-                شبكة بايننس الذكية(BSC)هي شبكة آمنة ومضمونه  للغاية. تحمل تكلفة دراسة كاملة وتناول الطعام. والأهم من ذلك ، شبكة بايننس الذكية(BSC) تتصل بسلاسة مع ميتا ماسك والمحافظ الأخرى على الإنترنت!
+                يتم الآن دعم Meta Pets فقط من خلال سلسلة بلوك تشين الذكية من Binance. منذ بدايته في 22 نوفمبر 2021 ، عمل هذا المشروع على توسيع طاقمه بشكل مطرد والمضي قدمًا على طول خارطة الطريق الخاصة به. سيستمر النظام البيئي Meta Pets في النمو ، وسنحتاج إلى استخدام سلاسل كتل أخرى مثل Ethereum وشبكة Polygon لإكمال طموحاتنا في خريطة الطريق.
                 </p>
               </div>
               <div className="ecosystem-img-box">
@@ -83,17 +80,6 @@ const Network = () => {
                       <img src="assets/images/network-shadow.png" alt="" />
                     </div>
                     <div className="network-icon">
-                      <img src="assets/images/network3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="network-img">
-                  <div className="network-img-outer">
-                    <img src="assets/images/network-circul.png" alt="" />
-                    <div className="network-img-shadow">
-                      <img src="assets/images/network-shadow.png" alt="" />
-                    </div>
-                    <div className="network-icon">
                       <img src="assets/images/network2.png" alt="" />
                     </div>
                   </div>
@@ -105,7 +91,29 @@ const Network = () => {
                       <img src="assets/images/network-shadow.png" alt="" />
                     </div>
                     <div className="network-icon">
-                      <img src="assets/images/network1.png" alt="" />
+                      <img src="assets/images/ethereum-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="network-img">
+                  <div className="network-img-outer">
+                    <img src="assets/images/network-circul.png" alt="" />
+                    <div className="network-img-shadow">
+                      <img src="assets/images/network-shadow.png" alt="" />
+                    </div>
+                    <div className="network-icon">
+                      <img src="assets/images/polygon-matic-logo.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="network-img">
+                  <div className="network-img-outer">
+                    <img src="assets/images/network-circul.png" alt="" />
+                    <div className="network-img-shadow">
+                      <img src="assets/images/network-shadow.png" alt="" />
+                    </div>
+                    <div className="network-icon">
+                      <img src="assets/images/solana-sol-logo.png" alt="" />
                     </div>
                   </div>
                 </div>

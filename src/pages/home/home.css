@@ -242,7 +242,7 @@ section.custom-pets:before {
     margin-bottom: 35px !important;
 }
 section.partner {
-    padding: 250px 0 100px;
+    padding: 150px 0 250px;
     position: relative;
 }
 .partner-box-outer {
@@ -436,7 +436,7 @@ section.roadmap {
     margin-bottom: 42px !important;
 }
 section.numquam-eius.numquam-eius2 {
-    margin-top: 203px;
+    margin: 203px 0 160px;
 }
 .road-test-icon img {
     max-width: 80px;
@@ -581,6 +581,20 @@ img.road-test-icon2 {
     opacity: 0.5;
 }
 
+.banner-inner li path {
+    opacity: .5;
+}
+.banner-inner li.banner-icon1 path {
+    fill: #f3ba2f;
+    opacity: 1;
+    z-index: 3;
+    position: relative;
+    opacity: 1;
+}
+.custom-pets-inner .btn-outer1 {
+    pointer-events: none;
+}
+
 /*-------@media-------*/
 
 
@@ -716,7 +730,7 @@ img.road-test-icon2 {
         margin: 16px auto 0;
     }
     section.partner {
-        padding: 150px 0 60px;
+        padding: 0px 0 150px;
     }
     .roadmap-text {
         display: block;
@@ -853,7 +867,7 @@ img.road-test-icon2 {
         margin-bottom: 24px !important;
     }
     section.partner {
-        padding: 100px 0 60px;
+        padding: 0px 0 100px;
     }
     .home-about-left p {
         font-size: 16px;
@@ -884,7 +898,7 @@ img.road-test-icon2 {
         width: 100%;
     }
     section.numquam-eius.numquam-eius2 {
-        margin-top: 100px;
+        margin: 100px 0 80px;
     }
     .home-about-right {
         margin-bottom: 30px;
@@ -959,7 +973,7 @@ img.road-test-icon2 {
         height: 380px;
     }
     section.numquam-eius.numquam-eius2 {
-        margin-top: 60px;
+        margin: 60px 0 40px;
     }
     .team-content h4 {
         font-size: 18px;

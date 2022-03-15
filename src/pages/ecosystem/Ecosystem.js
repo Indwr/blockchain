@@ -686,6 +686,45 @@ const Ecosystem = () => {
             </div>
           </div> */}
         </div>
+        <div className="container">
+          <div className="roadmap-bottom mt-lg-5 pt-lg-5 mt-3 pt-3">
+            <p>
+              <b className="erabic-lng">  ميتافيرس:</b>{" "}
+              <b className="english-lng">METAVERSE:</b>{" "}
+            </p>
+            <p className="english-lng">
+              For the time being, we have decided not to include anything
+              related to the METAVERSE in our roadmap because we are unsure when
+              the METAVERSE will be fully developed. Our team is in contact with
+              large companies working on the METAVERSE, but we currently lack
+              all of the assets required for our METAVERSE game, which is why we
+              have decided not to include anything in our roadmap.
+            </p>
+            <p  className="erabic-lng">
+            في الوقت الحالي ، قررنا عدم تضمين أي شيء متعلق بـ ميتافيرس في خريطة الطريق الخاصة بنا لأننا غير متأكدين من موعد تطوير ميتافيرس بالكامل. فريقنا على اتصال بشركات كبيرة تعمل على ميتافيرس، لكننا نفتقر حاليًا إلى جميع الأصول المطلوبة للعبة ميتافيرس، ولهذا السبب قررنا عدم تضمين أي شيء في خريطة الطريق الخاصة بنا.
+            </p>
+            <p className="english-lng">
+              We're also developing on our own Play to Earn METAVERSE game,
+              called The Pets Verse, for which more details will be released
+              soon.
+            </p>
+            <p className="erabic-lng">
+            نعمل أيضًا على تطوير لعبة لجني ميتافيرس الخاصة بنا ، والتي تسمى The Pets Verse ، والتي سيتم إصدار المزيد من التفاصيل عنها قريبًا.
+            </p>
+            <p >
+              <b className="english-lng">NOTE:</b>
+              <b className="erabic-lng">ملاحظة:</b>
+            </p>
+            <p className="mb-0 english-lng">
+              Our Roadmap may change at any time. Several revisions to our
+              Roadmap plans can be made during the completion process.
+            </p>
+            <p className="mb-0 erabic-lng">
+            قد تتغير خارطة الطريق الخاصة بنا في أي وقت. يمكن إجراء العديد من التغييرات على خطط خارطة الطريق الخاصة بنا أثناء عملية الإنجاز.
+
+            </p>
+          </div>
+        </div>
         <div className="ecosystem half-round">
           <img src="assets/images/half-round.png" alt="" />
         </div>

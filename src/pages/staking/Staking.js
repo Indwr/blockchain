@@ -13,15 +13,15 @@ const Staking = () => {
           <div className="row">
             <div className="col-12">
               <div className="staking-heading">
-                <h2 className="heading mb-0 english-lng">Stake your MetaPets and earn</h2>
-                <h2 className="heading mb-0 erabic-lng">ربط  حصة ميتابيتس لكسب</h2>
-                <h1 className="sub-heading mb-0 english-lng">MetaPets Coin </h1>
-                <h1 className="sub-heading mb-0 erabic-lng">عملة ميتاتس </h1>
+                <h2 className="heading mb-0 english-lng">Stake your MetaPets</h2>
+                <h2 className="heading mb-0 erabic-lng">حصة الخاص بك ميتا</h2>
+                <h1 className="sub-heading mb-0 english-lng">Earn $MetaPets</h1>
+                <h1 className="sub-heading mb-0 erabic-lng">اربح $ Meta </h1>
                 <p className="heading-text english-lng">
-                  Stake your MetaPets tokens and earn MetaPets coins
+                Stake your MetaPets and grow your back while supporting our ecosystem
                 </p>
                 <p className="heading-text erabic-lng">
-                قم بربط ميتابيتس واكسب عملات ميتابيتس
+                راهن بالحيوانات الفوقية الخاصة بك وقم بتنمية ظهرك مع دعم نظامنا البيئي
                 </p>
               </div>
               <div className="staking-content">

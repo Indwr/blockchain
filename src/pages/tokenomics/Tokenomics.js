@@ -20,8 +20,8 @@ const Tokenomics = () => {
                   <h3 className="sub-heading mb-0 english-lng">Tokenomics</h3>
                   <h3 className="sub-heading mb-0 erabic-lng">رموز</h3>
                   <div className="tokenomics-main-heading">
-                    <h1 className="english-lng">100 Quadrillion</h1>
-                    <h1 className="erabic-lng">100 كوادريليون</h1>
+                    <h1 className="english-lng"> 13% Total Tax </h1>
+                    <h1 className="erabic-lng">13٪ إجمالي الضرائب</h1>
                     <p className="mb-0 heading-text english-lng">
                       According to our Bubble Map partners: we have a healthy
                       project.
@@ -92,8 +92,8 @@ const Tokenomics = () => {
                   </div>
                   <div className="tokenomics-content-box">
                     <h4>1%</h4>
-                    <p className="english-lng">Towards aggressive marketing</p>
-                    <p className="erabic-lng">نحو تسويق مكافح</p>
+                    <p className="english-lng">Towards Marketing & Development</p>
+                    <p className="erabic-lng"> نحو التسويق والتنمية</p>
                     <div className="token-box-img">
                       <img
                         className="token-box-black"

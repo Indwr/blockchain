@@ -63,7 +63,7 @@ const Home = () => {
                   </div>
                 </div>
                 <ul>
-                  <li>
+                  <li className="banner-icon1">
                     <svg
                       width="68"
                       height="68"
@@ -234,10 +234,10 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="metapets-games">
+      <section>
         <div className="container">
           <div className="row">
-            <div className="col-12">
+          <div className="col-12">
               <div className="metapets-games-icon">
                 <ul>
                   <li>
@@ -457,282 +457,6 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="metapets-games-left">
-                <img
-                  className="metapets-games-left-img metapets-games-left-img-black"
-                  src="assets/images/metapets-games.png"
-                  alt=""
-                />
-                <img
-                  className="metapets-games-left-img metapets-games-left-img-white"
-                  src="assets/images/metapets-games-white.png"
-                  alt=""
-                />
-                <div className="metapats-bg">
-                  <img src="assets/images/metapets-game-bg2.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="metapets-games-right">
-                <h2 className="heading mb-0 english-lng">Keep your pet engaged</h2>
-                <h2 className="heading mb-0 erabic-lng">ابقى حيوانك الاليف منخرط </h2>
-                <h3 className="sub-heading mb-0 english-lng">MetaPets Games</h3>
-                <h3 className="sub-heading mb-0 erabic-lng">العاب ميتابتس</h3>
-                <p className="english-lng">
-                  MetaPets Games will be a way to engage the community and help
-                  them build a relationship in a fun and competitive way. NFT
-                  games where you can train your MetaPets, dress them, and breed
-                  them are some of the many ways you will be able to give love
-                  and care to your new friend constantly.
-                </p>
-                <p className="erabic-lng">
-                لعاب ميتابيتس هي طريقه لربط المجتمع ومساعدته على بناء علاقات بطريقه تنافسيه ومسليه
-                 العاب NFT حيث تستطيع ان تدرب حيوان الميتابيتس الخاص بك وهنالك الكثير من الطرق  لتقوم باعطائه العنايه والحب باطعامهم والباسهم وتربيتهم
-                </p>
-                <div className="btn-outer1 english-lng">
-                  <Link className="comman-btn btn-outer" to={"/about"}>
-                    Learn More
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </Link>
-                </div>
-                <div className="btn-outer1 erabic-lng">
-                  <Link className="comman-btn btn-outer" to={"/about"}>
-                  يتعلم أكثر
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="image-round">
-          <img src="assets/images/metapets-round.png" alt="" />
-        </div>
-      </section>
-
-      <section className="custom-pets">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="custom-pets-inner">
-                <div className="custom-pets-inner-box">
-                  <h2 className="heading mb-0 english-lng">
-                    Custom Pet Builder…Coming soon
-                  </h2>
-                  <h2 className="heading mb-0 erabic-lng">
-                  مُنشئ مخصص للحيوانات الأليفة ... قريبًا
-                  </h2>
-                  <h3 className="sub-heading mb-0 english-lng">Custom Pets</h3>
-                  <h3 className="sub-heading mb-0 erabic-lng"> الحيوانات الأليفة المخصصة</h3>
-                  <p className="english-lng">
-                    Build the pet of your dreams, a friend who will be at your
-                    beckoned call.{" "}
-                  </p>
-                  <p className="erabic-lng">
-                  تقوم الحيوانات الأليفة المخصصة ببناء حيوان أحلامك الأليف ، صديق سيكون في متناول يدك{" "}
-                  </p>
-                  <div className="btn-outer1 english-lng">
-                    <a
-                      className="comman-btn btn-outer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                    >
-                      Buy Now
-                      <img
-                        src="assets/images/button-border.svg"
-                        alt="button-border"
-                      />
-                    </a>
-                  </div>
-                  <div className="btn-outer1 erabic-lng">
-                    <a
-                      className="comman-btn btn-outer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                    >
-                      اشتري الآن
-                      <img
-                        src="assets/images/button-border.svg"
-                        alt="button-border"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <img
-                  className="custom-pets-main-img custom-pets-main-img-black"
-                  src="assets/images/custom-pets-img.png"
-                  alt=""
-                />
-                <img
-                  className="custom-pets-main-img custom-pets-main-img-white"
-                  src="assets/images/custom-pets-white-img.png"
-                  alt=""
-                />
-                <div className="custom-pets-circul">
-                  <img
-                    className="rotating"
-                    src="assets/images/round-circul.png"
-                    alt=""
-                  />
-                </div>
-                <div className="custom-pets-circul2">
-                  <img
-                    className="rotating"
-                    src="assets/images/round-circul.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="custom-pets-line">
-          <img src="assets/images/custom-pets-line.png" alt="line" />
-        </div>
-      </section>
-
-      <section className="numquam-eius">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 d-flex align-items-center order-md-1 order-2">
-              <div className="numquam-eius-left">
-                <h2 className="heading mb-0 english-lng">
-                  A pet that will always be yours
-                </h2>
-                <h2 className="heading mb-0 erabic-lng">
-                حيوان أليف سيكون لك دائمًا
-                </h2>
-                <h3 className="sub-heading mb-0 english-lng">Customizable Pets</h3>
-                <h3 className="sub-heading mb-0 erabic-lng">حيوانات أليفة قابلة للتخصيص</h3>
-                <p className="english-lng">
-                  Use your imagination to customize your loving friend! Launch
-                  your custom MetaPet, adopt any traits you want to make them
-                  unique, brag about your MetaPet social media, and sell or swap
-                  it on the marketplace.
-                </p>
-                <p className="erabic-lng">
-                استخدم خيالك لتخصيص صديقك المحب! قم بتشغيل ميتابيتس المخصص الخاص بك ، واختار أي سمات تريد أن تجعلها فريدة من نوعها ، وتفاخر بوسائط ميتابيتس الاجتماعية الخاصة بك، وقم ببيعها أو تبديلها في السوق.
-                </p>
-                <div className="btn-outer1 english-lng">
-                  <a
-                    className="comman-btn btn-outer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                  >
-                    Buy Now
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </a>
-                </div>
-                <div className="btn-outer1 erabic-lng">
-                  <a
-                    className="comman-btn btn-outer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                  >
-                    اشتري الآن
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 order-md-2 order-1">
-              <div className="numquam-eius-right">
-                <div className="numquam-eius-right-img">
-                  <img
-                    className=""
-                    src="assets/images/Owlsframed2.gif"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="numquam-eius numquam-eius2">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 ">
-              <div className="numquam-eius-right">
-                <div className="numquam-eius-right-img">
-                  <img
-                    className=""
-                    src="assets/images/Kingakibagif1.gif"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="numquam-eius-left">
-                <h2 className="heading mb-0 english-lng">Future Plans</h2>
-                <h2 className="heading mb-0 erabic-lng">خطط مستقبلية</h2>
-                <h3 className="sub-heading mb-0 english-lng">
-                  {/*Change Customizable Pets & Write*/} Metaverse
-                </h3>
-                <h3 className="sub-heading mb-0 erabic-lng">
-                  {/*Change Customizable Pets & Write*/} ميتافيرس
-                </h3>
-                <p className="english-lng">
-                  MetaPets aims to make your MetaPet adaptable to the virtual
-                  designs of the Metaverse. Interoperable into other worlds, you
-                  can show your dog off in a dog show, have your prize cow
-                  produce milk to sell, and race your trophy-winning horse in a
-                  competition, all while earning a passive income from your
-                  MetaPets investment.
-                </p>
-                <p className="erabic-lng">
-                تهدف ميتابيتس  إلى جعل ميتابيتس الخاص بك قابلاً للتكيف مع التصميمات الافتراضية لـ ميتافيرس. قابلة للتشغيل المتبادل في عوالم أخرى ، يمكنك إظهار كلبك في عرض للكلاب ، وجعل بقرة الجائزة الخاصة بك تنتج الحليب لبيعه ، وتسابق مع خيلك الحائز على الكأس في منافسة ، كل ذلك بينما تربح دخلًا سلبيًا من استثمار ميتابيتس.
-
-                </p>
-                <div className="btn-outer1 english-lng">
-                  <a
-                    className="comman-btn btn-outer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                  >
-                    Buy Now
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </a>
-                </div>
-                <div className="btn-outer1 erabic-lng">
-                  <a
-                    className="comman-btn btn-outer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
-                  >
-                    اشتري الآن
-                    <img
-                      src="assets/images/button-border.svg"
-                      alt="button-border"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -901,7 +625,7 @@ const Home = () => {
                         alt=""
                       />
                       <div className="partner-box-img">
-                        <img src="assets/images/4a.png" alt="" />
+                        <img src="assets/images/certik-logotype-h-w.svg" alt="" />
                       </div>
                     </div>
                   </a>
@@ -948,7 +672,502 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-about">
+      <section className="metapets-games">
+        <div className="container">
+          <div className="row">
+            
+            <div className="col-md-6">
+              <div className="metapets-games-left">
+                <img
+                  className="metapets-games-left-img metapets-games-left-img-black"
+                  src="assets/images/metapets-games.png"
+                  alt=""
+                />
+                <img
+                  className="metapets-games-left-img metapets-games-left-img-white"
+                  src="assets/images/metapets-games-white.png"
+                  alt=""
+                />
+                <div className="metapats-bg">
+                  <img src="assets/images/metapets-game-bg2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="metapets-games-right">
+                <h2 className="heading mb-0 english-lng">Keep your pet engaged</h2>
+                <h2 className="heading mb-0 erabic-lng">ابقى حيوانك الاليف منخرط </h2>
+                <h3 className="sub-heading mb-0 english-lng">MetaPets Games</h3>
+                <h3 className="sub-heading mb-0 erabic-lng">العاب ميتابتس</h3>
+                <p className="english-lng">
+                  MetaPets Games will be a way to engage the community and help
+                  them build a relationship in a fun and competitive way. NFT
+                  games where you can train your MetaPets, dress them, and breed
+                  them are some of the many ways you will be able to give love
+                  and care to your new friend constantly.
+                </p>
+                <p className="erabic-lng">
+                لعاب ميتابيتس هي طريقه لربط المجتمع ومساعدته على بناء علاقات بطريقه تنافسيه ومسليه
+                 العاب NFT حيث تستطيع ان تدرب حيوان الميتابيتس الخاص بك وهنالك الكثير من الطرق  لتقوم باعطائه العنايه والحب باطعامهم والباسهم وتربيتهم
+                </p>
+                <div className="btn-outer1 english-lng">
+                  <Link className="comman-btn btn-outer" to={"/whitepaper"}>
+                    Learn More
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </Link>
+                </div>
+                <div className="btn-outer1 erabic-lng">
+                  <Link className="comman-btn btn-outer" to={"/whitepaper"}>
+                  يتعلم أكثر
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="image-round">
+          <img src="assets/images/metapets-round.png" alt="" />
+        </div>
+      </section>
+
+      <section className="custom-pets">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="custom-pets-inner">
+                <div className="custom-pets-inner-box">
+                  <h2 className="heading mb-0 english-lng">
+                    Custom Pet DAPP
+                  </h2>
+                  <h2 className="heading mb-0 erabic-lng">
+                  مخصص الحيوانات الأليفة DAPP
+                  </h2>
+                  <h3 className="sub-heading mb-0 english-lng">Custom Pets</h3>
+                  <h3 className="sub-heading mb-0 erabic-lng"> الحيوانات الأليفة المخصصة</h3>
+                  <p className="english-lng">
+                    Build the pet of your dreams, a friend who will be at your
+                    beckoned call.{" "}
+                  </p>
+                  <p className="erabic-lng">
+                  تقوم الحيوانات الأليفة المخصصة ببناء حيوان أحلامك الأليف ، صديق سيكون في متناول يدك{" "}
+                  </p>
+                  <div className="btn-outer1 english-lng " >
+                    <a
+                      className="comman-btn btn-outer "
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    >
+                      Coming soon
+                      <img
+                        src="assets/images/button-border.svg"
+                        alt="button-border"
+                      />
+                    </a>
+                  </div>
+                  <div className="btn-outer1 erabic-lng ">
+                    <a
+                      className="comman-btn btn-outer " 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    >
+                      قريبا
+                      <img
+                        src="assets/images/button-border.svg"
+                        alt="button-border"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <img
+                  className="custom-pets-main-img custom-pets-main-img-black"
+                  src="assets/images/custom-pets-img.png"
+                  alt=""
+                />
+                <img
+                  className="custom-pets-main-img custom-pets-main-img-white"
+                  src="assets/images/custom-pets-white-img.png"
+                  alt=""
+                />
+                <div className="custom-pets-circul">
+                  <img
+                    className="rotating"
+                    src="assets/images/round-circul.png"
+                    alt=""
+                  />
+                </div>
+                <div className="custom-pets-circul2">
+                  <img
+                    className="rotating"
+                    src="assets/images/round-circul.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="custom-pets-line">
+          <img src="assets/images/custom-pets-line.png" alt="line" />
+        </div>
+      </section>
+
+      <section className="numquam-eius">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 d-flex align-items-center order-md-1 order-2">
+              <div className="numquam-eius-left">
+                <h2 className="heading mb-0 english-lng">
+                  A pet that will always be yours
+                </h2>
+                <h2 className="heading mb-0 erabic-lng">
+                حيوان أليف سيكون لك دائمًا
+                </h2>
+                <h3 className="sub-heading mb-0 english-lng">Customizable Pets</h3>
+                <h3 className="sub-heading mb-0 erabic-lng">حيوانات أليفة قابلة للتخصيص</h3>
+                <p className="english-lng">
+                  Use your imagination to customize your loving friend! Launch
+                  your custom MetaPet, adopt any traits you want to make them
+                  unique, brag about your MetaPet social media, and sell or swap
+                  it on the marketplace.
+                </p>
+                <p className="erabic-lng">
+                استخدم خيالك لتخصيص صديقك المحب! قم بتشغيل ميتابيتس المخصص الخاص بك ، واختار أي سمات تريد أن تجعلها فريدة من نوعها ، وتفاخر بوسائط ميتابيتس الاجتماعية الخاصة بك، وقم ببيعها أو تبديلها في السوق.
+                </p>
+                <div className="btn-outer1 english-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    Coming Soon
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+                <div className="btn-outer1 erabic-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    قريبا
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 order-md-2 order-1">
+              <div className="numquam-eius-right">
+                <div className="numquam-eius-right-img">
+                  <img
+                    className=""
+                    src="assets/images/Owlsframed2.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="numquam-eius numquam-eius2 ">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 ">
+              <div className="numquam-eius-right">
+                <div className="numquam-eius-right-img">
+                  <img
+                    className=""
+                    src="assets/images/Kingakibagif1.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 d-flex align-items-center">
+              <div className="numquam-eius-left">
+                <h2 className="heading mb-0 english-lng">Future Plans</h2>
+                <h2 className="heading mb-0 erabic-lng">خطط مستقبلية</h2>
+                <h3 className="sub-heading mb-0 english-lng">
+                  {/*Change Customizable Pets & Write*/} Metaverse
+                </h3>
+                <h3 className="sub-heading mb-0 erabic-lng">
+                  {/*Change Customizable Pets & Write*/} ميتافيرس
+                </h3>
+                <p className="english-lng">
+                  MetaPets aims to make your MetaPet adaptable to the virtual
+                  designs of the Metaverse. Interoperable into other worlds, you
+                  can show your dog off in a dog show, have your prize cow
+                  produce milk to sell, and race your trophy-winning horse in a
+                  competition, all while earning a passive income from your
+                  MetaPets investment.
+                </p>
+                <p className="erabic-lng">
+                تهدف ميتابيتس  إلى جعل ميتابيتس الخاص بك قابلاً للتكيف مع التصميمات الافتراضية لـ ميتافيرس. قابلة للتشغيل المتبادل في عوالم أخرى ، يمكنك إظهار كلبك في عرض للكلاب ، وجعل بقرة الجائزة الخاصة بك تنتج الحليب لبيعه ، وتسابق مع خيلك الحائز على الكأس في منافسة ، كل ذلك بينما تربح دخلًا سلبيًا من استثمار ميتابيتس.
+
+                </p>
+                <div className="btn-outer1 english-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    Coming Soon
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+                <div className="btn-outer1 erabic-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    قريبا
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="partner">
+        <div className="container">
+          <div className="partner-outer">
+            <div className="row">
+              <div className="col-12">
+                <div className="parner-text">
+                  <h2 className="heading mb-0 english-lng">
+                    Our friends in the crypto world
+                  </h2>
+                  <h2 className="heading mb-0 erabic-lng">
+                  أصدقائنا في عالم التشفير
+                  </h2>
+                  <h3 className="sub-heading mb-0 english-lng">Partners</h3>
+                  <h3 className="sub-heading mb-0 erabic-lng">شركاء</h3>
+                  <p className="english-lng">A project can't be successful alone</p>
+                  <p className="erabic-lng">لا يمكن أن يكون المشروع ناجحًا بمفرده.</p>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://whitebit.com"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/5a.png" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer ">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://coinmarketcap.com/currencies/metapets/"
+                  >
+                    <div className="partner-box partner-box2">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/marketcap.png" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.coingecko.com/en/coins/metapets"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/1a.png" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://bscscan.com/address/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/2a.png" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.dextools.io/app/bsc/pair-explorer/0xbe41f59d6d558a49ab04a10b479c9a8d6a280105"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/3a.png" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div className="partner-box-outer">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://poocoin.app/tokens/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  >
+                    <div className="partner-box">
+                      <img
+                        className="patner-box-black"
+                        src="assets/images/parner-box.png"
+                        alt=""
+                      />
+                      <img
+                        className="patner-box-white"
+                        src="assets/images/partner-box-white.png"
+                        alt=""
+                      />
+                      <div className="partner-box-img">
+                        <img src="assets/images/certik-logotype-h-w.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="parnter-btn">
+              <div className="btn-outer1 english-lng">
+                <a
+                  className="comman-btn btn-outer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                >
+                  Buy Now
+                  <img
+                    src="assets/images/button-border.svg"
+                    alt="button-border"
+                  />
+                </a>
+              </div>
+              <div className="btn-outer1 erabic-lng">
+                <a
+                  className="comman-btn btn-outer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                >
+                  اشتري الآن
+                  <img
+                    src="assets/images/button-border.svg"
+                    alt="button-border"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="parner-main-round">
+              <img src="assets/images/parner-main-round.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="parner-round-img">
+          <img src="assets/images/half-round.png" alt="" />
+        </div>
+      </section> */}
+
+      <section className="home-about pt-5 mt-5">
         <div className="container">
           <div className="row">
             <div className="col-md-6 order-md-1 order-2">
@@ -980,7 +1199,7 @@ const Home = () => {
                 </p>
                 <div className="btn-outer1 english-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
-                    Our Whitepaper
+                  Whitepaper
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -989,7 +1208,7 @@ const Home = () => {
                 </div>
                 <div className="btn-outer1 erabic-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
-                  ورقة العمل لدينا
+                  ورق ابيض
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -1057,7 +1276,7 @@ const Home = () => {
                   مستقبل جريء وخلاق لميتابيتس وسوف يتوسع في ميتافيرس. نتطلع إلى تقديم رؤيتنا لمستثمرينا ، والتي ستأخذنا إلى ما هو أبعد من خيال أي شخص.
                   </p>
                 </div>
-                <div className="btn-outer1 english-lng">
+                {/* <div className="btn-outer1 english-lng">
                   <a
                     className="comman-btn btn-outer"
                     target="_blank"
@@ -1070,8 +1289,8 @@ const Home = () => {
                       alt="button-border"
                     />
                   </a>
-                </div>
-                <div className="btn-outer1 erabic-lng">
+                </div> */}
+                {/* <div className="btn-outer1 erabic-lng">
                   <a
                     className="comman-btn btn-outer"
                     target="_blank"
@@ -1084,51 +1303,13 @@ const Home = () => {
                       alt="button-border"
                     />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
         <CarousalSecond />
-        <div className="container">
-          <div className="roadmap-bottom mt-lg-5 pt-lg-5 mt-3 pt-3">
-            <p>
-              <b className="erabic-lng">  ميتافيرس:</b>{" "}
-              <b className="english-lng">METAVERSE:</b>{" "}
-            </p>
-            <p className="english-lng">
-              For the time being, we have decided not to include anything
-              related to the METAVERSE in our roadmap because we are unsure when
-              the METAVERSE will be fully developed. Our team is in contact with
-              large companies working on the METAVERSE, but we currently lack
-              all of the assets required for our METAVERSE game, which is why we
-              have decided not to include anything in our roadmap.
-            </p>
-            <p  className="erabic-lng">
-            في الوقت الحالي ، قررنا عدم تضمين أي شيء متعلق بـ ميتافيرس في خريطة الطريق الخاصة بنا لأننا غير متأكدين من موعد تطوير ميتافيرس بالكامل. فريقنا على اتصال بشركات كبيرة تعمل على ميتافيرس، لكننا نفتقر حاليًا إلى جميع الأصول المطلوبة للعبة ميتافيرس، ولهذا السبب قررنا عدم تضمين أي شيء في خريطة الطريق الخاصة بنا.
-            </p>
-            <p className="english-lng">
-              We're also developing on our own Play to Earn METAVERSE game,
-              called The Pets Verse, for which more details will be released
-              soon.
-            </p>
-            <p >
-            نعمل أيضًا على تطوير لعبة لجني ميتافيرس الخاصة بنا ، والتي تسمى The Pets Verse ، والتي سيتم إصدار المزيد من التفاصيل عنها قريبًا.
-            </p>
-            <p >
-              <b className="english-lng">NOTE:</b>
-              <b className="erabic-lng">ملاحظة:</b>
-            </p>
-            <p className="mb-0 english-lng">
-              Our Roadmap may change at any time. Several revisions to our
-              Roadmap plans can be made during the completion process.
-            </p>
-            <p className="mb-0 erabic-lng">
-            قد تتغير خارطة الطريق الخاصة بنا في أي وقت. يمكن إجراء العديد من التغييرات على خطط خارطة الطريق الخاصة بنا أثناء عملية الإنجاز.
-
-            </p>
-          </div>
-        </div>
+        
       </section>
     </div>
   );
