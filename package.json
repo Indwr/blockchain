@@ -31,7 +31,8 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.6",
     "reactstrap": "^9.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import { ethers } from "ethers";
-
 import Header from "../../components/header/Header";
 import "./stakinginner.css";
 
@@ -10,7 +9,9 @@ const Stakinginner = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
+  const [metaPetsBalance, setMetaPetsBalance] = useState(0);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
+  const [isConnected, setIsConnected] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -22,6 +23,7 @@ const Stakinginner = () => {
         })
         .then((result) => {
           accountChangeHandler(result[0]);
+          getBalance();
         });
     } else {
       setErrorMessage("Install MetaMask");
@@ -35,6 +37,27 @@ const Stakinginner = () => {
     setConnButtonText("Connect Wallet");
   };
 
+  const getTokens = async (
+    tokenAddress,
+    tokenSymbol,
+    tokenDecimals,
+    tokenImage
+  ) => {
+    const wasAdded = await window.ethereum.request({
+      method: "wallet_watchAsset",
+      params: {
+        type: "ERC20", // Initially only supports ERC20, but eventually more!
+        options: {
+          address: tokenAddress, // The address that the token is at.
+          symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+          decimals: tokenDecimals, // The number of decimals in the token
+          image: tokenImage, // A string url of the token logo
+        },
+      },
+    });
+    console.log(wasAdded);
+    return wasAdded;
+  };
   const getUserBalance = (address) => {
     window.ethereum
       .request({
@@ -53,16 +76,59 @@ const Stakinginner = () => {
     });
   };
 
-  window.ethereum.on("accountsChanged", accountChangeHandler);
+  const handleDisconnect = () => {
+    setIsConnected(false);
+    setDefaultAccount("");
+    setUserBalance(0);
+  };
+
+  if (typeof window.ethereum !== "undefined") {
+    window.ethereum.on("accountsChanged", accountChangeHandler);
+  }
+
+  function getBalance() {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contract_address: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d",
+        address: "0xEcf9a23671a63d2f722f7362ECF6A48b1483b302",
+      }),
+    };
+    fetch("http://127.0.0.1:8080/api/v1/getBebTokenBalance", requestOptions)
+      .then((response) => response.json())
+      .then((data) => setMetaPetsBalance(abbreviateNumber(data.balance)));
+  }
+
+  var SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
+  function abbreviateNumber(number) {
+    // what tier? (determines SI symbol)
+    var tier = (Math.log10(Math.abs(number)) / 3) | 0;
+
+    // if zero, we don't need a suffix
+    if (tier == 0) return number;
+
+    // get suffix and determine scale
+    var suffix = SI_SYMBOL[tier];
+    var scale = Math.pow(10, tier * 3);
+
+    // scale the number
+    var scaled = number / scale;
+
+    // format number and add suffix
+    return scaled.toFixed(1) + suffix;
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
     if (typeof window.ethereum === "undefined") {
-      handleShow();
+      // handleShow();
       console.log("Please install MetaMask");
+    } else {
+      setIsConnected(defaultAccount ? true : false);
     }
     if (!defaultAccount) {
-      handleShow();
+      // handleShow();
     }
   }, []);
   return (
@@ -86,10 +152,10 @@ const Stakinginner = () => {
                       src="assets/images/stakin-inner1.svg"
                       alt="icon"
                     />
-                    <p>457</p>
+                    <p>{metaPetsBalance}</p>
                   </div>
                   <h6>{defaultAccount}</h6>
-                  <button onClick={checkMetamaskHasDisconnected}>Logout</button>
+                  <button onClick={handleDisconnect}>Logout</button>
                 </div>
                 <div className="stakin-inner-heading-btn">
                   {defaultAccount === null && (
