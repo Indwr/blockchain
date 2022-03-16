@@ -6,7 +6,7 @@ import "./stakinginner.css";
 
 const Stakinginner = () => {
   const [show, setShow] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(null);
+  // const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
   const [metaPetsBalance, setMetaPetsBalance] = useState(0);
@@ -26,7 +26,7 @@ const Stakinginner = () => {
           getBalance();
         });
     } else {
-      setErrorMessage("Install MetaMask");
+      console.log("Install MetaMask");
     }
   };
 
@@ -37,27 +37,27 @@ const Stakinginner = () => {
     setConnButtonText("Connect Wallet");
   };
 
-  const getTokens = async (
-    tokenAddress,
-    tokenSymbol,
-    tokenDecimals,
-    tokenImage
-  ) => {
-    const wasAdded = await window.ethereum.request({
-      method: "wallet_watchAsset",
-      params: {
-        type: "ERC20", // Initially only supports ERC20, but eventually more!
-        options: {
-          address: tokenAddress, // The address that the token is at.
-          symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
-          decimals: tokenDecimals, // The number of decimals in the token
-          image: tokenImage, // A string url of the token logo
-        },
-      },
-    });
-    console.log(wasAdded);
-    return wasAdded;
-  };
+  // const getTokens = async (
+  //   tokenAddress,
+  //   tokenSymbol,
+  //   tokenDecimals,
+  //   tokenImage
+  // ) => {
+  //   const wasAdded = await window.ethereum.request({
+  //     method: "wallet_watchAsset",
+  //     params: {
+  //       type: "ERC20", // Initially only supports ERC20, but eventually more!
+  //       options: {
+  //         address: tokenAddress, // The address that the token is at.
+  //         symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+  //         decimals: tokenDecimals, // The number of decimals in the token
+  //         image: tokenImage, // A string url of the token logo
+  //       },
+  //     },
+  //   });
+  //   console.log(wasAdded);
+  //   return wasAdded;
+  // };
   const getUserBalance = (address) => {
     window.ethereum
       .request({
@@ -69,12 +69,12 @@ const Stakinginner = () => {
       });
   };
 
-  const checkMetamaskHasDisconnected = () => {
-    console.log(window.ethereum);
-    window.ethereum.on("disconnect", () => {
-      console.log("MetaMask discconnected");
-    });
-  };
+  // const checkMetamaskHasDisconnected = () => {
+  //   console.log(window.ethereum);
+  //   window.ethereum.on("disconnect", () => {
+  //     console.log("MetaMask discconnected");
+  //   });
+  // };
 
   const handleDisconnect = () => {
     setIsConnected(false);
@@ -106,7 +106,7 @@ const Stakinginner = () => {
     var tier = (Math.log10(Math.abs(number)) / 3) | 0;
 
     // if zero, we don't need a suffix
-    if (tier == 0) return number;
+    if (tier === 0) return number;
 
     // get suffix and determine scale
     var suffix = SI_SYMBOL[tier];
@@ -119,18 +119,18 @@ const Stakinginner = () => {
     return scaled.toFixed(1) + suffix;
   }
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   if (typeof window.ethereum === "undefined") {
-  //     // handleShow();
-  //     console.log("Please install MetaMask");
-  //   } else {
-  //     setIsConnected(defaultAccount ? true : false);
-  //   }
-  //   if (!defaultAccount) {
-  //     // handleShow();
-  //   }
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (typeof window.ethereum === "undefined") {
+      handleShow();
+      console.log("Please install MetaMask");
+    } else {
+      // setIsConnected(defaultAccount ? true : false);
+    }
+    // if (!defaultAccount) {
+    //   handleShow();
+    // }
+  }, []);
   return (
     <div>
       <Header />
@@ -155,7 +155,9 @@ const Stakinginner = () => {
                     <p>{metaPetsBalance}</p>
                   </div>
                   <h6>{defaultAccount}kdsjvkdshvkjdsl;vk;dsmvlkdsnvk,m</h6>
-                  {/* <button onClick={handleDisconnect}>Logout</button> */}
+                  {isConnected && (
+                    <button onClick={handleDisconnect}>Logout</button>
+                  )}
                 </div>
                 <div className="stakin-inner-heading-btn">
                   {defaultAccount === null && (
@@ -724,18 +726,26 @@ const Stakinginner = () => {
         </div>
       </div> */}
       <div className="staking-popup1">
-        <Modal className="staking-popup1" show={show} onHide={handleClose} backdrop="static">
+        <Modal
+          className="staking-popup1"
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+        >
           {/* <Modal.Header>
             <Modal.Title>MetaPets Staking</Modal.Title>
           </Modal.Header> */}
-          <Modal.Body> <div>
-            <div className="close popup-close text-center">
-            <img src="assets/images/popup-close.png" alt="" />
-            </div>
-          <img src="assets/images/popup1.png" alt="" />
-                <h5>MetaPets Staking</h5>
-                <p>MetaMask is not installed</p>
-            </div> </Modal.Body>
+          <Modal.Body>
+            {" "}
+            <div>
+              <div className="close popup-close text-center">
+                <img src="assets/images/popup-close.png" alt="" />
+              </div>
+              <img src="assets/images/popup1.png" alt="" />
+              <h5>MetaPets Staking</h5>
+              <p>MetaMask is not installed</p>
+            </div>{" "}
+          </Modal.Body>
           {/* <Modal.Footer>
             <a
               href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
