@@ -119,18 +119,18 @@ const Stakinginner = () => {
     return scaled.toFixed(1) + suffix;
   }
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    if (typeof window.ethereum === "undefined") {
-      // handleShow();
-      console.log("Please install MetaMask");
-    } else {
-      setIsConnected(defaultAccount ? true : false);
-    }
-    if (!defaultAccount) {
-      // handleShow();
-    }
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   if (typeof window.ethereum === "undefined") {
+  //     // handleShow();
+  //     console.log("Please install MetaMask");
+  //   } else {
+  //     setIsConnected(defaultAccount ? true : false);
+  //   }
+  //   if (!defaultAccount) {
+  //     // handleShow();
+  //   }
+  // }, []);
   return (
     <div>
       <Header />
@@ -724,12 +724,19 @@ const Stakinginner = () => {
         </div>
       </div> */}
       <div className="staking-popup1">
-        <Modal show={show} onHide={handleClose} backdrop="static">
-          <Modal.Header>
+        <Modal className="staking-popup1" show={true} onHide={handleClose} backdrop="static">
+          {/* <Modal.Header>
             <Modal.Title>MetaPets Staking</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>MetaMask is not installed</Modal.Body>
-          <Modal.Footer>
+          </Modal.Header> */}
+          <Modal.Body> <div>
+            <div className="close popup-close text-center">
+            <img src="assets/images/popup-close.png" alt="" />
+            </div>
+          <img src="assets/images/popup1.png" alt="" />
+                <h5>MetaPets Staking</h5>
+                <p>MetaMask is not installed</p>
+            </div> </Modal.Body>
+          {/* <Modal.Footer>
             <a
               href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
               target="_blank"
@@ -737,7 +744,7 @@ const Stakinginner = () => {
             >
               Click to install
             </a>
-          </Modal.Footer>
+          </Modal.Footer> */}
         </Modal>
 
         <div

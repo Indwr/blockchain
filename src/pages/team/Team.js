@@ -443,8 +443,8 @@ const Team = () => {
                     alt=""
                   />
                   <div className="team-content">
-                    <img src="assets/images/TINAS_HUBBY.png" alt="" />
-                    <h4>Emi</h4>
+                    <img src="assets/images/EDDIE.png" alt="" />
+                    <h4>Eddie</h4>
                     <p>MOD Team </p>
                   </div>
                 </div>
