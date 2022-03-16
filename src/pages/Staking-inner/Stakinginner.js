@@ -154,8 +154,8 @@ const Stakinginner = () => {
                     />
                     <p>{metaPetsBalance}</p>
                   </div>
-                  <h6>{defaultAccount}</h6>
-                  <button onClick={handleDisconnect}>Logout</button>
+                  <h6>{defaultAccount}kdsjvkdshvkjdsl;vk;dsmvlkdsnvk,m</h6>
+                  {/* <button onClick={handleDisconnect}>Logout</button> */}
                 </div>
                 <div className="stakin-inner-heading-btn">
                   {defaultAccount === null && (
@@ -724,7 +724,7 @@ const Stakinginner = () => {
         </div>
       </div> */}
       <div className="staking-popup1">
-        <Modal className="staking-popup1" show={true} onHide={handleClose} backdrop="static">
+        <Modal className="staking-popup1" show={show} onHide={handleClose} backdrop="static">
           {/* <Modal.Header>
             <Modal.Title>MetaPets Staking</Modal.Title>
           </Modal.Header> */}
