@@ -582,6 +582,9 @@ img.road-test-icon2 {
     color: #FFFFFF;
     opacity: 0.5;
 }
+.numquam-eius-left .btn-outer1 {
+    pointer-events: none;
+}
 
 /* .banner-inner li path {
     opacity: .5;
