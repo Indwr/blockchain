@@ -847,7 +847,7 @@ const Home = () => {
                     className="comman-btn btn-outer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://metapetscoin.com/home"
                   >
                     Coming Soon
                     <img
@@ -927,7 +927,7 @@ const Home = () => {
                     className="comman-btn btn-outer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://metapetscoin.com/home"
                   >
                     Coming Soon
                     <img
