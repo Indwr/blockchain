@@ -23,7 +23,7 @@ body.white-theme.home-bg{
 .white-theme .copy-addres {
     background-image: linear-gradient(to left,#f2f4fc, #f6f6fd), linear-gradient(184deg,#F213FF, rgb(187, 187, 187) , #0BEFD8);
 }
-.white-theme .metapets-games .metapets-games-icon a svg stop {
+.white-theme .metapets-games-icon a svg stop {
     stop-color: #0E0D17;
     transition: all .4s;
     stop-opacity: 0.9;
@@ -38,6 +38,10 @@ body.white-theme.home-bg{
     left: 0;
     z-index: -3;
     filter: blur(41px);
+}
+.white-theme .banner-inner li.banner-icon1 path {
+    fill: #f3ba2f;
+    stroke: #f3ba2f;
 }
 .white-theme .logo-white, .white-theme .cat-white, .white-theme .metapets-games-left-img-white{
     display: block;

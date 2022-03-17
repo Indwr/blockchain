@@ -1,8 +1,11 @@
 .erabic-lng{
-    display: block;
+    display: block !important;
+}
+.heading.erabic-lng{
+    display: inline-block !important;
 }
 .arabic ul.navbar-nav.me-auto.erabic-lng {
-    display: flex ;
+    display: flex !important;
 }
 .arabic .english-lng{
     display: none;

@@ -173,10 +173,13 @@ ul.navbar-nav.me-auto.erabic-lng{
     display: none ;
 }
 .erabic-lng{
-    display: none ;
+    display: none !important;
 }
 .english-lng{
     display: block;
+}
+.heading.english-lng{
+    display: inline-block;
 }
 
 @media(max-width: 1200px){

@@ -141,6 +141,9 @@
 .token-box-white{
     display: none;
 }
+.tokenomics-main-heading h1.erabic-lng{
+    display: none;
+}
 
 @media(max-width: 767px){
     .tokenomics-main-heading h1 {
