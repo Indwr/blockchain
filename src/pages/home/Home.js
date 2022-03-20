@@ -26,14 +26,19 @@ const Home = () => {
               <div className="banner-inner">
                 <h2 className="heading english-lng">MetaPets</h2>
                 <h2 className="heading erabic-lng">ميتابيتس</h2>
-                <h1 className="sub-heading english-lng">A new world, a new pet</h1>
-                <h1 className="sub-heading erabic-lng">عالم جديد، حيوان أليف جديد</h1>
+                <h1 className="sub-heading english-lng">
+                  A new world, a new pet
+                </h1>
+                <h1 className="sub-heading erabic-lng">
+                  عالم جديد، حيوان أليف جديد
+                </h1>
                 <p className="english-lng">
                   With MetaPets you can find your fur-ever friend who will
                   always be with you in the Metaverse.
                 </p>
                 <p className="erabic-lng">
-                مع ميتابيتس، يمكنك العثور على صديقك الأبدي الذي سيكون معك دائمًا في ميتافيرس
+                  مع ميتابيتس، يمكنك العثور على صديقك الأبدي الذي سيكون معك
+                  دائمًا في ميتافيرس
                 </p>
                 <div className="copy">
                   <div className="copy-addres">
@@ -44,8 +49,8 @@ const Home = () => {
                         onCopy={(e) => copyAddress(e)}
                       >
                         <button className="comman-btn btn-outer ">
-                          <span className="english-lng">Copy Address</span> 
-                          <span className="erabic-lng"> نسخ العنوان</span> 
+                          <span className="english-lng">Copy Address</span>
+                          <span className="erabic-lng"> نسخ العنوان</span>
                           <img
                             src="assets/images/button-border.svg"
                             alt="button-border"
@@ -237,7 +242,7 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="row">
-          <div className="col-12">
+            <div className="col-12">
               <div className="metapets-games-icon">
                 <ul>
                   <li>
@@ -471,12 +476,16 @@ const Home = () => {
                     Our friends in the crypto world
                   </h2>
                   <h2 className="heading mb-0 erabic-lng">
-                  أصدقائنا في عالم التشفير
+                    أصدقائنا في عالم التشفير
                   </h2>
                   <h3 className="sub-heading mb-0 english-lng">Partners</h3>
                   <h3 className="sub-heading mb-0 erabic-lng">شركاء</h3>
-                  <p className="english-lng">A project can't be successful alone</p>
-                  <p className="erabic-lng">لا يمكن أن يكون المشروع ناجحًا بمفرده.</p>
+                  <p className="english-lng">
+                    A project can't be successful alone
+                  </p>
+                  <p className="erabic-lng">
+                    لا يمكن أن يكون المشروع ناجحًا بمفرده.
+                  </p>
                 </div>
               </div>
             </div>
@@ -625,7 +634,10 @@ const Home = () => {
                         alt=""
                       />
                       <div className="partner-box-img">
-                        <img src="assets/images/certik-logotype-h-w.svg" alt="" />
+                        <img
+                          src="assets/images/certik-logotype-h-w.svg"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </a>
@@ -638,7 +650,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  href="https://swap.metapetscoin.com"
                 >
                   Buy Now
                   <img
@@ -652,7 +664,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  href="https://swap.metapetscoin.com"
                 >
                   اشتري الآن
                   <img
@@ -675,7 +687,6 @@ const Home = () => {
       <section className="metapets-games">
         <div className="container">
           <div className="row">
-            
             <div className="col-md-6">
               <div className="metapets-games-left">
                 <img
@@ -695,8 +706,12 @@ const Home = () => {
             </div>
             <div className="col-md-6">
               <div className="metapets-games-right">
-                <h2 className="heading mb-0 english-lng">Keep your pet engaged</h2>
-                <h2 className="heading mb-0 erabic-lng">ابقى حيوانك الاليف منخرط </h2>
+                <h2 className="heading mb-0 english-lng">
+                  Keep your pet engaged
+                </h2>
+                <h2 className="heading mb-0 erabic-lng">
+                  ابقى حيوانك الاليف منخرط{" "}
+                </h2>
                 <h3 className="sub-heading mb-0 english-lng">MetaPets Games</h3>
                 <h3 className="sub-heading mb-0 erabic-lng">العاب ميتابتس</h3>
                 <p className="english-lng">
@@ -707,8 +722,10 @@ const Home = () => {
                   and care to your new friend constantly.
                 </p>
                 <p className="erabic-lng">
-                لعاب ميتابيتس هي طريقه لربط المجتمع ومساعدته على بناء علاقات بطريقه تنافسيه ومسليه
-                 العاب NFT حيث تستطيع ان تدرب حيوان الميتابيتس الخاص بك وهنالك الكثير من الطرق  لتقوم باعطائه العنايه والحب باطعامهم والباسهم وتربيتهم
+                  لعاب ميتابيتس هي طريقه لربط المجتمع ومساعدته على بناء علاقات
+                  بطريقه تنافسيه ومسليه العاب NFT حيث تستطيع ان تدرب حيوان
+                  الميتابيتس الخاص بك وهنالك الكثير من الطرق لتقوم باعطائه
+                  العنايه والحب باطعامهم والباسهم وتربيتهم
                 </p>
                 <div className="btn-outer1 english-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
@@ -721,7 +738,7 @@ const Home = () => {
                 </div>
                 <div className="btn-outer1 erabic-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
-                  يتعلم أكثر
+                    يتعلم أكثر
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -743,22 +760,24 @@ const Home = () => {
             <div className="col-12">
               <div className="custom-pets-inner">
                 <div className="custom-pets-inner-box">
-                  <h2 className="heading mb-0 english-lng">
-                    Custom Pet DAPP
-                  </h2>
+                  <h2 className="heading mb-0 english-lng">Custom Pet DAPP</h2>
                   <h2 className="heading mb-0 erabic-lng">
-                  مخصص الحيوانات الأليفة DAPP
+                    مخصص الحيوانات الأليفة DAPP
                   </h2>
                   <h3 className="sub-heading mb-0 english-lng">Custom Pets</h3>
-                  <h3 className="sub-heading mb-0 erabic-lng"> الحيوانات الأليفة المخصصة</h3>
+                  <h3 className="sub-heading mb-0 erabic-lng">
+                    {" "}
+                    الحيوانات الأليفة المخصصة
+                  </h3>
                   <p className="english-lng">
                     Build the pet of your dreams, a friend who will be at your
                     beckoned call.{" "}
                   </p>
                   <p className="erabic-lng">
-                  تقوم الحيوانات الأليفة المخصصة ببناء حيوان أحلامك الأليف ، صديق سيكون في متناول يدك{" "}
+                    تقوم الحيوانات الأليفة المخصصة ببناء حيوان أحلامك الأليف ،
+                    صديق سيكون في متناول يدك{" "}
                   </p>
-                  <div className="btn-outer1 english-lng " >
+                  <div className="btn-outer1 english-lng ">
                     <a
                       className="comman-btn btn-outer "
                       target="_blank"
@@ -774,7 +793,7 @@ const Home = () => {
                   </div>
                   <div className="btn-outer1 erabic-lng ">
                     <a
-                      className="comman-btn btn-outer " 
+                      className="comman-btn btn-outer "
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
@@ -829,10 +848,14 @@ const Home = () => {
                   A pet that will always be yours
                 </h2>
                 <h2 className="heading mb-0 erabic-lng">
-                حيوان أليف سيكون لك دائمًا
+                  حيوان أليف سيكون لك دائمًا
                 </h2>
-                <h3 className="sub-heading mb-0 english-lng">Customizable Pets</h3>
-                <h3 className="sub-heading mb-0 erabic-lng">حيوانات أليفة قابلة للتخصيص</h3>
+                <h3 className="sub-heading mb-0 english-lng">
+                  Customizable Pets
+                </h3>
+                <h3 className="sub-heading mb-0 erabic-lng">
+                  حيوانات أليفة قابلة للتخصيص
+                </h3>
                 <p className="english-lng">
                   Use your imagination to customize your loving friend! Launch
                   your custom MetaPet, adopt any traits you want to make them
@@ -840,7 +863,10 @@ const Home = () => {
                   it on the marketplace.
                 </p>
                 <p className="erabic-lng">
-                استخدم خيالك لتخصيص صديقك المحب! قم بتشغيل ميتابيتس المخصص الخاص بك ، واختار أي سمات تريد أن تجعلها فريدة من نوعها ، وتفاخر بوسائط ميتابيتس الاجتماعية الخاصة بك، وقم ببيعها أو تبديلها في السوق.
+                  استخدم خيالك لتخصيص صديقك المحب! قم بتشغيل ميتابيتس المخصص
+                  الخاص بك ، واختار أي سمات تريد أن تجعلها فريدة من نوعها ،
+                  وتفاخر بوسائط ميتابيتس الاجتماعية الخاصة بك، وقم ببيعها أو
+                  تبديلها في السوق.
                 </p>
                 <div className="btn-outer1 english-lng">
                   <a
@@ -919,8 +945,12 @@ const Home = () => {
                   MetaPets investment.
                 </p>
                 <p className="erabic-lng">
-                تهدف ميتابيتس  إلى جعل ميتابيتس الخاص بك قابلاً للتكيف مع التصميمات الافتراضية لـ ميتافيرس. قابلة للتشغيل المتبادل في عوالم أخرى ، يمكنك إظهار كلبك في عرض للكلاب ، وجعل بقرة الجائزة الخاصة بك تنتج الحليب لبيعه ، وتسابق مع خيلك الحائز على الكأس في منافسة ، كل ذلك بينما تربح دخلًا سلبيًا من استثمار ميتابيتس.
-
+                  تهدف ميتابيتس إلى جعل ميتابيتس الخاص بك قابلاً للتكيف مع
+                  التصميمات الافتراضية لـ ميتافيرس. قابلة للتشغيل المتبادل في
+                  عوالم أخرى ، يمكنك إظهار كلبك في عرض للكلاب ، وجعل بقرة
+                  الجائزة الخاصة بك تنتج الحليب لبيعه ، وتسابق مع خيلك الحائز
+                  على الكأس في منافسة ، كل ذلك بينما تربح دخلًا سلبيًا من
+                  استثمار ميتابيتس.
                 </p>
                 <div className="btn-outer1 english-lng">
                   <a
@@ -1184,7 +1214,10 @@ const Home = () => {
                   anyone else out there create.{" "}
                 </p>
                 <p className="erabic-lng">
-                تتمثل رؤيتنا في أن نرى أن مشروعنا يضيف إلى نمو وقيمة ميتافيرس. سيكون حقًا قابلاً للتشغيل المتبادل ومفتوحًا - مما يعني أنه على الطريق ، سيتمكن المالك من استخدام ميتابيتس في ألعاب / عوالم تعريفية أخرى نقوم بإنشائها نحن أو أي شخص آخر
+                  تتمثل رؤيتنا في أن نرى أن مشروعنا يضيف إلى نمو وقيمة ميتافيرس.
+                  سيكون حقًا قابلاً للتشغيل المتبادل ومفتوحًا - مما يعني أنه على
+                  الطريق ، سيتمكن المالك من استخدام ميتابيتس في ألعاب / عوالم
+                  تعريفية أخرى نقوم بإنشائها نحن أو أي شخص آخر
                 </p>
                 <p className="english-lng">
                   So, for example, your MetaPets could be pulled into a training
@@ -1195,11 +1228,15 @@ const Home = () => {
                   loyal community.
                 </p>
                 <p className="erabic-lng">
-                لذلك ، على سبيل المثال ، قد يتم سحب ميتابيتس إلى معسكر تدريب أو حديقة كلاب أو أي نوع آخر من الألعاب التي يريد شخص ما بناءها على عوالم مختلفة في ميتافيرس دون الحاجة بالضرورة إلى إذن. سعادة مجتمعنا هي أولويتنا الأولى ، وكل شيء نقوم بإنشائه سيكون لمكافأة مجتمعنا المخلص.
+                  لذلك ، على سبيل المثال ، قد يتم سحب ميتابيتس إلى معسكر تدريب
+                  أو حديقة كلاب أو أي نوع آخر من الألعاب التي يريد شخص ما بناءها
+                  على عوالم مختلفة في ميتافيرس دون الحاجة بالضرورة إلى إذن.
+                  سعادة مجتمعنا هي أولويتنا الأولى ، وكل شيء نقوم بإنشائه سيكون
+                  لمكافأة مجتمعنا المخلص.
                 </p>
                 <div className="btn-outer1 english-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
-                  Whitepaper
+                    Whitepaper
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -1208,7 +1245,7 @@ const Home = () => {
                 </div>
                 <div className="btn-outer1 erabic-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
-                  ورق ابيض
+                    ورق ابيض
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -1241,8 +1278,12 @@ const Home = () => {
                 <h2 className="heading mb-0 erabic-lng">طاقمنا الأسطوري</h2>
                 <h3 className="sub-heading mb-0 english-lng">Team</h3>
                 <h3 className="sub-heading mb-0 erabic-lng">فريق</h3>
-                <p className="english-lng">A project goes farther with helping hands.</p>
-                <p className="erabic-lng">يذهب المشروعإلى  أبعد من ذلك بمساعدة الأيدي.</p>
+                <p className="english-lng">
+                  A project goes farther with helping hands.
+                </p>
+                <p className="erabic-lng">
+                  يذهب المشروعإلى أبعد من ذلك بمساعدة الأيدي.
+                </p>
               </div>
             </div>
           </div>
@@ -1264,8 +1305,12 @@ const Home = () => {
                 <div className="roadmap-text-box">
                   <h2 className="heading mb-0 english-lng">Roadmap</h2>
                   <h2 className="heading mb-0 erabic-lng">خريطة الطريق</h2>
-                  <h3 className="sub-heading mb-0 english-lng">Explore Our Roadmap</h3>
-                  <h3 className="sub-heading mb-0 erabic-lng">اكتشف خارطة الطريق الخاصة بنا</h3>
+                  <h3 className="sub-heading mb-0 english-lng">
+                    Explore Our Roadmap
+                  </h3>
+                  <h3 className="sub-heading mb-0 erabic-lng">
+                    اكتشف خارطة الطريق الخاصة بنا
+                  </h3>
                   <p className="english-lng">
                     The future for MetaPets is bold, creative, and will expand
                     into the Metaverse. We look forward to bringing our
@@ -1273,7 +1318,9 @@ const Home = () => {
                     anyone's imagination.
                   </p>
                   <p className="erabic-lng">
-                  مستقبل جريء وخلاق لميتابيتس وسوف يتوسع في ميتافيرس. نتطلع إلى تقديم رؤيتنا لمستثمرينا ، والتي ستأخذنا إلى ما هو أبعد من خيال أي شخص.
+                    مستقبل جريء وخلاق لميتابيتس وسوف يتوسع في ميتافيرس. نتطلع
+                    إلى تقديم رؤيتنا لمستثمرينا ، والتي ستأخذنا إلى ما هو أبعد
+                    من خيال أي شخص.
                   </p>
                 </div>
                 {/* <div className="btn-outer1 english-lng">
@@ -1309,7 +1356,6 @@ const Home = () => {
           </div>
         </div>
         <CarousalSecond />
-        
       </section>
     </div>
   );

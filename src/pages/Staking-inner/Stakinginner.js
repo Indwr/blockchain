@@ -6,12 +6,18 @@ import "./stakinginner.css";
 
 const Stakinginner = () => {
   const [show, setShow] = useState(false);
+  const [baseUrl, setBaseUrl] = useState("http://127.0.0.1:3002/api/v1/");
   // const [errorMessage, setErrorMessage] = useState(null);
+  const [totalStacked, setTotalStacked] = useState(0);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
   const [metaPetsBalance, setMetaPetsBalance] = useState(0);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const [isConnected, setIsConnected] = useState(false);
+  const [totalLockedValue, setTotalLockedValue] = useState(0);
+  const [metaPetsPrice, setMetaPetsPrice] = useState("0.000000000223");
+  const [lockedVolumn, setLockedVolumn] = useState([]);
+  const [firstRow, setFirstRow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -23,7 +29,6 @@ const Stakinginner = () => {
         })
         .then((result) => {
           accountChangeHandler(result[0]);
-          getBalance();
         });
     } else {
       console.log("Install MetaMask");
@@ -35,6 +40,7 @@ const Stakinginner = () => {
     setDefaultAccount(newAccount);
     getUserBalance(newAccount.toString());
     setConnButtonText("Connect Wallet");
+    getBalance(newAccount);
   };
 
   // const getTokens = async (
@@ -86,19 +92,32 @@ const Stakinginner = () => {
     window.ethereum.on("accountsChanged", accountChangeHandler);
   }
 
-  function getBalance() {
+  function getBalance(addresss) {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         contract_address: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d",
-        address: "0xEcf9a23671a63d2f722f7362ECF6A48b1483b302",
+        address: addresss,
       }),
     };
-    fetch("http://127.0.0.1:8080/api/v1/getBebTokenBalance", requestOptions)
+    fetch(`${baseUrl}getBebTokenBalance`, requestOptions)
       .then((response) => response.json())
       .then((data) => setMetaPetsBalance(abbreviateNumber(data.balance)));
   }
+
+  const getLockedVolumn = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        address: defaultAccount,
+      }),
+    };
+    fetch(`${baseUrl}getListingLockedToken`, requestOptions)
+      .then((response) => response.json())
+      .then((data) => setLockedVolumn(data.totalListingLockedToken));
+  };
 
   var SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
   function abbreviateNumber(number) {
@@ -119,17 +138,45 @@ const Stakinginner = () => {
     return scaled.toFixed(1) + suffix;
   }
 
+  const totalStackedToken = () => {
+    const requestOptions = {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    };
+    fetch(`${baseUrl}getTotalStackedToken`, requestOptions)
+      .then((response) => response.json())
+      .then((data) =>
+        setTotalStacked(abbreviateNumber(data.totalStackedToken))
+      );
+    updateMetaPrice(totalStacked);
+  };
+
+  function updateMetaPrice(totalStackedTokens) {
+    setTotalLockedValue(totalStackedTokens * metaPetsPrice);
+  }
+  const firstClass = () => {
+    let response = firstRow === true ? false : true;
+    setFirstRow(response);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    // if (window.location.hostname === "127.0.0.1" || "localhost") {
+    //   setBaseUrl(`http://${window.location.hostname}:3002/api/v1/`);
+    // }
     if (typeof window.ethereum === "undefined") {
       handleShow();
       console.log("Please install MetaMask");
     } else {
+      setTimeout(() => {
+        totalStackedToken();
+        getLockedVolumn();
+      }, 200);
       // setIsConnected(defaultAccount ? true : false);
     }
-    // if (!defaultAccount) {
-    //   handleShow();
-    // }
+
+    setBaseUrl("http://127.0.0.1:3002/api/v1/");
+    setMetaPetsPrice("0.000000000223");
   }, []);
   return (
     <div>
@@ -144,7 +191,7 @@ const Stakinginner = () => {
                 <div className="stakin-inner-heading-box">
                   <div className="staking-icon">
                     <img src="assets/images/stakin-inner2.svg" alt="icon" />
-                    <p>{userBalance}</p>
+                    <p className="userBalanceFIrstP">{userBalance}</p>
                   </div>
                   <div className="staking-icon staking-icon1">
                     <img
@@ -152,9 +199,9 @@ const Stakinginner = () => {
                       src="assets/images/stakin-inner1.svg"
                       alt="icon"
                     />
-                    <p>{metaPetsBalance}</p>
+                    <p className="metaPetsBalanceSecondP">{metaPetsBalance}</p>
                   </div>
-                  <h6>{defaultAccount}kdsjvkdshvkjdsl;vk;dsmvlkdsnvk,m</h6>
+                  <h6>{defaultAccount}</h6>
                   {isConnected && (
                     <button onClick={handleDisconnect}>Logout</button>
                   )}
@@ -176,17 +223,17 @@ const Stakinginner = () => {
               <div className="staking-inner-second">
                 <div className="staking-inner-second-box">
                   <h4>
-                    <img src="assets/images/stakin-inner1.svg" alt="icon" />{" "}
-                    2,403,210,0361.
+                    <img src="assets/images/stakin-inner1.svg" alt="icon" />
+                    {totalStacked}
                   </h4>
                   <p>Total Staked</p>
                 </div>
                 <div className="staking-inner-second-box staking-inner-second-box1">
-                  <h4>$ 44,405.6499</h4>
+                  <h4>$ {totalLockedValue}</h4>
                   <p>Total Value Locked</p>
                 </div>
                 <div className="staking-inner-second-box">
-                  <h4>$0.000000000223</h4>
+                  <h4>${metaPetsPrice}</h4>
                   <p>Price MetaPets</p>
                 </div>
               </div>
@@ -248,7 +295,7 @@ const Stakinginner = () => {
                             </tr>
                           </thead>
                           <tbody>
-                            <tr className="dark-tr">
+                            <tr className="dark-tr" onClick={firstClass}>
                               <th>Range Amount </th>
                               <td>
                                 <span className="apy-box">21.94%</span>
@@ -303,7 +350,12 @@ const Stakinginner = () => {
                                 </button>
                               </td>
                             </tr>
-                            <tr className="dark-tr">
+                            <tr
+                              className={
+                                "dark-tr " +
+                                (firstRow === true ? "" : "firstRowHide")
+                              }
+                            >
                               <td colSpan="6">
                                 <div className="staking-detail">
                                   <div className="staking-detail-bar-outer">
@@ -644,46 +696,26 @@ const Stakinginner = () => {
                                 </div>
                               </td>
                             </tr>
-                            <tr className="dark-tr">
-                              <td>Silver</td>
-                              <td>$200.00</td>
-                              <td>7 Days</td>
-                              <td>18/09/2021</td>
-                              <td>7 Days</td>
-                              <td>18/09/2021</td>
-                              <td>62</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr className="light-tr">
-                              <td>Gold</td>
-                              <td>$45.00</td>
-                              <td>90 Days</td>
-                              <td>12/06/2021</td>
-                              <td>90 Days</td>
-                              <td>12/06/2021</td>
-                              <td>12/06/2021</td>
-                              <td>40%</td>
-                            </tr>
-                            <tr className="dark-tr">
-                              <td>Ruby</td>
-                              <td>$75.00</td>
-                              <td>90 Days</td>
-                              <td>08/03/2022</td>
-                              <td>7 Days</td>
-                              <td>08/03/2022</td>
-                              <td>10</td>
-                              <td>24%</td>
-                            </tr>
-                            <tr className="light-tr">
-                              <td>Diamond</td>
-                              <td>$25.00</td>
-                              <td>7 Days</td>
-                              <td>16/08/2021</td>
-                              <td>180 Days</td>
-                              <td>16/08/2021</td>
-                              <td>56 </td>
-                              <td>32%</td>
-                            </tr>
+                            {lockedVolumn.map((item, key) => (
+                              <>
+                                <tr
+                                  className={
+                                    key % 2 === 0 ? "dark-tr" : "light-tr"
+                                  }
+                                >
+                                  <td>{item.package}</td>
+                                  <td>${item.totalAmount}</td>
+                                  <td>{item.lockedDay} Days</td>
+                                  <td>{item.stackDate}</td>
+                                  <td>{item.lockedDay} Days</td>
+                                  <td>{item.endDate}</td>
+                                  <td>62</td>
+                                  {/* Note Calcualete days According to current date and End date of the Package */}
+                                  <td>20%</td>
+                                  {/* Note Calcualete Estimated Interest According to Start Date from stacking with current Date */}
+                                </tr>
+                              </>
+                            ))}
                           </tbody>
                         </table>
                       </div>
