@@ -97,6 +97,7 @@
     position: absolute;
     top: -152px;
     right: -332px;
+    z-index: -1;
 }
 .banner-inner ul li svg {
     width: 30px;
@@ -147,9 +148,10 @@ img.metapets-games-left-img {
     margin: 34px 0 152px;
 }
 
-.metapets-games .metapets-games-icon a svg stop {
+ .metapets-games-icon a svg  {
     stop-color: #ededee;
     transition: all .4s;
+    /* fill:#ededee; */
 }
 .metapets-games .metapets-games-icon a:hover svg stop {
     stop-color: #02e3ce;
@@ -580,16 +582,20 @@ img.road-test-icon2 {
     color: #FFFFFF;
     opacity: 0.5;
 }
-
-.banner-inner li path {
-    opacity: .5;
+.numquam-eius-left .btn-outer1 {
+    pointer-events: none;
 }
+
+/* .banner-inner li path {
+    opacity: .5;
+} */
 .banner-inner li.banner-icon1 path {
     fill: #f3ba2f;
     opacity: 1;
     z-index: 3;
     position: relative;
     opacity: 1;
+    stroke: #f3ba2f;
 }
 .custom-pets-inner .btn-outer1 {
     pointer-events: none;

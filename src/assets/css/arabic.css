@@ -1,8 +1,11 @@
 .erabic-lng{
-    display: block;
+    display: block !important;
+}
+.heading.erabic-lng{
+    display: inline-block !important;
 }
 .arabic ul.navbar-nav.me-auto.erabic-lng {
-    display: flex ;
+    display: flex !important;
 }
 .arabic .english-lng{
     display: none;
@@ -75,6 +78,36 @@
     left: auto;
     right: auto !important;
     width: 221px;
+}
+.arabic .staking-icon {
+    margin-right: 0px;
+    margin-left: 26px;
+}
+.arabic .staking-icon img {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+.arabic .staking-icon.staking-icon1 {
+    margin-right: 0px;
+    margin-left: 49px;
+}
+.arabic .mpc-coin-right p {
+    margin: 0 0px 0 28px !important;
+}
+.arabic .stack-mpcheading-right p {
+    margin: 0 0px 0 70px !important;
+}
+.arabic p.border-right {
+    border-right: 1px solid rgb(255 255 255 / 10%);
+    border-left: 0px solid rgb(255 255 255 / 10%);
+    margin-left: 0;
+    margin-right: 25px;
+    padding-left: 0;
+    padding-right: 25px;
+}
+.arabic .summry-row-right p img {
+    margin-right: 0px;
+    margin-left: 8px;
 }
 
 @media(max-width: 1400px){

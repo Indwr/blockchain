@@ -180,6 +180,9 @@ a:hover svg stop {
   top: 50%;
   transform: translateY(-50%);
 }
+/* .footer-form .erabic-lng {
+  display: none;
+} */
 
 @media (max-width: 1400px) {
   .footer-box.footer-box1 {

@@ -78,8 +78,8 @@ const Home = () => {
                     >
                       <path
                         d="M34 5.66667L17 22.6667L22.6667 28.3333L34 17L45.3333 28.3333L51 22.6667L34 5.66667Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -87,8 +87,8 @@ const Home = () => {
                       />
                       <path
                         d="M34 62.3333L17 45.3333L22.6667 39.6667L34 51L45.3333 39.6667L51 45.3333L34 62.3333Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -96,8 +96,8 @@ const Home = () => {
                       />
                       <path
                         d="M56.058 27.489L49.647 33.9L56.058 40.3111L62.4691 33.9L56.058 27.489Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -105,8 +105,8 @@ const Home = () => {
                       />
                       <path
                         d="M12.1415 27.4886L5.73044 33.8996L12.1415 40.3107L18.5525 33.8996L12.1415 27.4886Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -114,8 +114,8 @@ const Home = () => {
                       />
                       <path
                         d="M33.7991 26.9879L26.787 34L33.7991 41.0121L40.8112 34L33.7991 26.9879Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -133,8 +133,8 @@ const Home = () => {
                     >
                       <path
                         d="M16.9625 22.3708L28.7625 17.2083C29.2542 16.9625 29.7458 16.9625 30.4833 17.2083L42.2833 22.3708C43.2667 22.8625 44.25 21.6333 43.5125 20.65L31.2208 5.65417C30.4833 4.67084 29.0083 4.67084 28.2708 5.65417L15.9792 20.65C14.9958 21.6333 15.9792 22.8625 16.9625 22.3708Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -142,8 +142,8 @@ const Home = () => {
                       />
                       <path
                         d="M16.9625 36.6292L28.7625 41.7917C29.2542 42.0375 29.7458 42.0375 30.4833 41.7917L42.2833 36.6292C43.2667 36.1375 44.25 37.3667 43.5125 38.35L31.2208 53.3458C30.4833 54.3292 29.0083 54.3292 28.2708 53.3458L15.9792 38.35C14.9958 37.3667 15.9792 36.1375 16.9625 36.6292Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -151,8 +151,8 @@ const Home = () => {
                       />
                       <path
                         d="M29.5 23.1083L16.7167 29.5L29.5 35.8917L42.2833 29.5L29.5 23.1083Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -170,7 +170,7 @@ const Home = () => {
                     >
                       <path
                         d="M39.5 39.8292L24.6875 48.3875L9.875 39.8292V22.7125L24.6875 14.1542L39.5 22.7125V27.9792"
-                        stroke="white"
+                        stroke="#86868b"
                         strokeWidth="6.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -178,7 +178,7 @@ const Home = () => {
                       />
                       <path
                         d="M39.5 39.8292L54.3125 31.2708L69.125 39.8292V56.9458L54.3125 65.5042L39.5 56.9458V51.35"
-                        stroke="white"
+                        stroke="#86868b"
                         strokeWidth="6.5"
                         strokeMiterlimit="10"
                         strokeLinecap="round"
@@ -196,22 +196,22 @@ const Home = () => {
                     >
                       <path
                         d="M61.6667 10.7917H16.9583C16.0333 10.7917 15.1083 11.1 14.4917 12.025L9.86667 18.1917C8.325 20.35 9.86667 23.125 12.3333 23.125H57.0417C57.9667 23.125 58.8917 22.8167 59.5083 21.8917L64.1333 15.725C65.675 13.5667 64.1333 10.7917 61.6667 10.7917Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                       />
                       <path
                         d="M12.3333 30.8333H57.0417C57.9667 30.8333 58.8917 31.1417 59.5083 32.0667L64.1333 38.2333C65.675 40.3917 64.1333 43.1667 61.6667 43.1667H16.9583C16.0333 43.1667 15.1083 42.8583 14.4917 41.9333L9.86667 35.7667C8.325 33.6083 9.86667 30.8333 12.3333 30.8333Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                       />
                       <path
                         d="M61.6667 50.875H16.9583C16.0333 50.875 15.1083 51.1833 14.4917 52.1083L9.86667 58.275C8.325 60.4333 9.86667 63.2083 12.3333 63.2083H57.0417C57.9667 63.2083 58.8917 62.9 59.5083 61.975L64.1333 55.8083C65.675 53.65 64.1333 50.875 61.6667 50.875Z"
-                        fill="white"
-                        stroke="white"
+                        fill="#86868b"
+                        stroke="#86868b"
                         strokeWidth="1.5"
                         strokeMiterlimit="10"
                       />
@@ -308,10 +308,10 @@ const Home = () => {
                             y2="27.9999"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stopColor="#00FFE5" />
+                            <stop stopColor="white" />
                             <stop
                               offset="1"
-                              stopColor="#00FFE5"
+                              stopColor="white"
                               stopOpacity="0.35"
                             />
                           </linearGradient>
@@ -620,7 +620,7 @@ const Home = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://poocoin.app/tokens/0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    href="https://www.certik.com/projects/metapetscoin"
                   >
                     <div className="partner-box">
                       <img
@@ -650,7 +650,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://swap.metapetscoin.com"
+                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                 >
                   Buy Now
                   <img
@@ -664,7 +664,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://swap.metapetscoin.com"
+                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                 >
                   اشتري الآن
                   <img
@@ -760,7 +760,7 @@ const Home = () => {
             <div className="col-12">
               <div className="custom-pets-inner">
                 <div className="custom-pets-inner-box">
-                  <h2 className="heading mb-0 english-lng">Custom Pet DAPP</h2>
+                  <h2 className="heading mb-0 english-lng">Custom Pets DAPP</h2>
                   <h2 className="heading mb-0 erabic-lng">
                     مخصص الحيوانات الأليفة DAPP
                   </h2>
@@ -873,7 +873,7 @@ const Home = () => {
                     className="comman-btn btn-outer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    href="https://metapetscoin.com/home"
                   >
                     Coming Soon
                     <img
@@ -957,7 +957,7 @@ const Home = () => {
                     className="comman-btn btn-outer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    href="https://metapetscoin.com/home"
                   >
                     Coming Soon
                     <img

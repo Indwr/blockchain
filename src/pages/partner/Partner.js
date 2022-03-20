@@ -115,7 +115,7 @@ const Partner = () => {
                   <div className="partner-img-box">
                     <a
                       target="_blank"
-                      href="https://www.certik.com/"
+                      href="https://www.certik.com/projects/metapetscoin"
                       rel="noreferrer"
                     >
                       <div className="partner-img-box-outer">
@@ -143,7 +143,7 @@ const Partner = () => {
                   <div className="partner-img-box">
                     <a
                       target="_blank"
-                      href="https://pancakeswap.finance/"
+                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                       rel="noreferrer"
                     >
                       <div className="partner-img-box-outer">
