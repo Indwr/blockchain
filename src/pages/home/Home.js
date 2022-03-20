@@ -650,7 +650,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  href="https://swap.metapetscoin.com"
                 >
                   Buy Now
                   <img
@@ -664,7 +664,7 @@ const Home = () => {
                   className="comman-btn btn-outer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                  href="https://swap.metapetscoin.com"
                 >
                   اشتري الآن
                   <img
