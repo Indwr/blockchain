@@ -16,8 +16,10 @@ const About = () => {
               <div className="about-inner ">
                 <div className="about-inner-box">
                   <h2 className="heading english-lng">Our Vision</h2>
+                  <h2 className="heading turkish-lng">Vizyonumuz</h2>
                   <h2 className="heading erabic-lng">رؤيتنا</h2>
                   <h1 className="sub-heading english-lng">About Us</h1>
+                  <h1 className="sub-heading turkish-lng">Hakkımızda</h1>
                   <h1 className="sub-heading erabic-lng">عنامعلومات</h1>
                   <video
                     loop
@@ -26,7 +28,7 @@ const About = () => {
                     src="assets/images/about-video.mp4"
                     type="video/mp4"
                   ></video>
-                  <div className="english-lng">
+              <div className="english-lng">
 
                   
                   <p>
@@ -124,8 +126,22 @@ const About = () => {
                     and breed them, show them off at the national dog show, and
                     place them on a pedestal for others to envy.
                   </p>
-                  </div>
-                  <div className="erabic-lng">
+                </div>
+                <div className="turkish-lng">
+                  <p>MetaPets, Metaverse'e sevgi ve arkadaşlığı kişiselleştirilmiş bir şekilde getirmenin ilk adımı olmayı ve kullanıcıların tasarımlarının evcil hayvanlarının sahibi olmalarını sağlamayı hedefliyor. Bir daha asla kayıpla gelen acı verici duygular için endişelenmenize gerek kalmayacaktır.</p>
+                  <p>Kedilere alerjiniz var ama onları seviyor musunuz? Kalbinizin kedi sahip olma isteğini yerine getirin, renklerin, boyutların ve sevimli tüylerinin sonsuza kadar arkadaşınız olacak şekilde özelleştirilebildiği bir NFT'ye dönüştürün.</p>
+                  <p>MetaPets, MetaPet'inizi Metaverse'in sanal tasarımlarına uyarlanabilir hale getirmeyi amaçlar. Diğer dünyalarla birlikte çalışabilir, bir köpek gösterisinde köpeğinizi gösterebilir, ödüllü ineğinizin satmak için süt üretmesini sağlayabilir ve ödüllü atınızı bir yarışmada yarıştırırken, MetaPets Yatırımınızdan pasif bir gelir elde edebilirsiniz.</p>
+                  <p>Sonsuza kadar seninle olacak bir evcil hayvana sahip olsaydın ne olurdu? Her zaman yanınızda, her zaman sevgi dolu, sizi görmekten her zaman mutlu. Konsepti hayal etmek o kadar zor değil, özellikle de evcil hayvanınızı Metaverse'de dijital bir dünyada hayal ettiğinizde hiç zor olmayacaktır.</p>
+                  <p>Gerçek dünyada sahiplendiğiniz gerçek evcil hayvanlar ile Metaverse'de her zaman yanınızda olacak olanlar arasındaki ilişkiyi düşünmemiz için bize ilham verdi.</p>
+                  <p>Can arkadaşımız üzgün, yalnız veya yorgun olduğunuzda ve sadece birlikte olmak istediğinizde yanınızdadır. Bir daha asla evcil hayvanınızı kaybetmeyeceksiniz ve kaybın kederi ve zorluğuyla uğraşmak zorunda kalmayacaksınız.</p>
+                  <p>Üzüntünün üstesinden gelmek zor, yeni bir evcil hayvan kaybetmek ve seni de bırakmayacak gibi hissetmek çok zor. Ama Metaverse'de sonsuza kadar evcil hayvan sahibi olabileceğinizi hayal edin. Metaverse'de hala bir arkadaşlığa sahip olabilir veya birlikte bir aile olabilirsiniz. Sizinle aynı durumu yaşayabilecek evcil hayvan sahiplerini kolayca bulabilir, birlikte bu acıyı birlikte atlatmanıza yardımcı olabilirsiniz. Evcil hayvanlarımızı, sonsuza kadar birlikte olma olasılıklarını düşünürken aklımıza gelen başlangıç ​​noktası bu oldu, bu yüzden MetaPets adlı bu projeyi hayata geçirdik.</p>
+                  <p>Küresel yaşam tarzlarındaki değişiklikler ve insanların evde sıkışıp kalırken yaratıcı olmanın yeni yollarını benimsemesiyle birlikte, 2021 yılı insanların Metaverse hakkında ciddi bir şekilde konuşmaya başladığı yıl olması tamamen rastgele olmayabilir. Pandemi sırasında, sosyal hayatımızdan alışverişlerimize kadar pek çok şey zorunluluktan dijital hale geldi ve bazen Metaevrenin ortasında olduğumuzu hissettik.</p>
+                  <p>Ondan önce Sanal Gerçeklik (VR), bizi gerçekliğe dayalı bir dijital dünyaya geçişe zorlamanın en gerçekçi yolu gibi görünüyordu. Sanal Gerçeklik cihazlarını görmeye devam edeceğiz; Ancak, giymesi rahat güçlü cihazlar olduğunda ve bunun gibi şeyler daha yaygın hale geldiğinde oyun bitti mı olacak? Yoksa farklı bir şekilde yorumlanabilir mi, Daha çok OYUN BAŞLA mı olacak?!</p>
+                  <p>Bunu yaparken, telefonlarımızda olduğumuz gibi bizi yavaşça değiştiren aynı ortamda veya fiziksel alanda bile deneyimleyeceğimiz farklı gerçeklik katmanları olacak - pasif olarak, fiziksel bir ortamda ve zihinsel olarak dijital ortama olacaktır. Yine de, bu sadece başlangıç, çünkü bir telefonun ötesinde, tüm bedenlerimiz tamamen meşgul olacak ve Metaverse'nin ilginçleşmeye başladığı yer burası - her şeyin mümkün olduğu ve arkadaşlarımız ve arkadaşlarımızla yeni ve yaratıcı bir dünya olacaktır.</p>
+                  <p>Bu ortamda, ebediyen sadık ve sevgi dolu MetaPet'lerimizle eşzamanlı olarak bu alternatif gerçeklikleri gerçekten keşfetmeye ve yaşamaya başlıyoruz.</p>
+                  <p>Günümüz teknolojisinin çözünürlük seviyesi ve kalitesi sayesinde Metaverse gerçek hayattaki kadar doğal görünebilir. Bununla birlikte, tüm bunlar, bir kişinin vizyonuna sadık kalırken, tüm duyularımızı meşgul eden daha sürükleyici bir eğlence deneyimine işaret ediyor, örneğin, sevimli evcil hayvanlarınızla sanal bir dünyada ikinci bir arkadaşa sahip olma yeteneğidir. Sahipler evcil hayvanlarını giydirebilir, eğitebilir ve yetiştirebilir, ulusal köpek gösterisinde gösterebilir ve başkalarının kıskanması için onları bir özel yerde koyabiliriler.</p>
+                </div>
+                <div className="erabic-lng">
                   <p>
                   تهدف ميتابيتس إلى أن تكون الخطوة الأولى في جلب الحب والرفقة إلى ميتافيرس بطريقة مخصصة ، مما يسمح للمستخدمين بأن يصبحوا أصحاب حيوانات أليفة من تصميمهم. لا داعي للقلق مرة أخرى بشأن المشاعر المؤلمة التي تأتي مع الخسارة.
                   </p>

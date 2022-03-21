@@ -26,8 +26,10 @@ const Whitepaper = () => {
             <div className="col-12">
               <div className="whitepaper-heading">
                 <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                <h2 className="heading mb-0 turkish-lng">MetaPets </h2>
                 <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
                 <h1 className="sub-heading mb-0 english-lng">Whitepaper</h1>
+                <h1 className="sub-heading mb-0 turkish-lng">Teknik Raporu.</h1>
                 <h1 className="sub-heading mb-0 erabic-lng">ورقة معلومات</h1>
                 <p className="heading-text english-lng">
                   A project's whitepaper is a team's vision and plan for where
@@ -36,6 +38,9 @@ const Whitepaper = () => {
                   if we got it right. To satisfy the needs of some of our
                   international communities, we have translated it into a few
                   languages. More to come.
+                </p>
+                <p className="heading-text turkish-lng">
+                Bir projenin teknik raporu, bir ekibin vizyonu ve projenin nereye gideceğine ilişkin planıdır. Bir teknik inceleme ne kadar yaratıcı ve iyi yazılmışsa, vizyonu o kadar iyi olur. Bu nedenle teknik raporumuzu kontrol edin ve doğru yapmış mıyız bakın. Uluslararası topluluklarımızdan bazılarının ihtiyaçlarını karşılamak için onu birkaç dile çevirdik. Gelenler daha fazla olacak
                 </p>
                 <p className="heading-text erabic-lng">
                 الورقة البيضاء للمشروع هي رؤية الفريق وخطته للمكان الذي سيذهب إليه المشروع. كلما كانت الورقة البيضاء أكثر إبداعًا وحسنًا ، كانت الرؤية أفضل. تحقق من منتجاتنا ومعرفة ما إذا كنا قد حصلنا عليها بشكل صحيح. لتلبية احتياجات بعض مجتمعاتنا الدولية ، قمنا بترجمتها إلى عدة لغات. المزيد قادم.
@@ -70,11 +75,26 @@ const Whitepaper = () => {
                       alt="icon"
                     />
                     <a
-                      className="alink"
+                      className="alink english-lng"
                       href={"assets/pdf/MetaPets-WhitePaper-V1-2.pdf"}
                       download
                     >
                       Download PDF File
+                    </a>
+                    <a
+                      className="alink turkish-lng"
+                      href={"assets/pdf/MetaPets-WhitePaper-V1-2.pdf"}
+                      download
+                    >
+                      PDF DOSYASINI İNDİR
+                    </a>
+                    <a
+                      className="alink erabic-lng"
+                      href={"assets/pdf/MetaPets-WhitePaper-V1-2.pdf"}
+                      download
+                    >
+                      قم بتنزيل ملف PDF
+
                     </a>
                   </button>
                 </div>

@@ -17,12 +17,17 @@ const Ecosystem = () => {
               <div className="ecoysystem-inner">
                 <div className="ecoysystem-inner-heading">
                   <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 turkish-lng">MetaPets</h2>
                   <h2 className="heading mb-0 erabic-lng">نظام ميتابيتس</h2>
                   <h1 className="sub-heading mb-0 english-lng">Ecosystem</h1>
+                  <h1 className="sub-heading mb-0 turkish-lng">Ekosistemi </h1>
                   <h1 className="sub-heading mb-0 erabic-lng">البيئي</h1>
                   <p className="heading-text english-lng">
                     For projects to thrive, it is required for many moving parts
                     to work closely together.
+                  </p>
+                  <p className="heading-text turkish-lng">
+                  Projelerin başarılı olması için birçok hareketli parçanın birlikte çalışması gerekir.
                   </p>
                   <p className="heading-text erabic-lng">
                   لكي تزدهر المشاريع ، يلزم أن تعمل العديد من الأجزاء المتحركة معًا بشكل وثيق.
@@ -95,6 +100,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Charity </h5>
+                          <h5 className="turkish-lng">HAYIR İŞLERİ </h5>
                           <h5 className="erabic-lng">عمل خيري </h5>
                         </div>
                       </div>
@@ -151,6 +157,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Giveaways</h5>
+                          <h5 className="turkish-lng">ÇEKİLİŞLER</h5>
                           <h5 className="erabic-lng">هدايا </h5>
                         </div>
                       </div>
@@ -196,6 +203,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Cross-Chain</h5>
+                          <h5 className="turkish-lng">ZİNCİRLER ARASI</h5>
                           <h5 className="erabic-lng">عبر سلسلة</h5>
                         </div>
                       </div>
@@ -247,6 +255,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Dapps</h5>
+                          <h5 className="turkish-lng">DAPPS</h5>
                           <h5 className="erabic-lng">تطبيق لامركزي</h5>
                         </div>
                       </div>
@@ -280,6 +289,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Metaverse</h5>
+                          <h5 className="turkish-lng">METAVERSE</h5>
                           <h5 className="erabic-lng">ميتافيرس </h5>
                         </div>
                       </div>
@@ -339,6 +349,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Games</h5>
+                          <h5 className="turkish-lng">OYUNLARI</h5>
                           <h5 className="erabic-lng"> ألعاب</h5>
                         </div>
                       </div>
@@ -384,6 +395,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">3D Games</h5>
+                          <h5 className="turkish-lng">3D OYUNLAR</h5>
                           <h5 className="erabic-lng">ألعاب ثلاثية الأبعاد</h5>
                         </div>
                       </div>
@@ -427,6 +439,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">2D Games</h5>
+                          <h5 className="turkish-lng">2D OYUNLAR</h5>
                           <h5 className="erabic-lng">   ألعاب ثنائية الأبعاد</h5>
                         </div>
                       </div>
@@ -470,6 +483,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">VR/AR Games</h5>
+                          <h5 className="turkish-lng">VR/AR OYUNLARI</h5>
                           <h5 className="erabic-lng">ألعاب</h5>
                         </div>
                       </div>
@@ -529,6 +543,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">Custom Pets</h5>
+                          <h5 className="turkish-lng">ÖZEL HAYVANLAR</h5>
                           <h5 className="erabic-lng"> حيوانات أليفة مخصصة</h5>
                         </div>
                       </div>
@@ -636,6 +651,7 @@ const Ecosystem = () => {
                           </svg>
 
                           <h5 className="english-lng">NFT Games</h5>
+                          <h5 className="turkish-lng">NFT OYUNLARI</h5>
                           <h5 className="erabic-lng">NFT ألعاب </h5>
                         </div>
                       </div>
@@ -691,6 +707,7 @@ const Ecosystem = () => {
             <p>
               <b className="erabic-lng">  ميتافيرس:</b>{" "}
               <b className="english-lng">METAVERSE:</b>{" "}
+              <b className="turkish-lng">METAVERS:</b>{" "}
             </p>
             <p className="english-lng">
               For the time being, we have decided not to include anything
@@ -700,6 +717,9 @@ const Ecosystem = () => {
               all of the assets required for our METAVERSE game, which is why we
               have decided not to include anything in our roadmap.
             </p>
+            <p className="turkish-lng">
+            Şu an için METAVERSE ile ilgili hiçbir şeyi yol haritamıza dahil etmemeye karar verdik çünkü METAVERSE'in tam olarak ne zaman geliştirileceğinden emin değiliz. Ekibimiz METAVERSE üzerinde çalışan büyük şirketlerle iletişim halinde, ancak şu anda METAVERSE oyunumuz için gereken tüm varlıklara sahip değiliz, bu yüzden yol haritamıza hiçbir şey eklememeye karar
+            </p>
             <p  className="erabic-lng">
             في الوقت الحالي ، قررنا عدم تضمين أي شيء متعلق بـ ميتافيرس في خريطة الطريق الخاصة بنا لأننا غير متأكدين من موعد تطوير ميتافيرس بالكامل. فريقنا على اتصال بشركات كبيرة تعمل على ميتافيرس، لكننا نفتقر حاليًا إلى جميع الأصول المطلوبة للعبة ميتافيرس، ولهذا السبب قررنا عدم تضمين أي شيء في خريطة الطريق الخاصة بنا.
             </p>
@@ -708,16 +728,23 @@ const Ecosystem = () => {
               called The Pets Verse, for which more details will be released
               soon.
             </p>
+            <p className="turkish-lng">
+            Ayrıca, yakında daha fazla ayrıntı açıklanacak olan The Pets Verse adlı kendi Oyna Kazan METAVERSE oyunumuzu geliştiriyoruz.
+            </p>
             <p className="erabic-lng">
             نعمل أيضًا على تطوير لعبة لجني ميتافيرس الخاصة بنا ، والتي تسمى The Pets Verse ، والتي سيتم إصدار المزيد من التفاصيل عنها قريبًا.
             </p>
             <p >
               <b className="english-lng">NOTE:</b>
+              <b className="turkish-lng">:NOT</b>
               <b className="erabic-lng">ملاحظة:</b>
             </p>
             <p className="mb-0 english-lng">
               Our Roadmap may change at any time. Several revisions to our
               Roadmap plans can be made during the completion process.
+            </p>
+            <p className="mb-0 turkish-lng">
+            Yol Haritamız her an değişebilir. Tamamlanma sürecinde Yol Haritası planlarımızda çeşitli revizeler yapılabilir.
             </p>
             <p className="mb-0 erabic-lng">
             قد تتغير خارطة الطريق الخاصة بنا في أي وقت. يمكن إجراء العديد من التغييرات على خطط خارطة الطريق الخاصة بنا أثناء عملية الإنجاز.

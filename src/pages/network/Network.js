@@ -22,12 +22,15 @@ const Network = () => {
             <div className="col12">
               <div className="network-headding">
                 <h2 className="heading mb-0 english-lng">Smart contract</h2>
+                <h2 className="heading mb-0 turkish-lng">Akıllı sözleşme</h2>
                 <h2 className="heading mb-0 erabic-lng">عقد ذكي</h2>
                 <h1 className="sub-heading mb-0 english-lng">MetaPets Supported Blockchain</h1>
+                <h1 className="sub-heading mb-0 turkish-lng">Binance Akıllı Zincir Ağı</h1>
                 <h1 className="sub-heading mb-0 erabic-lng">البلوكتشين المدعومة من Meta Pets</h1>
                 <p className="heading-text english-lng">
                 MetaPets is now supported solely by the Binance Smart Chain blockchain. Since its inception on November 22, 2021, this project has been steadily expanding its crew and progressing along its roadmap. The MetaPets ecosystem will continue to grow, and we will need to use other blockchains like Ethereum and the Polygon network to complete our roadmap ambitions.
                 </p>
+                <p className="heading-text turkish-lng">Binance Akıllı Zincir Ağı son derece güvenli ve garantilidir. Düşük işlem ücretleri ve süper hızlı onaylamalar alın.  En önemlisi ise, Binance Akıllı Zincir Ağı, Metamask ve diğer çevrimiçi cüzdanlarla sorunsuz bir şekilde bağlanmaktadır</p>
                 <p className="heading-text erabic-lng">
                 يتم الآن دعم Meta Pets فقط من خلال سلسلة بلوك تشين الذكية من Binance. منذ بدايته في 22 نوفمبر 2021 ، عمل هذا المشروع على توسيع طاقمه بشكل مطرد والمضي قدمًا على طول خارطة الطريق الخاصة به. سيستمر النظام البيئي Meta Pets في النمو ، وسنحتاج إلى استخدام سلاسل كتل أخرى مثل Ethereum وشبكة Polygon لإكمال طموحاتنا في خريطة الطريق.
                 </p>

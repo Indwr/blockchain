@@ -16,12 +16,17 @@ const Partner = () => {
               <div className="paetner-inner">
                 <div className="partner-heading">
                   <h2 className="heading mb-0 english-lng">MetaPets</h2>
+                  <h2 className="heading mb-0 turkish-lng">MetaPets </h2>
                   <h2 className="heading mb-0 erabic-lng">ميتابيتس</h2>
                   <h1 className="sub-heading mb-0 english-lng">Partners</h1>
+                  <h1 className="sub-heading mb-0 turkish-lng">Ortakları</h1>
                   <h1 className="sub-heading mb-0 erabic-lng">شركاء</h1>
                   <p className="heading-text english-lng">
                     We are very pleased to show our current partners and excited
                     to announce more in the future.
+                  </p>
+                  <p className="heading-text turkish-lng">
+                  Mevcut ortaklarımızı göstermekten çok mutluyuz ve gelecekte daha fazlasını duyurmaktan heyecan duyuyoruz
                   </p>
                   <p className="heading-text erabic-lng">
                   يسعدنا أن نظهر شركائنا الحاليين ومتحمسون للإعلان عن المزيد في المستقبل.
@@ -37,7 +42,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img1.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -51,7 +58,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img2.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -65,7 +74,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img3.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -79,7 +90,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img4.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -93,7 +106,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img5.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -107,7 +122,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/partner-img6.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -121,7 +138,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/cretik.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -135,7 +154,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/pinkmoon.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>
@@ -149,7 +170,9 @@ const Partner = () => {
                       <div className="partner-img-box-outer">
                         <div className="partner-img-box-content">
                           <img src="assets/images/pancakeswap.png" alt="" />
-                          <h6>Visit Website</h6>
+                          <h6 className="english-lng">Visit Website</h6>
+                          <h6 className="turkish-lng">Siteyi ziyaret et</h6>
+                          <h6 className="erabic-lng">زيارة الموقع</h6>
                         </div>
                       </div>
                     </a>

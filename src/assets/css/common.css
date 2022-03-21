@@ -175,6 +175,9 @@ ul.navbar-nav.me-auto.erabic-lng{
 .erabic-lng{
     display: none !important;
 }
+.turkish-lng{
+    display: none !important;
+}
 .english-lng{
     display: block;
 }

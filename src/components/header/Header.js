@@ -8,6 +8,7 @@ import { ThemeContext, themes } from "../themes/ThemeContext";
 import "../../assets/css/common.css";
 import "../../assets/css/white.css";
 // import "../../assets/css/arabic.css";
+import "../../assets/css/turkish.css";
 import "./header.css";
 
 const Header = () => {
@@ -180,6 +181,52 @@ const Header = () => {
                       </Link>
                     </li>
                   </ul>
+                  <ul className="navbar-nav me-auto turkish-lng">
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link nav-link-about active ms-0"
+                        aria-current="page"
+                        to={"/about"}
+                      >
+                        Hakkımızda 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/ecosystem"}>
+                      Ekosistem 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/network"}>
+                      Ağ 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/partner"}>
+                      Ortaklar 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/team"}>
+                      Ekibi 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/whitepaper"}>
+                      Teknik Rapor
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/tokenomics"}>
+                      Tokenomik 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link " to={"/staking"}>
+                      Stake Etme
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </nav>
               <div className="menu-left">
@@ -235,17 +282,23 @@ const Header = () => {
                   >
                     <li>
                       <Link to={"/home"} className="dropdown-item">
-                        Action
+                        <span className="english-lng">English</span>
+                        <span className="erabic-lng">إنجليزي</span>
+                        <span className="turkish-lng">ingilizce</span>
                       </Link>
                     </li>
                     <li>
                       <Link to={"/home"} className="dropdown-item">
-                        Another action
+                        <span className="english-lng">Arabic</span>
+                        <span className="erabic-lng">عربي</span>
+                        <span className="turkish-lng">Arapça</span>
                       </Link>
                     </li>
                     <li>
                       <Link to={"/home"} className="dropdown-item">
-                        Something else here
+                        <span className="english-lng">Turkish</span>
+                        <span className="erabic-lng">اللغة التركية</span>
+                        <span className="turkish-lng">Türk</span>
                       </Link>
                     </li>
                   </ul>

@@ -26,12 +26,14 @@ const Home = () => {
               <div className="banner-inner">
                 <h2 className="heading english-lng">MetaPets</h2>
                 <h2 className="heading erabic-lng">ميتابيتس</h2>
+                <h2 className="heading turkish-lng">MetaPets</h2>
                 <h1 className="sub-heading english-lng">
                   A new world, a new pet
                 </h1>
                 <h1 className="sub-heading erabic-lng">
                   عالم جديد، حيوان أليف جديد
                 </h1>
+                <h1 className="sub-heading turkish-lng">Yeni bir dünya, yeni bir evcil hayvan</h1>
                 <p className="english-lng">
                   With MetaPets you can find your fur-ever friend who will
                   always be with you in the Metaverse.
@@ -39,6 +41,9 @@ const Home = () => {
                 <p className="erabic-lng">
                   مع ميتابيتس، يمكنك العثور على صديقك الأبدي الذي سيكون معك
                   دائمًا في ميتافيرس
+                </p>
+                <p className="turkish-lng">
+                Metapets ile metaverse'de her zaman yanınızda olacak tüylü arkadaşınızı bulabilirsiniz.
                 </p>
                 <div className="copy">
                   <div className="copy-addres">
@@ -51,6 +56,7 @@ const Home = () => {
                         <button className="comman-btn btn-outer ">
                           <span className="english-lng">Copy Address</span>
                           <span className="erabic-lng"> نسخ العنوان</span>
+                          <span className="turkish-lng"> Adresi kopyala </span>
                           <img
                             src="assets/images/button-border.svg"
                             alt="button-border"
@@ -475,13 +481,20 @@ const Home = () => {
                   <h2 className="heading mb-0 english-lng">
                     Our friends in the crypto world
                   </h2>
+                  <h2 className="heading mb-0 turkish-lng">
+                  Kripto dünyasındaki arkadaşlarımız
+                  </h2>
                   <h2 className="heading mb-0 erabic-lng">
                     أصدقائنا في عالم التشفير
                   </h2>
                   <h3 className="sub-heading mb-0 english-lng">Partners</h3>
+                  <h3 className="sub-heading mb-0 turkish-lng">Ortaklar</h3>
                   <h3 className="sub-heading mb-0 erabic-lng">شركاء</h3>
                   <p className="english-lng">
                     A project can't be successful alone
+                  </p>
+                  <p className="turkish-lng">
+                  Bir proje tek başına başarılı olamaz.
                   </p>
                   <p className="erabic-lng">
                     لا يمكن أن يكون المشروع ناجحًا بمفرده.
@@ -659,6 +672,20 @@ const Home = () => {
                   />
                 </a>
               </div>
+              <div className="btn-outer1 turkish-lng">
+                <a
+                  className="comman-btn btn-outer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://swap.metapetscoin.com"
+                >
+                  Şimdi satın al
+                  <img
+                    src="assets/images/button-border.svg"
+                    alt="button-border"
+                  />
+                </a>
+              </div>
               <div className="btn-outer1 erabic-lng">
                 <a
                   className="comman-btn btn-outer"
@@ -712,14 +739,23 @@ const Home = () => {
                 <h2 className="heading mb-0 erabic-lng">
                   ابقى حيوانك الاليف منخرط{" "}
                 </h2>
+                <h2 className="heading mb-0 turkish-lng">
+                Evcil hayvanınızı meşgul edin{" "}
+                </h2>
                 <h3 className="sub-heading mb-0 english-lng">MetaPets Games</h3>
                 <h3 className="sub-heading mb-0 erabic-lng">العاب ميتابتس</h3>
+                <h3 className="sub-heading mb-0 turkish-lng">MetaPets Oyunları</h3>
+
                 <p className="english-lng">
                   MetaPets Games will be a way to engage the community and help
                   them build a relationship in a fun and competitive way. NFT
                   games where you can train your MetaPets, dress them, and breed
                   them are some of the many ways you will be able to give love
                   and care to your new friend constantly.
+                </p>
+                <p className="turkish-lng">
+                MetaPets Oyunları, toplulukla etkileşim kurmanın ve eğlenceli ve rekabetçi bir şekilde bir ilişki kurmalarına yardımcı olmanın bir yolu olacaktır. MetaPets'inizi eğitebileceğiniz, giydirebileceğiniz ve yetiştirebileceğiniz NFT oyunları, yeni arkadaşınıza sürekli olarak sevgi ve ilgi göstermenin birçok yolundan bazılarıdır.
+
                 </p>
                 <p className="erabic-lng">
                   لعاب ميتابيتس هي طريقه لربط المجتمع ومساعدته على بناء علاقات
@@ -745,6 +781,15 @@ const Home = () => {
                     />
                   </Link>
                 </div>
+                <div className="btn-outer1 turkish-lng">
+                  <Link className="comman-btn btn-outer" to={"/whitepaper"}>
+                  daha fazla bilgi edin
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -761,10 +806,12 @@ const Home = () => {
               <div className="custom-pets-inner">
                 <div className="custom-pets-inner-box">
                   <h2 className="heading mb-0 english-lng">Custom Pets DAPP</h2>
+                  <h2 className="heading mb-0 turkish-lng">Özel Evcil Hayvanlar DAPP</h2>
                   <h2 className="heading mb-0 erabic-lng">
                     مخصص الحيوانات الأليفة DAPP
                   </h2>
                   <h3 className="sub-heading mb-0 english-lng">Custom Pets</h3>
+                  <h3 className="sub-heading mb-0 turkish-lng">Özel Evcil Hayvanlar</h3>
                   <h3 className="sub-heading mb-0 erabic-lng">
                     {" "}
                     الحيوانات الأليفة المخصصة
@@ -772,6 +819,9 @@ const Home = () => {
                   <p className="english-lng">
                     Build the pet of your dreams, a friend who will be at your
                     beckoned call.{" "}
+                  </p>
+                  <p className="turkish-lng">
+                  Çağrınızda olacak bir arkadaş olan hayallerinizdeki evcil hayvanı oluşturun.{" "}
                   </p>
                   <p className="erabic-lng">
                     تقوم الحيوانات الأليفة المخصصة ببناء حيوان أحلامك الأليف ،
@@ -785,6 +835,20 @@ const Home = () => {
                       href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
                     >
                       Coming soon
+                      <img
+                        src="assets/images/button-border.svg"
+                        alt="button-border"
+                      />
+                    </a>
+                  </div>
+                  <div className="btn-outer1 turkish-lng ">
+                    <a
+                      className="comman-btn btn-outer "
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://pancakeswap.finance/swap?inputCurrency=0x24ce3d571fbcfd9d81dc0e1a560504636a4d046d"
+                    >
+                      Yakında gelecek
                       <img
                         src="assets/images/button-border.svg"
                         alt="button-border"
@@ -847,11 +911,17 @@ const Home = () => {
                 <h2 className="heading mb-0 english-lng">
                   A pet that will always be yours
                 </h2>
+                <h2 className="heading mb-0 turkish-lng">
+                Her zaman senin olacak bir evcil hayvan
+                </h2>
                 <h2 className="heading mb-0 erabic-lng">
                   حيوان أليف سيكون لك دائمًا
                 </h2>
                 <h3 className="sub-heading mb-0 english-lng">
                   Customizable Pets
+                </h3>
+                <h3 className="sub-heading mb-0 turkish-lng">
+                Özelleştirilebilir Evcil Hayvanlar
                 </h3>
                 <h3 className="sub-heading mb-0 erabic-lng">
                   حيوانات أليفة قابلة للتخصيص
@@ -861,6 +931,9 @@ const Home = () => {
                   your custom MetaPet, adopt any traits you want to make them
                   unique, brag about your MetaPet social media, and sell or swap
                   it on the marketplace.
+                </p>
+                <p className="turkish-lng">
+                Sevgi dolu arkadaşınızı kişiselleştirmek için hayal gücünüzü kullanın! Özel MetaPet'inizi başlatın, benzersiz kılmak istediğiniz herhangi bir özelliği benimseyin, MetaPet sosyal medyanızla övün ve pazarda satın veya takas edin.
                 </p>
                 <p className="erabic-lng">
                   استخدم خيالك لتخصيص صديقك المحب! قم بتشغيل ميتابيتس المخصص
@@ -876,6 +949,20 @@ const Home = () => {
                     href="https://metapetscoin.com/home"
                   >
                     Coming Soon
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+                <div className="btn-outer1 turkish-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://metapetscoin.com/home"
+                  >
+                    Yakında gelecek
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -929,8 +1016,12 @@ const Home = () => {
             <div className="col-md-6 d-flex align-items-center">
               <div className="numquam-eius-left">
                 <h2 className="heading mb-0 english-lng">Future Plans</h2>
+                <h2 className="heading mb-0 turkish-lng">Gelecek planları</h2>
                 <h2 className="heading mb-0 erabic-lng">خطط مستقبلية</h2>
                 <h3 className="sub-heading mb-0 english-lng">
+                  {/*Change Customizable Pets & Write*/} Metaverse
+                </h3>
+                <h3 className="sub-heading mb-0 turkish-lng">
                   {/*Change Customizable Pets & Write*/} Metaverse
                 </h3>
                 <h3 className="sub-heading mb-0 erabic-lng">
@@ -943,6 +1034,10 @@ const Home = () => {
                   produce milk to sell, and race your trophy-winning horse in a
                   competition, all while earning a passive income from your
                   MetaPets investment.
+                </p>
+                <p className="turkish-lng">
+                MetaPets, MetaPet'inizi Metaverse'in sanal tasarımlarına uyarlanabilir hale getirmeyi amaçlar. Diğer dünyalarla birlikte çalışabilir, bir köpek gösterisinde köpeğinizi gösterebilir, ödüllü ineğinizin satmak için süt üretmesini sağlayabilir ve ödüllü atınızı bir yarışmada yarıştırırken, MetaPets yatırımınızdan pasif bir gelir elde edebilirsiniz.
+
                 </p>
                 <p className="erabic-lng">
                   تهدف ميتابيتس إلى جعل ميتابيتس الخاص بك قابلاً للتكيف مع
@@ -960,6 +1055,20 @@ const Home = () => {
                     href="https://metapetscoin.com/home"
                   >
                     Coming Soon
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </a>
+                </div>
+                <div className="btn-outer1 turkish-lng">
+                  <a
+                    className="comman-btn btn-outer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://metapetscoin.com/home"
+                  >
+                    Yakında gelecek
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -1203,8 +1312,10 @@ const Home = () => {
             <div className="col-md-6 order-md-1 order-2">
               <div className="home-about-left">
                 <h2 className="heading mb-0 english-lng">Our Vision</h2>
+                <h2 className="heading mb-0 turkish-lng">Vizyonumuz</h2>
                 <h2 className="heading mb-0 erabic-lng">رؤيتنا</h2>
                 <h3 className="sub-heading mb-0 english-lng">About Us </h3>
+                <h3 className="sub-heading mb-0 turkish-lng">Hakkımızda</h3>
                 <h3 className="sub-heading mb-0 erabic-lng">معلومات عنا</h3>
                 <p className="english-lng">
                   Our vision is to see that our project adds to the growth and
@@ -1212,6 +1323,9 @@ const Home = () => {
                   open - meaning that down the road, an owner will be able to
                   use their MetaPets in other games/meta worlds that we or
                   anyone else out there create.{" "}
+                </p>
+                <p className="turkish-lng">
+                Vizyonumuz, projemizin Metaverse'in büyümesine ve değerine katkıda bulunduğunu görmektir. Gerçekten de birlikte çalışabilir ve açık olacak hale gelmesi, bir kullanıcı MetaPets'ini bizim veya oradaki herhangi birinin yarattığı diğer oyunlarda/meta dünyalarda kullanabilecek.{" "}
                 </p>
                 <p className="erabic-lng">
                   تتمثل رؤيتنا في أن نرى أن مشروعنا يضيف إلى نمو وقيمة ميتافيرس.
@@ -1227,6 +1341,9 @@ const Home = () => {
                   one priority, and everything we create will be to reward our
                   loyal community.
                 </p>
+                <p className="turkish-lng">
+                Örneğin, MetaPets'inizi bir eğitim kampına, bir köpek parkına veya birinin Metaverse'de farklı dünyalar üzerine inşa etmek istediği herhangi bir başka tür oyuna, izin gerektirmeden bulunabilir. Topluluğumuzun mutluluğu bir numaralı önceliğimizdir ve yarattığımız her şey sadık topluluğumuzu ödüllendirmek olacaktır.
+                </p>
                 <p className="erabic-lng">
                   لذلك ، على سبيل المثال ، قد يتم سحب ميتابيتس إلى معسكر تدريب
                   أو حديقة كلاب أو أي نوع آخر من الألعاب التي يريد شخص ما بناءها
@@ -1237,6 +1354,15 @@ const Home = () => {
                 <div className="btn-outer1 english-lng">
                   <Link className="comman-btn btn-outer" to={"/whitepaper"}>
                     Whitepaper
+                    <img
+                      src="assets/images/button-border.svg"
+                      alt="button-border"
+                    />
+                  </Link>
+                </div>
+                <div className="btn-outer1 turkish-lng">
+                  <Link className="comman-btn btn-outer" to={"/whitepaper"}>
+                  Teknik Rapor
                     <img
                       src="assets/images/button-border.svg"
                       alt="button-border"
@@ -1275,11 +1401,16 @@ const Home = () => {
             <div className="col-12">
               <div className="home-team-heading">
                 <h2 className="heading mb-0 english-lng">Our Legendary Crew</h2>
+                <h2 className="heading mb-0 turkish-lng">Efsanevi Ekibimiz</h2>
                 <h2 className="heading mb-0 erabic-lng">طاقمنا الأسطوري</h2>
                 <h3 className="sub-heading mb-0 english-lng">Team</h3>
+                <h3 className="sub-heading mb-0 turkish-lng">Ekip</h3>
                 <h3 className="sub-heading mb-0 erabic-lng">فريق</h3>
                 <p className="english-lng">
                   A project goes farther with helping hands.
+                </p>
+                <p className="turkish-lng">
+                Bir proje yardım elleriyle daha da ileri gider.
                 </p>
                 <p className="erabic-lng">
                   يذهب المشروعإلى أبعد من ذلك بمساعدة الأيدي.
@@ -1304,9 +1435,13 @@ const Home = () => {
               <div className="roadmap-text">
                 <div className="roadmap-text-box">
                   <h2 className="heading mb-0 english-lng">Roadmap</h2>
+                  <h2 className="heading mb-0 turkish-lng">Yol Haritası</h2>
                   <h2 className="heading mb-0 erabic-lng">خريطة الطريق</h2>
                   <h3 className="sub-heading mb-0 english-lng">
                     Explore Our Roadmap
+                  </h3>
+                  <h3 className="sub-heading mb-0 turkish-lng">
+                  Yol Haritamızı Keşfedin
                   </h3>
                   <h3 className="sub-heading mb-0 erabic-lng">
                     اكتشف خارطة الطريق الخاصة بنا
@@ -1316,6 +1451,10 @@ const Home = () => {
                     into the Metaverse. We look forward to bringing our
                     investors our vision, one that will take us far beyond
                     anyone's imagination.
+                  </p>
+                  <p className="turkish-lng">
+                  MetaPets'in geleceği cesur, yaratıcı ve Metaverse'e doğru genişleyecek. Yatırımcılarımıza, bizi herkesin hayal gücünün çok ötesine taşıyacak olan vizyonumuzu getirmeyi dört gözle bekliyoruz.
+
                   </p>
                   <p className="erabic-lng">
                     مستقبل جريء وخلاق لميتابيتس وسوف يتوسع في ميتافيرس. نتطلع

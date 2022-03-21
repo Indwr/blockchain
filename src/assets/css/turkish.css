@@ -1,0 +1,14 @@
+
+
+.heading.turkish-lng{
+    display: inline-block !important;
+}
+.turkish ul.navbar-nav.me-auto.turkish-lng {
+    display: flex !important;
+}
+.turkish .english-lng{
+    display: none;
+}
+.turkish-lng{
+    display: block !important;
+}
