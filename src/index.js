@@ -17,9 +17,7 @@ ReactDOM.render(
         <App />
       </BrowserRouter>
     </React.StrictMode>
-    {""}
   </ThemeContextWrapper>,
-
   document.getElementById("root")
 );
 

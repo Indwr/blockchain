@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import { ethers } from "ethers";
+import axios from "axios";
 import Header from "../../components/header/Header";
 import "./stakinginner.css";
 
@@ -18,6 +19,10 @@ const Stakinginner = () => {
   const [metaPetsPrice, setMetaPetsPrice] = useState("0.000000000223");
   const [lockedVolumn, setLockedVolumn] = useState([]);
   const [firstRow, setFirstRow] = useState(false);
+  const [secondRow, setSecondRow] = useState(false);
+  const [thirdRow, setThirdRow] = useState(false);
+  const [fourthRow, setFourthRow] = useState(false);
+  const [abi, setAbi] = useState("");
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -158,7 +163,68 @@ const Stakinginner = () => {
     let response = firstRow === true ? false : true;
     setFirstRow(response);
   };
+  const secondClass = () => {
+    let response = secondRow === true ? false : true;
+    setSecondRow(response);
+  };
+  const thirdClass = () => {
+    let response = thirdRow === true ? false : true;
+    setThirdRow(response);
+  };
+  const fourthClass = () => {
+    let response = fourthRow === true ? false : true;
+    setFourthRow(response);
+  };
 
+  //Start Stacking Code
+
+  //Get ABI data
+  const getAbi = async () => {
+    return axios
+      .post(`${baseUrl}getAbiData`, {
+        address: "0x4D1E90aB966ae26c778b2f9f365aA40abB13f53C",
+      })
+      .then((response) => {
+        return response.data.data;
+      })
+      .catch(function (error) {
+        return error;
+      });
+  };
+
+  const createTransaction = async () => {
+    let data = await getAbi();
+    let addr = "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d";
+    console.log(data);
+    let tokensValue = 0.000002;
+    tokensValue = (tokensValue * 1e8).toFixed(0);
+    tokensValue = tokensValue.toLocaleString("fullwide", {
+      useGrouping: false,
+    });
+
+    web3 = new Web3(window.ethereum);
+    const myContract = new web3.eth.Contract(
+      JSON.parse(contract.contractAbi),
+      addr
+    );
+    console.log(myContract);
+    // const tx = myContract.methods.transfer('0x41EE0552ECFa4811781D3262493b521A16656723', tokensValue);
+    // const transactionParameters = {
+    //   nonce: "0x00", // ignored by MetaMask
+    //   gasPrice: 0, // customizable by user during MetaMask confirmation.
+    //   gas: 0, // customizable by user during MetaMask confirmation.
+    //   to: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d", // Required except during contract publications.
+    //   from: defaultAccount, // must match user's active address.
+    //   value: "0x00", // Only required to send ether to the recipient from the initiating external account.
+    //   data: tx.encodeABI(), // Optional, but used for defining smart contract creation and interaction.
+    //   chainId: "0x3", // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
+    // };
+    // const txHash = await window.ethereum.request({
+    //   method: "eth_sendTransaction",
+    //   params: [transactionParameters],
+    // });
+    // console.log("Response Data is here", txHash);
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
     // if (window.location.hostname === "127.0.0.1" || "localhost") {
@@ -295,7 +361,7 @@ const Stakinginner = () => {
                             </tr>
                           </thead>
                           <tbody>
-                            <tr className="dark-tr" onClick={firstClass}>
+                            <tr className="dark-tr">
                               <th>Range Amount </th>
                               <td>
                                 <span className="apy-box">21.94%</span>
@@ -317,7 +383,9 @@ const Stakinginner = () => {
                                     aria-labelledby="dropdownMenuLink"
                                   >
                                     <li>
-                                      <span className="dropdown-item">30</span>
+                                      <span className="dropdown-item">
+                                        30 Days
+                                      </span>
                                     </li>
                                     <li>
                                       <span className="dropdown-item">
@@ -345,6 +413,7 @@ const Stakinginner = () => {
                                   className="stake"
                                   data-bs-toggle="modal"
                                   data-bs-target="#exampleModal2"
+                                  onClick={(firstClass, createTransaction)}
                                 >
                                   Stake
                                 </button>
@@ -511,7 +580,9 @@ const Stakinginner = () => {
                                     aria-labelledby="dropdownMenuLink"
                                   >
                                     <li>
-                                      <span className="dropdown-item">30</span>
+                                      <span className="dropdown-item">
+                                        30 Days
+                                      </span>
                                     </li>
                                     <li>
                                       <span className="dropdown-item">
@@ -537,7 +608,148 @@ const Stakinginner = () => {
                                 </span>{" "}
                               </td>
                               <td>
-                                <button className="stake">Stake</button>
+                                <button onClick={secondClass} className="stake">
+                                  Stake
+                                </button>
+                              </td>
+                            </tr>
+                            <tr
+                              className={
+                                "dark-tr " +
+                                (secondRow === true ? "" : "secondRowHide")
+                              }
+                            >
+                              <td colSpan="6">
+                                <div className="staking-detail">
+                                  <div className="staking-detail-bar-outer">
+                                    <div className="staking-detail-bar">
+                                      <div className="staking-bar-text">
+                                        <p>Total Staked</p>
+                                        <h4>2,403,210.0361</h4>
+                                      </div>
+                                    </div>
+                                    <div className="staking-bar">
+                                      <p>Pool Limit</p>
+                                      <div className="staking-bar-number">
+                                        <h5>5%</h5>
+                                        <h5>2,500,000</h5>
+                                      </div>
+                                      <div className="progress">
+                                        <div
+                                          className="progress-bar"
+                                          role="progressbar"
+                                          aria-valuenow="25"
+                                          aria-valuemin="0"
+                                          aria-valuemax="100"
+                                        ></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="stack-mpc">
+                                    <div className="stack-mpc-heading">
+                                      <h4>Stake</h4>
+                                      <div className="stack-mpcheading-right">
+                                        <p>Avilable: 0 MPC</p>
+                                        <h3>
+                                          Buy MPC{" "}
+                                          <img
+                                            src="assets/images/mpc1.png"
+                                            alt="icon"
+                                          />
+                                        </h3>
+                                      </div>
+                                    </div>
+                                    <div className="mpc-coin">
+                                      <h5>500</h5>
+                                      <div className="mpc-coin-right">
+                                        <p>MetaPets Coin</p>
+                                        <button>MAX</button>
+                                      </div>
+                                    </div>
+                                    <h6>
+                                      The amount can not be lower than 500 MPC
+                                    </h6>
+                                  </div>
+                                  <div className="staking-inner-summary">
+                                    <h4>Summary</h4>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Stake Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Interest End Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Withdrawal Delay Time</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <span>None</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>APY</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>21.94%</h5>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>Estimated Interests</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>8.2192 MPC</h5>
+                                      </div>
+                                    </div>
+                                    <div className="stakin-inner-heading-btn text-center">
+                                      <button
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal5"
+                                      >
+                                        Confirm Staking
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
                             <tr className="dark-tr">
@@ -568,7 +780,9 @@ const Stakinginner = () => {
                                     aria-labelledby="dropdownMenuLink"
                                   >
                                     <li>
-                                      <span className="dropdown-item">30</span>
+                                      <span className="dropdown-item">
+                                        30 Days
+                                      </span>
                                     </li>
                                     <li>
                                       <span className="dropdown-item">
@@ -597,9 +811,149 @@ const Stakinginner = () => {
                                   className="stake"
                                   data-bs-toggle="modal"
                                   data-bs-target="#exampleModal3"
+                                  onClick={thirdClass}
                                 >
                                   Stake
                                 </button>
+                              </td>
+                            </tr>
+                            <tr
+                              className={
+                                "dark-tr " +
+                                (thirdRow === true ? "" : "thirdRowHide")
+                              }
+                            >
+                              <td colSpan="6">
+                                <div className="staking-detail">
+                                  <div className="staking-detail-bar-outer">
+                                    <div className="staking-detail-bar">
+                                      <div className="staking-bar-text">
+                                        <p>Total Staked</p>
+                                        <h4>2,403,210.0361</h4>
+                                      </div>
+                                    </div>
+                                    <div className="staking-bar">
+                                      <p>Pool Limit</p>
+                                      <div className="staking-bar-number">
+                                        <h5>5%</h5>
+                                        <h5>2,500,000</h5>
+                                      </div>
+                                      <div className="progress">
+                                        <div
+                                          className="progress-bar"
+                                          role="progressbar"
+                                          aria-valuenow="25"
+                                          aria-valuemin="0"
+                                          aria-valuemax="100"
+                                        ></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="stack-mpc">
+                                    <div className="stack-mpc-heading">
+                                      <h4>Stake</h4>
+                                      <div className="stack-mpcheading-right">
+                                        <p>Avilable: 0 MPC</p>
+                                        <h3>
+                                          Buy MPC{" "}
+                                          <img
+                                            src="assets/images/mpc1.png"
+                                            alt="icon"
+                                          />
+                                        </h3>
+                                      </div>
+                                    </div>
+                                    <div className="mpc-coin">
+                                      <h5>500</h5>
+                                      <div className="mpc-coin-right">
+                                        <p>MetaPets Coin</p>
+                                        <button>MAX</button>
+                                      </div>
+                                    </div>
+                                    <h6>
+                                      The amount can not be lower than 500 MPC
+                                    </h6>
+                                  </div>
+                                  <div className="staking-inner-summary">
+                                    <h4>Summary</h4>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Stake Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Interest End Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Withdrawal Delay Time</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <span>None</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>APY</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>21.94%</h5>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>Estimated Interests</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>8.2192 MPC</h5>
+                                      </div>
+                                    </div>
+                                    <div className="stakin-inner-heading-btn text-center">
+                                      <button
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal5"
+                                      >
+                                        Confirm Staking
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
                             <tr className="light-tr">
@@ -624,7 +978,9 @@ const Stakinginner = () => {
                                     aria-labelledby="dropdownMenuLink"
                                   >
                                     <li>
-                                      <span className="dropdown-item">30</span>
+                                      <span className="dropdown-item">
+                                        30 Days
+                                      </span>
                                     </li>
                                     <li>
                                       <span className="dropdown-item">
@@ -653,9 +1009,149 @@ const Stakinginner = () => {
                                   className="stake"
                                   data-bs-toggle="modal"
                                   data-bs-target="#exampleModal4"
+                                  onClick={fourthClass}
                                 >
                                   Stake
                                 </button>
+                              </td>
+                            </tr>
+                            <tr
+                              className={
+                                "dark-tr " +
+                                (fourthRow === true ? "" : "fourthRowHide")
+                              }
+                            >
+                              <td colSpan="6">
+                                <div className="staking-detail">
+                                  <div className="staking-detail-bar-outer">
+                                    <div className="staking-detail-bar">
+                                      <div className="staking-bar-text">
+                                        <p>Total Staked</p>
+                                        <h4>2,403,210.0361</h4>
+                                      </div>
+                                    </div>
+                                    <div className="staking-bar">
+                                      <p>Pool Limit</p>
+                                      <div className="staking-bar-number">
+                                        <h5>5%</h5>
+                                        <h5>2,500,000</h5>
+                                      </div>
+                                      <div className="progress">
+                                        <div
+                                          className="progress-bar"
+                                          role="progressbar"
+                                          aria-valuenow="25"
+                                          aria-valuemin="0"
+                                          aria-valuemax="100"
+                                        ></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="stack-mpc">
+                                    <div className="stack-mpc-heading">
+                                      <h4>Stake</h4>
+                                      <div className="stack-mpcheading-right">
+                                        <p>Avilable: 0 MPC</p>
+                                        <h3>
+                                          Buy MPC{" "}
+                                          <img
+                                            src="assets/images/mpc1.png"
+                                            alt="icon"
+                                          />
+                                        </h3>
+                                      </div>
+                                    </div>
+                                    <div className="mpc-coin">
+                                      <h5>500</h5>
+                                      <div className="mpc-coin-right">
+                                        <p>MetaPets Coin</p>
+                                        <button>MAX</button>
+                                      </div>
+                                    </div>
+                                    <h6>
+                                      The amount can not be lower than 500 MPC
+                                    </h6>
+                                  </div>
+                                  <div className="staking-inner-summary">
+                                    <h4>Summary</h4>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Stake Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Interest End Date</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <img
+                                            src="assets/images/calendar.png"
+                                            alt=""
+                                          />
+                                          <span>2022-03-08</span>{" "}
+                                        </p>
+                                        <p className="border-right">
+                                          <img
+                                            src="assets/images/clock.png"
+                                            alt=""
+                                          />
+                                          <span>02:31:04</span>{" "}
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <p>Withdrawal Delay Time</p>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <p>
+                                          <span>None</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>APY</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>21.94%</h5>
+                                      </div>
+                                    </div>
+                                    <div className="summry-row">
+                                      <div className="summry-row-left">
+                                        <h6>Estimated Interests</h6>
+                                      </div>
+                                      <div className="summry-row-right">
+                                        <h5>8.2192 MPC</h5>
+                                      </div>
+                                    </div>
+                                    <div className="stakin-inner-heading-btn text-center">
+                                      <button
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal5"
+                                      >
+                                        Confirm Staking
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
                           </tbody>
