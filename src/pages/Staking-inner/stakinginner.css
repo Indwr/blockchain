@@ -766,3 +766,15 @@ tbody tr:last-child td:first-child {
 .fourthRowHide {
   display: none;
 }
+.mpc-coin input {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  opacity: 0.8;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  height: 50px;
+}

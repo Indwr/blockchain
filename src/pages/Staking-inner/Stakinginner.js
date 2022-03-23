@@ -25,7 +25,7 @@ const Stakinginner = () => {
   const [secondRow, setSecondRow] = useState(false);
   const [thirdRow, setThirdRow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(false);
 
   const connectWalletHandler = () => {
     if (window.ethereum) {
