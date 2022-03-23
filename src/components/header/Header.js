@@ -130,7 +130,7 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link " to={"/staking"}>
+                      <Link className="nav-link " to={"/staking-inner"}>
                         Staking
                       </Link>
                     </li>
@@ -147,37 +147,37 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/ecosystem"}>
-                      النظام البيئي
+                        النظام البيئي
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/network"}>
-                      شبكة الاتصال
+                        شبكة الاتصال
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/partner"}>
-                      شركاء
+                        شركاء
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/team"}>
-                      فريق
+                        فريق
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/whitepaper"}>
-                      الورقة البيضاء
+                        الورقة البيضاء
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/tokenomics"}>
-                      الرموز
+                        الرموز
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link " to={"/staking"}>
-                      ربط الحصة
+                      <Link className="nav-link " to={"/staking-inner"}>
+                        ربط الحصة
                       </Link>
                     </li>
                   </ul>
@@ -188,42 +188,42 @@ const Header = () => {
                         aria-current="page"
                         to={"/about"}
                       >
-                        Hakkımızda 
+                        Hakkımızda
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/ecosystem"}>
-                      Ekosistem 
+                        Ekosistem
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/network"}>
-                      Ağ 
+                        Ağ
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/partner"}>
-                      Ortaklar 
+                        Ortaklar
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/team"}>
-                      Ekibi 
+                        Ekibi
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/whitepaper"}>
-                      Teknik Rapor
+                        Teknik Rapor
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link " to={"/tokenomics"}>
-                      Tokenomik 
+                        Tokenomik
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link " to={"/staking"}>
-                      Stake Etme
+                      <Link className="nav-link " to={"/staking-inner"}>
+                        Stake Etme
                       </Link>
                     </li>
                   </ul>

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import { ethers } from "ethers";
 import axios from "axios";
+import fromExponential from "from-exponential";
 import Header from "../../components/header/Header";
 import "./stakinginner.css";
+// import Web3 from "web3";
+import Web3 from "web3";
 
 const Stakinginner = () => {
   const [show, setShow] = useState(false);
@@ -16,13 +19,11 @@ const Stakinginner = () => {
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const [isConnected, setIsConnected] = useState(false);
   const [totalLockedValue, setTotalLockedValue] = useState(0);
-  const [metaPetsPrice, setMetaPetsPrice] = useState("0.000000000223");
+  const [metaPetsPrice, setMetaPetsPrice] = useState(0);
   const [lockedVolumn, setLockedVolumn] = useState([]);
   const [firstRow, setFirstRow] = useState(false);
   const [secondRow, setSecondRow] = useState(false);
   const [thirdRow, setThirdRow] = useState(false);
-  const [fourthRow, setFourthRow] = useState(false);
-  const [abi, setAbi] = useState("");
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -153,12 +154,11 @@ const Stakinginner = () => {
       .then((data) =>
         setTotalStacked(abbreviateNumber(data.totalStackedToken))
       );
-    updateMetaPrice(totalStacked);
   };
 
-  function updateMetaPrice(totalStackedTokens) {
-    setTotalLockedValue(totalStackedTokens * metaPetsPrice);
-  }
+  // function updateMetaPrice() {
+  //   setTotalLockedValue(fromExponential(totalStacked * metaPetsPrice));
+  // }
   const firstClass = () => {
     let response = firstRow === true ? false : true;
     setFirstRow(response);
@@ -170,10 +170,6 @@ const Stakinginner = () => {
   const thirdClass = () => {
     let response = thirdRow === true ? false : true;
     setThirdRow(response);
-  };
-  const fourthClass = () => {
-    let response = fourthRow === true ? false : true;
-    setFourthRow(response);
   };
 
   //Start Stacking Code
@@ -195,41 +191,47 @@ const Stakinginner = () => {
   const createTransaction = async () => {
     let data = await getAbi();
     let addr = "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d";
-    console.log(data);
     let tokensValue = 0.000002;
     tokensValue = (tokensValue * 1e8).toFixed(0);
     tokensValue = tokensValue.toLocaleString("fullwide", {
       useGrouping: false,
     });
 
-    web3 = new Web3(window.ethereum);
-    const myContract = new web3.eth.Contract(
-      JSON.parse(contract.contractAbi),
-      addr
-    );
+    let web3 = new Web3(window.ethereum);
+    const myContract = new web3.eth.Contract(JSON.parse(data), addr);
     console.log(myContract);
-    // const tx = myContract.methods.transfer('0x41EE0552ECFa4811781D3262493b521A16656723', tokensValue);
-    // const transactionParameters = {
-    //   nonce: "0x00", // ignored by MetaMask
-    //   gasPrice: 0, // customizable by user during MetaMask confirmation.
-    //   gas: 0, // customizable by user during MetaMask confirmation.
-    //   to: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d", // Required except during contract publications.
-    //   from: defaultAccount, // must match user's active address.
-    //   value: "0x00", // Only required to send ether to the recipient from the initiating external account.
-    //   data: tx.encodeABI(), // Optional, but used for defining smart contract creation and interaction.
-    //   chainId: "0x3", // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
-    // };
-    // const txHash = await window.ethereum.request({
-    //   method: "eth_sendTransaction",
-    //   params: [transactionParameters],
-    // });
-    // console.log("Response Data is here", txHash);
+    const tx = myContract.methods.transfer(
+      "0x41EE0552ECFa4811781D3262493b521A16656723",
+      tokensValue
+    );
+    const transactionParameters = {
+      nonce: "0x00", // ignored by MetaMask
+      gasPrice: 0, // customizable by user during MetaMask confirmation.
+      gas: 0, // customizable by user during MetaMask confirmation.
+      to: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d", // Required except during contract publications.
+      from: defaultAccount, // must match user's active address.
+      value: "0x00", // Only required to send ether to the recipient from the initiating external account.
+      data: tx.encodeABI(), // Optional, but used for defining smart contract creation and interaction.
+      chainId: "0x3", // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
+    };
+    const txHash = await window.ethereum.request({
+      method: "eth_sendTransaction",
+      params: [transactionParameters],
+    });
   };
+
+  const fetchBalance = async () => {
+    try {
+      const resp = await axios.post(`${baseUrl}getTokenPrice`);
+      setMetaPetsPrice(fromExponential(resp.data.data));
+      setTotalLockedValue(fromExponential(resp.data.totalStackedToken));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    // if (window.location.hostname === "127.0.0.1" || "localhost") {
-    //   setBaseUrl(`http://${window.location.hostname}:3002/api/v1/`);
-    // }
     if (typeof window.ethereum === "undefined") {
       handleShow();
       console.log("Please install MetaMask");
@@ -237,12 +239,11 @@ const Stakinginner = () => {
       setTimeout(() => {
         totalStackedToken();
         getLockedVolumn();
-      }, 200);
-      // setIsConnected(defaultAccount ? true : false);
+        fetchBalance();
+      }, 100);
     }
 
     setBaseUrl("http://127.0.0.1:3002/api/v1/");
-    setMetaPetsPrice("0.000000000223");
   }, []);
   return (
     <div>
@@ -356,64 +357,33 @@ const Stakinginner = () => {
                               <th scope="col">APY</th>
                               <th scope="col">Duration</th>
                               <th scope="col">Type</th>
-                              <th scope="col">Range Amount </th>
                               <th scope="col"> </th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr className="dark-tr">
-                              <th>Range Amount </th>
+                              <th>Silver </th>
                               <td>
-                                <span className="apy-box">21.94%</span>
+                                <span className="apy-box">
+                                  20% <span className="apy-box-plush">+</span>{" "}
+                                  <span className="apy-box-text">
+                                    13% Tax Back
+                                  </span>
+                                </span>
                               </td>
                               <td>
-                                <div className="dropdown">
-                                  <span
-                                    className="btn btn-secondary dropdown-toggle"
-                                    role="button"
-                                    id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                  >
-                                    7 Days
-                                  </span>
-
-                                  <ul
-                                    className="dropdown-menu"
-                                    aria-labelledby="dropdownMenuLink"
-                                  >
-                                    <li>
-                                      <span className="dropdown-item">
-                                        30 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        90 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        180 Days
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <span className="lock">2 Month</span>
                               </td>
                               <td>
                                 <span className="lock">Lock</span>
                               </td>
-                              <td>
-                                <span className="range-ammount">
-                                  500 - 4,999 MP
-                                </span>
-                              </td>
+
                               <td>
                                 <button
                                   className="stake"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal2"
-                                  onClick={(firstClass, createTransaction)}
+                                  // data-bs-toggle="modal"
+                                  // data-bs-target="#exampleModal2"
+                                  onClick={firstClass}
                                 >
                                   Stake
                                 </button>
@@ -561,51 +531,18 @@ const Stakinginner = () => {
                             <tr className="light-tr">
                               <th>Gold</th>
                               <td>
-                                <span className="apy-box">21.94%</span>
+                                <span className="apy-box">
+                                  45% <span className="apy-box-plush">+</span>{" "}
+                                  <span className="apy-box-text">
+                                    13% Tax Back
+                                  </span>
+                                </span>
                               </td>
                               <td>
-                                <div className="dropdown">
-                                  <span
-                                    className="btn btn-secondary dropdown-toggle"
-                                    role="button"
-                                    id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                  >
-                                    7 Days
-                                  </span>
-
-                                  <ul
-                                    className="dropdown-menu"
-                                    aria-labelledby="dropdownMenuLink"
-                                  >
-                                    <li>
-                                      <span className="dropdown-item">
-                                        30 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        90 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        180 Days
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <span className="lock">4 Month</span>
                               </td>
                               <td>
                                 <span className="lock">Lock</span>
-                              </td>
-                              <td>
-                                {" "}
-                                <span className="range-ammount">
-                                  {" "}
-                                  5,000 - 19,999 MP
-                                </span>{" "}
                               </td>
                               <td>
                                 <button onClick={secondClass} className="stake">
@@ -631,8 +568,8 @@ const Stakinginner = () => {
                                     <div className="staking-bar">
                                       <p>Pool Limit</p>
                                       <div className="staking-bar-number">
-                                        <h5>5%</h5>
-                                        <h5>2,500,000</h5>
+                                        {/* <h5>5%</h5> */}
+                                        <h5>Unlimited</h5>
                                       </div>
                                       <div className="progress">
                                         <div
@@ -650,17 +587,24 @@ const Stakinginner = () => {
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
                                         <p>Avilable: 0 MPC</p>
-                                        <h3>
-                                          Buy MPC{" "}
-                                          <img
-                                            src="assets/images/mpc1.png"
-                                            alt="icon"
-                                          />
-                                        </h3>
+                                        <a
+                                          href="https://swap.metapetscoin.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <h3>
+                                            Buy MPC{" "}
+                                            <img
+                                              src="assets/images/mpc1.png"
+                                              alt="icon"
+                                            />
+                                          </h3>
+                                        </a>
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
-                                      <h5>500</h5>
+                                      <input type="text" placeholder="500" />
+                                      {/* <h5>500</h5> */}
                                       <div className="mpc-coin-right">
                                         <p>MetaPets Coin</p>
                                         <button>MAX</button>
@@ -711,16 +655,6 @@ const Stakinginner = () => {
                                             alt=""
                                           />
                                           <span>02:31:04</span>{" "}
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <p>Withdrawal Delay Time</p>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <p>
-                                          <span>None</span>
                                         </p>
                                       </div>
                                     </div>
@@ -753,58 +687,20 @@ const Stakinginner = () => {
                               </td>
                             </tr>
                             <tr className="dark-tr">
-                              <th>Ruby</th>
+                              <th>Diamond</th>
                               <td>
                                 <span className="apy-box">
-                                  21.94%{" "}
-                                  <span className="apy-box-plush">+</span>{" "}
+                                  100% <span className="apy-box-plush">+</span>{" "}
                                   <span className="apy-box-text">
-                                    RANDOM 20 GOT A REWARD
+                                    13% Tax Back
                                   </span>
                                 </span>
                               </td>
                               <td>
-                                <div className="dropdown">
-                                  <span
-                                    className="btn btn-secondary dropdown-toggle"
-                                    role="button"
-                                    id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                  >
-                                    7 Days
-                                  </span>
-
-                                  <ul
-                                    className="dropdown-menu"
-                                    aria-labelledby="dropdownMenuLink"
-                                  >
-                                    <li>
-                                      <span className="dropdown-item">
-                                        30 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        90 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        180 Days
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <span className="lock">6 Month</span>
                               </td>
                               <td>
                                 <span className="lock">Lock</span>
-                              </td>
-                              <td>
-                                {" "}
-                                <span className="range-ammount">
-                                  20,000 - 39,999 MP
-                                </span>
                               </td>
                               <td>
                                 <button
@@ -821,204 +717,6 @@ const Stakinginner = () => {
                               className={
                                 "dark-tr " +
                                 (thirdRow === true ? "" : "thirdRowHide")
-                              }
-                            >
-                              <td colSpan="6">
-                                <div className="staking-detail">
-                                  <div className="staking-detail-bar-outer">
-                                    <div className="staking-detail-bar">
-                                      <div className="staking-bar-text">
-                                        <p>Total Staked</p>
-                                        <h4>2,403,210.0361</h4>
-                                      </div>
-                                    </div>
-                                    <div className="staking-bar">
-                                      <p>Pool Limit</p>
-                                      <div className="staking-bar-number">
-                                        <h5>5%</h5>
-                                        <h5>2,500,000</h5>
-                                      </div>
-                                      <div className="progress">
-                                        <div
-                                          className="progress-bar"
-                                          role="progressbar"
-                                          aria-valuenow="25"
-                                          aria-valuemin="0"
-                                          aria-valuemax="100"
-                                        ></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="stack-mpc">
-                                    <div className="stack-mpc-heading">
-                                      <h4>Stake</h4>
-                                      <div className="stack-mpcheading-right">
-                                        <p>Avilable: 0 MPC</p>
-                                        <h3>
-                                          Buy MPC{" "}
-                                          <img
-                                            src="assets/images/mpc1.png"
-                                            alt="icon"
-                                          />
-                                        </h3>
-                                      </div>
-                                    </div>
-                                    <div className="mpc-coin">
-                                      <h5>500</h5>
-                                      <div className="mpc-coin-right">
-                                        <p>MetaPets Coin</p>
-                                        <button>MAX</button>
-                                      </div>
-                                    </div>
-                                    <h6>
-                                      The amount can not be lower than 500 MPC
-                                    </h6>
-                                  </div>
-                                  <div className="staking-inner-summary">
-                                    <h4>Summary</h4>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <p>Stake Date</p>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <p>
-                                          <img
-                                            src="assets/images/calendar.png"
-                                            alt=""
-                                          />
-                                          <span>2022-03-08</span>{" "}
-                                        </p>
-                                        <p className="border-right">
-                                          <img
-                                            src="assets/images/clock.png"
-                                            alt=""
-                                          />
-                                          <span>02:31:04</span>{" "}
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <p>Interest End Date</p>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <p>
-                                          <img
-                                            src="assets/images/calendar.png"
-                                            alt=""
-                                          />
-                                          <span>2022-03-08</span>{" "}
-                                        </p>
-                                        <p className="border-right">
-                                          <img
-                                            src="assets/images/clock.png"
-                                            alt=""
-                                          />
-                                          <span>02:31:04</span>{" "}
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <p>Withdrawal Delay Time</p>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <p>
-                                          <span>None</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <h6>APY</h6>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <h5>21.94%</h5>
-                                      </div>
-                                    </div>
-                                    <div className="summry-row">
-                                      <div className="summry-row-left">
-                                        <h6>Estimated Interests</h6>
-                                      </div>
-                                      <div className="summry-row-right">
-                                        <h5>8.2192 MPC</h5>
-                                      </div>
-                                    </div>
-                                    <div className="stakin-inner-heading-btn text-center">
-                                      <button
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal5"
-                                      >
-                                        Confirm Staking
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr className="light-tr">
-                              <th>Diamond</th>
-                              <td>
-                                <span className="apy-box">21.94% </span>
-                              </td>
-                              <td>
-                                <div className="dropdown">
-                                  <span
-                                    className="btn btn-secondary dropdown-toggle"
-                                    role="button"
-                                    id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                  >
-                                    7 Days
-                                  </span>
-
-                                  <ul
-                                    className="dropdown-menu"
-                                    aria-labelledby="dropdownMenuLink"
-                                  >
-                                    <li>
-                                      <span className="dropdown-item">
-                                        30 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        90 Days
-                                      </span>
-                                    </li>
-                                    <li>
-                                      <span className="dropdown-item">
-                                        180 Days
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </td>
-                              <td>
-                                <span className="lock">Lock</span>
-                              </td>
-                              <td>
-                                {" "}
-                                <span className="range-ammount">
-                                  40,000 - Unlimited MP
-                                </span>
-                              </td>
-                              <td>
-                                <button
-                                  className="stake"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#exampleModal4"
-                                  onClick={fourthClass}
-                                >
-                                  Stake
-                                </button>
-                              </td>
-                            </tr>
-                            <tr
-                              className={
-                                "dark-tr " +
-                                (fourthRow === true ? "" : "fourthRowHide")
                               }
                             >
                               <td colSpan="6">

@@ -213,7 +213,7 @@ tbody tr td {
 }
 span.apy-box-text {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 15px;
   color: #ffffff;
   width: 98px;
@@ -437,7 +437,7 @@ tr.dark-tr th {
 .progress-bar {
   background: linear-gradient(90deg, #0befd8 1.4%, #0befd8 101%);
   border-radius: 54px;
-  width: 15%;
+  width: 100%;
 }
 .stack-mpc-heading {
   display: flex;
