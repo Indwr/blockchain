@@ -8,7 +8,7 @@ import { ThemeContext, themes } from "../themes/ThemeContext";
 import "../../assets/css/common.css";
 import "../../assets/css/white.css";
 // import "../../assets/css/arabic.css";
-import "../../assets/css/turkish.css";
+// import "../../assets/css/turkish.css";
 import "./header.css";
 
 const Header = () => {
