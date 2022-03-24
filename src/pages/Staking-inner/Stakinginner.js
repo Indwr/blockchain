@@ -24,8 +24,20 @@ const Stakinginner = () => {
   const [firstRow, setFirstRow] = useState(false);
   const [secondRow, setSecondRow] = useState(false);
   const [thirdRow, setThirdRow] = useState(false);
+  const [browser, setBrowser] = useState("");
+  const [walletAddress, setWalletAddress] = useState(
+    "0x4c734A99858A35d08a30BB42CC9636789233eDf8"
+  );
+  const [contractAdress, setContractAddress] = useState(
+    "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d"
+  );
+  const [metaPetsTotalStackingGold, setMetaPetsTotalStackingGold] = useState(0);
+  const [metaPetsTotalStackingSilver, setMetaPetsTotalStackingSilver] =
+    useState(0);
+  const [metaPetsTotalStackingDiamond, setMetaPetsTotalStackingDiamond] =
+    useState(0);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const connectWalletHandler = () => {
     if (window.ethereum) {
@@ -190,7 +202,7 @@ const Stakinginner = () => {
 
   const createTransaction = async () => {
     let data = await getAbi();
-    let addr = "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d";
+    let addr = contractAdress;
     let tokensValue = 0.000002;
     tokensValue = (tokensValue * 1e8).toFixed(0);
     tokensValue = tokensValue.toLocaleString("fullwide", {
@@ -200,15 +212,12 @@ const Stakinginner = () => {
     let web3 = new Web3(window.ethereum);
     const myContract = new web3.eth.Contract(JSON.parse(data), addr);
     console.log(myContract);
-    const tx = myContract.methods.transfer(
-      "0x41EE0552ECFa4811781D3262493b521A16656723",
-      tokensValue
-    );
+    const tx = myContract.methods.transfer(walletAddress, tokensValue);
     const transactionParameters = {
       nonce: "0x00", // ignored by MetaMask
       gasPrice: 0, // customizable by user during MetaMask confirmation.
       gas: 0, // customizable by user during MetaMask confirmation.
-      to: "0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d", // Required except during contract publications.
+      to: contractAdress, // Required except during contract publications.
       from: defaultAccount, // must match user's active address.
       value: "0x00", // Only required to send ether to the recipient from the initiating external account.
       data: tx.encodeABI(), // Optional, but used for defining smart contract creation and interaction.
@@ -230,16 +239,98 @@ const Stakinginner = () => {
     }
   };
 
+  const fetchStackedDataAccordingToPackages = async () => {
+    const resp = await axios.get(`${baseUrl}getTotalStackedAccordingToPackage`);
+    let checkGoldPrice =
+      resp.data.gold.length > 0 ? resp.data.gold[0].noOfStockedToken : 0;
+    let checkSilverPrice =
+      resp.data.silver.length > 0 ? resp.data.silver[0].noOfStockedToken : 0;
+    let checkDiamondPrice =
+      resp.data.diamond.length > 0 ? resp.data.diamond[0].noOfStockedToken : 0;
+    setMetaPetsTotalStackingGold(checkGoldPrice);
+    setMetaPetsTotalStackingSilver(checkSilverPrice);
+    setMetaPetsTotalStackingDiamond(checkDiamondPrice);
+  };
+
+  const checkBrowser = () => {
+    // Firefox 1.0+
+    var isFirefox = typeof InstallTrigger !== "undefined";
+
+    // Safari 3.0+ "[object HTMLElementConstructor]"
+    var isSafari =
+      /constructor/i.test(window.HTMLElement) ||
+      (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+      })(
+        !window["safari"] ||
+          (typeof safari !== "undefined" && window["safari"].pushNotification)
+      );
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+
+    // Edge 20+
+    var isEdge = !isIE && !!window.StyleMedia;
+
+    // Chrome 1 - 79
+    var isChrome =
+      !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+
+    // Edge (based on chromium) detection
+    var isEdgeChromium = isChrome && navigator.userAgent.indexOf("Edg") !== -1;
+
+    var output;
+    output += "isFirefox: " + isFirefox + ",";
+    output += "isChrome: " + isChrome + ",";
+    output += "isSafari: " + isSafari + ",";
+    output += "isIE: " + isIE + ",";
+    output += "isEdge: " + isEdge + ",";
+    output += "isEdgeChromium: " + isEdgeChromium + ",";
+    // document.body.innerHTML = output;
+    output.split(",").forEach((element) => {
+      let brow = element.split(":");
+      if ("isChrome" === brow[0]) {
+        setBrowser(
+          "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
+        );
+      }
+      if ("isSafari" === brow[0]) {
+        setBrowser("https://metamask.io/download/");
+      }
+      if ("isIE" === brow[0]) {
+        setBrowser("https://metamask.io/download/");
+      }
+      if ("isEdge" === brow[0]) {
+        setBrowser(
+          "https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm?hl=en-US"
+        );
+      }
+      if ("isEdgeChromium" === brow[0]) {
+        setBrowser("https://metamask.io/download/");
+      }
+      if ("isFirefox" === brow[0]) {
+        setBrowser(
+          "https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/"
+        );
+      }
+    });
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
     if (typeof window.ethereum === "undefined") {
-      handleShow();
+      checkBrowser();
+      setTimeout(() => {
+        handleShow();
+      }, 200);
       console.log("Please install MetaMask");
     } else {
       setTimeout(() => {
         totalStackedToken();
         getLockedVolumn();
         fetchBalance();
+        fetchStackedDataAccordingToPackages();
+        setWalletAddress("0x4c734A99858A35d08a30BB42CC9636789233eDf8");
+        setContractAddress("0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d");
       }, 100);
     }
 
@@ -401,14 +492,13 @@ const Stakinginner = () => {
                                     <div className="staking-detail-bar">
                                       <div className="staking-bar-text">
                                         <p>Total Staked</p>
-                                        <h4>2,403,210.0361</h4>
+                                        <h4>{metaPetsTotalStackingGold}</h4>
                                       </div>
                                     </div>
                                     <div className="staking-bar">
                                       <p>Pool Limit</p>
                                       <div className="staking-bar-number">
-                                        <h5>5%</h5>
-                                        <h5>2,500,000</h5>
+                                        <h5>Unlimited</h5>
                                       </div>
                                       <div className="progress">
                                         <div
@@ -562,7 +652,7 @@ const Stakinginner = () => {
                                     <div className="staking-detail-bar">
                                       <div className="staking-bar-text">
                                         <p>Total Staked</p>
-                                        <h4>2,403,210.0361</h4>
+                                        <h4>{metaPetsTotalStackingSilver}</h4>
                                       </div>
                                     </div>
                                     <div className="staking-bar">
@@ -725,14 +815,13 @@ const Stakinginner = () => {
                                     <div className="staking-detail-bar">
                                       <div className="staking-bar-text">
                                         <p>Total Staked</p>
-                                        <h4>2,403,210.0361</h4>
+                                        <h4>{metaPetsTotalStackingDiamond}</h4>
                                       </div>
                                     </div>
                                     <div className="staking-bar">
                                       <p>Pool Limit</p>
                                       <div className="staking-bar-number">
-                                        <h5>5%</h5>
-                                        <h5>2,500,000</h5>
+                                        <h5>Unlimted</h5>
                                       </div>
                                       <div className="progress">
                                         <div
@@ -970,6 +1059,9 @@ const Stakinginner = () => {
               <img src="assets/images/popup1.png" alt="" />
               <h5>MetaPets Staking</h5>
               <p>MetaMask is not installed</p>
+              <a target="_blank" rel="noopener noreferrer" href={browser}>
+                Click to Install MetaMask
+              </a>
             </div>{" "}
           </Modal.Body>
           {/* <Modal.Footer>
