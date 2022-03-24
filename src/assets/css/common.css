@@ -34,7 +34,7 @@ body.home-bg {
   font-family: "Epilogue", sans-serif !important;
   background-color: #0e0d17 !important;
   /* overflow-x: hidden; */
-  /* background-image: url(../../../public/assets/images/home-background.gif); */
+  background-image: url(../../../src/assets/images/home-background.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

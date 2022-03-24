@@ -2,7 +2,7 @@ body.white-theme {
   background-color: #ffffff !important;
 }
 body.white-theme.home-bg {
-  /* background-image: url(../../../public/assets/images/home-backgroun-white.gif) !important; */
+  background-image: url(../../../src/assets/images/home-backgroun-white.gif) !important;
 }
 .white-theme header {
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
