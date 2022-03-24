@@ -53,6 +53,13 @@
     margin-bottom: 50px;
     width: 100%;
 }
+.about-inner-box h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
 
 @media(max-width: 1500px){
     .about-main-img img {
@@ -89,5 +96,9 @@
         border-radius: 40px;
         margin-bottom: 30px;
         width: 100%;
+    }
+    .about-inner-box h4 {
+        font-size:24px;
+        margin-bottom: 20px;
     }
 }
