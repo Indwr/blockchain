@@ -340,34 +340,35 @@ const Stakinginner = () => {
 
   const submitFirstPackage = async () => {
     let hasKey = await createTransaction();
+    return hasKey;
   };
 
   const submitSecondPackage = async () => {
     let hasKey = await createTransaction();
+    return hasKey;
   };
 
   const submitThirdPackage = async () => {
-    let hasKey = await createTransaction();
-
-    let obj = {
-      tokenAddress: walletAddress,
-      userAddress: defaultAccount,
-      package: "diamond",
-      totalAmount: "",
-      apy: "",
-      stackDate: "",
-      lockedDay: "",
-      noOfStackedToken: "",
-      endDate: "",
-      estimatedInterest: "",
-      rawData: "",
-    };
-    await insertData(obj);
+    // let hasKey = await createTransaction();
+    // let obj = {
+    //   tokenAddress: walletAddress,
+    //   userAddress: defaultAccount,
+    //   package: "diamond",
+    //   totalAmount: "",
+    //   apy: "",
+    //   stackDate: "",
+    //   lockedDay: "",
+    //   noOfStackedToken: "",
+    //   endDate: "",
+    //   estimatedInterest: "",
+    //   rawData: "",
+    // };
+    // await insertData(obj);
   };
 
-  const insertData = async (data) => {
-    await axios.post(`${baseUrl}createStackRecord`, data);
-  };
+  // const insertData = async (data) => {
+  //   await axios.post(`${baseUrl}createStackRecord`, data);
+  // };
 
   const createTransaction = async () => {
     let data = await getAbi();

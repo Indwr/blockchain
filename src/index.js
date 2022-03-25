@@ -11,12 +11,12 @@ import ScrollToTop from "./ScrollToTop";
 
 ReactDOM.render(
   <ThemeContextWrapper>
-    <React.StrictMode>
-      <BrowserRouter>
-        <ScrollToTop />
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>
+    {/* <React.StrictMode> */}
+    <BrowserRouter>
+      <ScrollToTop />
+      <App />
+    </BrowserRouter>
+    {/* </React.StrictMode> */}
   </ThemeContextWrapper>,
   document.getElementById("root")
 );
