@@ -68,7 +68,7 @@ const About = () => {
                   <h1>Placing Orders for Goods</h1>
                   <p>By placing an Order for Goods through the Service, You warrant that You are legally capable of entering into binding contracts.</p>
                   <h5>Your Information</h5>
-                  [2:59 pm, 24/03/2022] +91 70099 63066: <p>If You wish to place an Order for Goods available on the Service, You may be asked to supply certain information relevant to Your Order including, without limitation, Your name, Your email, Your phone number, Your credit card number, the expiration date of Your credit card, Your billing address, and Your shipping information.</p>
+                  <p>If You wish to place an Order for Goods available on the Service, You may be asked to supply certain information relevant to Your Order including, without limitation, Your name, Your email, Your phone number, Your credit card number, the expiration date of Your credit card, Your billing address, and Your shipping information.</p>
                   <p>You represent and warrant that: (i) You have the legal right to use any credit or debit card(s) or other payment method(s) in connection with any Order; and that (ii) the information You supply to us is true, correct and complete.</p>
                   <p>By submitting such information, You grant us the right to provide the information to payment processing third parties for purposes of facilitating the completion of Your Order.</p>
                   <h2>Order Cancellation</h2>
