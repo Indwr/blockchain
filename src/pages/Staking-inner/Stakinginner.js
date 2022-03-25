@@ -10,14 +10,14 @@ import Web3 from "web3";
 
 const Stakinginner = () => {
   const [show, setShow] = useState(false);
+  const [loader, setLoader] = useState(false);
+  const [loaderForConnect, setLoaderForConnect] = useState(false);
   const [baseUrl, setBaseUrl] = useState("http://127.0.0.1:3002/api/v1/");
-  // const [errorMessage, setErrorMessage] = useState(null);
   const [totalStacked, setTotalStacked] = useState(0);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
   const [metaPetsBalance, setMetaPetsBalance] = useState(0);
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
-  const [isConnected, setIsConnected] = useState(false);
   const [totalLockedValue, setTotalLockedValue] = useState(0);
   const [metaPetsPrice, setMetaPetsPrice] = useState(0);
   const [lockedVolumn, setLockedVolumn] = useState([]);
@@ -25,6 +25,13 @@ const Stakinginner = () => {
   const [secondRow, setSecondRow] = useState(false);
   const [thirdRow, setThirdRow] = useState(false);
   const [browser, setBrowser] = useState("");
+  const [metapetaInputValue1, setMetapetaInputValue1] = useState("");
+  const [metapetaInputValue2, setMetapetaInputValue2] = useState("");
+  const [metapetaInputValue3, setMetapetaInputValue3] = useState("");
+  const [metaPetsBalanceTo, setMetaPetsBalanceTo] = useState(0);
+  const [finalMonth, setFinalMonth] = useState("");
+  const [finalMonth2, setFinalMonth2] = useState("");
+  const [finalMonth3, setFinalMonth3] = useState("");
   const [walletAddress, setWalletAddress] = useState(
     "0x4c734A99858A35d08a30BB42CC9636789233eDf8"
   );
@@ -37,8 +44,20 @@ const Stakinginner = () => {
   const [metaPetsTotalStackingDiamond, setMetaPetsTotalStackingDiamond] =
     useState(0);
   const handleClose = () => setShow(false);
+  const handleClose3 = () => setLoaderForConnect(true);
   const handleShow = () => setShow(true);
+  const closePopup = () => setLoader(false);
+  const closePopup3 = () => setLoaderForConnect(false);
 
+  const handleChangeFirst = (e) => {
+    setMetapetaInputValue1(e.target.value);
+  };
+  const handleChangeSecond = (e) => {
+    setMetapetaInputValue2(e.target.value);
+  };
+  const handleChangeThird = (e) => {
+    setMetapetaInputValue3(e.target.value);
+  };
   const connectWalletHandler = () => {
     if (window.ethereum) {
       window.ethereum
@@ -48,6 +67,7 @@ const Stakinginner = () => {
         .then((result) => {
           accountChangeHandler(result[0]);
         });
+      setLoader(true);
     } else {
       console.log("Install MetaMask");
     }
@@ -101,7 +121,6 @@ const Stakinginner = () => {
   // };
 
   const handleDisconnect = () => {
-    setIsConnected(false);
     setDefaultAccount("");
     setUserBalance(0);
   };
@@ -121,8 +140,13 @@ const Stakinginner = () => {
     };
     fetch(`${baseUrl}getBebTokenBalance`, requestOptions)
       .then((response) => response.json())
-      .then((data) => setMetaPetsBalance(abbreviateNumber(data.balance)));
+      .then((data) => setMetaPetsBalanceFinal(data.balance));
   }
+
+  const setMetaPetsBalanceFinal = (balance) => {
+    setMetaPetsBalance(abbreviateNumber(balance));
+    setMetaPetsBalanceTo(balance);
+  };
 
   const getLockedVolumn = () => {
     const requestOptions = {
@@ -156,6 +180,105 @@ const Stakinginner = () => {
     return scaled.toFixed(1) + suffix;
   }
 
+  function dateFormater(date, separator) {
+    var day = date.getDate();
+    // add +1 to month because getMonth() returns month from 0 to 11
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    // show date and month in two digits
+    // if month is less than 10, add a 0 before it
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    // now we have day, month and year
+    // use the separator to join them
+    return year + separator + month + separator + day;
+  }
+
+  function updateMonth(month2) {
+    let date = new Date();
+    var day = date.getDate();
+    // add +1 to month because getMonth() returns month from 0 to 11
+    var month = date.getMonth() + month2;
+    var year = date.getFullYear();
+
+    // show date and month in two digits
+    // if month is less than 10, add a 0 before it
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    // now we have day, month and year
+    // use the separator to join them
+    let ff = year + "-" + month + "-" + day;
+    setFinalMonth(ff);
+
+    // (new Date().getMonth() + month);
+  }
+
+  function updateMonth2(month3) {
+    let date = new Date();
+    var day = date.getDate();
+    // add +1 to month because getMonth() returns month from 0 to 11
+    var month = date.getMonth() + month3;
+    var year = date.getFullYear();
+
+    // show date and month in two digits
+    // if month is less than 10, add a 0 before it
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    // now we have day, month and year
+    // use the separator to join them
+    let ff = year + "-" + month + "-" + day;
+    setFinalMonth2(ff);
+
+    // (new Date().getMonth() + month);
+  }
+
+  function updateMonth3(month4) {
+    let date = new Date();
+    var day = date.getDate();
+    // add +1 to month because getMonth() returns month from 0 to 11
+    var month = date.getMonth() + month4;
+    var year = date.getFullYear();
+
+    // show date and month in two digits
+    // if month is less than 10, add a 0 before it
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    // now we have day, month and year
+    // use the separator to join them
+    let ff = year + "-" + month + "-" + day;
+    setFinalMonth3(ff);
+
+    // (new Date().getMonth() + month);
+  }
+
+  function timeFormater(date, separator) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    return hours + separator + minutes + separator + seconds;
+  }
+
   const totalStackedToken = () => {
     const requestOptions = {
       method: "GET",
@@ -172,16 +295,31 @@ const Stakinginner = () => {
   //   setTotalLockedValue(fromExponential(totalStacked * metaPetsPrice));
   // }
   const firstClass = () => {
-    let response = firstRow === true ? false : true;
-    setFirstRow(response);
+    if (defaultAccount) {
+      let response = firstRow === true ? false : true;
+      setFirstRow(response);
+      updateMonth(3);
+    } else {
+      handleClose3();
+    }
   };
   const secondClass = () => {
-    let response = secondRow === true ? false : true;
-    setSecondRow(response);
+    if (defaultAccount) {
+      let response = secondRow === true ? false : true;
+      setSecondRow(response);
+      updateMonth2(5);
+    } else {
+      handleClose3();
+    }
   };
   const thirdClass = () => {
-    let response = thirdRow === true ? false : true;
-    setThirdRow(response);
+    if (defaultAccount) {
+      let response = thirdRow === true ? false : true;
+      setThirdRow(response);
+      updateMonth3(7);
+    } else {
+      handleClose3();
+    }
   };
 
   //Start Stacking Code
@@ -198,6 +336,37 @@ const Stakinginner = () => {
       .catch(function (error) {
         return error;
       });
+  };
+
+  const submitFirstPackage = async () => {
+    let hasKey = await createTransaction();
+  };
+
+  const submitSecondPackage = async () => {
+    let hasKey = await createTransaction();
+  };
+
+  const submitThirdPackage = async () => {
+    let hasKey = await createTransaction();
+
+    let obj = {
+      tokenAddress: walletAddress,
+      userAddress: defaultAccount,
+      package: "diamond",
+      totalAmount: "",
+      apy: "",
+      stackDate: "",
+      lockedDay: "",
+      noOfStackedToken: "",
+      endDate: "",
+      estimatedInterest: "",
+      rawData: "",
+    };
+    await insertData(obj);
+  };
+
+  const insertData = async (data) => {
+    await axios.post(`${baseUrl}createStackRecord`, data);
   };
 
   const createTransaction = async () => {
@@ -227,6 +396,7 @@ const Stakinginner = () => {
       method: "eth_sendTransaction",
       params: [transactionParameters],
     });
+    return txHash;
   };
 
   const fetchBalance = async () => {
@@ -250,6 +420,18 @@ const Stakinginner = () => {
     setMetaPetsTotalStackingGold(checkGoldPrice);
     setMetaPetsTotalStackingSilver(checkSilverPrice);
     setMetaPetsTotalStackingDiamond(checkDiamondPrice);
+  };
+
+  const updateMetaPets = () => {
+    setMetapetaInputValue1(metaPetsBalanceTo);
+  };
+
+  const updateMetaPets2 = () => {
+    setMetapetaInputValue2(metaPetsBalanceTo);
+  };
+
+  const updateMetaPets3 = () => {
+    setMetapetaInputValue3(metaPetsBalanceTo);
   };
 
   const checkBrowser = () => {
@@ -344,26 +526,33 @@ const Stakinginner = () => {
           <div className="row">
             <div className="col-12 text-center">
               <div className="inner-heading">
-                <h2 className="heading mb-0">Stake your Metapets and earn</h2>
-                <h1 className="sub-heading mb-0">MetaPets Coin</h1>
-                <div className="stakin-inner-heading-box">
-                  <div className="staking-icon">
-                    <img src="assets/images/stakin-inner2.svg" alt="icon" />
-                    <p className="userBalanceFIrstP">{userBalance}</p>
-                  </div>
-                  <div className="staking-icon staking-icon1">
-                    <img
-                      className="first-img"
-                      src="assets/images/stakin-inner1.svg"
-                      alt="icon"
-                    />
-                    <p className="metaPetsBalanceSecondP">{metaPetsBalance}</p>
-                  </div>
-                  <h6>{defaultAccount}</h6>
-                  {isConnected && (
-                    <button onClick={handleDisconnect}>Logout</button>
-                  )}
-                </div>
+                <h2 className="heading mb-0">Stake your MetaPets</h2>
+                <h1 className="sub-heading mb-0">Earn $MetaPets</h1>
+                <p>
+                  Stake your MetaPets and grow back while supporting our
+                  ecosystem
+                </p>
+                {defaultAccount && (
+                  <span onClick={handleDisconnect}>
+                    <div className="stakin-inner-heading-box">
+                      <div className="staking-icon">
+                        <img src="assets/images/stakin-inner2.svg" alt="icon" />
+                        <p className="userBalanceFIrstP">{userBalance}</p>
+                      </div>
+                      <div className="staking-icon staking-icon1">
+                        <img
+                          className="first-img"
+                          src="assets/images/stakin-inner1.svg"
+                          alt="icon"
+                        />
+                        <p className="metaPetsBalanceSecondP">
+                          {metaPetsBalance}
+                        </p>
+                      </div>
+                      <h6>{defaultAccount}</h6>
+                    </div>
+                  </span>
+                )}
                 <div className="stakin-inner-heading-btn">
                   {defaultAccount === null && (
                     <button
@@ -515,7 +704,7 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: 0 MPC</p>
+                                        <p>Avilable: {metaPetsBalance} MPC</p>
                                         <h3>
                                           Buy MPC{" "}
                                           <img
@@ -526,15 +715,21 @@ const Stakinginner = () => {
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
-                                      <h5>500</h5>
+                                      <input
+                                        type="text"
+                                        onChange={handleChangeFirst}
+                                        value={metapetaInputValue1 || 0}
+                                      />
                                       <div className="mpc-coin-right">
                                         <p>MetaPets Coin</p>
-                                        <button>MAX</button>
+                                        <button onClick={updateMetaPets}>
+                                          MAX
+                                        </button>
                                       </div>
                                     </div>
-                                    <h6>
+                                    {/* <h6>
                                       The amount can not be lower than 500 MPC
-                                    </h6>
+                                    </h6> */}
                                   </div>
                                   <div className="staking-inner-summary">
                                     <h4>Summary</h4>
@@ -548,14 +743,18 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>
+                                            {dateFormater(new Date(), "-")}
+                                          </span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -569,14 +768,16 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>{finalMonth}</span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -595,7 +796,7 @@ const Stakinginner = () => {
                                         <h6>APY</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>21.94%</h5>
+                                        <h5>20% + 13% Tax Back</h5>
                                       </div>
                                     </div>
                                     <div className="summry-row">
@@ -603,14 +804,13 @@ const Stakinginner = () => {
                                         <h6>Estimated Interests</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>8.2192 MPC</h5>
+                                        <h5>
+                                          {(20 / 100) * metapetaInputValue1} MPC
+                                        </h5>
                                       </div>
                                     </div>
                                     <div className="stakin-inner-heading-btn text-center">
-                                      <button
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal5"
-                                      >
+                                      <button onClick={submitFirstPackage}>
                                         Confirm Staking
                                       </button>
                                     </div>
@@ -676,7 +876,7 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: 0 MPC</p>
+                                        <p>Avilable: {metaPetsBalance} MPC</p>
                                         <a
                                           href="https://swap.metapetscoin.com/"
                                           target="_blank"
@@ -693,16 +893,22 @@ const Stakinginner = () => {
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
-                                      <input type="text" placeholder="500" />
-                                      {/* <h5>500</h5> */}
+                                      <input
+                                        type="text"
+                                        placeholder=""
+                                        value={metapetaInputValue2 || 0}
+                                        onChange={handleChangeSecond}
+                                      />
                                       <div className="mpc-coin-right">
                                         <p>MetaPets Coin</p>
-                                        <button>MAX</button>
+                                        <button onClick={updateMetaPets2}>
+                                          MAX
+                                        </button>
                                       </div>
                                     </div>
-                                    <h6>
+                                    {/* <h6>
                                       The amount can not be lower than 500 MPC
-                                    </h6>
+                                    </h6> */}
                                   </div>
                                   <div className="staking-inner-summary">
                                     <h4>Summary</h4>
@@ -716,14 +922,18 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>
+                                            {dateFormater(new Date(), "-")}
+                                          </span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -737,14 +947,16 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>{finalMonth2}</span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -753,7 +965,7 @@ const Stakinginner = () => {
                                         <h6>APY</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>21.94%</h5>
+                                        <h5>45% + 13% Tax Back</h5>
                                       </div>
                                     </div>
                                     <div className="summry-row">
@@ -761,14 +973,13 @@ const Stakinginner = () => {
                                         <h6>Estimated Interests</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>8.2192 MPC</h5>
+                                        <h5>
+                                          {(45 / 100) * metapetaInputValue2} MPC
+                                        </h5>
                                       </div>
                                     </div>
                                     <div className="stakin-inner-heading-btn text-center">
-                                      <button
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal5"
-                                      >
+                                      <button onClick={submitSecondPackage}>
                                         Confirm Staking
                                       </button>
                                     </div>
@@ -838,7 +1049,7 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: 0 MPC</p>
+                                        <p>Avilable: {metaPetsBalance} MPC</p>
                                         <h3>
                                           Buy MPC{" "}
                                           <img
@@ -849,15 +1060,22 @@ const Stakinginner = () => {
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
-                                      <h5>500</h5>
+                                      <input
+                                        type="text"
+                                        placeholder=""
+                                        value={metapetaInputValue3 || 0}
+                                        onChange={handleChangeThird}
+                                      />
                                       <div className="mpc-coin-right">
                                         <p>MetaPets Coin</p>
-                                        <button>MAX</button>
+                                        <button onClick={updateMetaPets3}>
+                                          MAX
+                                        </button>
                                       </div>
                                     </div>
-                                    <h6>
+                                    {/* <h6>
                                       The amount can not be lower than 500 MPC
-                                    </h6>
+                                    </h6> */}
                                   </div>
                                   <div className="staking-inner-summary">
                                     <h4>Summary</h4>
@@ -871,14 +1089,18 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>
+                                            {dateFormater(new Date(), "-")}
+                                          </span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -892,14 +1114,16 @@ const Stakinginner = () => {
                                             src="assets/images/calendar.png"
                                             alt=""
                                           />
-                                          <span>2022-03-08</span>{" "}
+                                          <span>{finalMonth3}</span>{" "}
                                         </p>
                                         <p className="border-right">
                                           <img
                                             src="assets/images/clock.png"
                                             alt=""
                                           />
-                                          <span>02:31:04</span>{" "}
+                                          <span>
+                                            {timeFormater(new Date(), ":")}
+                                          </span>{" "}
                                         </p>
                                       </div>
                                     </div>
@@ -918,7 +1142,7 @@ const Stakinginner = () => {
                                         <h6>APY</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>21.94%</h5>
+                                        <h5>100% + 13% Tax Back</h5>
                                       </div>
                                     </div>
                                     <div className="summry-row">
@@ -926,14 +1150,16 @@ const Stakinginner = () => {
                                         <h6>Estimated Interests</h6>
                                       </div>
                                       <div className="summry-row-right">
-                                        <h5>8.2192 MPC</h5>
+                                        <h5>
+                                          {" "}
+                                          {(100 / 100) *
+                                            metapetaInputValue3}{" "}
+                                          MPC
+                                        </h5>
                                       </div>
                                     </div>
                                     <div className="stakin-inner-heading-btn text-center">
-                                      <button
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal5"
-                                      >
+                                      <button onClick={submitThirdPackage}>
                                         Confirm Staking
                                       </button>
                                     </div>
@@ -1047,9 +1273,6 @@ const Stakinginner = () => {
           onHide={handleClose}
           backdrop="static"
         >
-          {/* <Modal.Header>
-            <Modal.Title>MetaPets Staking</Modal.Title>
-          </Modal.Header> */}
           <Modal.Body>
             {" "}
             <div>
@@ -1064,15 +1287,6 @@ const Stakinginner = () => {
               </a>
             </div>{" "}
           </Modal.Body>
-          {/* <Modal.Footer>
-            <a
-              href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click to install
-            </a>
-          </Modal.Footer> */}
         </Modal>
 
         <div
@@ -1102,30 +1316,51 @@ const Stakinginner = () => {
       </div>
 
       <div className="staking-popup1">
-        <div
-          className="modal fade"
-          id="exampleModal3"
-          tabIndex="-1"
-          aria-labelledby="exampleModal1Label"
-          aria-hidden="true"
+        <Modal
+          className="staking-popup1"
+          show={loader}
+          onHide={handleClose}
+          backdrop="static"
         >
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-body">
-                <div
-                  className="popup-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <img src="assets/images/popup-close.png" alt="" />
-                </div>
-                <img src="assets/images/popup2.png" alt="" />
-                <h5>MetaPets Staking</h5>
-                <p>Connected Successfully</p>
+          <Modal.Body>
+            {" "}
+            <div>
+              <div
+                className="close popup-close text-center"
+                onClick={closePopup}
+              >
+                <img src="assets/images/popup-close.png" alt="" />
               </div>
-            </div>
-          </div>
-        </div>
+              <img src="assets/images/popup2.png" alt="" />
+              <h5>MetaPets Staking</h5>
+              <p>Connected Successfully</p>
+            </div>{" "}
+          </Modal.Body>
+        </Modal>
+      </div>
+
+      <div className="staking-popup1">
+        <Modal
+          className="staking-popup1"
+          show={loaderForConnect}
+          onHide={handleClose3}
+          backdrop="static"
+        >
+          <Modal.Body>
+            {" "}
+            <div>
+              <div
+                className="close popup-close text-center"
+                onClick={closePopup3}
+              >
+                <img src="assets/images/popup-close.png" alt="" />
+              </div>
+              <img src="assets/images/popup1.png" alt="" />
+              <h5>MetaPets Staking</h5>
+              <p>Please Connect Your Wallet</p>
+            </div>{" "}
+          </Modal.Body>
+        </Modal>
       </div>
 
       <div className="staking-popup1">
