@@ -17,7 +17,87 @@ const About = () => {
                 <div className="about-inner-box">
                   <h2 className="heading">MetaPets</h2>
                   <h1 className="sub-heading">Terms and Conditions</h1>
-                  <p>
+                  <p>Last updated: March 24, 2022</p>
+                  <p>Please read these terms and conditions carefully before using Our Service.</p>
+                  <h4>Interpretation and Definitions</h4>
+                  <h5>Interpretation</h5>
+                  <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+                  <h5>Definitions</h5>
+                  <p>For the purposes of these Terms and Conditions:</p>
+                  <ul>
+                  <li>
+                  <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+                  </li>
+                  <li>
+                  <p><strong>Country</strong> refers to:  China</p>
+                  </li>
+                  <li>
+                  <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to MetaPets™ Coin.</p>
+                  </li>
+                  <li>
+                  <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+                  </li>
+                  <li>
+                  <p><strong>Goods</strong> refer to the items offered for sale on the Service.</p>
+                  </li>
+                  <li>
+                  <p><strong>Orders</strong> mean a request by You to purchase Goods from Us.</p>
+                  </li>
+                  <li>
+                  <p><strong>Service</strong> refers to the Website.</p>
+                  </li>
+                  <li>
+                  <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</p>
+                  </li>
+                  <li>
+                  <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
+                  </li>
+                  <li>
+                  <p><strong>Website</strong> refers to MetaPets™ Coin, accessible from <a href="www.metapetscoin.com" rel="external nofollow noopener" target="_blank">www.metapetscoin.com</a></p>
+                  </li>
+                  <li>
+                  <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+                  </li>
+                  </ul>
+                  <h4>Acknowledgment</h4>
+                  <p>These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.</p>
+                  <p>Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.</p>
+                  <p>By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.</p>
+                  <p>You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.</p>
+                  <p>Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.</p>
+                  <h1>Placing Orders for Goods</h1>
+                  <p>By placing an Order for Goods through the Service, You warrant that You are legally capable of entering into binding contracts.</p>
+                  <h5>Your Information</h5>
+                  [2:59 pm, 24/03/2022] +91 70099 63066: <p>If You wish to place an Order for Goods available on the Service, You may be asked to supply certain information relevant to Your Order including, without limitation, Your name, Your email, Your phone number, Your credit card number, the expiration date of Your credit card, Your billing address, and Your shipping information.</p>
+                  <p>You represent and warrant that: (i) You have the legal right to use any credit or debit card(s) or other payment method(s) in connection with any Order; and that (ii) the information You supply to us is true, correct and complete.</p>
+                  <p>By submitting such information, You grant us the right to provide the information to payment processing third parties for purposes of facilitating the completion of Your Order.</p>
+                  <h2>Order Cancellation</h2>
+                  <p>We reserve the right to refuse or cancel Your Order at any time for certain reasons including but not limited to:</p>
+                  <ul>
+                  <li>Goods availability</li>
+                  <li>Errors in the description or prices for Goods</li>
+                  <li>Errors in Your Order</li>
+                  </ul>
+                  <p>We reserve the right to refuse or cancel Your Order if fraud or an unauthorized or illegal transaction is suspected.</p>
+                  <h5>Your Order Cancellation Rights</h5>
+                  <p>Any Goods you purchase can only be returned in accordance with these Terms and Conditions and Our Returns Policy.</p>
+                  <p>Our Returns Policy forms a part of these Terms and Conditions. Please read our Returns Policy to learn more about your right to cancel Your Order.</p>
+                  <p>Your right to cancel an Order only applies to Goods that are returned in the same condition as You received them. You should also include all of the products instructions, documents and wrappings. Goods that are damaged or not in the same condition as You received them or which are worn simply beyond opening the original packaging will not be refunded. You should therefore take reasonable care of the purchased Goods while they are in Your possession.</p>
+                  <p>We will reimburse You no later than 14 days from the day on which We receive the returned Goods. We will use the same means of payment as You used for the Order, and You will not incur any fees for such reimbursement.</p>
+                  <p>You will not have any right to cancel an Order for the supply of any of the following Goods:</p>
+                  <ul>
+                  <li>The supply of Goods made to Your specifications or clearly personalized.</li>
+                  <li>The supply of Goods which according to their nature are not suitable to be returned, deteriorate rapidly or where the date of expiry is over.</li>
+                  <li>The supply of Goods which are not suitable for return due to health protection or hygiene reasons and were unsealed after delivery.</li>
+                  <li>The supply of Goods which are, after delivery, according to their nature, inseparably mixed with other items.</li>
+                  <li>The supply of digital content which is not supplied on a tangible medium if the performance has begun with Your prior express consent and You have acknowledged Your loss of cancellation right.</li>
+                  </ul>
+                  <h2>Availability, Errors and Inaccuracies</h2>
+                  <p>We are constantly updating Our offerings of Goods on the Service. The Goods available on Our Service may be mispriced, described inaccurately, or unavailable, and We may experience delays in updating information regarding our Goods on the Service and in Our advertising on other websites.</p>
+                  <p>We cannot and do not guarantee the accuracy or completeness of any information, including prices, product images, specifications, availability, and services. We reserve the right to change or update information and to correct errors, inaccuracies, or omissions at any time without prior notice.</p>
+                  <h5>Prices Policy</h5>
+                  <p>The Company reserves the right to revise its prices at any time prior to accepting an Order.</p>
+                  {/* <p>
                     These terms and conditions (the "Terms and Conditions")
                     govern the use of{" "}
                     <a href="www.metapetscoin.com">www.metapetscoin.com</a> .
@@ -140,16 +220,16 @@ const About = () => {
                   <p>
                     Please contact us if you have any questions or concerns. Our
                     contact details are as follows:
-                  </p>
+  </p>*/}
                   <p>
-                    <a href="tel:1916633095 ">(191) 663-3095 </a>
-                    <br />
-                    <a href="mailto:support@metapetscoin.com  ">
-                      support@metapetscoin.com{" "}
+                    {/* <a href="tel:1916633095 ">(191) 663-3095 </a>
+                    <br /> */}
+                    <a href="mailto:support@metapetscoin.com">
+                    support@metapetscoin.com{" "}
                     </a>
-                    <br />
-                    8731 Tanager Woods Dr.
-                  </p>
+                    {/* <br />
+                    8731 Tanager Woods Dr. */}
+                  </p> 
 
                   <div className="about-main-img">
                     <img src="assets/images/about-main.png" alt="" />

@@ -184,13 +184,13 @@ const About = () => {
                   <p>
                     Liam Hayne
                     <br />
-                    <a href="mailto:www.metapetscoin1@gmail.com">
-                      www.metapetscoin1@gmail.com
+                    <a href="mailto:support@metapetscoin.com">
+                    support@metapetscoin.com
                     </a>
-                    <br />
+                   {/* <br />
                     <a href="tel:5121107975">(512) 110-7975</a>
-                    <br />
-                    8731 Tanager Woods Dr. Cincinnati, Ohio 45249
+                    <br /> 
+                    8731 Tanager Woods Dr. Cincinnati, Ohio 45249 */}
                   </p>
 
                   <div className="about-main-img">
