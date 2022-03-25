@@ -254,6 +254,9 @@ ul.navbar-nav.me-auto.erabic-lng {
 .heading.english-lng {
   display: inline-block;
 }
+ul.navbar-nav.me-auto.english-lng {
+  display: flex;
+}
 
 @media (max-width: 1200px) {
   .sub-heading {

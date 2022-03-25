@@ -68,9 +68,9 @@ const About = () => {
                     <a href="mailto:support@metapetscoin.com">
                     support@metapetscoin.com
                     </a>
-                    {/* <br />
-                    <a href="tel:5121107975">(512) 110-7975</a>
-                    <br />
+                     <br />
+                    <a href="tel:15121107975">1-512-110-7975</a>
+                   {/* <br />
                     8731 Tanager Woods Dr. Cincinnati, Ohio 45249 */}
                   </p>
 

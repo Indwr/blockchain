@@ -304,7 +304,7 @@ const Header = () => {
                   </ul>
                 </div>
                 <button
-                  className="navbar-toggler p-0 d-xxl-none ms-3"
+                  className="navbar-toggler p-0 d-xl-none ms-3"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"

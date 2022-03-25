@@ -92,7 +92,7 @@ const About = () => {
                   <li>The supply of Goods which are, after delivery, according to their nature, inseparably mixed with other items.</li>
                   <li>The supply of digital content which is not supplied on a tangible medium if the performance has begun with Your prior express consent and You have acknowledged Your loss of cancellation right.</li>
                   </ul>
-                  <h2>Availability, Errors and Inaccuracies</h2>
+                  <h5>Availability, Errors and Inaccuracies</h5>
                   <p>We are constantly updating Our offerings of Goods on the Service. The Goods available on Our Service may be mispriced, described inaccurately, or unavailable, and We may experience delays in updating information regarding our Goods on the Service and in Our advertising on other websites.</p>
                   <p>We cannot and do not guarantee the accuracy or completeness of any information, including prices, product images, specifications, availability, and services. We reserve the right to change or update information and to correct errors, inaccuracies, or omissions at any time without prior notice.</p>
                   <h5>Prices Policy</h5>
@@ -222,8 +222,8 @@ const About = () => {
                     contact details are as follows:
   </p>*/}
                   <p>
-                    {/* <a href="tel:1916633095 ">(191) 663-3095 </a>
-                    <br /> */}
+                    <a href="tel:15121107975 ">1-512-110-7975 </a>
+                    <br />
                     <a href="mailto:support@metapetscoin.com">
                     support@metapetscoin.com{" "}
                     </a>
