@@ -62,7 +62,7 @@ const About = () => {
                   <h5>Contact Information</h5>
                   <p>
                     If you have any questions, concerns or complaints, you can
-                    contact our privacy officer, Liam Hayne, at:
+                    contact our privacy officer, Darrell Norris, at:
                   </p>
                   <p>
                     <a href="mailto:support@metapetscoin.com">

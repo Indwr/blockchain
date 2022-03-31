@@ -45,7 +45,7 @@ const Stakinginner = () => {
     useState(0);
   const handleClose = () => setShow(false);
   const handleClose3 = () => setLoaderForConnect(true);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(false);
   const closePopup = () => setLoader(false);
   const closePopup3 = () => setLoaderForConnect(false);
 
@@ -581,7 +581,7 @@ const Stakinginner = () => {
                   <p>Total Value Locked</p>
                 </div>
                 <div className="staking-inner-second-box">
-                  <h4>${metaPetsPrice}</h4>
+                  <h4>$ {metaPetsPrice}</h4>
                   <p>Price MetaPets</p>
                 </div>
               </div>
