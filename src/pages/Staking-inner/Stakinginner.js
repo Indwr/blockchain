@@ -10,6 +10,7 @@ import Web3 from "web3";
 
 const Stakinginner = () => {
   const [show, setShow] = useState(false);
+  const [error, setError] = useState("");
   const [loader, setLoader] = useState(false);
   const [loaderForConnect, setLoaderForConnect] = useState(false);
   const [baseUrl, setBaseUrl] = useState("http://127.0.0.1:3002/api/v1/");
@@ -66,8 +67,11 @@ const Stakinginner = () => {
         })
         .then((result) => {
           accountChangeHandler(result[0]);
+          setLoader(true);
+          setTimeout(() => {
+            getLockedVolumn(result[0]);
+          }, 1000);
         });
-      setLoader(true);
     } else {
       console.log("Install MetaMask");
     }
@@ -123,6 +127,7 @@ const Stakinginner = () => {
   const handleDisconnect = () => {
     setDefaultAccount("");
     setUserBalance(0);
+    window.location.reload();
   };
 
   if (typeof window.ethereum !== "undefined") {
@@ -148,12 +153,12 @@ const Stakinginner = () => {
     setMetaPetsBalanceTo(balance);
   };
 
-  const getLockedVolumn = () => {
+  const getLockedVolumn = (address) => {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        address: defaultAccount,
+        address: address,
       }),
     };
     fetch(`${baseUrl}getListingLockedToken`, requestOptions)
@@ -339,41 +344,86 @@ const Stakinginner = () => {
   };
 
   const submitFirstPackage = async () => {
-    let hasKey = await createTransaction();
-    return hasKey;
+    // if (metapetaInputValue1 > 0) {
+    let hasKey = await createTransaction(metapetaInputValue1);
+    let obj = {
+      tokenAddress: walletAddress,
+      userAddress: defaultAccount,
+      package: "gold",
+      totalAmount: metapetaInputValue1,
+      apy: 33,
+      stackDate:
+        dateFormater(new Date(), "-") + " " + timeFormater(new Date(), ":"),
+      lockedDay: 60,
+      noOfStackedToken: metapetaInputValue1,
+      endDate: finalMonth + " " + timeFormater(new Date(), ":"),
+      estimatedInterest: (20 / 100) * metapetaInputValue1,
+      rawData: hasKey,
+    };
+    await insertData(obj);
+    window.location.reload();
+    // } else {
+    //   setError("Please enter one or more metapets");
+    // }
   };
 
   const submitSecondPackage = async () => {
-    let hasKey = await createTransaction();
-    return hasKey;
+    // if (metapetaInputValue1 > 0) {
+    let hasKey = await createTransaction(metapetaInputValue2);
+    let obj = {
+      tokenAddress: walletAddress,
+      userAddress: defaultAccount,
+      package: "silver",
+      totalAmount: metapetaInputValue2,
+      apy: 58,
+      stackDate:
+        dateFormater(new Date(), "-") + " " + timeFormater(new Date(), ":"),
+      lockedDay: 120,
+      noOfStackedToken: metapetaInputValue2,
+      endDate: finalMonth2 + " " + timeFormater(new Date(), ":"),
+      estimatedInterest: (45 / 100) * metapetaInputValue2,
+      rawData: hasKey,
+    };
+    await insertData(obj);
+    window.location.reload();
+    // } else {
+    //   setError("Please enter one or more metapets");
+    // }
   };
 
   const submitThirdPackage = async () => {
-    // let hasKey = await createTransaction();
-    // let obj = {
-    //   tokenAddress: walletAddress,
-    //   userAddress: defaultAccount,
-    //   package: "diamond",
-    //   totalAmount: "",
-    //   apy: "",
-    //   stackDate: "",
-    //   lockedDay: "",
-    //   noOfStackedToken: "",
-    //   endDate: "",
-    //   estimatedInterest: "",
-    //   rawData: "",
-    // };
-    // await insertData(obj);
+    // if (metapetaInputValue1 > 0) {
+    let hasKey = await createTransaction(metapetaInputValue3);
+    let obj = {
+      tokenAddress: walletAddress,
+      userAddress: defaultAccount,
+      package: "diamond",
+      totalAmount: metapetaInputValue3,
+      apy: 113,
+      stackDate:
+        dateFormater(new Date(), "-") + " " + timeFormater(new Date(), ":"),
+      lockedDay: 180,
+      noOfStackedToken: metapetaInputValue3,
+      endDate: finalMonth3 + " " + timeFormater(new Date(), ":"),
+      estimatedInterest: (100 / 100) * metapetaInputValue3,
+      rawData: hasKey,
+    };
+    await insertData(obj);
+    window.location.reload();
+    // } else {
+    //   setError("Please enter one or more metapets");
+    // }
   };
 
-  // const insertData = async (data) => {
-  //   await axios.post(`${baseUrl}createStackRecord`, data);
-  // };
+  const insertData = async (data) => {
+    await axios.post(`${baseUrl}createStackRecord`, data);
+  };
 
-  const createTransaction = async () => {
+  const createTransaction = async (inputValue) => {
     let data = await getAbi();
     let addr = contractAdress;
-    let tokensValue = 0.000002;
+    console.log(inputValue);
+    let tokensValue = inputValue * 10;
     tokensValue = (tokensValue * 1e8).toFixed(0);
     tokensValue = tokensValue.toLocaleString("fullwide", {
       useGrouping: false,
@@ -382,6 +432,7 @@ const Stakinginner = () => {
     let web3 = new Web3(window.ethereum);
     const myContract = new web3.eth.Contract(JSON.parse(data), addr);
     console.log(myContract);
+    console.log("i am here", tokensValue);
     const tx = myContract.methods.transfer(walletAddress, tokensValue);
     const transactionParameters = {
       nonce: "0x00", // ignored by MetaMask
@@ -509,7 +560,7 @@ const Stakinginner = () => {
     } else {
       setTimeout(() => {
         totalStackedToken();
-        getLockedVolumn();
+
         fetchBalance();
         fetchStackedDataAccordingToPackages();
         setWalletAddress("0x4c734A99858A35d08a30BB42CC9636789233eDf8");
@@ -728,6 +779,12 @@ const Stakinginner = () => {
                                         </button>
                                       </div>
                                     </div>
+                                    <span
+                                      style={{ color: "red" }}
+                                      className="badge badge-danger"
+                                    >
+                                      {error}
+                                    </span>
                                     {/* <h6>
                                       The amount can not be lower than 500 MPC
                                     </h6> */}
@@ -806,7 +863,11 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {(20 / 100) * metapetaInputValue1} MPC
+                                          {/* {(20 / 100) * */}
+                                          {(20 / 100) *
+                                            (metapetaInputValue1 -
+                                              (13 / 100) * metapetaInputValue1)}
+                                          MPC
                                         </h5>
                                       </div>
                                     </div>
@@ -907,6 +968,12 @@ const Stakinginner = () => {
                                         </button>
                                       </div>
                                     </div>
+                                    <span
+                                      style={{ color: "red" }}
+                                      className="badge badge-danger"
+                                    >
+                                      {error}
+                                    </span>
                                     {/* <h6>
                                       The amount can not be lower than 500 MPC
                                     </h6> */}
@@ -975,7 +1042,10 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {(45 / 100) * metapetaInputValue2} MPC
+                                          {(45 / 100) *
+                                            (metapetaInputValue2 -
+                                              (13 / 100) * metapetaInputValue2)}
+                                          MPC
                                         </h5>
                                       </div>
                                     </div>
@@ -1078,6 +1148,12 @@ const Stakinginner = () => {
                                       The amount can not be lower than 500 MPC
                                     </h6> */}
                                   </div>
+                                  <span
+                                    style={{ color: "red" }}
+                                    className="badge badge-danger"
+                                  >
+                                    {error}
+                                  </span>
                                   <div className="staking-inner-summary">
                                     <h4>Summary</h4>
                                     <div className="summry-row">
@@ -1152,9 +1228,9 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {" "}
                                           {(100 / 100) *
-                                            metapetaInputValue3}{" "}
+                                            (metapetaInputValue3 -
+                                              (13 / 100) * metapetaInputValue3)}
                                           MPC
                                         </h5>
                                       </div>
@@ -1189,7 +1265,7 @@ const Stakinginner = () => {
                               <th scope="col">Locked Days</th>
                               <th scope="col">Interest End Date</th>
                               <th scope="col">Accrue Days </th>
-                              <th scope="col"> Estimated Interests</th>
+                              {/* <th scope="col"> Estimated Interests</th> */}
                             </tr>
                           </thead>
                           <tbody>
@@ -1214,14 +1290,14 @@ const Stakinginner = () => {
                                   }
                                 >
                                   <td>{item.package}</td>
-                                  <td>${item.totalAmount}</td>
+                                  <td>$MTP {item.totalAmount}</td>
                                   <td>{item.lockedDay} Days</td>
                                   <td>{item.stackDate}</td>
                                   <td>{item.lockedDay} Days</td>
                                   <td>{item.endDate}</td>
-                                  <td>62</td>
+                                  <td>1</td>
                                   {/* Note Calcualete days According to current date and End date of the Package */}
-                                  <td>20%</td>
+                                  {/* <td>20%</td> */}
                                   {/* Note Calcualete Estimated Interest According to Start Date from stacking with current Date */}
                                 </tr>
                               </>
