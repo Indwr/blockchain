@@ -211,6 +211,9 @@ img.menu-logo.menu-logo-white {
 .white-theme .token-box-img {
   z-index: -1;
 }
+.white-theme span.apy-box-text {
+  color: #000;
+}
 .white-theme .staking-white {
   display: block;
 }
