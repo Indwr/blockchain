@@ -13,7 +13,9 @@ const Stakinginner = () => {
   const [error, setError] = useState("");
   const [loader, setLoader] = useState(false);
   const [loaderForConnect, setLoaderForConnect] = useState(false);
-  const [baseUrl, setBaseUrl] = useState("http://127.0.0.1:3002/api/v1/");
+  const [baseUrl, setBaseUrl] = useState(
+    "https://api.metapetscoin.com/api/v1/"
+  );
   const [totalStacked, setTotalStacked] = useState(0);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
@@ -567,8 +569,8 @@ const Stakinginner = () => {
         setContractAddress("0x24cE3d571fBcFD9D81dc0e1a560504636a4D046d");
       }, 100);
     }
-
-    setBaseUrl("http://127.0.0.1:3002/api/v1/");
+    setError("");
+    setBaseUrl("https://api.metapetscoin.com/api/v1/");
   }, []);
   return (
     <div>
@@ -622,7 +624,8 @@ const Stakinginner = () => {
               <div className="staking-inner-second">
                 <div className="staking-inner-second-box">
                   <h4>
-                    <img src="assets/images/stakin-inner1.svg" alt="icon" />
+                    $MTP
+                    {/* <img src="assets/images/stakin-inner1.svg" alt="icon" /> */}
                     {totalStacked}
                   </h4>
                   <p>Total Staked</p>
@@ -686,7 +689,7 @@ const Stakinginner = () => {
                           <thead>
                             <tr>
                               <th scope="col">Package</th>
-                              <th scope="col">APY</th>
+                              <th scope="col">APR</th>
                               <th scope="col">Duration</th>
                               <th scope="col">Type</th>
                               <th scope="col"> </th>
@@ -851,7 +854,7 @@ const Stakinginner = () => {
                                     </div>
                                     <div className="summry-row">
                                       <div className="summry-row-left">
-                                        <h6>APY</h6>
+                                        <h6>APR</h6>
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>20% + 13% Tax Back</h5>
@@ -1030,7 +1033,7 @@ const Stakinginner = () => {
                                     </div>
                                     <div className="summry-row">
                                       <div className="summry-row-left">
-                                        <h6>APY</h6>
+                                        <h6>APR</h6>
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>45% + 13% Tax Back</h5>
@@ -1216,7 +1219,7 @@ const Stakinginner = () => {
                                     </div>
                                     <div className="summry-row">
                                       <div className="summry-row-left">
-                                        <h6>APY</h6>
+                                        <h6>APR</h6>
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>100% + 13% Tax Back</h5>
@@ -1260,7 +1263,7 @@ const Stakinginner = () => {
                             <tr>
                               <th scope="col">Package</th>
                               <th scope="col">Total Amount</th>
-                              <th scope="col">APY</th>
+                              <th scope="col">APR</th>
                               <th scope="col">Stake Date</th>
                               <th scope="col">Locked Days</th>
                               <th scope="col">Interest End Date</th>
