@@ -13,9 +13,7 @@ const Stakinginner = () => {
   const [error, setError] = useState("");
   const [loader, setLoader] = useState(false);
   const [loaderForConnect, setLoaderForConnect] = useState(false);
-  const [baseUrl, setBaseUrl] = useState(
-    "https://api.metapetscoin.com/api/v1/"
-  );
+  const [baseUrl, setBaseUrl] = useState("https://metapetscoin.com/api/v1/");
   const [totalStacked, setTotalStacked] = useState(0);
   const [defaultAccount, setDefaultAccount] = useState(null);
   const [userBalance, setUserBalance] = useState(null);
@@ -152,6 +150,7 @@ const Stakinginner = () => {
 
   const setMetaPetsBalanceFinal = (balance) => {
     setMetaPetsBalance(abbreviateNumber(balance));
+    console.log("here", balance);
     setMetaPetsBalanceTo(balance);
   };
 
@@ -457,7 +456,9 @@ const Stakinginner = () => {
     try {
       const resp = await axios.post(`${baseUrl}getTokenPrice`);
       setMetaPetsPrice(fromExponential(resp.data.data));
-      setTotalLockedValue(fromExponential(resp.data.totalStackedToken));
+      setTotalLockedValue(
+        fromExponential(resp.data.totalStackedToken.toFixed(10))
+      );
     } catch (error) {
       console.error(error);
     }
@@ -477,6 +478,7 @@ const Stakinginner = () => {
   };
 
   const updateMetaPets = () => {
+    console.log("My MetaPets Balance", metaPetsBalanceTo);
     setMetapetaInputValue1(metaPetsBalanceTo);
   };
 
@@ -551,6 +553,11 @@ const Stakinginner = () => {
       }
     });
   };
+
+  const calculateEstimateInterest = (amount, month) => {
+    let singleMonth = amount / 12;
+    return singleMonth * month;
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
     if (typeof window.ethereum === "undefined") {
@@ -570,7 +577,7 @@ const Stakinginner = () => {
       }, 100);
     }
     setError("");
-    setBaseUrl("https://api.metapetscoin.com/api/v1/");
+    setBaseUrl("https://metapetscoin.com/api/v1/");
   }, []);
   return (
     <div>
@@ -759,14 +766,20 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: {metaPetsBalance} MPC</p>
-                                        <h3>
-                                          Buy MPC{" "}
-                                          <img
-                                            src="assets/images/mpc1.png"
-                                            alt="icon"
-                                          />
-                                        </h3>
+                                        <p>Available: {metaPetsBalance} MTP</p>
+                                        <a
+                                          href="https://swap.metapetscoin.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <h3>
+                                            Buy MTP{" "}
+                                            <img
+                                              src="assets/images/mpc1.png"
+                                              alt="icon"
+                                            />
+                                          </h3>
+                                        </a>
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
@@ -866,11 +879,14 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {/* {(20 / 100) * */}
-                                          {(20 / 100) *
-                                            (metapetaInputValue1 -
-                                              (13 / 100) * metapetaInputValue1)}
-                                          MPC
+                                          {calculateEstimateInterest(
+                                            (20 / 100) *
+                                              (metapetaInputValue1 -
+                                                (13 / 100) *
+                                                  metapetaInputValue1),
+                                            2
+                                          )}
+                                          MTP
                                         </h5>
                                       </div>
                                     </div>
@@ -941,14 +957,14 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: {metaPetsBalance} MPC</p>
+                                        <p>Available: {metaPetsBalance} MTP</p>
                                         <a
                                           href="https://swap.metapetscoin.com/"
                                           target="_blank"
                                           rel="noopener noreferrer"
                                         >
                                           <h3>
-                                            Buy MPC{" "}
+                                            Buy MTP{" "}
                                             <img
                                               src="assets/images/mpc1.png"
                                               alt="icon"
@@ -1045,10 +1061,15 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {(45 / 100) *
-                                            (metapetaInputValue2 -
-                                              (13 / 100) * metapetaInputValue2)}
-                                          MPC
+                                          {calculateEstimateInterest(
+                                            (45 / 100) *
+                                              (metapetaInputValue2 -
+                                                (13 / 100) *
+                                                  metapetaInputValue2),
+                                            4
+                                          )}
+                                          {}
+                                          MTP
                                         </h5>
                                       </div>
                                     </div>
@@ -1123,14 +1144,20 @@ const Stakinginner = () => {
                                     <div className="stack-mpc-heading">
                                       <h4>Stake</h4>
                                       <div className="stack-mpcheading-right">
-                                        <p>Avilable: {metaPetsBalance} MPC</p>
-                                        <h3>
-                                          Buy MPC{" "}
-                                          <img
-                                            src="assets/images/mpc1.png"
-                                            alt="icon"
-                                          />
-                                        </h3>
+                                        <p>Available: {metaPetsBalance} MTP</p>
+                                        <a
+                                          href="https://swap.metapetscoin.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <h3>
+                                            Buy MTP{" "}
+                                            <img
+                                              src="assets/images/mpc1.png"
+                                              alt="icon"
+                                            />
+                                          </h3>
+                                        </a>
                                       </div>
                                     </div>
                                     <div className="mpc-coin">
@@ -1231,10 +1258,14 @@ const Stakinginner = () => {
                                       </div>
                                       <div className="summry-row-right">
                                         <h5>
-                                          {(100 / 100) *
-                                            (metapetaInputValue3 -
-                                              (13 / 100) * metapetaInputValue3)}
-                                          MPC
+                                          {calculateEstimateInterest(
+                                            (100 / 100) *
+                                              (metapetaInputValue3 -
+                                                (13 / 100) *
+                                                  metapetaInputValue3),
+                                            6
+                                          )}
+                                          MTP
                                         </h5>
                                       </div>
                                     </div>
