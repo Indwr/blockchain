@@ -130,7 +130,11 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link " to={"/staking-inner"}>
+                      <Link
+                        className="nav-link "
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
                         Staking
                       </Link>
                     </li>
